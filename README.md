@@ -1,5 +1,5 @@
 # SailWatchPro-Public
-![cover](SailWatchPro/Assets.xcassets/AppIcon.appiconset/icon-76x76@2x.png)
+![cover](images/icon-76x76@2x.png)
 
 *The Complete Racing Companion for Serious Sailors*
 
@@ -17,7 +17,7 @@ Welcome to SailWatchPro, your ultimate companion for competitive sailing. Design
 *The main hub for all critical sailing data*
 
 <div align="center">
- <img src="SailWatchPro/Assets.xcassets/images/swp-dashboard-split-cards-compass.png" width="270"/>  
+ <img src="images/swp-dashboard-split-cards-compass.png" width="270"/>  
 </div>
 
 - **Wind Data**: Real-time true and apparent wind speed/direction
@@ -33,7 +33,7 @@ Welcome to SailWatchPro, your ultimate companion for competitive sailing. Design
 *Pre-start data view to provide precision timing and line analysis from Expedition Marine*
 
 <div align="left">
- <img src="SailWatchPro/Assets.xcassets/images/swp-start-view-dark.png" width="270"/>
+ <img src="images/swp-start-view-dark.png" width="270"/>
 </div>
 
 **Race Timers**
@@ -73,7 +73,7 @@ Welcome to SailWatchPro, your ultimate companion for competitive sailing. Design
 *Professional navigation and course planning*
 
 <div align="left">
- <img src="SailWatchPro/Assets.xcassets/images/swp-nav-map.png" width="270"/>
+ <img src="images/swp-nav-map.png" width="270"/>
 </div>
 
 - **Electronic Map Display**: Real-time position with course overlay and buoy wind data
@@ -86,7 +86,7 @@ Welcome to SailWatchPro, your ultimate companion for competitive sailing. Design
 *Comprehensive wind monitoring and trend analysis*
 
 <div align="left">
- <img src="SailWatchPro/Assets.xcassets/images/swp-wind-state.png" width="270"/>
+ <img src="images/swp-wind-state.png" width="270"/>
 </div>
 
 **Real-Time Wind Cards**
@@ -132,7 +132,7 @@ Welcome to SailWatchPro, your ultimate companion for competitive sailing. Design
 **Buoy Data**
 
 <div align="left">
- <img src="SailWatchPro/Assets.xcassets/images/swp-weather-data.png" width="270"/>
+ <img src="images/swp-weather-data.png" width="270"/>
 </div>
 
 - Comprehensive weather information
@@ -165,7 +165,7 @@ Welcome to SailWatchPro, your ultimate companion for competitive sailing. Design
 Your Apple Watch becomes a powerful racing companion with dedicated views:
 
 <div align="left">
- <img src="SailWatchPro/Assets.xcassets/images/swp-apple-watch-views.png" width="270"/>
+ <img src="images/swp-apple-watch-views.png" width="270"/>
 </div>
 
 
