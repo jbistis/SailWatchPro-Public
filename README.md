@@ -326,7 +326,7 @@ SailWatchPro is continuously updated with new features and improvements based on
 
 For the best racing experience, ensure both your iPhone and Apple Watch apps are updated to the latest versions.
 
-Support: https://jbistis.github.io/SailWatchPro/
+Support: https://jbistis.github.io/SailWatchPro-Public/
 
 ---
 
