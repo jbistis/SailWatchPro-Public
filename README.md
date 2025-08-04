@@ -36,7 +36,7 @@ The Dashboard is divided into the sections:
 
 <ol>
   <li>Key Performance Indicator Split Cards</li>
-      <p>The row of split cards at the top of the dashboard change colors based on how close your actual sailing data is to the recommended target values.</p>
+      <p>This row of cards at the top of the dashboard change colors based on how close your actual sailing data is to the recommended target values.</p>
   <li>Compass Rose</li>
     <p>This section provides a visual representation of how you're driving to target versus actual angles for both AWA and TWA.  Also shows TWD as well as how the current set and drift are coming into contact with the boat.</p>
   <li>Custom Data Fields</li>
