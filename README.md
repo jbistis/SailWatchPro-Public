@@ -60,14 +60,7 @@ Welcome to SailWatchPro, your ultimate companion for competitive sailing. Design
 - **Wind Shift Detection**: Automatic trend analysis with confidence indicators
 - **Lift/Header Identification**: Real-time sailing angle optimization
 - **Mark Strategy**: Next mark analysis with optimal sail and angle recommendations
-- **Competitor Awareness**: Track nearby boats and their relative positions - Coming Soon
-
-**Wind Trend Indicators**
-- **STY/STY**: Steady conditions (no significant change)
-- **VEE/VEE**: Veering wind (clockwise shift)
-- **BCK/BCK**: Backing wind (counterclockwise shift)
-- **OSC**: Oscillating conditions
-- **Color Coding**: Blue for significant shifts, Orange for transitions, Purple for oscillations
+- **Competitor Awareness**: Track nearby boats and their relative positions and threat level - Coming Soon
 
 ### 🗺️ Navigator - Course Management
 *Professional navigation and course planning*
@@ -90,9 +83,11 @@ Welcome to SailWatchPro, your ultimate companion for competitive sailing. Design
 </div>
 
 **Real-Time Wind Cards**
+- **Wind Data Manager**: Seamlessly manage wind data across app users on your sailboat. Each connected device maintains a rolling wind database, initialized when the first device launches the app and capturing real-time wind instrument readings. The database accumulates and maintains a rolling 6 hours of data over time. New devices sync with the longest-running device to acquire all data collected since the app started. If the longest-running device exits, the next active device becomes the sync device, maintaining seamless synchronization of the 6 hour database for new connections without disrupting the distributed database.
+ 
 - **TWD**: True Wind Direction (degrees)
 - **TWS**: True Wind Speed (knots)  
-- **Wind Trend**: Current shift pattern with confidence indicator
+- **Wind Trend Analyzer**: Current shift pattern with confidence indicator.
 
 **Vertical Strip Charts**
 - **Time-based Analysis**: Configurable time windows (2 min to 6 hours)
@@ -102,7 +97,7 @@ Welcome to SailWatchPro, your ultimate companion for competitive sailing. Design
 
 **Chart Features**
 - **Green Line**: Raw wind data showing all fluctuations
-- **Yellow Dotted Line**: Rolling average for trend identification
+- **Magenta Dotted Line**: Rolling average for trend identification
 - **Background Grid**: Easy reference for value and time scales
 - **Interactive Time Selection**: Tap time labels to adjust viewing window
 
@@ -123,17 +118,18 @@ Welcome to SailWatchPro, your ultimate companion for competitive sailing. Design
 - Sail events and usage tracking and performance data with export to Sail Analytics.
 
 ### 🌡️ Weather Tools
+- **Weather Data Manager**: Seamlessly track nearby buoy wind and weather data and share amoung your crew. The app maintains the most recent buoy fetch within 100 NM of the boats position capturing readings from nearby buoys with 6 hour history when provided by the buoy. The app presents the buoy readings to all users via the weather data view sharing one buoy fetch amoungst all users. Should any user refresh the data, the results are shared to all users via the boats WiFi. To date, we have extrated weather data from NDBC buoys from NOAA CoastWatch ERDDAP (standard NDBC network), NDBC stations via AXDS ERDDAP, LISICOS buoys (UConn direct) using OCR, NERACOOS datasets (Gulf of Maine area), and NDBC stations available through NERACOOS. We can easily adapt more buoys as required. The Navigator view map overylays the buoy data with the boat's current position and race course so your Navigator can investiage the wind trends of nearby future locations to help optimze the route.
+
+- **Buoy Data**
+<div align="left">
+ <img src="images/swp-weather-data.png" width="270"/>
+</div>
 
 **Barometer**
 - Real-time atmospheric pressure monitoring
 - Trend analysis with historical data
 - Weather pattern prediction support
 
-**Buoy Data**
-
-<div align="left">
- <img src="images/swp-weather-data.png" width="270"/>
-</div>
 
 - Comprehensive weather information
 - Integration with nearby buoy data including OCR if needed
@@ -200,6 +196,8 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 - **TWA Reaching Threshold**: Sailing mode detection sensitivity
 
 ### Display Options
+- **Light Mode**: Uses traditional dark text on a light background
+- **Dark Mode**: Inverts the color scheme displaying light text on a dark background
 - **Night Mode**: Red-tinted display for night vision preservation
 - **Chart Time Windows**: Customizable data history viewing
 - **Map Style**: Choose between hybrid, standard, satellite, or imagery views
@@ -211,9 +209,9 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 
 ---
 
-## Tips for Racing Success
+## Tips for Racing
 
-### Start Line Mastery
+### Start Line
 1. **Set your pins early** in the race preparation sequence
 2. **Monitor line bias continuously** - it changes with wind shifts
 3. **Use the "Distance Below Line" indicator** to avoid OCS
@@ -246,7 +244,7 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 - **Intermittent connection**: Check WiFi signal strength and network stability
 
 ### Display Problems
-- **Data not updating**: Restart the UDP connection in settings
+- **Data not updating**: Restart Expedition Marine or the UDP connection in settings
 - **Charts not displaying**: Verify time window settings and available data
 - **Watch not syncing**: Check iPhone-Watch connectivity and app permissions
 
@@ -261,9 +259,9 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 - **iPad**: iOS 18.5 or later
 - **iPhone**: iOS 18.5 or later
 - **Apple Watch**: watchOS 11.5 or later
-- **Expedition Marine**: Compatible UDP data output
-- **Network**: Reliable WiFi connection for real-time data
-  
+- **Expedition Marine**: 12.4.12 or later
+- **Network**: Reliable WiFi connection for real-time data with a wired connection for the Expedition Marine PC
+
 ---
 
 ## Getting Started
