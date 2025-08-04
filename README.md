@@ -83,7 +83,7 @@ Welcome to SailWatchPro, your ultimate companion for competitive sailing. Design
 </div>
 
 **Real-Time Wind Cards**
-- **Wind Data Manager**: Seamlessly manage wind data across app users on your sailboat. Each connected device maintains a rolling wind database, initialized when the first device launches the app and capturing real-time wind instrument readings. The database accumulates and maintains a rolling 6 hours of data over time. New devices sync with the longest-running device to acquire all data collected since the app started. If the longest-running device exits, the next active device becomes the sync device, maintaining seamless synchronization of the 6 hour database for new connections without disrupting the distributed database.
+- **Wind Data Manager**: Seamlessly manage wind instrument data and share and share amoung your crew. Each connected device maintains a rolling wind database, initialized when the first device launches the app and capturing real-time wind instrument readings. The database accumulates and maintains a rolling 6 hours of wind instrument data over time. New devices sync with the longest-running device to acquire all data collected since the longest-running device started. If the longest-running device exits, the next longest-running device becomes the sync device, maintaining seamless synchronization of the 6 hour database for new connections without disrupting the distributed database.
  
 - **TWD**: True Wind Direction (degrees)
 - **TWS**: True Wind Speed (knots)  
