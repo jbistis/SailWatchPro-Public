@@ -26,18 +26,22 @@ Welcome to SailWatchPro – more than just data, it's decision intelligence for 
 
 ## Features
 
-### 📊 Dashboard - Your Data Command Center
+### 📊 Dashboard
 
 <div align="center">
- <img src="images/swp-dashboard-split-cards-compass.png" width="270"/>  
+ <img src="images/swp-dashboard-light.png" width="512"/>  
 </div>
 
-- **Wind Data**: Real-time true and apparent wind speed/direction
-- **Performance Metrics**: Boat speed, VMG, polar performance percentages
-- **Navigation**: Mark bearings, distances, and ETA calculations
-- **Course Info**: Current heading, COG, leeway, and set/drift
-- **Safety Data**: Depth readings with color-coded safety indicators
-- **Custom Data Fields**: Personalized data display
+The Dashboard is divided into the sections:
+
+<ol>
+  <li>Key Performance Indicator Split Cards</li>
+      <p>The row of split cards at the top of the dashboard change colors based on how close your actual sailing data is to the recommended target values.</p>
+  <li>Compass Rose</li>
+    <p>This section provides a visual representation of how you're driving to target versus actual angles for both AWA and TWA.  Also shows TWD as well as how the current set and drift are coming into contact with the boat.</p>
+  <li>Custom Data Fields</li>
+    <p>The custom fields let you pick and choose which Expedition Marine channels you want to show and where color coded to group like objects together.</p>
+</ol>
 
 **Key Insight**: The dashboard automatically switches data priorities based on your sailing mode (upwind/reaching/downwind) and provides color feedback based on out of bounds conditions.
 
