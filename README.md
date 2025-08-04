@@ -45,7 +45,7 @@ The Dashboard is divided into the sections:
 
 **Key Insight**: The dashboard automatically switches data priorities based on your sailing mode (upwind/reaching/downwind) and provides color feedback based on out of bounds conditions.
 
-### ⏱️ Start - Fully integrated with Expedition Marine 
+### ⏱️ Start - Fully integrated with Expedition Marine with a two-way interface
 
 <div align="center">
  <img src="images/swp-start-view-dark.png" width="512"/>
