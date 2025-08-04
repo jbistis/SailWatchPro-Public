@@ -36,7 +36,7 @@ The Dashboard is divided into the sections:
 
 <ol>
   <li>Key Performance Indicator Split Cards</li>
-      <p>This row of cards at the top of the dashboard change colors based on how close your actual sailing data is to the recommended target values.</p>
+      <p>The top row of cards on the dashboard changes color based on how closely your sailing data aligns with recommended target values. The Split Cards dynamically display relevant data, showing upwind metrics when sailing upwind and downwind metrics when sailing downwind.</p>
   <li>Compass Rose</li>
     <p>This section provides a visual representation of how you're driving to target versus actual angles for both AWA and TWA.  Also shows TWD as well as how the current set and drift are coming into contact with the boat.</p>
   <li>Custom Data Fields</li>
@@ -80,8 +80,8 @@ The Dashboard is divided into the sections:
 ### 🗺️ Navigator - Course Management
 *Professional navigation and course planning*
 
-<div align="left">
- <img src="images/swp-nav-map.png" width="270"/>
+<div align="center">
+ <img src="images/swp-nav-map.png" width="512"/>
 </div>
 
 - **Electronic Map Display**: Real-time position with course overlay and buoy wind data
@@ -93,8 +93,8 @@ The Dashboard is divided into the sections:
 ### 🌬️ Wind - Advanced Wind Analysis
 *Comprehensive wind monitoring and trend analysis*
 
-<div align="left">
- <img src="images/swp-wind-state.png" width="270"/>
+<div align="center">
+ <img src="images/swp-wind-state.png" width="512"/>
 </div>
 
 **Real-Time Wind Cards**
