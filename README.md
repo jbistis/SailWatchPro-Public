@@ -1,20 +1,32 @@
-# SailWatchPro-Public
-![cover](images/icon-76x76@2x.png)
+# SailWatchPro
 
-*The Complete Racing Companion for Serious Sailors*
+<p align="center">
+  <a href="https://sailwatchpro.io/">
+    <img alt="SailWatchPro" title="SailWatchPro" src="images/icon-76x76@2x.png">
+  </a>
+</p>
+
+<p align="center">
+ The Complete Racing Companion for Serious Sailors
+</p>
+
+<p align="center">
+  <a href="https://itunes.apple.com/us/app/gitpoint/id1251245162?mt=8">
+    <img alt="Download on the App Store" title="App Store" src="http://i.imgur.com/0n2zqHD.png" width="140">
+  </a>
+</p>
 
 ---
 
-## Welcome to SailWatchPro
+## Introduction
 
-Welcome to SailWatchPro, your ultimate companion for competitive sailing. Designed to integrate seamlessly with Expedition Marine, SailWatchPro delivers real-time racing insights, precise wind analysis, and tactical decision support. Whether you're navigating tight buoy races or tackling offshore challenges, SailWatchPro equips you with critical data exactly when you need it, empowering you to make informed decisions and optimize performance on the water.
+Welcome to SailWatchPro – more than just data, it's decision intelligence for competitive sailing. Seamlessly integrating with Expedition Marine, SailWatchPro goes beyond basic reporting by synthesizing real-time inputs like wind patterns, boat speed, and course data into clear tactical insights. Whether you're racing around buoys or navigating an offshore regatta, SailWatchPro helps you make smarter decisions and optimize performance when it matters most.
 
 ---
 
-## Core Features Overview
+## Features
 
 ### 📊 Dashboard - Your Data Command Center
-*The main hub for all critical sailing data*
 
 <div align="center">
  <img src="images/swp-dashboard-split-cards-compass.png" width="270"/>  
@@ -29,11 +41,10 @@ Welcome to SailWatchPro, your ultimate companion for competitive sailing. Design
 
 **Key Insight**: The dashboard automatically switches data priorities based on your sailing mode (upwind/reaching/downwind) and provides color feedback based on out of bounds conditions.
 
-### ⏱️ Start - Pre-Race Excellence
-*Pre-start data view to provide precision timing and line analysis from Expedition Marine*
+### ⏱️ Start - Fully integrated with Expedition Marine 
 
-<div align="left">
- <img src="images/swp-start-view-dark.png" width="270"/>
+<div align="center">
+ <img src="images/swp-start-view-dark.png" width="512"/>
 </div>
 
 **Race Timers**
