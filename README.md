@@ -116,6 +116,12 @@ The Dashboard is divided into the sections:
 - **Background Grid**: Easy reference for value and time scales
 - **Interactive Time Selection**: Tap time labels to adjust viewing window
 
+**Barometer**: This view continuously tracks and records atmospheric pressure, displaying a visual history of pressure changes. This record is vital for weather forecasting, helping to identify trends and predict short-term weather shifts. The app also alerts users when the data interface for this channel stops receiving updates, preventing false assumptions of stable pressure.
+
+<div align="center">
+ <img src="images/swp-barometer.png" width="512"/>
+</div>
+
 ### ⛵ Performance Analysis Tools
 
 **Sail Crossover**
@@ -136,8 +142,8 @@ The Dashboard is divided into the sections:
 - **Weather Data Manager**: Any user can retrieve wind and weather data, including historical data, from buoys within 100 nautical miles of your boat’s position. The app shares the latest buoy readings with all crew members through the boat’s local WiFi network. When any user refreshes the data, the updated readings are automatically shared with all app users on the same network, ensuring all decision-makers view the same dataset.  To date, we have extrated weather data from NDBC buoys from NOAA CoastWatch ERDDAP (standard NDBC network), NDBC stations via AXDS ERDDAP, LISICOS buoys (UConn direct) using OCR, NERACOOS datasets (Gulf of Maine area), and NDBC stations available through NERACOOS. We can easily adapt more buoys as required. The Navigator view map overylays the buoy data with the boat's current position and race course so your Navigator can investiage the wind trends of nearby future locations to help optimze the route.
 
 - **Buoy Data**
-<div align="left">
- <img src="images/swp-weather-data.png" width="270"/>
+<div align="center">
+ <img src="images/swp-weather-data.png" width="512"/>
 </div>
 
 **Barometer**
@@ -175,8 +181,8 @@ The Dashboard is divided into the sections:
 
 Your Apple Watch becomes a powerful racing companion with dedicated views:
 
-<div align="left">
- <img src="images/swp-apple-watch-views.png" width="270"/>
+<div align="center">
+ <img src="images/swp-apple-watch-views.png" width="512"/>
 </div>
 
 
