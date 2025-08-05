@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
- The Complete Racing Companion for Serious Sailors
+ The Complete Racing Companion for Serious Sailors with Expedition Marine.
 </p>
 
 <p align="center">
@@ -20,7 +20,7 @@
 
 ## Introduction
 
-Welcome to SailWatchPro – more than just data, it's decision intelligence for competitive sailing. Seamlessly integrating with Expedition Marine, SailWatchPro goes beyond basic reporting by synthesizing real-time inputs like wind patterns, boat speed, and course data into clear tactical insights. Whether you're racing around buoys or navigating an offshore regatta, SailWatchPro helps you make smarter decisions and optimize performance when it matters most.
+Welcome to SailWatchPro – more than just data, it's a powerful tool designed to give sailing teams real-time, actionable insights that drive smarter decisions and boost race performance. By seamlessly integrating with Expedition Marine, SailWatchPro takes your data beyond basic reporting. It analyzes key inputs like wind patterns, boat speed, and course data, delivering clear tactical insights that help you stay ahead of the competition. Whether you're racing around buoys or navigating an offshore regatta, SailWatchPro ensures you make the right moves when it matters most.
 
 ---
 
