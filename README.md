@@ -29,7 +29,7 @@ Welcome to SailWatchPro – more than just data, it's decision intelligence for 
 ### 📊 Dashboard
 
 <div align="center">
- <img src="images/swp-dashboard-light.png" width="512"/>  
+ <img src="images/swp-dashboard-light-hl.png" width="512"/>  
 </div>
 
 The Dashboard is divided into the sections:
