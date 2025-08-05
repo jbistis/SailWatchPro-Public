@@ -79,13 +79,18 @@ The Dashboard is divided into the sections:
 
 ### 🗺️ Navigator - Course Management
 *Professional navigation and course planning*
+- **Electronic Map Display**: Real-time position with course overlay and buoy wind data
 
 <div align="center">
- <img src="images/swp-nav-map.png" width="512"/>
+ <img src="images/swp-navigator-landscape-ALIR-dark.png" width="512"/>
 </div>
 
-- **Electronic Map Display**: Real-time position with course overlay and buoy wind data
-- **Waypoint Management**: Mark positions and distances
+  images/swp-navigator-landscape-ALIR-dark.png
+- **Waypoint Management**: Mark positions and distances with True Wind Angles
+<div align="center">
+ <img src="images/swp-navigator-portrait-ALIR-dark.png" width="512"/>
+</div>
+
 - **Course Planning**: Integrated race course display
 - **GPS Tracking**: Precise position data with speed over ground
 - **Routing Analysis**: Optimal course suggestions based on conditions
