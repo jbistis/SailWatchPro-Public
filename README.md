@@ -20,7 +20,7 @@
 
 ## Introduction
 
-Welcome to SailWatchPro – more than just data, it's a powerful tool designed to give sailing teams real-time, actionable insights that drive smarter decisions and boost race performance. By seamlessly integrating with Expedition Marine, SailWatchPro takes your data beyond basic reporting. It analyzes key inputs like wind patterns, boat speed, and course data, delivering clear tactical insights that help you stay ahead of the competition. Whether you're racing around buoys or navigating an offshore regatta, SailWatchPro ensures you make the right moves when it matters most.
+Welcome to SailWatchPro – a companion solution that enhances the power of Expedition Marine Software by delivering real-time, tactical insights tailored for competitive sailing. Seamlessly integrating with Expedition, the gold standard in navigation and race management, SailWatchPro brings added clarity to key performance data such as wind patterns, boat speed, and course positioning. Whether you're racing around the buoys or tackling offshore challenges, SailWatchPro helps teams make confident, informed decisions when every second counts.
 
 ---
 
