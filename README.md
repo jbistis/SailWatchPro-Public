@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
- The Complete Racing Companion for Serious Sailors with Expedition Marine.
+ The Complete Racing Companion with Expedition Marine.
 </p>
 
 <p align="center">
