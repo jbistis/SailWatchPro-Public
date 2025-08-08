@@ -135,6 +135,10 @@ The Dashboard is divided into the sections:
 - Performance comparisons between sail options
 - Wind range recommendations for each sail
 
+<div align="center">
+  <img src="images/swp-sail-crossover-light.png" width="512"/>
+</div>
+
 **Polars**
 - Real-time polar performance analysis
 - Target speeds and angles for current conditions
