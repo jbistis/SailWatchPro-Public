@@ -86,7 +86,6 @@ The Dashboard is divided into the sections:
  <img src="images/swp-navigator-landscape-ALIR-dark.png" width="512"/>
 </div>
 
-  images/swp-navigator-landscape-ALIR-dark.png
 - **Waypoint Management**: Mark positions and distances with True Wind Angles
 <div align="center">
  <img src="images/swp-navigator-portrait-ALIR-dark.png" width="512"/>
