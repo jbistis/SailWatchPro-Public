@@ -30,7 +30,7 @@ SailWatchPro extends and enhances the power of Expedition Marine, bringing its c
 ### 📊 Dashboard
 
 <div align="center">
- <img src="images/swp-dashboard-manual-light.png" width="256"/>  
+ <img src="images/images/swp-dashboard-light.png" width="256"/>  
 </div>
 
 The Dashboard is divided into the sections:
