@@ -76,6 +76,10 @@ The above dashboard is divided into the sections:
 
 ### ⏱️ Start
 <p>The Start view displays the Start Area, showing the boat’s position relative to the start line and pin laylines. It also presents TTG, TTB, TTL, and DTL data for port, center, and starboard, along with a graphical representation of the line bias and the heading to the first mark—helping you determine the optimal place to cross the line.</p>
+
+<div align="center">
+ <img src="images/swp-start-view-light.png" width="384"/>
+</div>
 - Start Area Grid
 - Wind Strip Charts
 
