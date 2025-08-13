@@ -46,7 +46,9 @@ The above dashboard is divided into the sections:
 
 **Key Insight**: The dashboard automatically switches data priorities based on your sailing mode (upwind/reaching/downwind) and provides color feedback based on out of bounds conditions.
 
-### ⏱️ Start - Fully integrated with Expedition Marine with a two-way interface
+### ⏱️ Pre-Start
+
+<p>The Prestart view is where you ping the pin, select the racecouse, and set and sync the race timer clock.</p>
 
 <div align="center">
  <img src="images/swp-start-view-dark.png" width="512"/>
@@ -68,6 +70,11 @@ The above dashboard is divided into the sections:
 - **KILL**: Stop active countdown
 - **SYNC**: Round timer to nearest whole minute
 - **Course Selection**: Load race courses from Expedition
+
+### ⏱️ Start
+
+
+
 
 ### 🧭 Tactician - Smart Racing Decisions
 *Advanced tactical analysis for competitive racing*
