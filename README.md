@@ -38,10 +38,10 @@ The Dashboard is divided into the sections:
 <ol>
   <li>Key Performance Indicators</li>
       <p>The top row of dashboard cards change colors based on how closely your sailing data aligns with recommended target values. The cards dynamically display relevant data, showing upwind metrics when sailing upwind and downwind metrics when sailing downwind.</p>
-  <li>Compass Rose</li>
-    <p>This section provides a visual representation of how you're driving to target versus actual angles for both AWA and TWA.  Also shows TWD and how the current set and drift are impacting the boat.</p>
   <li>Custom Data Fields</li>
     <p>The custom fields let you pick and choose which Expedition Marine channels you want to show and where color coded to group like objects together.</p>
+  <li>Compass Rose</li>
+    <p>This section provides a visual representation of how you're driving to target versus actual angles for both AWA and TWA.  Also shows TWD and how the current set and drift are impacting the boat.</p>
 </ol>
 
 **Key Insight**: The dashboard automatically switches data priorities based on your sailing mode (upwind/reaching/downwind) and provides color feedback based on out of bounds conditions.
