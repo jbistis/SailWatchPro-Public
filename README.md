@@ -48,7 +48,7 @@ The above dashboard is divided into the sections:
 
 ### ⏱️ Pre-Start
 
-<p>The Prestart view is where you ping the pin, select the racecouse, and set and sync the race timer clock.</p>
+<p>The Prestart view is where you ping the pin, select the racecourse, and set and synchronize the race timer.</p>
 
 <div align="center">
  <img src="images/swp-start-view-dark.png" width="384"/>
@@ -71,10 +71,12 @@ The above dashboard is divided into the sections:
 - **SYNC**: Round timer to nearest whole minute
 - **Course Selection**: Load race courses from Expedition
 
+**Race Course Management**
+- **Course Selection**: Load race courses from Expedition
+
 ### ⏱️ Start
-
-
-
+- Start Area Grid
+- Wind Strip Charts
 
 ### 🧭 Tactician - Smart Racing Decisions
 *Advanced tactical analysis for competitive racing*
