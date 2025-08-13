@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
- The Complete Racing Companion with Expedition Marine
+ A Complete Racing Companion for Expedition Marine
 </p>
 
 <p align="center">
