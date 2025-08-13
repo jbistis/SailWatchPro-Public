@@ -48,7 +48,7 @@ The above dashboard is divided into the sections:
 
 ### ⏱️ Pre-Start
 
-<p>The Prestart view is where you ping the pin, select the racecourse, and set and synchronize the race timer.</p>
+<p>The Prestart view is where you may ping the pins, select the racecourse, and set and synchronize the race timer.</p>
 
 <div align="center">
  <img src="images/swp-start-view-dark.png" width="384"/>
