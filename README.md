@@ -75,6 +75,7 @@ The above dashboard is divided into the sections:
 - **Course Selection**: Load race courses from Expedition
 
 ### ⏱️ Start
+<p>The Start view displays the Start Area, showing the boat’s position relative to the start line and pin laylines. It also presents TTG, TTB, TTL, and DTL data for port, center, and starboard, along with a graphical representation of the line bias and the heading to the first mark—helping you determine the optimal place to cross the line.</p>
 - Start Area Grid
 - Wind Strip Charts
 
