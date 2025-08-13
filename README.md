@@ -51,7 +51,7 @@ The above dashboard is divided into the sections:
 <p>The Prestart view is where you ping the pin, select the racecouse, and set and sync the race timer clock.</p>
 
 <div align="center">
- <img src="images/swp-start-view-dark.png" width="512"/>
+ <img src="images/swp-start-view-dark.png" width="384"/>
 </div>
 
 **Race Timers**
@@ -90,12 +90,12 @@ The above dashboard is divided into the sections:
 - **Electronic Map Display**: Real-time position with course overlay and buoy wind data
 
 <div align="center">
- <img src="images/swp-navigator-landscape-ALIR-dark.png" width="512"/>
+ <img src="images/swp-navigator-landscape-ALIR-dark.png" width="384"/>
 </div>
 
 - **Waypoint Management**: Mark positions and distances with True Wind Angles
 <div align="center">
- <img src="images/swp-navigator-portrait-ALIR-dark.png" width="512"/>
+ <img src="images/swp-navigator-portrait-ALIR-dark.png" width="384"/>
 </div>
 
 - **Course Planning**: Integrated race course display
@@ -106,7 +106,7 @@ The above dashboard is divided into the sections:
 *Comprehensive wind monitoring and trend analysis*
 
 <div align="center">
- <img src="images/swp-wind-state.png" width="512"/>
+ <img src="images/swp-wind-state.png" width="384"/>
 </div>
 
 **Real-Time Wind Cards**
@@ -131,7 +131,7 @@ The above dashboard is divided into the sections:
 **Barometer**: This view continuously tracks and records atmospheric pressure, displaying a visual history of pressure changes. This record is vital for anticipating storms and squalls: A rapid drop in barometric pressure is often a strong indicator of an approaching low-pressure system, which can bring strong winds and inclement weather. By monitoring this downward trend on the barograph, sailors gain valuable lead time to take precautions, like securing the vessel and reefing sails.  The app also alerts users when the data interface for this channel stops receiving updates, preventing false assumptions of stable pressure.
 
 <div align="center">
- <img src="images/swp-barometer.png" width="512"/>
+ <img src="images/swp-barometer.png" width="384"/>
 </div>
 
 ### ⛵ Performance Analysis Tools
@@ -142,7 +142,7 @@ The above dashboard is divided into the sections:
 - Wind range recommendations for each sail
 
 <div align="center">
-  <img src="images/swp-sail-crossover-light.png" width="512"/>
+  <img src="images/swp-sail-crossover-light.png" width="384"/>
 </div>
 
 **Polars**
@@ -159,7 +159,7 @@ The above dashboard is divided into the sections:
 
 - **Buoy Data**
 <div align="center">
- <img src="images/swp-weather-data.png" width="512"/>
+ <img src="images/swp-weather-data.png" width="384"/>
 </div>
 
 **Barometer**
