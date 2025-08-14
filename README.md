@@ -113,7 +113,7 @@ The above dashboard is divided into the sections:
   <li>Designer Crossover Chart</li>
   <p>Based on sail usage recommendations from your sailmaker. This chart reflects the theoretical or intended wind ranges for each sail.</p>
   <li>Performance Crossover Chart</li>
-  <p>Built from actual sailing data collected during your races or sessions. It shows the true wind angles (TWA) and true wind speeds (TWS) at which each sail was used. When multiple sails are used in overlapping conditions, the sail associated with the highest boatspeed is shown.</p>
+  <p>Built from actual sailing data collected during your races or sessions. It shows the true wind angles (TWA) and true wind speeds (TWS) at which each sail was used. When multiple sails are used in overlapping conditions, the sail associated with the highest boatspeed is shown.  This data is easily agreegated and downloaded from [https://www.sailnjord.com/](https://app.sailnjord.com/help/analytics/visualizations/sail-crossover.html?highlight=crossover#sail-crossover)</p>
 </ul>
 
 <div align="center">
