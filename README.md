@@ -91,12 +91,12 @@ The above dashboard is divided into the sections:
 - **Electronic Map Display**: Real-time position with course overlay and buoy wind data
 
 <div align="center">
- <img src="images/swp-navigator-landscape-ALIR-dark.png" width="384"/>
+ <img src="images/swp-navigator-landscape-ALIR-light.png" width="384"/>
 </div>
 
 - **Waypoint Management**: Mark positions and distances with True Wind Angles
 <div align="center">
- <img src="images/swp-navigator-portrait-ALIR-dark.png" width="384"/>
+ <img src="images/swp-navigator-portrait-ALIR-light.png" width="384"/>
 </div>
 
 - **Course Planning**: Integrated race course display
