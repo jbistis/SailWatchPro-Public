@@ -27,7 +27,10 @@ SailWatchPro extends and enhances the power of Expedition Marine, bringing its c
 
 ## Features
 
-### 📊 Dashboard
+### 📊 Tactician Dashboard
+- **Layline Analysis**: Distance and time to laylines
+- **Wind Shift Detection**: Automatic trend analysis with confidence indicators
+- **Lift/Header Identification**: Real-time sailing angle optimization
 
 <div align="center">
  <img src="images/swp-dashboard-light.png" width="384"/>  
@@ -86,11 +89,7 @@ The above dashboard is divided into the sections:
 ### 🧭 Tactician - Smart Racing Decisions
 *Advanced tactical analysis for competitive racing*
 
-- **Layline Analysis**: Distance and time to laylines
-- **Wind Shift Detection**: Automatic trend analysis with confidence indicators
-- **Lift/Header Identification**: Real-time sailing angle optimization
-- **Mark Strategy**: Next mark analysis with optimal sail and angle recommendations
-- **Competitor Awareness**: Track nearby boats and their relative positions and threat level - Coming Soon
+
 
 ### 🗺️ Navigator - Course Management
 *Professional navigation and course planning*
