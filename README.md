@@ -116,6 +116,7 @@ The above dashboard is divided into the sections:
 - **TWD**: True Wind Direction (degrees)
 - **TWS**: True Wind Speed (knots)  
 - **Wind Trend Analyzer**: Current shift pattern with confidence indicator.
+- **Braometric Pressure**: Continuously tracks and records atmospheric pressure
 
 **Vertical Strip Charts**
 - **Time-based Analysis**: Configurable time windows (2 min to 6 hours)
@@ -129,7 +130,7 @@ The above dashboard is divided into the sections:
 - **Background Grid**: Easy reference for value and time scales
 - **Interactive Time Selection**: Tap time labels to adjust viewing window
 
-**Barometer**: This view continuously tracks and records atmospheric pressure, displaying a visual history of pressure changes. This record is vital for anticipating storms and squalls: A rapid drop in barometric pressure is often a strong indicator of an approaching low-pressure system, which can bring strong winds and inclement weather. By monitoring this downward trend on the barograph, sailors gain valuable lead time to take precautions, like securing the vessel and reefing sails.  The app also alerts users when the data interface for this channel stops receiving updates, preventing false assumptions of stable pressure.
+**Barometer**: This view tracks and records atmospheric pressure in real-time, displaying a visual history of pressure changes. This record is vital for anticipating storms and squalls: A rapid drop in barometric pressure is often a strong indicator of an approaching low-pressure system, which can bring strong winds and inclement weather. By monitoring this downward trend on the barograph, sailors gain valuable lead time to take precautions, like securing the vessel and reefing sails.  The app also alerts users when the data interface for this channel stops receiving updates, preventing false assumptions of stable pressure.
 
 <div align="center">
  <img src="images/swp-barometer.png" width="384"/>
