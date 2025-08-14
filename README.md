@@ -269,33 +269,6 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 
 ---
 
-## Tips for Racing
-
-### Start Line
-1. **Set your pins early** in the race preparation sequence
-2. **Monitor line bias continuously** - it changes with wind shifts
-3. **Use the "Distance Below Line" indicator** to avoid OCS
-
-### Wind Analysis
-1. **Watch the rolling average line** for underlying wind trends
-2. **Use longer time windows** (10+ minutes) for strategy, shorter (2-5 minutes) for tactics
-3. **Monitor wind trend confidence indicators** - higher confidence = more reliable shift
-4. **Combine wind data with competitor analysis** for tactical decisions
-
-### Performance Optimization
-1. **Check polar percentages regularly** to ensure optimal performance
-2. **Use VMG data** for upwind/downwind optimization
-3. **Monitor heel angle** for optimal sail trim
-4. **Track depth closely** in shallow water racing
-
-### Data Management
-1. **Start with test mode** to familiarize yourself with interfaces
-2. **Configure time windows** based on your racing style and conditions
-3. **Use night mode** for dawn/dusk racing and night sailing
-4. **Keep critical data cards** in your primary views
-
----
-
 ## Troubleshooting
 
 ### Connection Issues
