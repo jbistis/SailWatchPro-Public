@@ -33,7 +33,7 @@ SailWatchPro extends and enhances the power of Expedition Marine, bringing its c
 - **Lift/Header Identification**: Real-time sailing angle optimization
 
 <div align="center">
- <img src="images/swp-dashboard-light.png" width="384"/>  
+ <img src="images/swp-dashboard-light.png" width="448"/>  
 </div>
 
 The above dashboard is divided into the sections:
@@ -54,7 +54,7 @@ The above dashboard is divided into the sections:
 <p>The Prestart view is where you may ping the pins, select the racecourse, and set and synchronize the race timer.</p>
 
 <div align="center">
- <img src="images/swp-prestart-view-light.png" width="384"/>
+ <img src="images/swp-prestart-view-light.png" width="448"/>
 </div>
 
 **Race Timers**
@@ -81,7 +81,7 @@ The above dashboard is divided into the sections:
 <p>The Start view displays the Start Area, showing the boat’s position relative to the start line and pin laylines. It also presents TTG, TTB, TTL, and DTL data for port, center, and starboard, along with a graphical representation of the line bias and the heading to the first mark—helping you determine the optimal place to cross the line.</p>
 
 <div align="center">
- <img src="images/swp-start-view-light.png" width="384"/>
+ <img src="images/swp-start-view-light.png" width="448"/>
 </div>
 - Start Area Grid
 - Wind Strip Charts
@@ -91,12 +91,12 @@ The above dashboard is divided into the sections:
 - **Electronic Map Display**: Real-time position with course overlay and buoy wind data
 
 <div align="center">
-  <img src="images/swp-navigator-landscape-ALIR-light.png" width="384"/>
+  <img src="images/swp-navigator-landscape-ALIR-light.png" width="448"/>
 </div>
 
 - **Waypoint Management**: Mark positions and distances with True Wind Angles
 <div align="center">
-  <img src="images/swp-navigator-portrait-ALIR-light.png" width="384"/>
+  <img src="images/swp-navigator-portrait-ALIR-light.png" width="448"/>
 </div>
 
 - **Course Planning**: Integrated race course display
@@ -107,7 +107,7 @@ The above dashboard is divided into the sections:
 *Comprehensive wind monitoring and trend analysis*
 
 <div align="center">
- <img src="images/swp-wind-state.png" width="384"/>
+ <img src="images/swp-wind-state.png" width="448"/>
 </div>
 
 **Real-Time Wind Cards**
@@ -133,7 +133,7 @@ The above dashboard is divided into the sections:
 **Barometer**: This view tracks and records atmospheric pressure in real-time, displaying a visual history of pressure changes. This record is vital for anticipating storms and squalls: A rapid drop in barometric pressure is often a strong indicator of an approaching low-pressure system, which can bring strong winds and inclement weather. By monitoring this downward trend on the barograph, sailors gain valuable lead time to take precautions, like securing the vessel and reefing sails.  The app also alerts users when the data interface for this channel stops receiving updates, preventing false assumptions of stable pressure.
 
 <div align="center">
- <img src="images/swp-barometer.png" width="384"/>
+ <img src="images/swp-barometer.png" width="448"/>
 </div>
 
 ### ⛵ Performance Analysis Tools
@@ -144,7 +144,7 @@ The above dashboard is divided into the sections:
 - Wind range recommendations for each sail
 
 <div align="center">
-  <img src="images/swp-sail-crossover-light.png" width="384"/>
+  <img src="images/swp-sail-crossover-light.png" width="448"/>
 </div>
 
 **Polars**
@@ -161,7 +161,7 @@ The above dashboard is divided into the sections:
 
 - **Buoy Data**
 <div align="center">
- <img src="images/swp-weather-data.png" width="384"/>
+ <img src="images/swp-weather-data.png" width="448"/>
 </div>
 
 **Barometer**
@@ -177,7 +177,7 @@ The above dashboard is divided into the sections:
 ### 🎯 MOB Function
 In the event of a MOB (Man Overboard) situation, SailWatchPro communicates the incident to Expedition Marine and the chartplotters. Additionally, the MOB view continuously calculates the estimated MOB position and hypothermia risk, helping you prepare the crew for recovery.
 <div align="center">
- <img src="images/swp-MOB.png" width="384"/>
+ <img src="images/swp-MOB.png" width="448"/>
 </div>
 
 ### 🎯 Advanced Features
