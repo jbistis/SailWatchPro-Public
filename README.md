@@ -86,11 +86,6 @@ The above dashboard is divided into the sections:
 - Start Area Grid
 - Wind Strip Charts
 
-### 🧭 Tactician - Smart Racing Decisions
-*Advanced tactical analysis for competitive racing*
-
-
-
 ### 🗺️ Navigator - Course Management
 *Professional navigation and course planning*
 - **Electronic Map Display**: Real-time position with course overlay and buoy wind data
