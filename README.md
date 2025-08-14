@@ -283,7 +283,6 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 
 ### Display Problems
 - **Data not updating**: Restart Expedition Marine or the UDP connection in settings
-- **Charts not displaying**: Verify time window settings and available data
 - **Watch not syncing**: Check iPhone-Watch connectivity and app permissions
 
 ### Performance Issues
@@ -322,10 +321,10 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 
 1. **Connect to Expedition Marine**
   - Install the app on your iOS device.
-  - Open Settings and configure your boat's WiFi network details.
+  - In the SailProApp, touch Settings and configure your boat's WiFi network and other details.
   - Set the IP address to match the Expedition Marine network IP address you set in the previous step.
   - Set the UDP port to match the Expedition Marine network port you set in the previous step.
-  - Exit the app and restart to enable the connection and look for green status indicators.
+  - Restart to enable the connection and look for green status indicators.
 
 2. **Configure Your Boat**
   - Enter your boat name
@@ -362,7 +361,7 @@ SailWatchPro is continuously updated with new features and improvements based on
 
 For the best racing experience, ensure both your iPhone and Apple Watch apps are updated to the latest versions.
 
-Support: https://jbistis.github.io/SailWatchPro-Public/
+For Support & Enhancement Requests please contact us at https://github.com/jbistis/SailWatchPro-Public/issues.  We’re eager to hear your suggestions on features that would make the app even more valuable to you.
 
 ---
 
