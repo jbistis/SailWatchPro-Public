@@ -104,13 +104,23 @@ The above dashboard is divided into the sections:
 - **Routing Analysis**: Optimal course suggestions based on conditions
 
 ### 🗺️ Sails - Inventory and Event Management
+
+**Sail Crossover Chart**
+- Optimal sail selection based on current conditions
+- Performance comparisons between sail options
+- Wind range recommendations for each sail
+
+<div align="center">
+  <img src="images/swp-sail-crossover-light.png" width="448"/>
+</div>
+
 - **Inventory**: Each time you import a sail crossover chart, the app updates the sail inventory based on the sails found in the XML file. You can then enable or disable sails, or designate which sails are left on shore for any particular race.
 
 - <div align="center">
   <img src="images/swp-sail-inventory-light.png" width="448"/>
 </div>
 
-- **Events**: Once you import your sail chart, you can then enter Sail Up events with time and location.  The log file of events may be uploaded to https://www.sailnjord.com/
+- **Events**: Once you import your sail chart, you can begin entering Sail Up events with corresponding time and location. The event log file can then be uploaded to https://www.sailnjord.com/.
 
 <div align="center">
   <img src="images/swp-sail-events-light.png" width="448"/>
@@ -151,15 +161,6 @@ The above dashboard is divided into the sections:
 </div>
 
 ### ⛵ Performance Analysis Tools
-
-**Sail Crossover**
-- Optimal sail selection based on current conditions
-- Performance comparisons between sail options
-- Wind range recommendations for each sail
-
-<div align="center">
-  <img src="images/swp-sail-crossover-light.png" width="448"/>
-</div>
 
 **Polars**
 - Real-time polar performance analysis
