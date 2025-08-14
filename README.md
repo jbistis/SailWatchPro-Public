@@ -103,7 +103,7 @@ The above dashboard is divided into the sections:
 - **GPS Tracking**: Precise position data with speed over ground
 - **Routing Analysis**: Optimal course suggestions based on conditions
 
-### 🌬️ Wind - Advanced Wind Analysis
+### 🌬️ Wind Analysis
 *Comprehensive wind monitoring and trend analysis*
 
 <div align="center">
@@ -111,7 +111,7 @@ The above dashboard is divided into the sections:
 </div>
 
 **Real-Time Wind Cards**
-- **Wind Data Manager**: Seamlessly manage wind instrument data and share and share amoung your crew. Each connected device maintains a rolling wind database, initialized when the first device launches the app and capturing real-time wind instrument readings. The database accumulates and maintains a rolling 6 hours of wind instrument data over time. New devices sync with the longest-running device to acquire all data collected since the longest-running device started. If the longest-running device exits, the next longest-running device becomes the sync device, maintaining seamless synchronization of the 6 hour database for new connections without disrupting the distributed database.
+- **Wind Data Manager**: Manage wind instrument data and seamlessly share it among your crew. When the app starts, each connected device receives a rolling wind database initialized by the first device to launch the app. This database captures real-time wind instrument readings and maintains a continuous 6-hour history. New devices sync with the longest-running device to access all data collected since that device started. If the longest-running device disconnects, the next longest-running device takes over as the sync source—ensuring uninterrupted sharing and synchronization of wind data across the network..
  
 - **TWD**: True Wind Direction (degrees)
 - **TWS**: True Wind Speed (knots)  
