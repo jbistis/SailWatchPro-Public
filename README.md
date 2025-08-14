@@ -103,6 +103,20 @@ The above dashboard is divided into the sections:
 - **GPS Tracking**: Precise position data with speed over ground
 - **Routing Analysis**: Optimal course suggestions based on conditions
 
+### 🗺️ Sails - Inventory and Event Management
+- **Inventory**: Each time you import a sail crossover chart, the app updates the sail inventory based on the sails found in the XML file. You can then enable or disable sails, or designate which sails are left on shore for any particular race.
+
+- <div align="center">
+  <img src="images/swp-sail-inventory-light.png" width="448"/>
+</div>
+
+- **Events**: Once you import your sail chart, you can then enter Sail Up events with time and location.  The log file of events may be uploaded to https://www.sailnjord.com/
+
+<div align="center">
+  <img src="images/swp-sail-events-light.png" width="448"/>
+</div>
+
+
 ### 🌬️ Wind Analysis
 *Comprehensive wind monitoring and trend analysis*
 
@@ -157,6 +171,7 @@ The above dashboard is divided into the sections:
 - Sail events and usage tracking and performance data with export to Sail Analytics.
 
 ### 🌡️ Weather Tools
+
 - **Weather Data Manager**: Any user can retrieve wind and weather data, including historical data, from buoys within 100 nautical miles of your boat’s position. The app shares the latest buoy readings with all crew members through the boat’s local WiFi network. When any user refreshes the data, the updated readings are automatically shared with all app users on the same network, ensuring all decision-makers view the same dataset.  To date, we have extrated weather data from NDBC buoys from NOAA CoastWatch ERDDAP (standard NDBC network), NDBC stations via AXDS ERDDAP, LISICOS buoys (UConn direct) using OCR, NERACOOS datasets (Gulf of Maine area), and NDBC stations available through NERACOOS. We can easily adapt more buoys as required. The Navigator view map overylays the buoy data with the boat's current position and race course so your Navigator can investiage the wind trends of nearby future locations to help optimze the route.
 
 - **Buoy Data**
