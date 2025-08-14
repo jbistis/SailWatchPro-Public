@@ -106,9 +106,15 @@ The above dashboard is divided into the sections:
 ### 🗺️ Sails - Inventory and Event Management
 
 **Sail Crossover Chart**
-- Optimal sail selection based on current conditions
-- Performance comparisons between sail options
-- Wind range recommendations for each sail
+
+<p>The app supports two types of crossover charts:</p>
+
+<ul>
+  <li>Designer Crossover Chart</li>
+  <p>Based on sail usage recommendations from your sailmaker. This chart reflects the theoretical or intended wind ranges for each sail.</p>
+  <li>Performance Crossover Chart</li>
+  <p>Built from actual sailing data collected during your races or sessions. It shows the true wind angles (TWA) and true wind speeds (TWS) at which each sail was used. When multiple sails are used in overlapping conditions, the sail associated with the highest boatspeed is shown.</p>
+</ul>
 
 <div align="center">
   <img src="images/swp-sail-crossover-light.png" width="448"/>
@@ -184,8 +190,6 @@ The above dashboard is divided into the sections:
 - Real-time atmospheric pressure monitoring
 - Trend analysis with historical data
 - Weather pattern prediction support
-
-
 - Comprehensive weather information
 - Integration with nearby buoy data including OCR if needed
 - Historical weather pattern analysis
