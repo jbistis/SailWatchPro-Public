@@ -122,7 +122,7 @@ The above dashboard is divided into the sections:
 
 - **Inventory**: Each time you import a sail crossover chart, the app updates the sail inventory based on the sails found in the XML file. You can then enable or disable sails, or designate which sails are left on shore for any particular race.
 
-- <div align="center">
+<div align="center">
   <img src="images/swp-sail-inventory-light.png" width="448"/>
 </div>
 
