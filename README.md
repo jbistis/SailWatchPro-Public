@@ -173,6 +173,12 @@ The above dashboard is divided into the sections:
 - Integration with nearby buoy data including OCR if needed
 - Historical weather pattern analysis
 
+### 🎯 MOB Function
+In the event of a MOB (Man Overboard) situation, SailWatchPro communicates the incident to Expedition Marine and the chartplotters. Additionally, the MOB view continuously calculates the estimated MOB position and hypothermia risk, helping you prepare the crew for recovery.
+<div align="center">
+ <img src="images/swp-mob.png" width="384"/>
+</div>
+
 ### 🎯 Advanced Features
 
 **Expedition Control**
