@@ -146,6 +146,57 @@ The above dashboard is divided into the sections:
 - **TWD**: True Wind Direction (degrees)
 - **TWS**: True Wind Speed (knots)  
 - **Wind Trend Analyzer**: Current shift pattern with confidence indicator.
+- # Wind Trend Analysis
+
+## How the Program Determines Wind Trends
+
+## 1. Data Collection
+The program looks at recent wind data within a specified time window (default 15 minutes):
+- **TWD data** (True Wind Direction) - what direction the wind is coming from
+- **TWS data** (True Wind Speed) - how fast the wind is blowing
+
+## 2. Direction Trend Analysis
+For wind direction, it:
+- Calculates how much the wind direction has changed between consecutive readings
+- Handles the circular nature of wind (359° to 0° is actually just 1° change, not 359°)
+- Looks for patterns:
+  - **Steady**: Wind direction changes less than 5°
+  - **Backing**: Wind shifts counter-clockwise (e.g., from north to west)
+  - **Veering**: Wind shifts clockwise (e.g., from north to east)
+  - **Oscillating**: Wind "wobbles" back and forth repeatedly
+
+## 3. Intensity Trend Analysis
+For wind speed, it:
+- Calculates the overall change in speed over the time period
+- Measures how much the speed varies (to detect gusting)
+- Determines patterns:
+  - **Steady**: Speed changes less than 1 knot
+  - **Building**: Wind is getting stronger (more than 1 knot increase)
+  - **Dissipating**: Wind is getting weaker (more than 1 knot decrease)
+  - **Gusting**: Speed varies a lot even if average doesn't change much
+
+## 4. Confidence Calculation
+The program calculates how confident it is in the trend based on how much data it has - more data points = higher confidence.
+
+## 5. Final Result
+It combines both analyses into a single trend description like `VER15°/BLD+2.5` meaning "Wind veering 15 degrees while building 2.5 knots"
+
+The key insight is that it looks at the **overall pattern** of change over time, not just individual readings, and properly handles the circular nature of wind direction measurements.
+
+## Trend Types
+
+### Wind Direction Trends
+- `.backing(degrees: Double)` - Counter-clockwise shift
+- `.veering(degrees: Double)` - Clockwise shift
+- `.oscillating(range: Double)` - Back & forth within range
+- `.steady` - Consistent direction
+
+### Wind Intensity Trends
+- `.building(rate: Double)` - Increasing (kts over period)
+- `.dissipating(rate: Double)` - Decreasing (kts over period)
+- `.gusting(variance: Double)` - High short-term variance
+- `.steady` - Consistent speed
+
 - **Braometric Pressure**: Continuously tracks and records atmospheric pressure
 
 **Vertical Strip Charts**
