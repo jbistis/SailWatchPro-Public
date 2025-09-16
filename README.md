@@ -110,34 +110,6 @@ The above dashboard is divided into the following sections:
   <img src="images/swp-competitors-light.png" width="448"/>
 </div>
 
-- **Electronic Map Display**: Real-time position with course overlay and buoy wind data
-
-<div align="center">
-  <img src="images/swp-navigator-landscape-ALIR-light.png" width="448"/>
-</div>
-
-- **Waypoint Management**: Mark positions and distances with True Wind Angles
-<div align="center">
-  <img src="images/swp-navigator-portrait-ALIR-light.png" width="448"/>
-</div>
-
-- **Course Planning**: Integrated race course display
-- **GPS Tracking**: Precise position data with speed over ground
-- **Routing Analysis**: Optimal course suggestions based on conditions
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### 🗺️ Sails - Inventory and Event Management
 
 **Sail Crossover Chart**
