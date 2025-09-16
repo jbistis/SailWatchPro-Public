@@ -370,17 +370,19 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
   - Port - Select any port that is not used by another Expedition Marine network.
   - Click Expedition Settings
   - Click the Exp Rx filter and select the Receive marks check box.
-  - Click Exp Tx filter and select the channels noted in Appendix A down below.
+  - Click the Exp Tx filter and select the channels noted in Appendix A below.
 
 1. **Connect to Expedition Marine**
   - Install the app on your iOS device.
   - In the SailProApp, touch Settings and configure your boat's WiFi network and other details.
   - Set the IP address to match the Expedition Marine network IP address you set in the previous step.
   - Set the UDP port to match the Expedition Marine network port you set in the previous step.
+  - Set the IP address for any NMEA 2000 Ethernet Gateway and UDP port
   - Restart to enable the connection and look for green status indicators.
 
 2. **Configure Your Boat**
   - Enter your boat name
+  - Enter your boat's MMSI number
   - Set boat length (for distance calculations in boat lengths)
   - Set draft (for depth safety alerts)
   - Adjust TWA reaching threshold for sailing mode detection
