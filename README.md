@@ -355,7 +355,8 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 ---
 
 ## Getting Started
-
+- **Latest Version**: Because this app shares data between users, it is essential that all iOS devices run the same version of the app.
+- 
 ### First Launch Setup
 
 1. **Configure the Expdition Marine Network**
