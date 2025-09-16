@@ -395,8 +395,10 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 Enable Receive marks
 
 ## Exp Tx filter
-AWA, AWS, BSP, Cog, Course, Current Drift, Current Set, Depth,
-Mark lattitude, Mark longitude, Mark range, Mark time, Mark twa,
+AWA, AWS, Barometer, BSP, Cog, Course, Current Drift, Current Set, Depth,
+Heading, Heading - Cog, Heading to steer, Heading to steer polar, Heel (roll), Latitude,
+Layline bearing, Layline bearing on port, Layline bearing on strb, Layline distance on port, Layline distance on starb, Layline Distance, Layline time, Layline time on port, Layline time on starb, Longitude,
+Magnetic variation, Mark bearing, Mark bearing - Cog, Mark latitude, Mark longitude, Mark range, Mark time, Mark twa, Opposite track,
 Next mark awa, Next mark aws, Next mark bearing, Next mark latitude, Next mark longitude,
 Next mark polar time, Next mark range, Next mark time on port, Next mark time on starb, Next mark tws,
 Opposite track, Polar bsp, Polar bsp %, Sail mark, Sail next mark, Sog,
