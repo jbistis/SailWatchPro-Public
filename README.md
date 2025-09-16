@@ -41,6 +41,7 @@ The above dashboard is divided into the following sections:
 <ol>
   <li>Key Performance Indicators</li>
       <p>Each dashboard cards change colors based on how closely your sailing data aligns with recommended target values. The cards dynamically display relevant data, showing upwind metrics when sailing upwind and downwind metrics when sailing downwind.</p>
+        <p>The HEADER/LIFT card looks back three minutes to determine if the wind is shifting to the left or right.</p>
   <li>Custom Data Fields</li>
     <p>The custom fields let you pick and choose which Expedition Marine channels you want to show and where they are color-coded to group like objects together.</p>
   <li>Compass Rose</li>
