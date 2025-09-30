@@ -1,0 +1,266 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<crossoverchart>
+  <elements>
+    <element name="A1" group="DownwindSails" type="Sail">
+      <createdby val="" />
+      <datecreated val="0001-01-01" />
+      <visible val="False" />
+      <colour R="0" G="0" B="255" />
+      <straightline val="False" />
+      <sailarea val="495" units="m²" display="False" />
+      <alias val="A1-A;A1-B" />
+      <bezierpoints>
+        <point tws="8" twa="147" />
+        <point tws="5" twa="139" />
+        <point tws="4" twa="116" />
+        <point tws="6" twa="117" />
+        <point tws="9" twa="122" />
+        <point tws="13" twa="135" />
+        <point tws="14" twa="151" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="40" />
+      <linepattern val="Solid" />
+      <linewidth val="3" />
+      <labelposition tws="9" twa="132" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
+    </element>
+    <element name="A2" group="DownwindSails" type="Sail">
+      <createdby val="" />
+      <datecreated val="0001-01-01" />
+      <visible val="True" />
+      <colour R="0" G="255" B="0" />
+      <straightline val="False" />
+      <sailarea val="495" units="m²" display="False" />
+      <alias val="A2-B;A2-D" />
+      <bezierpoints>
+        <point tws="4.2" twa="142.6" />
+        <point tws="6.5" twa="173.4" />
+        <point tws="24.4" twa="170.2" />
+        <point tws="21.4" twa="147.8" />
+        <point tws="16.2" twa="129.8" />
+        <point tws="11.3" twa="113.4" />
+        <point tws="6.4" twa="114.4" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="40" />
+      <linepattern val="Solid" />
+      <linewidth val="3" />
+      <labelposition tws="12.9" twa="141.7" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
+    </element>
+    <element name="A3" group="DownwindSails" type="Sail">
+      <createdby val="" />
+      <datecreated val="0001-01-01" />
+      <visible val="True" />
+      <colour R="255" G="255" B="0" />
+      <straightline val="False" />
+      <bezierpoints>
+        <point tws="28.3" twa="160.6" />
+        <point tws="26.5" twa="129.2" />
+        <point tws="21.7" twa="106.5" />
+        <point tws="13.8" twa="95.3" />
+        <point tws="8.2" twa="96.8" />
+        <point tws="9.4" twa="120.4" />
+        <point tws="15" twa="133.3" />
+        <point tws="19.3" twa="154.5" />
+        <point tws="24.7" twa="165.6" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="40" />
+      <linepattern val="Solid" />
+      <linewidth val="3" />
+      <labelposition tws="18.6" twa="129.1" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
+    </element>
+    <element name="A4" group="DownwindSails" type="Sail">
+      <createdby val="" />
+      <datecreated val="0001-01-01" />
+      <visible val="False" />
+      <colour R="255" G="165" B="0" />
+      <straightline val="False" />
+      <sailarea val="495" units="m²" display="False" />
+      <bezierpoints>
+        <point tws="26" twa="136" />
+        <point tws="16" twa="128" />
+        <point tws="22" twa="154" />
+        <point tws="27" twa="156" />
+        <point tws="30" twa="155" />
+        <point tws="30" twa="148" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="40" />
+      <linepattern val="Solid" />
+      <linewidth val="3" />
+      <labelposition tws="25" twa="146" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
+    </element>
+    <element name="C0" group="DownwindSails" type="Sail">
+      <createdby val="" />
+      <datecreated val="0001-01-01" />
+      <visible val="True" />
+      <colour R="255" G="128" B="255" />
+      <straightline val="False" />
+      <bezierpoints>
+        <point tws="8.2" twa="72.7" />
+        <point tws="9.8" twa="98.9" />
+        <point tws="11.4" twa="119" />
+        <point tws="7.5" twa="131.9" />
+        <point tws="5.5" twa="141.4" />
+        <point tws="5.8" twa="169.2" />
+        <point tws="1.8" twa="163.4" />
+        <point tws="1.1" twa="77.2" />
+        <point tws="5.5" twa="64" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="40" />
+      <linepattern val="Solid" />
+      <linewidth val="3" />
+      <labelposition tws="6.3" twa="115.3" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
+    </element>
+    <element name="J1" group="Headsails" type="Sail">
+      <createdby val="" />
+      <datecreated val="0001-01-01" />
+      <visible val="True" />
+      <colour R="0" G="0" B="255" />
+      <straightline val="False" />
+      <sailarea val="53.450001" units="m²" display="False" />
+      <alias val="J1-A;J1-B" />
+      <sailweightkg val="123" />
+      <bezierpoints>
+        <point tws="2.3" twa="49.8" />
+        <point tws="2.7" twa="71.5" />
+        <point tws="14.7" twa="78.9" />
+        <point tws="13.9" twa="57.3" />
+        <point tws="12.6" twa="37.4" />
+        <point tws="2.9" twa="37.1" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="40" />
+      <linepattern val="Solid" />
+      <linewidth val="3" />
+      <labelposition tws="8.2" twa="55.3" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
+    </element>
+    <element name="J2" group="Headsails" type="Sail">
+      <createdby val="" />
+      <datecreated val="0001-01-01" />
+      <visible val="True" />
+      <colour R="0" G="255" B="0" />
+      <straightline val="False" />
+      <sailarea val="135" units="m²" display="False" />
+      <alias val="J2-A;J2-B" />
+      <sailweightkg val="45.400002" />
+      <bezierpoints>
+        <point tws="13.2" twa="75.8" />
+        <point tws="16.9" twa="86.2" />
+        <point tws="24.3" twa="87.7" />
+        <point tws="21" twa="49.3" />
+        <point tws="19" twa="35.6" />
+        <point tws="11.5" twa="37.6" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="40" />
+      <linepattern val="Solid" />
+      <linewidth val="3" />
+      <labelposition tws="17.6" twa="62" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
+    </element>
+    <element name="Storm Jib" group="Headsails" type="Sail">
+      <createdby val="" />
+      <datecreated val="0001-01-01" />
+      <visible val="False" />
+      <colour R="255" G="255" B="255" />
+      <straightline val="False" />
+      <sailarea val="123" units="m²" display="False" />
+      <alias val="J3-A" />
+      <sailweightkg val="328" />
+      <bezierpoints>
+        <point tws="25" twa="32" />
+        <point tws="29" twa="89" />
+        <point tws="34" twa="174" />
+        <point tws="40" twa="139" />
+        <point tws="39" twa="45" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="40" />
+      <linepattern val="Solid" />
+      <linewidth val="3" />
+      <labelposition tws="33" twa="95.9" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
+    </element>
+    <element name="J4" group="Headsails" type="Sail">
+      <createdby val="Jeremiah" />
+      <datecreated val="2025-07-22" />
+      <visible val="True" />
+      <colour R="255" G="0" B="0" />
+      <straightline val="False" />
+      <bezierpoints>
+        <point tws="19.4" twa="35.3" />
+        <point tws="27.8" twa="37.1" />
+        <point tws="31.1" twa="70.5" />
+        <point tws="38.7" twa="130.3" />
+        <point tws="36" twa="167.7" />
+        <point tws="30.5" twa="162.2" />
+        <point tws="29.6" twa="133.7" />
+        <point tws="27.5" twa="111.9" />
+        <point tws="23.9" twa="96.1" />
+        <point tws="19.4" twa="50.4" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="40" />
+      <linepattern val="Solid" />
+      <linewidth val="2" />
+      <labelposition tws="28.4" twa="99.5" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="0" g="0" b="0" />
+    </element>
+    <element name="J2R" group="Headsails" type="Sail">
+      <createdby val="Jeremiah" />
+      <datecreated val="2025-07-22" />
+      <visible val="True" />
+      <colour R="0" G="128" B="0" />
+      <straightline val="False" />
+      <bezierpoints>
+        <point tws="29" twa="165.5" />
+        <point tws="31.1" twa="129.8" />
+        <point tws="24.8" twa="89" />
+        <point tws="18.7" twa="78.9" />
+        <point tws="7.5" twa="70.8" />
+        <point tws="8.2" twa="96" />
+        <point tws="16.6" twa="106.5" />
+        <point tws="23.6" twa="119.8" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="40" />
+      <linepattern val="Solid" />
+      <linewidth val="2" />
+      <labelposition tws="19.9" twa="107" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="0" g="0" b="0" />
+    </element>
+    <element name="Reef1" group="Reefs" type="Reef">
+      <createdby val="" />
+      <datecreated val="0001-01-01" />
+      <visible val="True" />
+      <colour R="192" G="192" B="192" />
+      <straightline val="False" />
+      <bezierpoints>
+        <point tws="24" twa="33" />
+        <point tws="26" twa="63" />
+        <point tws="28" twa="136" />
+        <point tws="32.4" twa="173.5" />
+        <point tws="39.1" twa="166.2" />
+        <point tws="40.9" twa="135.3" />
+        <point tws="39.9" twa="70.5" />
+        <point tws="38" twa="40" />
+        <point tws="30" twa="28" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="0" />
+      <linepattern val="Dash" />
+      <linewidth val="4" />
+      <labelposition tws="35.7" twa="72.9" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
+    </element>
+  </elements>
+</crossoverchart>
