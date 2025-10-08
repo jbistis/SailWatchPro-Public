@@ -184,14 +184,18 @@ For wind speed, it:
   - **Gusting**: Speed varies a lot, even if the average doesn't change much
 
 ## 4. Confidence Calculation
-The program calculates how confident it is in the trend based on how much data it has - more data points = higher confidence.
+The program calculates its confidence in the trend based on the amount of data it has - more data points result in higher confidence.
 
 ## 5. Final Result
 It combines both analyses into a single trend description like `VER15°/BLD+2.5`, meaning "Wind veering 15 degrees while building 2.5 knots"
 
-The key insight is that it looks at the **overall pattern** of change over time, not just individual readings, and properly handles the circular nature of wind direction measurements.
+The key insight is that it examines the **overall pattern** of change over time, rather than just individual readings, and properly accounts for the circular nature of wind direction measurements.
 
-## Trend Types
+## Trend Analysis
+- `Rolling Averages`
+- `Linear Regression`
+- `Fast Fourier Transforms
+- `Wavelet Transforms using Morlet type`
 
 ### Wind Direction Trends
 - `.backing(degrees: Double)` - Counter-clockwise shift
