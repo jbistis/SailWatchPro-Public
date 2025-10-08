@@ -194,7 +194,7 @@ The key insight is that it examines the **overall pattern** of change over time,
 ## Trend Analysis
 - `Rolling Averages`
 - `Linear Regression`
-- `Fast Fourier Transforms
+- `Fast Fourier Transforms`
 - `Wavelet Transforms using Morlet type`
 
 ### Wind Direction Trends
