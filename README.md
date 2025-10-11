@@ -36,18 +36,19 @@ SailWatchPro extends and enhances the power of Expedition Marine, bringing its c
  <img src="images/swp-dashboard-light.png" width="448"/>  
 </div>
 
-The above dashboard is divided into the sections:
+The above dashboard is divided into the following sections:
 
 <ol>
   <li>Key Performance Indicators</li>
-      <p>The top row of dashboard cards change colors based on how closely your sailing data aligns with recommended target values. The cards dynamically display relevant data, showing upwind metrics when sailing upwind and downwind metrics when sailing downwind.</p>
+      <p>Each dashboard cards change colors based on how closely your sailing data aligns with recommended target values. The cards dynamically display relevant data, showing upwind metrics when sailing upwind and downwind metrics when sailing downwind.</p>
+        <p>The HEADER/LIFT card looks back three minutes to determine if the wind is shifting to the left or right.</p>
   <li>Custom Data Fields</li>
-    <p>The custom fields let you pick and choose which Expedition Marine channels you want to show and where color coded to group like objects together.</p>
+    <p>The custom fields let you pick and choose which Expedition Marine channels you want to show and where they are color-coded to group like objects together.</p>
   <li>Compass Rose</li>
-    <p>This section provides a visual representation of how you're driving to target versus actual angles for both AWA and TWA.  Also shows TWD and how the current set and drift are impacting the boat.</p>
+    <p>This section provides a visual representation of how you're driving to the target versus actual angles for both AWA and TWA.  Also shows TWD and how the current set and drift are impacting the boat.</p>
 </ol>
 
-**Key Insight**: The dashboard automatically switches data priorities based on your sailing mode (upwind/reaching/downwind) and provides color feedback based on out of bounds conditions.
+**Key Insight**: The dashboard automatically switches data priorities based on your sailing mode (upwind/reaching/downwind) and provides color feedback based on out-of-bounds conditions.
 
 ### ⏱️ Pre-Start
 
@@ -102,6 +103,13 @@ The above dashboard is divided into the sections:
 - **Course Planning**: Integrated race course display
 - **GPS Tracking**: Precise position data with speed over ground
 - **Routing Analysis**: Optimal course suggestions based on conditions
+
+### 🗺️ Competitor Tracking
+*Track competitor position, heading, and speeds in real-time*
+
+<div align="center">
+  <img src="images/swp-competitors-light.png" width="448"/>
+</div>
 
 ### 🗺️ Sails - Inventory and Event Management
 
@@ -173,17 +181,21 @@ For wind speed, it:
   - **Steady**: Speed changes less than 1 knot
   - **Building**: Wind is getting stronger (more than 1 knot increase)
   - **Dissipating**: Wind is getting weaker (more than 1 knot decrease)
-  - **Gusting**: Speed varies a lot even if average doesn't change much
+  - **Gusting**: Speed varies a lot, even if the average doesn't change much
 
 ## 4. Confidence Calculation
-The program calculates how confident it is in the trend based on how much data it has - more data points = higher confidence.
+The program calculates its confidence in the trend based on the amount of data it has - more data points result in higher confidence.
 
 ## 5. Final Result
-It combines both analyses into a single trend description like `VER15°/BLD+2.5` meaning "Wind veering 15 degrees while building 2.5 knots"
+It combines both analyses into a single trend description like `VER15°/BLD+2.5`, meaning "Wind veering 15 degrees while building 2.5 knots"
 
-The key insight is that it looks at the **overall pattern** of change over time, not just individual readings, and properly handles the circular nature of wind direction measurements.
+The key insight is that it examines the **overall pattern** of change over time, rather than just individual readings, and properly accounts for the circular nature of wind direction measurements.
 
-## Trend Types
+## Trend Analysis
+- `Rolling Averages`
+- `Linear Regression`
+- `Fast Fourier Transforms`
+- `Wavelet Transforms using Morlet type`
 
 ### Wind Direction Trends
 - `.backing(degrees: Double)` - Counter-clockwise shift
@@ -209,7 +221,7 @@ The key insight is that it looks at the **overall pattern** of change over time,
 - **Green Line**: Raw wind data showing all fluctuations
 - **Magenta Dotted Line**: Rolling average for trend identification
 - **Background Grid**: Easy reference for value and time scales
-- **Interactive Time Selection**: Tap time labels to adjust viewing window
+- **Interactive Time Selection**: Tap time labels to adjust the viewing window
 
 **Barometer**: This view tracks and records atmospheric pressure in real-time, displaying a visual history of pressure changes. This record is vital for anticipating storms and squalls: A rapid drop in barometric pressure is often a strong indicator of an approaching low-pressure system, which can bring strong winds and inclement weather. By monitoring this downward trend on the barograph, sailors gain valuable lead time to take precautions, like securing the vessel and reefing sails.  The app also alerts users when the data interface for this channel stops receiving updates, preventing false assumptions of stable pressure.
 
@@ -226,7 +238,7 @@ The key insight is that it looks at the **overall pattern** of change over time,
 
 ### 🌡️ Weather Tools
 
-- **Weather Data Manager**: Any user can retrieve wind and weather data, including historical data, from buoys within 100 nautical miles of your boat’s position. The app shares the latest buoy readings with all crew members through the boat’s local WiFi network. When any user refreshes the data, the updated readings are automatically shared with all app users on the same network, ensuring all decision-makers view the same dataset.  To date, we have extrated weather data from NDBC buoys from NOAA CoastWatch ERDDAP (standard NDBC network), NDBC stations via AXDS ERDDAP, LISICOS buoys (UConn direct) using OCR, NERACOOS datasets (Gulf of Maine area), and NDBC stations available through NERACOOS. We can easily adapt more buoys as required. The Navigator view map overylays the buoy data with the boat's current position and race course so your Navigator can investiage the wind trends of nearby future locations to help optimze the route.
+- **Weather Data Manager**: Any user can retrieve wind and weather data, including historical data, from buoys within 100 nautical miles of your boat’s position. The app shares the latest buoy readings with all crew members through the boat’s local WiFi network. When any user refreshes the data, the updated readings are automatically shared with all app users on the same network, ensuring all decision-makers view the same dataset.  To date, we have extracted weather data from NDBC buoys from NOAA CoastWatch ERDDAP (standard NDBC network), NDBC stations via AXDS ERDDAP, LISICOS buoys (UConn direct) using OCR, NERACOOS datasets (Gulf of Maine area), and NDBC stations available through NERACOOS. We can easily adapt more buoys as required. The Navigator view map overlays the buoy data with the boat's current position and race course so your Navigator can investigate the wind trends of nearby future locations to help optimize the route.
 
 - **Buoy Data**
 <div align="center">
@@ -238,7 +250,7 @@ The key insight is that it looks at the **overall pattern** of change over time,
 - Trend analysis with historical data
 - Weather pattern prediction support
 - Comprehensive weather information
-- Integration with nearby buoy data including OCR if needed
+- Integration with nearby buoy data, including OCR if needed
 - Historical weather pattern analysis
 
 ### 🎯 MOB Function
@@ -284,7 +296,7 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 - **TWA/AWA Split Boxes**: Wind angle optimization
 - **Depth Split Box**: Safety monitoring with alerts
 - **Custom Data Fields**: Personalized data display
-- **Automatic Page Switching**: Switches to depth page on dangerous conditions
+- **Automatic Page Switching**: Switches to the depth page on dangerous conditions
 
 **Watch Connectivity**
 - Seamless data sync from iPhone app
@@ -308,7 +320,7 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 
 ### Display Options
 - **Light Mode**: Uses traditional dark text on a light background
-- **Dark Mode**: Inverts the color scheme displaying light text on a dark background
+- **Dark Mode**: Inverts the color scheme, displaying light text on a dark background
 - **Night Mode**: Red-tinted display for night vision preservation
 - **Chart Time Windows**: Customizable data history viewing
 - **Map Style**: Choose between hybrid, standard, satellite, or imagery views
@@ -343,37 +355,40 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 - **iPhone**: iOS 18.5 or later
 - **Apple Watch**: watchOS 11.5 or later
 - **Expedition Marine**: 12.4.12 or later
-- **Network**: Reliable WiFi connection for real-time data with a wired connection for the Expedition Marine PC
+- **Network**: Reliable WiFi connection for real-time data, with a wired connection for the Expedition Marine PC
 
 ---
 
 ## Getting Started
+- **Latest Version**: Because this app shares data between users, it is essential that all iOS devices run the same version of the app.
 
 ### First Launch Setup
 
 1. **Configure the Expdition Marine Network**
-  - Start Expedition Marine on boat PC.
+  - Start Expedition Marine on the boat PC.
   - From the ☰ Hamburger Menu > drag down and hover over Instruments > click on Number of network connections
   - Enter one greater than the number displayed to add one more network > click OK
-  - From the ☰ Hamburger Menu > drag down and hover over and click Instruments
+  - From the ☰ Hamburger Menu > drag down, hover over, and click Instruments
   - Select the Network you just created and enter the following
   - Alias - SailWatchPro
   - Instruments - Expedition
-  - Address - 192.168.XXX.YYY where this is the IP address of your Expedition Marine PC.
+  - Address - 192.168.XXX.YYY, where this is the IP address of your Expedition Marine PC.
   - Port - Select any port that is not used by another Expedition Marine network.
   - Click Expedition Settings
-  - Click Exp Rx filter and select the Receive marks check box.
-  - Click Exp Tx filter and select the channels noted in Appendix A down below.
+  - Click the Exp Rx filter and select the Receive marks check box.
+  - Click the Exp Tx filter and select the channels noted in Appendix A below.
 
 1. **Connect to Expedition Marine**
   - Install the app on your iOS device.
   - In the SailProApp, touch Settings and configure your boat's WiFi network and other details.
   - Set the IP address to match the Expedition Marine network IP address you set in the previous step.
   - Set the UDP port to match the Expedition Marine network port you set in the previous step.
+  - Set the IP address for any NMEA 2000 Ethernet Gateway and UDP port
   - Restart to enable the connection and look for green status indicators.
 
 2. **Configure Your Boat**
   - Enter your boat name
+  - Enter your boat's MMSI number
   - Set boat length (for distance calculations in boat lengths)
   - Set draft (for depth safety alerts)
   - Adjust TWA reaching threshold for sailing mode detection
@@ -388,8 +403,10 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 Enable Receive marks
 
 ## Exp Tx filter
-AWA, AWS, BSP, Cog, Course, Current Drift, Current Set, Depth,
-Mark lattitude, Mark longitude, Mark range, Mark time, Mark twa,
+AWA, AWS, Barometer, BSP, Cog, Course, Current Drift, Current Set, Depth,
+Heading, Heading - Cog, Heading to steer, Heading to steer polar, Heel (roll), Latitude,
+Layline bearing, Layline bearing on port, Layline bearing on strb, Layline distance on port, Layline distance on starb, Layline Distance, Layline time, Layline time on port, Layline time on starb, Longitude,
+Magnetic variation, Mark bearing, Mark bearing - Cog, Mark latitude, Mark longitude, Mark range, Mark time, Mark twa, Opposite track,
 Next mark awa, Next mark aws, Next mark bearing, Next mark latitude, Next mark longitude,
 Next mark polar time, Next mark range, Next mark time on port, Next mark time on starb, Next mark tws,
 Opposite track, Polar bsp, Polar bsp %, Sail mark, Sail next mark, Sog,
@@ -407,10 +424,10 @@ SailWatchPro is continuously updated with new features and improvements based on
 
 For the best racing experience, ensure both your iPhone and Apple Watch apps are updated to the latest versions.
 
-For Support & Enhancement Requests please contact us at https://github.com/jbistis/SailWatchPro-Public/issues.  We’re eager to hear your suggestions on features that would make the app even more valuable to you.
+For Support & Enhancement Requests, please contact us at https://github.com/jbistis/SailWatchPro-Public/issues.  We’re eager to hear your suggestions on features that would make the app even more valuable to you.
 
 ---
 
-*Happy sailing and may you always find the favorable wind shift!*
+*Happy sailing, and may you always find the favorable wind shift!*
 
 **SailWatchPro Team**
