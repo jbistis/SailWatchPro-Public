@@ -210,7 +210,7 @@ The **TIME AHEAD** metric shows the corrected time advantage/disadvantage in the
 - Boats must be on the same race leg
 
 ### Lateral Separation (LAT SEP)
-Shows the perpendicular distance from the race course line between start and active mark:
+Shows the perpendicular distance from each boats current position to the rhumb line:
 - **Positive values with "P"**: Boat is to port of the course line
 - **Negative values with "S"**: Boat is to starboard of the course line
 - Helps identify tactical positioning and potential crossing situations
