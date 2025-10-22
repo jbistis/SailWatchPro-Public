@@ -100,16 +100,181 @@ The above dashboard is divided into the following sections:
   <img src="images/swp-navigator-portrait-ALIR-light.png" width="448"/>
 </div>
 
-- **Course Planning**: Integrated race course display
-- **GPS Tracking**: Precise position data with speed over ground
-- **Routing Analysis**: Optimal course suggestions based on conditions
-
 ### 🗺️ Competitor Tracking
 *Track competitor position, heading, and speeds in real-time*
 
 <div align="center">
   <img src="images/swp-competitors-light.png" width="448"/>
 </div>
+# CompetitorsModernView User Manual
+
+The CompetitorsModernView is a comprehensive competitor tracking and analysis interface designed for sailboat racing. This view provides real-time competitor monitoring, tactical analysis, and race management capabilities.
+
+## Main Interface Overview
+
+### Header Section
+The interface displays key status information at the top:
+- **Total competitors count** with breakdown by category
+- **Current race information** including race name, ID, scoring system, class, and flags
+- **Action buttons** for importing data, adding competitors, and managing the database
+
+### Status Chips
+Color-coded status indicators show:
+- **Racing** (Green): Number of competitors currently marked as racing
+- **Threats** (Red): Number of competitors classified as threats based on proximity and position
+- **Total** (Blue): Complete competitor count
+
+### Search and Sorting
+- **Search bar**: Filter competitors by name or MMSI number
+- **Sort controls**: Sort competitors by multiple criteria (name, distance, threat level, etc.) with ascending/descending options
+
+## Competitor Sections
+
+### Our Boat Section
+When your boat is found in the competitor database and marked as racing, it displays:
+- **Own boat card** with comprehensive race timing information
+- **Elapsed time** since race start
+- **Corrected time** calculations using TCF (Time Correction Factor)
+- **Tactical position** relative to race course and other competitors
+
+### Racing Competitors
+Competitors marked as racing are displayed with enhanced information including:
+- **Real-time position data** (bearing, range, course, speed)
+- **Threat level indicators** with color-coded circles
+- **AIS data freshness** showing how recently position data was received
+- **Race timing** with elapsed and corrected times
+- **Rolling averages** for COG, SOG, and VMC over 1, 2, 5, and 10-minute periods
+- **Tactical analysis** including distance ahead/behind and lateral separation
+
+### All Competitors
+Non-racing competitors are listed separately with basic information and the ability to:
+- Toggle racing status
+- Edit competitor details
+- Delete individual competitors
+
+### Detected Vessels
+When enabled, shows AIS-detected vessels that can be added as competitors:
+- **Class A and Class B** vessel filtering
+- **Automatic position calculation** for bearing and range
+- **One-click addition** to competitor database
+
+## Tactical Analysis Calculations
+
+### DISTANCE AHEAD
+The **DISTANCE AHEAD** metric shows the positional advantage between your boat and competitors measured along the race course.
+
+**Calculation Method:**
+- Measures the direct distance from each boat to the active race mark
+- Subtracts your distance from the competitor's distance to the mark
+- **Positive values** (+): You are ahead (closer to the mark than the competitor)
+- **Negative values** (-): You are behind (competitor is closer to the mark)
+- Displayed in nautical miles with one decimal precision (e.g., "+0.3nm", "-1.2nm")
+
+**Prerequisites:**
+- Both boats must be marked as "racing"
+- Both boats must have valid GPS positions
+- Both boats must be determined to be on the same race leg
+- Active mark coordinates must be available
+
+**Same Leg Detection:**
+The system uses VMC (Velocity Made Good) analysis to determine if boats are racing the same leg:
+- Both boats must have positive VMC toward the active mark
+- VMC difference between boats must be within reasonable tactical variation
+- Boats with strongly negative VMC are considered to be on different legs
+
+### TIME AHEAD
+The **TIME AHEAD** metric shows the corrected time advantage/disadvantage in the current race standings.
+
+**Calculation Method:**
+1. **Position-Adjusted Corrected Time Analysis:**
+  - Calculates each boat's corrected elapsed time using their respective TCF (Time Correction Factor)
+  - For boats at different distances from the mark, projects the time needed for the trailing boat to reach the leading boat's position
+  - Uses current VMC to estimate catch-up time
+  - Applies TCF to both current elapsed time and projected time
+
+2. **Calculation Logic:**
+  - If you're ahead by distance: Projects competitor's time to reach your position, then compares corrected times
+  - If competitor is ahead: Projects your time to reach their position, then compares corrected times
+  - If positions are similar (<100m difference): Uses direct corrected time comparison
+
+3. **Display Format:**
+  - **Positive values** (+): You are ahead on corrected time (winning)
+  - **Negative values** (-): Competitor is ahead on corrected time (you need to catch up)
+  - Formatted as MM:SS for times over 1 minute, or 0:SS for shorter intervals
+  - Green text for positive (ahead), red text for negative (behind)
+
+**Prerequisites:**
+- Both boats must have valid TCF values from their handicap ratings
+- Race must have started (elapsed time available)
+- Both boats must have reasonable VMC values (>0.5 knots) for projection calculations
+- Boats must be on the same race leg
+
+### Lateral Separation (LAT SEP)
+Shows the perpendicular distance from the race course line between start and active mark:
+- **Positive values with "P"**: Boat is to port of the course line
+- **Negative values with "S"**: Boat is to starboard of the course line
+- Helps identify tactical positioning and potential crossing situations
+
+## Key Features
+
+### Data Import Capabilities
+- **CSV Import**: Import competitor lists from spreadsheet files
+- **YachtScoring Integration**: Direct connection to YachtScoring platform for race data
+- **ORC Rating Fetch**: Automatic retrieval of ORC ratings and TCF values
+
+### Real-Time Analysis
+- **Threat Assessment**: Automatic classification based on proximity and tactical position
+- **VMC Calculations**: Velocity Made Good towards the active mark
+- **Tactical Positioning**: Distance ahead/behind and lateral separation analysis
+- **Time Corrections**: Real-time corrected time calculations using various rating systems
+
+### Race Management
+- **Auto-detection**: Automatically identifies and marks your boat as racing
+- **Rating Systems**: Support for ORC, PHRF, and other handicap systems
+- **Manual TCF Override**: Ability to set custom Time Correction Factors
+
+### Data Quality Monitoring
+- **AIS Age Indicators**: Color-coded freshness of position data (green <30s, orange <2min, red >2min)
+- **Position Validation**: Automatic filtering of invalid or zero coordinates
+- **Rolling Averages**: Smoothed data to reduce noise in tactical calculations
+
+## User Interactions
+
+### Adding Competitors
+- Manual entry via "Add" button
+- Import from detected AIS vessels
+- CSV file import
+- YachtScoring platform integration
+
+### Editing and Management
+- **Edit**: Pencil icon for modifying competitor details
+- **Delete**: Trash icon for removing individual competitors
+- **Toggle Racing**: Circle icon to mark competitors as racing/not racing
+- **Bulk Delete**: "Delete All" option with confirmation dialog
+
+### Race Configuration
+The view automatically adapts to race settings configured elsewhere in the application:
+- Race name and identifier
+- Scoring system selection
+- Class configuration
+- Mark positions for tactical calculations
+
+## Technical Notes
+
+### Data Requirements
+For tactical calculations to function properly, the system requires:
+- Valid GPS positions for all boats
+- TCF values from handicap ratings (ORC/PHRF)
+- Active race mark coordinates
+- Race start time for elapsed time calculations
+
+### Limitations
+- Tactical calculations only apply to boats on the same race leg
+- Time projections assume current VMC will be maintained
+- Very low VMC conditions (<0.5 knots) may result in unreliable projections
+- Boats with missing TCF values will show "---" for corrected time calculations
+
+This interface provides professional-level competitor analysis capabilities suitable for serious racing sailors who need comprehensive tactical information during races.
 
 ### 🗺️ Sails - Inventory and Event Management
 
