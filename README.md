@@ -187,7 +187,7 @@ The **TIME AHEAD** metric shows the corrected time advantage/disadvantage in the
 **Calculation Method:**
 1. **Position-Adjusted Corrected Time Analysis:**
   - Calculates each boat's corrected elapsed time using their respective TCF (Time Correction Factor)
-  - For boats at different distances from the mark, projects the time needed for the trailing boat to reach the leading boat's position
+  - For boats at different distances from the mark, projects the time needed for the trailing boat to reach the leading boat's distance to the mark.
   - Uses current VMC to estimate catch-up time
   - Applies TCF to both current elapsed time and projected time
 
