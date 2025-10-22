@@ -176,7 +176,7 @@ The **DISTANCE AHEAD** metric shows the positional advantage between your boat a
 - Active mark coordinates must be available
 
 **Same Leg Detection:**
-The system uses VMC (Velocity Made Good) analysis to determine if boats are racing the same leg:
+The system uses VMC (Velocity Made to Course) analysis to determine if boats are racing the same leg:
 - Both boats must have positive VMC toward the active mark
 - VMC difference between boats must be within reasonable tactical variation
 - Boats with strongly negative VMC are considered to be on different legs
