@@ -104,7 +104,7 @@ The above dashboard is divided into the following sections:
 *Track competitor position, heading, and speeds in real-time*
 
 <div align="center">
-  <img src="images/swp-competitors-gb" width="448"/>
+  <img src="images/swp-competitors-gb-2025" width="448"/>
 </div>
 
 The CompetitorsModernView is a comprehensive competitor tracking and analysis interface designed for sailboat racing. This view provides real-time competitor monitoring, tactical analysis, and race management capabilities.
