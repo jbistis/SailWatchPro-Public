@@ -309,7 +309,7 @@ This interface provides professional-level competitor analysis capabilities suit
 *Comprehensive wind monitoring and trend analysis*
 
 <div align="center">
- <img src="images/swp-wind-state.png" width="448"/>
+ <img src="images/swp-ipad11-air-wind-view-light.png" width="448"/>
 </div>
 
 **Real-Time Wind Cards**
