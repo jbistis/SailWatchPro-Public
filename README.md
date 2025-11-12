@@ -44,11 +44,12 @@ SailWatchPro extends and enhances Expedition Marine's capabilities, bringing the
 
 There are 12 user-defined dashboards.
 
+**Key Insight**: Many dashboard fields also support context-aware switching based on your sailing mode (upwind/reaching/downwind) and provide color feedback for out-of-bounds conditions.
+
+There are key performance indicators for the Apple Watch as well as access to all user-defined fields.
 <div align="center">
  <img src="images/swp-apple-watch-views.png" width="512"/>
 </div>
-
-**Key Insight**: Many dashboard fields also support context-aware switching based on your sailing mode (upwind/reaching/downwind) and provide color feedback for out-of-bounds conditions.
 
 ### ⏱️ Pre-Start
 
