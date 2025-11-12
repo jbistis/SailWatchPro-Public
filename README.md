@@ -41,7 +41,7 @@ SailWatchPro extends and enhances Expedition Marine's capabilities, bringing the
  <img src="images/swp-compass-dashboard-dark.png" width="128"/>  
 </div>
 
-The above dashboard is divided into the following sections:
+There are 12 user-defined dashboards.
 
 **Key Insight**: Many dashboard fields also support context-aware switching based on your sailing mode (upwind/reaching/downwind) and provide color feedback for out-of-bounds conditions.
 
