@@ -276,36 +276,6 @@ For tactical calculations to function properly, the system requires:
 
 This interface provides professional-level competitor analysis capabilities suitable for serious racing sailors who need comprehensive tactical information during races.
 
-### 🗺️ Sails - Inventory and Event Management
-
-**Sail Crossover Chart**
-
-<p>The app supports two types of crossover charts:</p>
-
-<ul>
-  <li>Designer Crossover Chart</li>
-  <p>Based on sail usage recommendations from your sailmaker. This chart reflects the theoretical or intended wind ranges for each sail.</p>
-  <li>Performance Crossover Chart</li>
-  <p>Built from real sailing data collected during your races or sessions, this view shows the true wind angles (TWA) and true wind speeds (TWS) at which each sail was used. When multiple sails are used in overlapping conditions, the sail associated with the highest boatspeed is shown. This data can be easily aggregated and downloaded from the Sail Analytics, see https://app.sailnjord.com/help/analytics/visualizations/sail-crossover.html?highlight=crossover#sail-crossover</p>
-</ul>
-
-<div align="center">
-  <img src="images/swp-sail-crossover-light.png" width="256"/>
-</div>
-
-- **Inventory**: Each time you import a sail crossover chart, the app updates the sail inventory based on the sails found in the XML file. You can then enable or disable sails, or designate which sails are left on shore for any particular race.
-
-<div align="center">
-  <img src="images/swp-sail-inventory-light.png" width="256"/>
-</div>
-
-- **Events**: Once you import your sail chart, you can begin entering Sail Up events with corresponding time and location. The event log file can then be uploaded to https://www.sailnjord.com/.
-
-<div align="center">
-  <img src="images/swp-sail-events-light.png" width="256"/>
-</div>
-
-
 ### 🌬️ Wind Analysis
 *Comprehensive wind monitoring and trend analysis*
 
@@ -387,6 +357,35 @@ The key insight is that it examines the **overall pattern** of change over time,
 - **Magenta Dotted Line**: Rolling average for trend identification
 - **Background Grid**: Easy reference for value and time scales
 - **Interactive Time Selection**: Tap time labels to adjust the viewing window
+
+### 🗺️ Sails - Inventory and Event Management
+
+**Sail Crossover Chart**
+
+<p>The app supports two types of crossover charts:</p>
+
+<ul>
+  <li>Designer Crossover Chart</li>
+  <p>Based on sail usage recommendations from your sailmaker. This chart reflects the theoretical or intended wind ranges for each sail.</p>
+  <li>Performance Crossover Chart</li>
+  <p>Built from real sailing data collected during your races or sessions, this view shows the true wind angles (TWA) and true wind speeds (TWS) at which each sail was used. When multiple sails are used in overlapping conditions, the sail associated with the highest boatspeed is shown. This data can be easily aggregated and downloaded from the Sail Analytics, see https://app.sailnjord.com/help/analytics/visualizations/sail-crossover.html?highlight=crossover#sail-crossover</p>
+</ul>
+
+<div align="center">
+  <img src="images/swp-sail-crossover-light.png" width="256"/>
+</div>
+
+- **Inventory**: Each time you import a sail crossover chart, the app updates the sail inventory based on the sails found in the XML file. You can then enable or disable sails, or designate which sails are left on shore for any particular race.
+
+<div align="center">
+  <img src="images/swp-sail-inventory-light.png" width="256"/>
+</div>
+
+- **Events**: Once you import your sail chart, you can begin entering Sail Up events with corresponding time and location. The event log file can then be uploaded to https://www.sailnjord.com/.
+
+<div align="center">
+  <img src="images/swp-sail-events-light.png" width="256"/>
+</div>
 
 **Barometer**: This view tracks and records atmospheric pressure in real-time, displaying a visual history of pressure changes. This record is vital for anticipating storms and squalls: A rapid drop in barometric pressure is often a strong indicator of an approaching low-pressure system, which can bring strong winds and inclement weather. By monitoring this downward trend on the barograph, sailors gain valuable lead time to take precautions, like securing the vessel and reefing sails.  The app also alerts users when the data interface for this channel stops receiving updates, preventing false assumptions of stable pressure.
 
