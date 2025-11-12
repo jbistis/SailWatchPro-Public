@@ -38,6 +38,7 @@ SailWatchPro extends and enhances Expedition Marine's capabilities, bringing the
  <img src="images/swp-buoys-landscape-dashboard-light.png" width="128"/>
  <img src="images/swp-2x2-wind-landscape-dashboard-light.png" width="128"/>
  <img src="images/swp-1x1-wind-landscape-dashboard-light.png" width="128"/>
+ <img src="images/swp-offshore-dashboard-light.png" width="128"/>
  <img src="images/swp-compass-dashboard-dark.png" width="128"/>  
 </div>
 
