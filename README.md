@@ -34,11 +34,11 @@ SailWatchPro extends and enhances Expedition Marine's capabilities, bringing the
 - **Lift/Header Identification**: Real-time sailing angle optimization
 
 <div align="center">
- <img src="images/swp-pre-start-dashboard-light.jpg" width="128"/>
- <img src="images/swp-buoys-dashboard-light.jpg" width="128"/>
- <img src="images/swp-offshore-dashboard-light.jpg" width="128"/>
- <img src="images/swp-2x2-wind-dashboard-light.jpg" width="128"/>
- <img src="images/swp-1x1-wind-dashboard-light.jpg" width="128"/>
+ <img src="images/swp-pre-start-landscape-dashboard-light.jpg" width="128"/>
+ <img src="images/swp-buoys-landscape-dashboard-light.jpg" width="128"/>
+ <img src="images/swp-offshore-landscape-dashboard-light.jpg" width="128"/>
+ <img src="images/swp-2x2-wind-landscape-dashboard-light.jpg" width="128"/>
+ <img src="images/swp-1x1-wind-landscape-dashboard-light.jpg" width="128"/>
  <img src="images/swp-compass-dashboard-dark.png" width="128"/>  
 </div>
 
