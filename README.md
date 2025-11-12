@@ -285,19 +285,19 @@ This interface provides professional-level competitor analysis capabilities suit
 </ul>
 
 <div align="center">
-  <img src="images/swp-sail-crossover-light.png" width="448"/>
+  <img src="images/swp-sail-crossover-light.png" width="256"/>
 </div>
 
 - **Inventory**: Each time you import a sail crossover chart, the app updates the sail inventory based on the sails found in the XML file. You can then enable or disable sails, or designate which sails are left on shore for any particular race.
 
 <div align="center">
-  <img src="images/swp-sail-inventory-light.png" width="448"/>
+  <img src="images/swp-sail-inventory-light.png" width="256"/>
 </div>
 
 - **Events**: Once you import your sail chart, you can begin entering Sail Up events with corresponding time and location. The event log file can then be uploaded to https://www.sailnjord.com/.
 
 <div align="center">
-  <img src="images/swp-sail-events-light.png" width="448"/>
+  <img src="images/swp-sail-events-light.png" width="256"/>
 </div>
 
 
@@ -344,7 +344,7 @@ For wind speed, it:
   - **Gusting**: Speed varies a lot, even if the average doesn't change much
 
 ## 4. Confidence Calculation
-The program calculates its confidence in the trend based on the amount of data it has - more data points result in higher confidence.
+The program calculates its confidence in the trend based on the number of data points - more data points result in higher confidence.
 
 ## 5. Final Result
 It combines both analyses into a single trend description like `VER15°/BLD+2.5`, meaning "Wind veering 15 degrees while building 2.5 knots"
@@ -398,7 +398,7 @@ The key insight is that it examines the **overall pattern** of change over time,
 
 ### 🌡️ Weather Tools
 
-- **Weather Data Manager**: Any user can retrieve wind and weather data, including historical data, from buoys within 100 nautical miles of your boat’s position. The app shares the latest buoy readings with all crew members through the boat’s local WiFi network. When any user refreshes the data, the updated readings are automatically shared with all app users on the same network, ensuring all decision-makers view the same dataset.  To date, we have extracted weather data from NDBC buoys from NOAA CoastWatch ERDDAP (standard NDBC network), NDBC stations via AXDS ERDDAP, LISICOS buoys (UConn direct) using OCR, NERACOOS datasets (Gulf of Maine area), and NDBC stations available through NERACOOS. We can easily adapt more buoys as required. The Navigator view map overlays the buoy data with the boat's current position and race course so your Navigator can investigate the wind trends of nearby future locations to help optimize the route.
+- **Weather Data Manager**: Any user can retrieve wind and weather data, including historical data, from buoys within 100 nautical miles of your boat’s position. The app shares the latest buoy readings with all crew members through the boat’s local WiFi network. When any user refreshes the data, the updated readings are automatically shared with all app users on the same network, ensuring all decision-makers view the same dataset.  To date, we have extracted weather data from NDBC buoys from NOAA CoastWatch ERDDAP (standard NDBC network), NDBC stations via AXDS ERDDAP, LISICOS buoys (UConn direct) using OCR, NERACOOS datasets (Gulf of Maine area), and NDBC stations available through NERACOOS. We can easily adapt more buoys as required. The Navigator view maps buoy data to the boat's current position and race course, so your Navigator can investigate wind trends at nearby future locations to help optimize the route.
 
 - **Buoy Data**
 <div align="center">
