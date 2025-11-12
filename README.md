@@ -29,7 +29,7 @@ SailWatchPro extends and enhances Expedition Marine's capabilities, bringing the
 
 ### 📊 User-Definable Dashboards
 - **Any Expedition Marine Channel may be selected as a user-defined field.
-- **Performance Data Aggregators for cog, sog, vmg, vmg%, vmc, vmc%, polar%, and Target Boat% calculated to 5, 10, and 15 minute rolling averages. 
+- **Performance Data Aggregators for cog, sog, vmg, vmg%, vmc, vmc%, polar%, and Target Boat% calculated to 5, 10, and 15 minute rolling averages.
 - **Wind Shift Detection**: Automatic trend analysis with confidence indicators.
 - **Lift/Header Identification**: Real-time sailing angle optimization
 
