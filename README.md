@@ -27,9 +27,10 @@ SailWatchPro extends and enhances the power of Expedition Marine, bringing its c
 
 ## Features
 
-### 📊 Tactician Dashboard
-- **Layline Analysis**: Distance and time to laylines
-- **Wind Shift Detection**: Automatic trend analysis with confidence indicators
+### 📊 User-Definable Dashboards
+- **Any Expedition Marine Channel may be selected as a user-defined field.
+- **Performance Data Aggregators for cog, sog, vmc, vmc%, Target Boat%, vmg, vmg%, polar% calculated to 5, 10, and 15 minute rolling averages. 
+- **Wind Shift Detection**: Automatic trend analysis with confidence indicators.
 - **Lift/Header Identification**: Real-time sailing angle optimization
 
 <div align="center">
@@ -38,17 +39,7 @@ SailWatchPro extends and enhances the power of Expedition Marine, bringing its c
 
 The above dashboard is divided into the following sections:
 
-<ol>
-  <li>Key Performance Indicators</li>
-      <p>Each dashboard cards change colors based on how closely your sailing data aligns with recommended target values. The cards dynamically display relevant data, showing upwind metrics when sailing upwind and downwind metrics when sailing downwind.</p>
-        <p>The HEADER/LIFT card looks back three minutes to determine if the wind is shifting to the left or right.</p>
-  <li>Custom Data Fields</li>
-    <p>The custom fields let you pick and choose which Expedition Marine channels you want to show and where they are color-coded to group like objects together.</p>
-  <li>Compass Rose</li>
-    <p>This section provides a visual representation of how you're driving to the target versus actual angles for both AWA and TWA.  Also shows TWD and how the current set and drift are impacting the boat.</p>
-</ol>
-
-**Key Insight**: The dashboard automatically switches data priorities based on your sailing mode (upwind/reaching/downwind) and provides color feedback based on out-of-bounds conditions.
+**Key Insight**: Many dashboard fields also support context-aware switching based on your sailing mode (upwind/reaching/downwind) and provide color feedback for out-of-bounds conditions.
 
 ### ⏱️ Pre-Start
 
