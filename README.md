@@ -78,7 +78,7 @@ There are 12 user-defined dashboards.
 <p>The Start view displays the Start Area, showing the boat’s position relative to the start line and pin laylines. It also presents TTG, TTB, TTL, and DTL data for port, center, and starboard, along with a graphical representation of the line bias and the heading to the first mark—helping you determine the optimal place to cross the line.</p>
 
 <div align="center">
- <img src="images/swp-start-view-light.png" width="448"/>
+ <img src="images/swp-start-view-light.png" width="256"/>
 </div>
 - Start Area Grid
 - Wind Strip Charts
@@ -88,19 +88,19 @@ There are 12 user-defined dashboards.
 - **Electronic Map Display**: Real-time position with course overlay and buoy wind data
 
 <div align="center">
-  <img src="images/swp-navigator-landscape-ALIR-light.png" width="448"/>
+  <img src="images/swp-navigator-landscape-ALIR-light.png" width="256"/>
 </div>
 
 - **Waypoint Management**: Mark positions and distances with True Wind Angles
 <div align="center">
-  <img src="images/swp-navigator-portrait-ALIR-light.png" width="448"/>
+  <img src="images/swp-navigator-portrait-ALIR-light.png" width="256"/>
 </div>
 
 ### 🗺️ Competitor Tracking
 *Track competitor position, heading, and speeds in real-time*
 
 <div align="center">
-  <img src="images/swp-competitors-gb-2025.png" width="448"/>
+  <img src="images/swp-competitors-gb-2025.png" width="256"/>
 </div>
 
 The CompetitorsModernView is a comprehensive competitor tracking and analysis interface designed for sailboat racing. This view provides real-time competitor monitoring, tactical analysis, and race management capabilities.
@@ -133,7 +133,7 @@ When your boat is found in the competitor database and marked as racing, it disp
 - **Tactical position** relative to race course and other competitors
 
 ### Racing Competitors
-Competitors marked as racing are displayed with enhanced information including:
+Competitors marked as racing are displayed with enhanced information, including:
 - **Real-time position data** (bearing, range, course, speed)
 - **Threat level indicators** with color-coded circles
 - **AIS data freshness** showing how recently position data was received
@@ -148,7 +148,7 @@ Non-racing competitors are listed separately with basic information and the abil
 - Delete individual competitors
 
 ### Detected Vessels
-When enabled, shows AIS-detected vessels that can be added as competitors:
+When enabled, it shows AIS-detected vessels that can be added as competitors:
 - **Class A and Class B** vessel filtering
 - **Automatic position calculation** for bearing and range
 - **One-click addition** to competitor database
@@ -174,7 +174,7 @@ The **DISTANCE AHEAD** metric shows the positional advantage between your boat a
 **Same Leg Detection:**
 The system uses VMC (Velocity Made to Course) analysis to determine if boats are racing the same leg:
 - Both boats must have positive VMC toward the active mark
-- VMC difference between boats must be within reasonable tactical variation
+- VMC difference between boats must be within a reasonable tactical variation
 - Boats with strongly negative VMC are considered to be on different legs
 
 ### TIME AHEAD
@@ -183,9 +183,9 @@ The **TIME AHEAD** metric shows the corrected time advantage/disadvantage in the
 **Calculation Method:**
 1. **Position-Adjusted Corrected Time Analysis:**
   - Calculates each boat's corrected elapsed time using their respective TCF (Time Correction Factor)
-  - For boats at different distances from the mark, projects the time needed for the trailing boat to reach the leading boat's distance to the mark.
+  - For boats at different distances from the mark, it projects the time needed for the trailing boat to reach the leading boat's distance to the mark.
   - Uses current VMC to estimate catch-up time
-  - Applies TCF to both current elapsed time and projected time
+  - Applies TCF to both the current elapsed time and the projected time
 
 2. **Calculation Logic:**
   - If you're ahead by distance: Projects competitor's time to reach your position, then compares corrected times
@@ -205,7 +205,7 @@ The **TIME AHEAD** metric shows the corrected time advantage/disadvantage in the
 - Boats must be on the same race leg
 
 ### Lateral Separation (LAT SEP)
-Shows the perpendicular distance from each boats current position to the rhumb line:
+Shows the perpendicular distance from each boat's current position to the rhumb line:
 - **Positive values with "P"**: Boat is to port of the course line
 - **Negative values with "S"**: Boat is to starboard of the course line
 - Helps identify tactical positioning and potential crossing situations
@@ -214,7 +214,7 @@ Shows the perpendicular distance from each boats current position to the rhumb l
 
 ### Data Import Capabilities
 - **CSV Import**: Import competitor lists from spreadsheet files
-- **YachtScoring Integration**: Direct connection to YachtScoring platform for race data
+- **YachtScoring Integration**: Direct connection to the YachtScoring platform for race data
 - **ORC Rating Fetch**: Automatic retrieval of ORC ratings and TCF values
 
 ### Real-Time Analysis
@@ -236,7 +236,7 @@ Shows the perpendicular distance from each boats current position to the rhumb l
 ## User Interactions
 
 ### Adding Competitors
-- Manual entry via "Add" button
+- Manual entry via the "Add" button
 - Import from detected AIS vessels
 - CSV file import
 - YachtScoring platform integration
@@ -265,7 +265,7 @@ For tactical calculations to function properly, the system requires:
 
 ### Limitations
 - Tactical calculations only apply to boats on the same race leg
-- Time projections assume current VMC will be maintained
+- Time projections assume the current VMC will be maintained
 - Very low VMC conditions (<0.5 knots) may result in unreliable projections
 - Boats with missing TCF values will show "---" for corrected time calculations
 
