@@ -51,7 +51,7 @@ There are 12 user-defined dashboards.
 <p>The Prestart view is where you may ping the pins, select the racecourse, and set and synchronize the race timer.</p>
 
 <div align="center">
- <img src="images/swp-prestart-view-light.png" width="448"/>
+ <img src="images/swp-prestart-view-light.png" width="256"/>
 </div>
 
 **Race Timers**
