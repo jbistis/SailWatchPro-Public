@@ -21,7 +21,7 @@
 
 ## Introduction
 
-SailWatchPro extends and enhances the power of Expedition Marine, bringing its capabilities above deck with a sleek, touch-friendly interface for iPad, iPad Mini, iPhone, and Apple Watch. Built for competitive sailing, SailWatchPro delivers real-time tactical insights, translating critical data—like wind patterns, boat speed, and course positioning—into clear, actionable information. Whether you're racing around the buoys or navigating offshore, SailWatchPro empowers your team to make fast, confident decisions when every second counts.
+SailWatchPro extends and enhances Expedition Marine's capabilities, bringing them above deck with a sleek, touch-friendly interface for iPad, iPad Mini, iPhone, and Apple Watch. Built for competitive sailing, SailWatchPro delivers real-time tactical insights by translating critical data—such as wind patterns, boat speed metrics, and course positioning—into clear, actionable information. Whether you're racing around the buoys or navigating offshore, SailWatchPro empowers your team to make fast, confident decisions when every second counts.
 
 ---
 
@@ -29,7 +29,7 @@ SailWatchPro extends and enhances the power of Expedition Marine, bringing its c
 
 ### 📊 User-Definable Dashboards
 - **Any Expedition Marine Channel may be selected as a user-defined field.
-- **Performance Data Aggregators for cog, sog, vmc, vmc%, Target Boat%, vmg, vmg%, polar% calculated to 5, 10, and 15 minute rolling averages. 
+- **Performance Data Aggregators for cog, sog, vmg, vmg%, vmc, vmc%, polar%, and Target Boat% calculated to 5, 10, and 15 minute rolling averages. 
 - **Wind Shift Detection**: Automatic trend analysis with confidence indicators.
 - **Lift/Header Identification**: Real-time sailing angle optimization
 
