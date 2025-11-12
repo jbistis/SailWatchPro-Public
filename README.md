@@ -44,6 +44,10 @@ SailWatchPro extends and enhances Expedition Marine's capabilities, bringing the
 
 There are 12 user-defined dashboards.
 
+<div align="center">
+ <img src="images/swp-apple-watch-views.png" width="512"/>
+</div>
+
 **Key Insight**: Many dashboard fields also support context-aware switching based on your sailing mode (upwind/reaching/downwind) and provide color feedback for out-of-bounds conditions.
 
 ### ⏱️ Pre-Start
@@ -520,7 +524,7 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 ---
 
 ## Getting Started
-- **Latest Version**: Because this app shares data between users, it is essential that all iOS devices run the same version of the app.
+- **Latest Version**: Because this app shares data between users, it is recommended that all iOS devices run the same version of the app.
 
 ### First Launch Setup
 
@@ -582,7 +586,7 @@ TWA, TWS, TWS, VMC, VMC %
 
 SailWatchPro is continuously updated with new features and improvements based on user feedback and racing experience. Regular updates include enhanced analytics, new data visualizations, and improved integration with marine electronics.
 
-For the best racing experience, ensure both your iPhone and Apple Watch apps are updated to the latest versions.
+For the best racing experience, ensure both your iPhone and Apple Watch apps are up to date.
 
 For Support & Enhancement Requests, please contact us at https://github.com/jbistis/SailWatchPro-Public/issues.  We’re eager to hear your suggestions on features that would make the app even more valuable to you.
 
