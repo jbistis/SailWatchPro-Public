@@ -39,7 +39,7 @@ SailWatchPro extends and enhances Expedition Marine's capabilities, bringing the
 - Performance Data Aggregators for cog, sog, vmg, vmg%, vmc, vmc%, polar%, and Target Boat% calculated to 5, 10, and 15 minute rolling averages.
 
 <div align="center">
- <img src="images/swp-dashboard-compass-portrait-light.png" width="128"/>  
+ <img src="images/swp-dashboard-compass-landscape-light.png" width="128"/>  
  <img src="images/swp-dashboard-3x3-landscape-light.png" width="128"/>
  <img src="images/swp-dashboard-2x2-landscape-light.png" width="128"/>
  <img src="images/swp-dashboard-1x2-landscape-light.png" width="128"/>
