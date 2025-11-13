@@ -27,10 +27,10 @@ SailWatchPro brings Expedition Marine data above deck with a touch-friendly inte
 ## Key Features
 
 <div align="center">
- <img src="images/swp-dashboard-3x3-landscape-light" width="128"/>
- <img src="images/swp-dashboard-3x3-landscape-light" width="128"/>
- <img src="images/swp-dashboard-3x3-landscape-light" width="128"/>
- <img src="images/swp-dashboard-3x3-landscape-light" width="128"/>
+ <img src="images/swp-dashboard-3x3-landscape-light.png" width="128"/>
+ <img src="images/swp-dashboard-3x3-landscape-light.png" width="128"/>
+ <img src="images/swp-dashboard-3x3-landscape-light.png" width="128"/>
+ <img src="images/swp-dashboard-3x3-landscape-light.png" width="128"/>
 </div>
 
 ### 📊 **Customizable Dashboards**
