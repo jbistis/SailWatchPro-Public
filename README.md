@@ -44,6 +44,7 @@ SailWatchPro extends and enhances Expedition Marine's capabilities, bringing the
  <img src="images/swp-dashboard-1x2-landscape-light.png" width="128"/>
  <img src="images/swp-dashboard-1x1-landscape-light.png" width="128"/>  
  <img src="images/swp-dashboard-compass-landscape-light.png" width="128"/>  
+ <img src="images/swp-dashboard-2x3-wind-portrait-light.png" width="128"/> 
 </div>
 
 There are 12 user-defined dashboards.
