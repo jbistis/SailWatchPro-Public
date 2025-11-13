@@ -39,12 +39,10 @@ SailWatchPro extends and enhances Expedition Marine's capabilities, bringing the
 - Performance Data Aggregators for cog, sog, vmg, vmg%, vmc, vmc%, polar%, and Target Boat% calculated to 5, 10, and 15 minute rolling averages.
 
 <div align="center">
- <img src="images/swp-pre-start-landscape-dashboard-light.png" width="128"/>
- <img src="images/swp-buoys-landscape-dashboard-light.png" width="128"/>
- <img src="images/swp-2x2-wind-landscape-dashboard-light.png" width="128"/>
- <img src="images/swp-1x1-wind-landscape-dashboard-light.png" width="128"/>
- <img src="images/swp-offshore-dashboard-light.png" width="128"/>
- <img src="images/swp-compass-dashboard-dark.png" width="128"/>  
+ <img src="images/swp-dashboard-3x3-landscape-light.png" width="128"/>
+ <img src="images/swp-dashboard-2x2-landscape-light.png" width="128"/>
+ <img src="images/swp-dashboard-2x1-landscape-light.png" width="128"/>
+ <img src="images/swp-dashboard-1x1-landscape-light.png" width="128"/>  
 </div>
 
 There are 12 user-defined dashboards.
