@@ -20,7 +20,9 @@
 
 ## What It Does
 
-SailWatchPro brings Expedition Marine data above deck with a touch-friendly interface for iPad, iPhone, and Apple Watch. Instead of going below to check the nav station, you get real-time tactical data in the cockpit—wind trends, competitor positions, performance metrics, and start line analysis.
+SailWatchPro extends and enhances Expedition Marine's capabilities, bringing them above deck with a sleek, touch-friendly interface for iPad, iPad Mini, iPhone, and Apple Watch. Built for competitive sailing, SailWatchPro delivers real-time tactical insights by translating critical data—such as wind patterns, boat speed metrics, and course positioning—into clear, actionable information. Whether you're racing around the buoys or navigating offshore, SailWatchPro empowers your team to make fast, confident decisions when every second counts.
+
+
 
 ---
 
