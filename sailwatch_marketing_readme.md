@@ -52,7 +52,8 @@ Real-time wind trend analysis using rolling averages, FFT, and wavelet transform
 
 ### 🗺️ **Competitor Tracking**
 <div align="center">
-  <img src="images/swp-competitors-gb-2025.png" width="256"/>
+  <img src="images/swp-map-view-with-competitor-light.png" width="256"/>
+  <img src="images/swp-competitor-view-light.png" width="256"/>
 </div>
 
 Track competitor positions with calculated metrics including distance ahead/behind, corrected time deltas, and lateral separation. Import competitor data from YachtScoring or CSV files, with automatic ORC rating retrieval. The system identifies threats based on proximity and tactical position.
