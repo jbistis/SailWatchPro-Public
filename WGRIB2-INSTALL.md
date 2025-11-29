@@ -17,15 +17,15 @@ This document describes the step-by-step process to build, update, and integrate
 
 ## Step 1: Clean Previous Builds
 
-cd /Users/jamesbistis/dev/SailWatchPro/ios-build
-rm -rf build build-simulator install install-simulator universal
+- cd /Users/jamesbistis/dev/SailWatchPro/ios-build
+- rm -rf build build-simulator install install-simulator universal
 
 ---
 
 ## Step 2: Build for Device (**arm64**)
 
-mkdir -p build
-cmake -S ../wgrib2 -B build \
+- mkdir -p build
+- cmake -S ../wgrib2 -B build \
   -DCMAKE_SYSTEM_NAME=iOS \
   -DCMAKE_OSX_ARCHITECTURES=arm64 \
   -DCMAKE_OSX_SYSROOT=$(xcrun --sdk iphoneos --show-sdk-path) \
