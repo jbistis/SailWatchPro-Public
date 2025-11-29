@@ -10,6 +10,13 @@ This document describes the step-by-step process to build, update, and integrate
 - Xcode 16.x (WWDC 2024, iOS 18.5/SDK 26.0)
 ```
 brew install jasper libpng zlib libaec
+git clone https://github.com/NOAA-EMC/wgrib2.git
+cd wgrib2
+mkdir build && cd build
+cmake .. -DMAKE_C_API=ON
+make -j
+sudo make install
+
 ```
 - Homebrew and CMake:
   ```
