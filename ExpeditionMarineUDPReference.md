@@ -46,6 +46,21 @@ This is a technical guide to the canonical UDP message interface used for remote
 - All parameters are required, except for optional Lat/Long (e.g., in MOB command).
 - No duplicated message types for wind, weather, or app-specific sync.
 
+## Swift Checksum Calculator for Expedition Marine
+
+```
+  private func calculateCorrectChecksum(_ command: String) -> String {
+        // Calculate XOR checksum including the # character (official EM protocol)
+        // XOR all characters from start up to (but not including) the '*' character
+        if let asteriskIndex = command.firstIndex(of: "*") {
+            let dataToCheck = String(command[..<asteriskIndex])
+            let checksum = dataToCheck.utf8.reduce(0) { $0 ^ $1 }
+            return String(format: "%02X", checksum)
+        }
+        return "00"
+    }
+```
+
 ---
 
 ## Examples
