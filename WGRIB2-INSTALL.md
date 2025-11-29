@@ -8,6 +8,9 @@ This document describes the step-by-step process to build, update, and integrate
 ## Prerequisites
 
 - Xcode 16.x (WWDC 2024, iOS 18.5/SDK 26.0)
+```
+brew install jasper libpng zlib libaec
+```
 - Homebrew and CMake:
   ```
   brew install cmake
