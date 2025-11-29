@@ -12,6 +12,12 @@ This document describes the step-by-step process to build, update, and integrate
   brew install cmake
 - wgrib2 source code checked out in your project at:  
   `/Users/jamesbistis/dev/SailWatchPro/wgrib2`
+  ```
+  cd /Users/jamesbistis/dev/SailWatchPro/
+  ```
+  ```
+  git clone https://github.com/NOAA-EMC/NCEPLIBS-wgrib2.git wgrib2
+  ```
 
 ---
 
