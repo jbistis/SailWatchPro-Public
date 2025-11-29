@@ -16,9 +16,12 @@ This document describes the step-by-step process to build, update, and integrate
 ---
 
 ## Step 1: Clean Previous Builds
-
-- cd /Users/jamesbistis/dev/SailWatchPro/ios-build
-- rm -rf build build-simulator install install-simulator universal
+```
+cd /Users/jamesbistis/dev/SailWatchPro/ios-build
+```
+```
+rm -rf build build-simulator install install-simulator universal
+```
 
 ---
 
