@@ -12,7 +12,6 @@ This document describes the step-by-step process to build, update, and integrate
   ```
   brew install cmake
   ```
-  `/Users/jamesbistis/dev/SailWatchPro/wgrib2`
   ```
   cd /Users/jamesbistis/dev/SailWatchPro/
   ```
