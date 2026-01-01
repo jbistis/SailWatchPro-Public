@@ -85,7 +85,13 @@ Once you select your race course, the software automatically defines the race ar
   <img src="images/swp-buoy-list-view-light.png" width="256"/>
 </div>
 
-Import your GRIB files, and SailWatchPro overlays predicted vs. actual weather for every key station, tracking how reality is diverging from the forecast in real time. See exactly where, when, and how the wind, pressure, or other elements are shifting differently than expected—across the entire race area.
+Import your GRIB files, and SailWatchPro overlays predicted vs. actual weather for every key station, tracking how reality is diverging from the forecast in real time. 
+
+<div align="center">
+  <img src="images/buoy-observed-grib.png" width="256"/>
+</div>
+
+See exactly where, when, and how the wind, pressure, or other elements are shifting differently than expected—across the entire race area.
 Stop guessing. Start knowing.  Gain the advantage the fleet can't see coming.
 
 ## Competitor Tracking and Threat Assessment
