@@ -37,7 +37,7 @@ The software is comprised from 4 functional pillars:
 Staying organized and dialed in during the pre-start phase is critical for nailing a perfect start. Expedition delivers world-class pre-start tools—line pings, timers, bias calculations, and more—but it often relies on a single user often below deck having to mouse click through to a Windows/tablet interface.
 
 <div align="center">
- <img src="images/swp-start-view-light.png" width="256"/>
+ <img src="images/swp-prestart-view-light.png" width="256"/>
 </div>
 
 <strong>SailWatchPro upgrades that workflow for the modern boat</strong><br>
@@ -53,6 +53,10 @@ Let the deck team own the start—confidently.
  
 ### Start Line
 The starting box 
+
+<div align="center">
+ <img src="images/swp-start-view-light.png" width="256"/>
+</div>
 
 ### Navigator View and Racing Dashboards
 
