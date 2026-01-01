@@ -55,7 +55,7 @@ Let the deck team own the start—confidently.
 The starting box 
 
 <div align="center">
- <img src="images/swp-start-view-light.png" width="256"/>
+ <img src="images/swp-start-view-light.png" width="384"/>
 </div>
 
 ### Navigator View and Racing Dashboards
@@ -86,13 +86,13 @@ In their limited spare time (when not sleeping), most navigators juggle GRIB vie
 Once you select your race course, the software automatically defines the race area and identifies the most relevant weather observation stations. With a simple set-it-and-forget-it setup, it periodically fetches the latest buoy data at your chosen interval—no more manual hunting.  
 
 <div align="center">
-  <img src="images/swp-buoy-list-view-light.png" width="256"/>
+  <img src="images/swp-buoy-list-view-light.png" width="384"/>
 </div>
 
 Import your GRIB files, and SailWatchPro overlays predicted vs. actual weather for every key station, tracking how reality is diverging from the forecast in real time. 
 
 <div align="center">
-  <img src="images/buoy-observed-grib.png" width="256"/>
+  <img src="images/buoy-observed-grib.png" width="384"/>
 </div>
 
 See exactly where, when, and how the wind, pressure, or other elements are shifting differently than expected—across the entire race area.
@@ -118,7 +118,7 @@ For both handicaped racing, the software calculates live corrected time for ever
 </ul>
 
 <div align="center">
-  <img src="images/swp-competitor-view-light.png" width="256"/>
+  <img src="images/swp-competitor-view-light.png" width="384"/>
   <!-- <img src="images/swp-map-view-with-competitor-light.png" width="256"/> -->
 </div>
 
