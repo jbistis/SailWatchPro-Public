@@ -51,10 +51,18 @@ Let the deck team own the start—confidently.
 The starting box 
 
 ### Navigator View and Racing Dashboards
-Once clear of the start line, staying aware of key data points while also trying to sail our most optimal course and trim requires keeping awware of critcal metrics.  Too often it is after a race is over, we have what the French refer to as l'esprit de l'escalier.  It describes the feeling of recovering your sharp thoughts only once you're no longer in the situation to use them.
-Mast displays do well for displaying NMEA and Expedition Marine data such as boat speeds, headings, and the boat's attainment toward its speed capabilites, but for competent sailing teams, most metrics are optimized most of the time but it is the few that are not that change over time that are do not make their way even to the most cluttered eye-chart of a deck screen.  Additionally, there are times where an out of bounds condition is only known when considering multiple datapoints together such as the relationship between the mark bearing and oppostive tack or a single data point over a longer period of time beyond the instant value or value percentage, even if dampened.  Our averaging engine computes rolling 5, 10, and 15 minute averaging for relevant Expedition Marine data where longer views help make better decisions.  For example, in an Offshore race, having your VMG% or COG is nice to see on a mast display but it is more meaningful to see your 5, 10, or 15 minute COG and VMG% to make sure the driver understands the objective and is performing to expectations.  
 
-Our Navigator View and Racing Dashboards provide this essential information to help us fly the right sail, not overstand a layline, or stay on course, just to name a few.
+<strong>Stay Ahead of the Drift</strong><br>
+Once clear of the start line, the real challenge begins: sailing your most optimal course and trim while monitoring critical metrics in real time. Too often, the sharpest insights arrive only after the race—when it’s too late to act. The French call this l’esprit de l’escalier (“staircase wit”): the feeling of recovering your sharp thoughts only once you’re no longer in the situation to use them.
+
+Mast displays do an excellent job showing live NMEA and Expedition data—boat speeds, headings, polar performance percentages, and more. For strong teams, most metrics stay optimized most of the time. But the race is won or lost in the few that drift off target over minutes, not seconds—subtle changes that even the most cluttered deck displays can miss.
+
+Worse, some critical conditions only reveal themselves when combining multiple data points or viewing trends over time: the relationship between mark bearing and opposite-tack layline, or a persistent current push that’s slowly knocking COG/VMG.
+
+<strong>SailWatchPro’s averaging engine changes that</strong>
+It automatically computes rolling 5-, 10-, and 15-minute averages for key Expedition-fed metrics where longer context drives better decisions. In offshore or long-leg racing, instant VMG% or COG on the mast is useful—but seeing your 5/10/15-minute trends tells the driver (and tactician) if they’re truly holding the objective, catching a slow leeway drift, or needing a mode adjustment before it costs you the leg.
+No more hindsight regrets.  Get the long view in real time—so you can correct course before the fleet does.
+Our Navigator View and Racing Dashboards provide this essential information to help us fly the right sail, not overstand a layline, or stay on the optimal course, just to name a few.
 
 
 ### Racing Dashboards
