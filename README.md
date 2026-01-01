@@ -125,6 +125,10 @@ With modern racing sailboats, information overload is almost inevitable. Sensors
 Continuously compares Speed Through Water (STW) to Speed Over Ground (SOG) and alerts you when you're pushing too much current (or getting a free ride).
 Tracks your desired heading to the next mark against actual Course Over Ground (COG), warning you the moment you're being gradually knocked off your line by leeway or current.
 
+<div align="center">
+ <img src="images/swp-advisories-light.png" width="512"/>
+</div>
+
 These are just two of many preconfigured, extensible advisories—tailor them to your boat, your crew, and your race strategy.
 Sure, you can get this information by staring at mast displays, scribbling notes, and doing constant mental calculations…
 But why burn brainpower when SailWatchPro can watch it for you, 24/7, and only interrupt when it matters?
