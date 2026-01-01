@@ -36,6 +36,10 @@ The software is divided into 4 pillars:
 <strong>Master the Pre-Start with SailWatchPro's Mobile Edge</strong><br>
 Staying organized and dialed in during the pre-start phase is critical for nailing a perfect start. Expedition delivers world-class pre-start tools—line pings, timers, bias calculations, and more—but it often relies on a single user often below deck having to mouse click through to a Windows interface.
 
+<div align="center">
+ <img src="images/swp-start-view-light.png" width="256"/>
+</div>
+
 <strong>SailWatchPro upgrades that workflow for the modern boat</strong><br>
 It replaces Expedition's clicks with intuitive iOS touch controls on iPad, iPhone, or even Apple Watch. Above-decks crew can now divide roles seamlessly: ping the line ends, manage the countdown timer, select and lock the course—all with quick taps, no heads-down fumbling.
 Once the timer and course are set (still powered by Expedition's precision below), SailWatchPro delivers a clean, visual starting dashboard tailored for the tactician. Get instant guidance on approach decisions, including start advice factoring in current wind, local current effects, line bias, and bearing to the first mark.<br>
