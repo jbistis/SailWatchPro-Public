@@ -117,6 +117,11 @@ For both handicaped racing, the software calculates live corrected time for ever
   <li>Or play it safe, cover the fleet, and cross the line to the podium?</li>
 </ul>
 
+<div align="center">
+  <img src="images/swp-competitor-view-light.png" width="256"/>
+  <!-- <img src="images/swp-map-view-with-competitor-light.png" width="256"/> -->
+</div>
+
 With the automated ORC interface, simply select the scoring method once the Race Committee announces it—SailWatchPro downloads all registered boats' TCFs automatically. No more tedious manual entry.
 Enter your competitors' boat details once to a csv file, then just click who you're racing against for any given race. It's effortless fleet awareness that lets you sail smarter, react faster, and win more.
 Stop guessing your position on handicap.  Start knowing—and acting on it—in real time.
