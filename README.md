@@ -20,7 +20,7 @@
 SailWatchPro extends and enhances Expedition Marine's capabilities, bringing them above deck with a sleek, touch-friendly interface for iPad, iPad Mini, iPhone, and Apple Watch. Built for competitive sailing, SailWatchPro delivers real-time tactical insights by synthesizing critical data—such as weather patterns, boat speed metrics, and course positioning—into clear, coherent actionable information and advisories. Whether you're racing around the buoys or navigating offshore, SailWatchPro empowers your team to make fast, confident decisions when every second counts.
 
 # **Application Pillars**
-The software is comprised from 4 pillars:
+The software is comprised from 4 functional pillars:
 <ul>
   <li>Racing Management</li>
   <li>Weather Observations and Analytics</li>
@@ -34,7 +34,7 @@ The software is comprised from 4 pillars:
 
 ### Prestart
 <strong>Master the Pre-Start with SailWatchPro's Mobile Edge</strong><br>
-Staying organized and dialed in during the pre-start phase is critical for nailing a perfect start. Expedition delivers world-class pre-start tools—line pings, timers, bias calculations, and more—but it often relies on a single user often below deck having to mouse click through to a Windows interface.
+Staying organized and dialed in during the pre-start phase is critical for nailing a perfect start. Expedition delivers world-class pre-start tools—line pings, timers, bias calculations, and more—but it often relies on a single user often below deck having to mouse click through to a Windows/tablet interface.
 
 <div align="center">
  <img src="images/swp-start-view-light.png" width="256"/>
@@ -64,15 +64,12 @@ Mast displays do an excellent job showing live NMEA and Expedition data—boat s
 Worse, some critical conditions only reveal themselves when combining multiple data points or viewing trends over time: the relationship between mark bearing and opposite-tack layline, or a persistent current push that’s slowly knocking COG/VMG.
 
 <strong>SailWatchPro’s averaging engine changes that</strong>
-It automatically computes rolling 5-, 10-, and 15-minute averages for key Expedition-fed metrics where longer context drives better decisions. In offshore or long-leg racing, instant VMG% or COG on the mast is useful—but seeing your 5/10/15-minute trends tells the driver (and tactician) if they’re truly holding the objective, catching a slow leeway drift, or needing a mode adjustment before it costs you the leg.
+It automatically computes rolling 5-, 10-, and 15-minute averages for key Expedition-fed channels where longer context drives better decisions. In offshore or long-leg racing, instant VMG% or COG on the mast is useful—but seeing your 5/10/15-minute trends tells the driver (and tactician) if they’re truly holding the objective, catching a slow leeway drift, or needing a mode adjustment before it costs you the leg.
 No more hindsight regrets.  Get the long view in real time—so you can correct course before the fleet does.
 Our Navigator View and Racing Dashboards provide this essential information to help us fly the right sail, not overstand a layline, or stay on the optimal course, just to name a few.
 
-
 ### Racing Dashboards
-The racing dashboards are designed to assit in making smarter decisions.  
-
-
+The app includes 12 customizable racing dashboards where the user may include any of their favoritve Expeition channels.  In addition, SailWatchPro  includes many more computed channels that are derived from the Expdition channels including those maintained by the Averaging Engine.
 
 <!-- Section - Weather Observations and Analytics -->
 ## Weather Observation and Analytics
@@ -80,8 +77,15 @@ The racing dashboards are designed to assit in making smarter decisions.
 Weather forecasts start degrading the moment they're published. Savvy navigators know that understanding spatial and temporal inaccuracies is often the difference between leading the fleet and chasing it.
 In their limited spare time (when not sleeping), most navigators juggle GRIB viewers, surf buoy data on their phone, and scribble notes about shifting winds—trying to build a big-picture view of what's really happening across the race area. Boat instruments are great, but your boat is essentially just one moving buoy—it can't show you the larger view.
 <br><br>
+
 <strong>SailWatchPro changes the game</strong><br>
-Once you select your race course, the software automatically defines the race area and identifies the most relevant weather observation stations. With a simple set-it-and-forget-it setup, it periodically fetches the latest buoy data at your chosen interval—no more manual hunting.  Import your GRIB files, and SailWatchPro overlays predicted vs. actual weather for every key station, tracking how reality is diverging from the forecast in real time. See exactly where, when, and how the wind, pressure, or other elements are shifting differently than expected—across the entire race area.
+Once you select your race course, the software automatically defines the race area and identifies the most relevant weather observation stations. With a simple set-it-and-forget-it setup, it periodically fetches the latest buoy data at your chosen interval—no more manual hunting.  
+
+<div align="center">
+  <img src="images/swp-buoy-list-view-light.png" width="256"/>
+</div>
+
+Import your GRIB files, and SailWatchPro overlays predicted vs. actual weather for every key station, tracking how reality is diverging from the forecast in real time. See exactly where, when, and how the wind, pressure, or other elements are shifting differently than expected—across the entire race area.
 Stop guessing. Start knowing.  Gain the advantage the fleet can't see coming.
 
 ## Competitor Tracking and Threat Assessment
