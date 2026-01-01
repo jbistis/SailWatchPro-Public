@@ -48,7 +48,7 @@ Let the deck team own the start—confidently.
 </div> -->
  
 ### Start Line
-The Starting Dashboard provides
+The starting box 
 
 ### Navigator View and Racing Dashboards
 Once clear of the start line, staying aware of key data points while also trying to sail our most optimal course and trim requires keeping awware of critcal metrics.  Too often it is after a race is over, we have what the French refer to as l'esprit de l'escalier.  It describes the feeling of recovering your sharp thoughts only once you're no longer in the situation to use them.
@@ -58,7 +58,9 @@ Our Navigator View and Racing Dashboards provide this essential information to h
 
 
 ### Racing Dashboards
-While racing the Navigator View provide 
+The racing dashboards are designed to assit in making smarter decisions.  
+
+
 
 <!-- Section - Weather Observations and Analytics -->
 ## Weather Observation and Analytics
