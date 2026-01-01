@@ -20,7 +20,7 @@
 SailWatchPro extends and enhances Expedition Marine's capabilities, bringing them above deck with a sleek, touch-friendly interface for iPad, iPad Mini, iPhone, and Apple Watch. Built for competitive sailing, SailWatchPro delivers real-time tactical insights by synthesizing critical data—such as weather patterns, boat speed metrics, and course positioning—into clear, coherent actionable information and advisories. Whether you're racing around the buoys or navigating offshore, SailWatchPro empowers your team to make fast, confident decisions when every second counts.
 
 # **Application Pillars**
-The software is divided into 4 pillars:
+The software is comprised from 4 pillars:
 <ul>
   <li>Racing Management</li>
   <li>Weather Observations and Analytics</li>
