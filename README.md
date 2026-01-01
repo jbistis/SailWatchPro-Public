@@ -126,7 +126,7 @@ Continuously compares Speed Through Water (STW) to Speed Over Ground (SOG) and a
 Tracks your desired heading to the next mark against actual Course Over Ground (COG), warning you the moment you're being gradually knocked off your line by leeway or current.
 
 <div align="center">
- <img src="images/swp-advisories-light.png" width="128"/>
+ <img src="images/swp-advisories-light.png" width="512"/>
 </div>
 
 These are just two of many preconfigured, extensible advisories—tailor them to your boat, your crew, and your race strategy.
