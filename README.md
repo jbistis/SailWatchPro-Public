@@ -50,8 +50,12 @@ Let the deck team own the start—confidently.
 ### Start Line
 The Starting Dashboard provides
 
-### Navigator View
-Once we are clear of the start line and racing.  Staying aware of the coourse and keeping in mind the relevant inforation is key to doing well.  Too often it is after a race is over, we have what the French refer to as l'esprit de l'escalier.  It describes the feeling of recovering your sharp thoughts only once you're no longer in the situation to use them.
+### Navigator View and Racing Dashboards
+Once clear of the start line, staying aware of key data points while also trying to sail our most optimal course and trim requires keeping awware of critcal metrics.  Too often it is after a race is over, we have what the French refer to as l'esprit de l'escalier.  It describes the feeling of recovering your sharp thoughts only once you're no longer in the situation to use them.
+Mast displays do well for displaying NMEA and Expedition Marine data such as boat speeds, headings, and the boat's attainment toward its speed capabilites, but for competent sailing teams, most metrics are optimized most of the time but it is the few that are not that change over time that are do not make their way even to the most cluttered eye-chart of a deck screen.  Additionally, there are times where an out of bounds condition is only known when considering multiple datapoints together such as the relationship between the mark bearing and oppostive tack or a single data point over a longer period of time beyond the instant value or value percentage, even if dampened.  Our averaging engine computes rolling 5, 10, and 15 minute averaging for relevant Expedition Marine data where longer views help make better decisions.  For example, in an Offshore race, having your VMG% or COG is nice to see on a mast display but it is more meaningful to see your 5, 10, or 15 minute COG and VMG% to make sure the driver understands the objective and is performing to expectations.  
+
+Our Navigator View and Racing Dashboards provide this essential information to help us fly the right sail, not overstand a layline, or stay on course, just to name a few.
+
 
 ### Racing Dashboards
 While racing the Navigator View provide 
