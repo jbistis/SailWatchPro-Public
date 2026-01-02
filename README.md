@@ -168,27 +168,12 @@ Stay ahead of the fleet. Stay focused on the race.
 ### 📊 **Customizable Dashboards**
 12 different layouts that display any Expedition Marine channel. Configure them for different race scenarios—pre-start, upwind work, reaching, or offshore. Fields show context-aware data based on sailing mode and provide visual alerts for out-of-range conditions.
 
-### 🎯 **Start Line Tools**
-<div align="center">
- <img src="images/swp-start-view-light.png" width="256"/>
-</div>
-
-Ping start line pins with a double-tap. The app calculates line bias, distance below line, and displays laylines with timing data for port, center, and starboard positions. Set countdown timers and sync them to the race sequence.
-
 ### 🌬️ **Wind Analysis**
 <div align="center">
  <img src="images/swp-wind-state.png" width="256"/>
 </div>
 
 Real-time wind trend analysis using rolling averages, FFT, and wavelet transforms. The app identifies patterns like veering, backing, building, or oscillating conditions and displays them with confidence indicators. Maintains a 6-hour wind history that automatically syncs across all crew devices on your boat's network.
-
-### 🗺️ **Competitor Tracking**
-<div align="center">
-  <img src="images/swp-competitor-view-light.png" width="256"/>
-  <img src="images/swp-map-view-with-competitor-light.png" width="256"/>
-</div>
-
-Track competitor positions with calculated metrics including distance ahead/behind, corrected time deltas, and lateral separation. Import competitor data from YachtScoring or CSV files, with automatic ORC rating retrieval. The system identifies threats based on proximity and tactical position.
 
 ### 🗺️ **Navigation & Course Management**
 <div align="center">
