@@ -86,7 +86,7 @@ In their limited spare time (when not sleeping), most navigators juggle GRIB vie
 Once you select your race course, the software automatically defines the race area and identifies the most relevant weather observation stations. With a simple set-it-and-forget-it setup, it periodically fetches the latest buoy data at your chosen interval—no more manual hunting.  
 
 <div align="center">
-  <img src="images/swp-buoy-list-view-light.png" width="384"/>
+  <img src="images/swp-buoy-list-view-with-trends-light.png" width="384"/>
 </div>
 
 Import your GRIB files, and SailWatchPro overlays predicted vs. actual weather for every key station, tracking how reality is diverging from the forecast in real time. 
