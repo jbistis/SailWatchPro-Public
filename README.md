@@ -52,7 +52,7 @@ Let the deck team own the start—confidently.
 </div> -->
  
 ### Start Line
-The starting box 
+The starting box is a rather hectic time and place when in sequence.  Expedition Marine excels at calculating the numbers you need to nail the start, including all the times and distances to line, to burn, and to gun, to name just a few.  SailWatchPro presents a startbox in the iOS interface that includes start advice, a visual representation of the start line bias, and the RC boat flags you should see for your current place in the sequence, to help ensure you have it right.  
 
 <div align="center">
  <img src="images/swp-iPad-start-view-with-flags-light.png" width="384"/>
