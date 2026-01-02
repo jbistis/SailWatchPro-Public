@@ -63,22 +63,22 @@ The starting box
 <strong>Stay Ahead of the Drift</strong><br>
 Once clear of the start line, the real challenge begins: sailing your most optimal course and trim while monitoring critical metrics in real time. Too often, the sharpest insights arrive only after the race—when it’s too late to act. The French call this l’esprit de l’escalier (“staircase wit”): the feeling of recovering your sharp thoughts only once you’re no longer in the situation to use them.
 
-Mast displays do an excellent job showing live NMEA and Expedition data—boat speeds, headings, polar performance percentages, and more. For strong teams, most metrics stay optimized most of the time. But the race is won or lost in the few that drift off target over minutes, not seconds—subtle changes that even the most cluttered deck displays can miss.
+Mast displays excel at displaying live NMEA and Expedition data—boat speeds, headings, polar performance percentages, and more. For strong teams, most metrics stay optimized most of the time. But the race is won or lost in the few that drift off target over minutes, not hours—subtle changes that even the most cluttered deck displays can miss.
 
 Worse, some critical conditions only reveal themselves when combining multiple data points or viewing trends over time: the relationship between mark bearing and opposite-tack layline, or a persistent current push that’s slowly knocking COG/VMG.
 
 <strong>SailWatchPro’s averaging engine changes that</strong>
 It automatically computes rolling 5-, 10-, and 15-minute averages for key Expedition-fed channels where longer context drives better decisions. In offshore or long-leg racing, instant VMG% or COG on the mast is useful—but seeing your 5/10/15-minute trends tells the driver (and tactician) if they’re truly holding the objective, catching a slow leeway drift, or needing a mode adjustment before it costs you the leg.
 No more hindsight regrets.  Get the long view in real time—so you can correct course before the fleet does.
-Our Navigator View and Racing Dashboards provide essential information to help us fly the right sail, not overstand a layline, or stay on the optimal course, among other benefits.
+Our Navigator View and Racing Dashboards provide essential information to help us fly the right sail, avoid overstanding a layline, and stay on the optimal course, among other benefits.
 
 ### Racing Dashboards
-The app includes 12 customizable racing dashboards where users can add any of their favorite Expedition channels.  In addition, SailWatchPro includes many more computed channels that are derived from the Expedition channels, including those maintained by the Averaging Engine.
+The app includes 12 customizable racing dashboards that users can add their favorite Expedition channels to.  In addition, SailWatchPro includes many more computed channels that are derived from the Expedition channels, including those maintained by the Averaging Engine.
 
 <!-- Section - Weather Observations and Analytics -->
 ## Weather Observation and Analytics
 <strong>Unlock the Real Race Weather Edge with SailWatchPro</strong><br>
-Weather forecasts start degrading the moment they're published. Savvy navigators know that understanding spatial and temporal inaccuracies is often the difference between leading the fleet and chasing it.
+Weather forecasts begin to degrade the moment they're published. Savvy navigators know that understanding spatial and temporal inaccuracies is often the difference between leading the fleet and chasing it.
 In their limited spare time (when not sleeping), most navigators juggle GRIB viewers, surf buoy data on their phone, and scribble notes about shifting winds—trying to build a big-picture view of what's really happening across the race area. Boat instruments are great, but your boat is essentially just one moving buoy—it can't show you the larger view.
 <br><br>
 
@@ -89,7 +89,8 @@ Once you select your race course, the software automatically defines the race ar
   <img src="images/swp-buoy-list-view-with-trends-light.png" width="384"/>
 </div>
 
-Import your GRIB files, and SailWatchPro overlays predicted vs. actual weather for every key station, tracking how reality is diverging from the forecast in real time. 
+<strong>Visualize the actual weather to the forecasted and predicted trends</strong><br>
+Import your GRIB files, and SailWatchPro overlays predicted vs. actual weather for every key station, tracking how reality is diverging from the forecast in real time.  Also included is a linear regression analysis of buoy data history to provide an additional predictive dataset.  
 
 <div align="center">
   <img src="images/buoy-observed-grib.png" width="384"/>
