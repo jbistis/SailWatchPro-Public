@@ -17,10 +17,10 @@
 </p>
 
 # **What it does**
-SailWatchPro extends and enhances Expedition Marine's capabilities, bringing them above deck with a sleek, touch-friendly interface for iPad, iPad Mini, iPhone, and Apple Watch. Built for competitive sailing, SailWatchPro delivers real-time tactical insights by synthesizing critical data—such as weather patterns, boat speed metrics, and course positioning—into clear, coherent actionable information and advisories. Whether you're racing around the buoys or navigating offshore, SailWatchPro empowers your team to make fast, confident decisions when every second counts.
+SailWatchPro extends and enhances Expedition Marine's capabilities, bringing them above deck with a sleek, touch-friendly interface for iPad, iPad Mini, iPhone, and Apple Watch. Built for competitive sailing, SailWatchPro delivers real-time tactical insights by synthesizing critical data—such as weather patterns, boat speed metrics, and course positioning—into clear, coherent, actionable information and advisories. Whether you're racing around the buoys or navigating offshore, SailWatchPro empowers your team to make fast, confident decisions when every second counts.
 
 # **Application Pillars**
-The software is comprised from 4 functional pillars:
+The software is comprised of 4 functional pillars:
 <ul>
   <li>Racing Management</li>
   <li>Weather Observations and Analytics</li>
@@ -34,7 +34,7 @@ The software is comprised from 4 functional pillars:
 
 ### Prestart
 <strong>Master the Pre-Start with SailWatchPro's Mobile Edge</strong><br>
-Staying organized and dialed in during the pre-start phase is critical for nailing a perfect start. Expedition delivers world-class pre-start tools—line pings, timers, bias calculations, and more—but it often relies on a single user often below deck having to mouse click through to a Windows/tablet interface.
+Staying organized and dialed in during the pre-start phase is critical for nailing a perfect start. Expedition delivers world-class pre-start tools—line pings, timers, bias calculations, and more—but it often relies on a single user, typically below deck, to mouse-click through to a Windows/tablet interface.
 
 <div align="center">
  <img src="images/swp-prestart-view-light.png" width="384"/>
@@ -70,10 +70,10 @@ Worse, some critical conditions only reveal themselves when combining multiple d
 <strong>SailWatchPro’s averaging engine changes that</strong>
 It automatically computes rolling 5-, 10-, and 15-minute averages for key Expedition-fed channels where longer context drives better decisions. In offshore or long-leg racing, instant VMG% or COG on the mast is useful—but seeing your 5/10/15-minute trends tells the driver (and tactician) if they’re truly holding the objective, catching a slow leeway drift, or needing a mode adjustment before it costs you the leg.
 No more hindsight regrets.  Get the long view in real time—so you can correct course before the fleet does.
-Our Navigator View and Racing Dashboards provide this essential information to help us fly the right sail, not overstand a layline, or stay on the optimal course, just to name a few.
+Our Navigator View and Racing Dashboards provide essential information to help us fly the right sail, not overstand a layline, or stay on the optimal course, among other benefits.
 
 ### Racing Dashboards
-The app includes 12 customizable racing dashboards where the user may include any of their favoritve Expeition channels.  In addition, SailWatchPro  includes many more computed channels that are derived from the Expdition channels including those maintained by the Averaging Engine.
+The app includes 12 customizable racing dashboards where users can add any of their favorite Expedition channels.  In addition, SailWatchPro includes many more computed channels that are derived from the Expedition channels, including those maintained by the Averaging Engine.
 
 <!-- Section - Weather Observations and Analytics -->
 ## Weather Observation and Analytics
@@ -103,7 +103,7 @@ Stop guessing. Start knowing.  Gain the advantage the fleet can't see coming.
 After the start gun, the real race begins: Where are your competitors, and how are you actually performing against them on handicap?
 Competitor boat performance often reveals the fastest path—which side of the course to favor, which areas to avoid. Basic AIS gives you range, bearing, SOG, and COG for each boat… but SailWatchPro goes much further.
 <br><br>
-For both handicaped racing, the software calculates live corrected time for every competitor against yours as the race unfolds. 
+For handicapped racing, the software calculates live corrected time for every competitor against you as the race unfolds. 
 
 <strong>See instantly:</strong>
 <ul>
@@ -113,7 +113,7 @@ For both handicaped racing, the software calculates live corrected time for ever
 
 <strong>It also tracks lateral separation across the fleet—so you can visualize who's leveraged to windward/leeward and decide:</strong>
 <ul>
-  <li>Time to take a risk and lever hard for a comeback?</li>
+  <li>Time to take a risk and leverage hard for a comeback?</li>
   <li>Or play it safe, cover the fleet, and cross the line to the podium?</li>
 </ul>
 
@@ -122,8 +122,8 @@ For both handicaped racing, the software calculates live corrected time for ever
   <!-- <img src="images/swp-map-view-with-competitor-light.png" width="256"/> -->
 </div>
 
-With the automated ORC interface, simply select the scoring method once the Race Committee announces it—SailWatchPro downloads all registered boats' TCFs automatically. No more tedious manual entry.
-Enter your competitors' boat details once to a csv file, then just click who you're racing against for any given race. It's effortless fleet awareness that lets you sail smarter, react faster, and win more.
+With the automated ORC interface, select the scoring method once the Race Committee announces it. SailWatchPro automatically downloads the TCFs for all registered boats. No more tedious manual entry.
+Enter your competitors' boat details once into a CSV file, then select the competitor you're racing against for any given race. Effortless fleet awareness lets you sail smarter, react faster, and win more.
 Stop guessing your position on handicap.  Start knowing—and acting on it—in real time.
 
 ## Strategic and Tactical Advisories
