@@ -89,7 +89,7 @@ Once you select your race course, the software automatically defines the race ar
   <img src="images/swp-buoy-list-view-with-trends-light.png" width="384"/>
 </div>
 
-<strong>Visualize the actual weather to the forecasted and predicted trends</strong><br>
+<strong>Visually overlay the actual weather with the GRIB forecasted and predicted trends</strong><br>
 Import your GRIB files, and SailWatchPro overlays predicted vs. actual weather for every key station, tracking how reality is diverging from the forecast in real time.  Also included is a linear regression analysis of buoy data history to provide an additional predictive dataset.  
 
 <div align="center">
