@@ -55,7 +55,7 @@ Let the deck team own the start—confidently.
 The starting box 
 
 <div align="center">
- <img src="images/swp-iPad-start-view-landscape-light.png" width="384"/>
+ <img src="images/swp-iPad-start-view-with-flags-light.png" width="384"/>
 </div>
 
 ### Navigator View and Racing Dashboards
