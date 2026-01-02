@@ -85,6 +85,7 @@ In their limited spare time (when not sleeping), most navigators juggle GRIB vie
 <strong>SailWatchPro changes the game</strong><br>
 Once you select your race course, the software automatically defines the race area and identifies the most relevant weather observation stations. With a simple set-it-and-forget-it setup, it periodically fetches the latest buoy data at your chosen interval—no more manual hunting.  
 
+### 🌬️ **Weather Station Wind Analysis**
 <div align="center">
   <img src="images/swp-buoy-list-view-with-trends-light.png" width="384"/>
 </div>
@@ -95,6 +96,15 @@ Import your GRIB files, and SailWatchPro overlays predicted vs. actual weather f
 <div align="center">
   <img src="images/buoy-observed-grib.png" width="384"/>
 </div>
+
+In addition to the fixed buoys, your boat is a moving weather station, and its instruments provide valuable information.  Wind is best described as a moving lawn sprinkler that oscillates as it travels from one place to another.  Sailboat teams that can correctly quantify the oscillations within the larger movement gain a distinct advantage in getting longer lifts and smaller knocks.
+
+### 🌬️ **Boat Instrumentation Wind Analysis**
+<div align="center">
+ <img src="images/swp-wind-state.png" width="256"/>
+</div>
+
+Real-time wind trend analysis using rolling averages, FFT, and wavelet transforms. The app identifies patterns such as veering, backing, building, and oscillating conditions and displays them with confidence indicators. Maintains a 6-hour wind history that automatically syncs across all crew devices on your boat's network.
 
 See exactly where, when, and how the wind, pressure, or other elements are shifting differently than expected—across the entire race area.
 Stop guessing. Start knowing.  Gain the advantage the fleet can't see coming.
