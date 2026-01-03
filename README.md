@@ -181,7 +181,7 @@ Stay ahead of the fleet. Stay focused on the race.
 
 ### 🗺️ **Navigation & Course Management**
 <div align="center">
-  <img src="images/swp-navigator-landscape-ALIR-light.png" width="256"/>
+  <img src="images/swp-navigator-landscape-light.png" width="256"/>
 </div>
 
 Electronic charts display your position, race course overlay, and nearby buoy wind data. Mark waypoints with TWA information to plan routing based on forecasted conditions along your course.
