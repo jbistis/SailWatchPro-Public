@@ -48,7 +48,7 @@ Centralized, customizable alerts that watch for you: current push, leeway drift,
 </div>
 
 <div align="center">
-  <img src="images/swp-startline-landscape-light.png" width="512">
+  <img src="images/images/swp-iPad-start-view-with-flags-light.png" width="384">
   <br><em>Start Line Visuals & Bias</em>
 </div>
 
@@ -98,61 +98,7 @@ or email directly: james.bistis@icloud.com
 
 
 
-# SailWatchPro
 
-<p align="center">
-  <a href="https://sailwatchpro.io/">
-    <img alt="SailWatchPro" title="SailWatchPro" src="images/icon-76x76@2x.png">
-  </a>
-</p>
-
-<p align="center">
- <strong>Win More Races. Make Faster Decisions.</strong>
-</p>
-
-<p align="center">
-  <a href="https://docs.google.com/document/d/1cXRDmIqwttnDQbBGQB0azVdZFzVpno5fVTCnSREfSbo/edit?usp=sharing">
-    <img alt="Download on the App Store" title="App Store" src="http://i.imgur.com/0n2zqHD.png" width="140">
-  </a>
-</p>
-
-# **What it does**
-SailWatchPro extends and enhances Expedition Marine's capabilities, bringing them above deck with a sleek, touch-friendly interface for iPad, iPad Mini, iPhone, and Apple Watch. Built for competitive sailing, SailWatchPro delivers real-time tactical insights by synthesizing critical data—such as weather patterns, boat speed metrics, and course positioning—into clear, coherent, actionable information and advisories. Whether you're racing around the buoys or navigating offshore, SailWatchPro empowers your team to make fast, confident decisions when every second counts.
-
-# **Application Pillars**
-The software is comprised of 3 functional pillars with a Tactical Advisory Overlay:
-<div align="center">
- <img src="images/swp-pillars.png" width="384"/>
-</div>
-
-<!-- <ul>
-  <li>Racing Management</li>
-  <li>Weather Observations and Analytics</li>
-  <li>Competitor Tracking and Threat Assessment</li>
-  <li>Strategic and Tactical Advisories</li>
-</ul> -->
-
-<!-- Section - Racing Management -->
-## Racing Management
-
-### Prestart
-<strong>Master the Pre-Start with SailWatchPro's Mobile Edge</strong><br>
-Staying organized and dialed in during the pre-start phase is critical for nailing a perfect start. Expedition delivers world-class pre-start tools—line pings, timers, bias calculations, and more—but it often relies on a single user, typically below deck, to mouse-click through to a Windows/tablet interface.
-
-<div align="center">
- <img src="images/swp-prestart-view-light.png" width="384"/>
-</div>
-
-<strong>SailWatchPro upgrades that workflow for the modern boat</strong><br>
-It replaces Expedition's clicks with intuitive iOS touch controls on iPad, iPhone, or even Apple Watch. Above-decks crew can now divide roles seamlessly: ping the line ends, manage the countdown timer, select and lock the course—all with quick taps, no heads-down fumbling.
-Once the timer and course are set (still powered by Expedition's precision below), SailWatchPro delivers a clean, visual starting dashboard tailored for the tactician. Get instant guidance on approach decisions, including start advice factoring in current wind, local current effects, line bias, and bearing to the first mark.<br>
-
-<strong>Go from chaos to control</strong><br>
-Let the deck team own the start—confidently.
-
-<!-- <div>
-  <img src="images/swp-dashboard-3x3-landscape-light.png" width="128"/>
-</div> -->
  
 ### Start Line
 The starting box is a rather hectic time and place when in sequence.  Expedition Marine excels at calculating the numbers you need to nail the start, including all the times and distances to line, to burn, and to gun, to name just a few.  SailWatchPro presents a startbox in the iOS interface that includes start advice, a visual representation of the start line bias, and the RC boat flags you should see for your current place in the sequence, to help ensure you have it right.  
