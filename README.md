@@ -158,15 +158,15 @@ Stay ahead of the fleet. Stay focused on the race.
 12 different layouts that display any Expedition Marine channel. Configure them for different race scenarios—pre-start, upwind work, reaching, or offshore. Fields show context-aware data based on sailing mode and provide visual alerts for out-of-range conditions.
 
 <div align="center">
- <img src="images/swp-dashboard-3x3-prestart-landscape-light.png" width="256"/>
- <img src="images/swp-dashboard-3x3-performance-landscape-light.png" width="256"/>
- <img src="images/swp-dashboard-3x3-buoys-landscape-light.png" width="256"/>
+ <img src="images/swp-dashboard-3x3-prestart-landscape-light.png" width="384"/>
+ <img src="images/swp-dashboard-3x3-performance-landscape-light.png" width="384"/>
+ <img src="images/swp-dashboard-3x3-buoys-landscape-light.png" width="384"/>
 </div>
 
 Portrait Mode
 <div align="center">
- <img src="images/swp-dashboard-1x2-portrait-light.png" width="128"/>
- <img src="images/swp-dashboard-1x1-portrait-light.png" width="128"/>
+ <img src="images/swp-dashboard-1x2-portrait-light.png" width="384"/>
+ <img src="images/swp-dashboard-1x1-portrait-light.png" width="384"/>
 </div>
 
 ### 🗺️ **Navigation & Course Management**
