@@ -37,6 +37,15 @@ Expedition delivers precision timing, line pings, and bias calculations. SailWat
 **Navigator View & Dashboards**  
 12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain optimal trim, avoid overstanding laylines, and correct drift before it costs places.
 
+<div align="center">
+  <img src="images/swp-navigator-portrait-light.png" width="384"/>
+</div><br><em>See the course progression and keep Expedition up to date with NEXT and PREV mark updates</em>
+
+<div align="center">
+  <img src="images/swp-navigator-landscape-light.png" width="384"/>
+</div><br><em>Electronic maps display your position, race course overlay, and nearby buoy wind data. Mark waypoints with TWA information to plan routing based on forecasted conditions along your course.
+</em>
+
 ### Weather Observations & Analytics
 Automatic polling of nearby buoys (NOAA, NDBC, etc.) within 100nm. Overlay predicted GRIB vs. actual observations, track divergences in real time, and analyze trends with rolling averages and advanced transforms (FFT, wavelet) for confident race-area decisions.
 
@@ -88,33 +97,15 @@ or email directly: james.bistis@icloud.com
 
 
 
-<!-- End of GROKs version
+<!-- End of Version
 
 
 
 
 
  
-### Start Line
-The starting box is a rather hectic time and place when in sequence.  Expedition Marine excels at calculating the numbers you need to nail the start, including all the times and distances to line, to burn, and to gun, to name just a few.  SailWatchPro presents a startbox in the iOS interface that includes start advice, a visual representation of the start line bias, and the RC boat flags you should see for your current place in the sequence, to help ensure you have it right.  
 
-<div align="center">
- <img src="images/swp-iPad-start-view-with-flags-light.png" width="384"/>
-</div>
 
-### Navigator View and Racing Dashboards
-
-<strong>Stay Ahead of the Drift</strong><br>
-Once clear of the start line, the real challenge begins: sailing your most optimal course and trim while monitoring critical metrics in real time. Too often, the sharpest insights arrive only after the race—when it’s too late to act. The French call this l’esprit de l’escalier (“staircase wit”): the feeling of recovering your sharp thoughts only once you’re no longer in the situation to use them.
-
-Mast displays excel at displaying live NMEA and Expedition data—boat speeds, headings, polar performance percentages, and more. For strong teams, most metrics stay optimized most of the time. But the race is won or lost in the few that drift off target over minutes, not hours—subtle changes that even the most cluttered deck displays can miss.
-
-Worse, some critical conditions only reveal themselves when combining multiple data points or viewing trends over time: the relationship between mark bearing and opposite-tack layline, or a persistent current push that’s slowly knocking COG/VMG.
-
-<strong>SailWatchPro’s averaging engine changes that</strong>
-It automatically computes rolling 5-, 10-, and 15-minute averages for key Expedition-fed channels where longer context drives better decisions. In offshore or long-leg racing, instant VMG% or COG on the mast is useful—but seeing your 5/10/15-minute trends tells the driver (and tactician) if they’re truly holding the objective, catching a slow leeway drift, or needing a mode adjustment before it costs you the leg.
-No more hindsight regrets.  Get the long view in real time—so you can correct course before the fleet does.
-Our Navigator View and Racing Dashboards provide essential information to help us fly the right sail, avoid overstanding a layline, and stay on the optimal course, among other benefits.
 
 ### 🗺️ **Navigation & Course Management**
 
