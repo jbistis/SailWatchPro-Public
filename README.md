@@ -209,8 +209,8 @@ Stay ahead of the fleet. Stay focused on the race.
   <strong>Four Channels</strong><br>
 </div>
 <div align="center">
- <img src="images/dashboard-2x2-wind-landscape-light.png" width="512"/>
-</div>---
+ <img src="images/swp-dashboard-2x2-wind-landscape-light.png" width="512"/>
+</div>
 
 ---
 
