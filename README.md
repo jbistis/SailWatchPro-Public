@@ -239,6 +239,13 @@ Stay ahead of the fleet. Stay focused on the race.
  <img src="images/swp-dashboard-1x1-portrait-light.png" width="512"/>
 </div>
 
+<div align="center">
+  <strong>Build your own custom names in custom order</strong><br>
+</div>
+<div align="center">
+ <img src="images/swp-dashboard-reorder-dashboards-landscape-light.png" width="512"/>
+</div>
+
 ### ⌚ **Apple Watch Integration**
 <div align="center">
  <img src="images/swp-apple-watch-views.png" width="512"/>
