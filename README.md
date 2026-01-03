@@ -172,6 +172,13 @@ Stay ahead of the fleet. Stay focused on the race.
 </div>
 
 <div align="center">
+  <strong>Offshore Racing Dashboard Example</strong><br>
+</div>
+<div align="center">
+  <img src="images/swp-dashboard-3x3-offshore-racing-landscape-light.png" width="512"/>
+</div>
+
+<div align="center">
   <strong>Driver Performance Dashboard Example</strong><br>
 </div>
 <div align="center">
@@ -179,16 +186,6 @@ Stay ahead of the fleet. Stay focused on the race.
 </div>
 
 
-
-
-
-
-
-
-<div align="center">
-  <strong>Performance Dashboard Example</strong>
- <img src="images/swp-dashboard-3x3-performance-landscape-light.png" width="384"/>
-</div>
 
 <div align="center">
   <strong>Buoy Racing Dashboard Example</strong>
