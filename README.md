@@ -10,6 +10,11 @@
  <strong>Win More Races. Make Faster Decisions.</strong>
 </p>
 
+## Pricing & Availability
+SailWatchPro is currently in limited beta with a small group of competitive boats.  
+Full release and pricing details coming soon — contact us for early access or to join the beta.
+[Request Beta Access →](mailto:your@email.com) | [Report Issues & Suggestions →](https://github.com/jbistis/SailWatchPro-Public/issues)
+
 <p align="center">
   <a href="https://docs.google.com/document/d/1cXRDmIqwttnDQbBGQB0azVdZFzVpno5fVTCnSREfSbo/edit?usp=sharing">
     <img alt="Download on the App Store" title="App Store" src="http://i.imgur.com/0n2zqHD.png" width="140">
