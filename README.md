@@ -157,18 +157,19 @@ Stay ahead of the fleet. Stay focused on the race.
 ### 📊 **Customizable Dashboards**
 12 different layouts that display any Expedition Marine channel. Configure them for different race scenarios—pre-start, upwind work, reaching, or offshore. Fields show context-aware data based on sailing mode and provide visual alerts for out-of-range conditions.
 
-<strong>Prestart Dashboard Example</strong>
 <div align="center">
+  <strong>Prestart Dashboard Example</strong>
  <img src="images/swp-dashboard-3x3-prestart-landscape-light.png" width="384"/>
 </div>
 
-<strong>Performance Dashboard Example</strong>
+
 <div align="center">
+  <strong>Performance Dashboard Example</strong>
  <img src="images/swp-dashboard-3x3-performance-landscape-light.png" width="384"/>
 </div>
 
-<strong>Buoy Racing Dashboard Example</strong>
 <div align="center">
+  <strong>Buoy Racing Dashboard Example</strong>
  <img src="images/swp-dashboard-3x3-buoys-landscape-light.png" width="384"/>
 </div>
 
