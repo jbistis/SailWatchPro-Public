@@ -155,25 +155,17 @@ But why burn brainpower when SailWatchPro can watch it for you, 24/7, and only i
 Stay ahead of the fleet. Stay focused on the race.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ## Key Features
 
 <div align="center">
- <img src="images/swp-dashboard-3x3-landscape-light.png" width="128"/>
- <img src="images/swp-dashboard-2x2-landscape-light.png" width="128"/>
- <img src="images/swp-dashboard-1x2-landscape-light.png" width="128"/>
- <img src="images/swp-dashboard-1x1-landscape-light.png" width="128"/>
+ <img src="images/swp-dashboard-3x3-prestart-landscape-light.png" width="128"/>
+ <img src="images/swp-dashboard-3x3-performance-landscape-light.png" width="128"/>
+ <img src="images/swp-dashboard-3x3-buoys-landscape-light.png" width="128"/>
+</div>
+
+<div align="center">
+ <img src="images/swp-dashboard-1x2-portrait-light.png" width="128"/>
+ <img src="images/swp-dashboard-1x1-portrait-light.png" width="128"/>
 </div>
 
 ### 📊 **Customizable Dashboards**
