@@ -170,6 +170,15 @@ Stay ahead of the fleet. Stay focused on the race.
 12 different layouts that display any Expedition Marine channel. Configure them for different race scenarios—pre-start, upwind work, reaching, or offshore. Fields show context-aware data based on sailing mode and provide visual alerts for out-of-range conditions.
 
 <div align="center">
+  <strong>Select any channel, including computed channels derived from Expedition Marine Channels</strong><br>
+</div>
+<div align="center">
+  <img src="images/swp-dashboard-select-channels-dashboards-landscape-light.png" width="512"/>
+</div>
+
+---
+
+<div align="center">
   <strong>Prestart Dashboard Example</strong><br>
 </div>
 <div align="center">
