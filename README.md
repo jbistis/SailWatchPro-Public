@@ -30,7 +30,7 @@ Expedition delivers precision timing, line pings, and bias calculations. SailWat
 </div>
 
 <div align="center">
-  <img src="images/images/swp-iPad-start-view-with-flags-light.png" width="384">
+  <img src="images/swp-iPad-start-view-with-flags-light.png" width="384">
   <br><em>Start Line Visuals & Bias</em>
 </div>
 
