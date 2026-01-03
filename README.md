@@ -72,6 +72,18 @@ It automatically computes rolling 5-, 10-, and 15-minute averages for key Expedi
 No more hindsight regrets.  Get the long view in real time—so you can correct course before the fleet does.
 Our Navigator View and Racing Dashboards provide essential information to help us fly the right sail, avoid overstanding a layline, and stay on the optimal course, among other benefits.
 
+### 🗺️ **Navigation & Course Management**
+
+<div align="center">
+  <img src="images/swp-navigator-portrait-light.png" width="384"/>
+</div>
+
+Electronic maps display your position, race course overlay, and nearby buoy wind data. Mark waypoints with TWA information to plan routing based on forecasted conditions along your course.
+
+<div align="center">
+  <img src="images/swp-navigator-landscape-light.png" width="384"/>
+</div>
+
 ### Racing Dashboards
 The app includes 12 customizable racing dashboards that users can add their favorite Expedition channels to.  In addition, SailWatchPro includes many more computed channels that are derived from the Expedition channels, including those maintained by the Averaging Engine.
 
@@ -204,17 +216,7 @@ Portrait Mode
  <img src="images/swp-dashboard-1x1-portrait-light.png" width="384"/>
 </div>
 
-### 🗺️ **Navigation & Course Management**
 
-<div align="center">
-  <img src="images/swp-navigator-portrait-light.png" width="384"/>
-</div>
-
-Electronic maps display your position, race course overlay, and nearby buoy wind data. Mark waypoints with TWA information to plan routing based on forecasted conditions along your course.
-
-<div align="center">
-  <img src="images/swp-navigator-landscape-light.png" width="384"/>
-</div>
 
 ### ⌚ **Apple Watch Integration**
 <div align="center">
