@@ -180,9 +180,6 @@ Stay ahead of the fleet. Stay focused on the race.
 12 different layouts that display any Expedition Marine channel. Configure them for different race scenarios—pre-start, upwind work, reaching, or offshore. Fields show context-aware data based on sailing mode and provide visual alerts for out-of-range conditions.
 
 ### 🗺️ **Navigation & Course Management**
-<div align="center">
-  <img src="images/swp-navigator-portrait-light.png" width="256"/>
-</div>
 
 <div align="center">
   <img src="images/swp-navigator-landscape-light.png" width="256"/>
