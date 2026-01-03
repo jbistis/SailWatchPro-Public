@@ -292,9 +292,8 @@ SailWatchPro is designed for competitive sailing with features that address comm
 - Reliable boat WiFi network
 
 ---
-
-
 ## Pricing & Availability
+
 SailWatchPro is currently in limited beta with a small group of competitive boats.  
 Full release and pricing details coming soon — contact us for early access or to join the beta.
 [Request Beta Access →](mailto:james.bistis@icloud.com) | [Report Issues & Suggestions →](https://github.com/jbistis/SailWatchPro-Public/issues)
