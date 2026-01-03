@@ -181,6 +181,10 @@ Stay ahead of the fleet. Stay focused on the race.
 
 ### 🗺️ **Navigation & Course Management**
 <div align="center">
+  <img src="images/swp-navigator-portrait-light.png" width="256"/>
+</div>
+
+<div align="center">
   <img src="images/swp-navigator-landscape-light.png" width="256"/>
 </div>
 
