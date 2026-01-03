@@ -39,11 +39,13 @@ Expedition delivers precision timing, line pings, and bias calculations. SailWat
 
 <div align="center">
   <img src="images/swp-navigator-portrait-light.png" width="384"/>
-</div><br><em>See the course progression and keep Expedition up to date with NEXT and PREV mark updates</em>
+  <br><em>See the course progression and keep Expedition up to date with NEXT and PREV mark updates</em>
+</div>
 
 <div align="center">
   <img src="images/swp-navigator-landscape-light.png" width="384"/>
-</div><br><em>Electronic maps display your position, race course overlay, and nearby buoy wind data. Mark waypoints with TWA information to plan routing based on forecasted conditions along your course.
+  <br><em>Electronic maps display your position, race course overlay, and nearby buoy wind data. Mark waypoints with TWA information to plan routing based on forecasted conditions along your course.
+</div>
 </em>
 
 ### Weather Observations & Analytics
