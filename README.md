@@ -27,12 +27,12 @@ Expedition delivers precision timing, line pings, and bias calculations. SailWat
 <div align="center">
   <img src="images/swp-prestart-view-light.png" width="384">
   <br><em>Pre-Start Dashboard – Mobile Edge for Above-Deck Control</em>
-</div>
+</div><br><br>
 
 <div align="center">
   <img src="images/swp-iPad-start-view-with-flags-light.png" width="384">
   <br><em>Start Line Visuals & Bias</em>
-</div>
+</div><br><br>
 
 **Navigator View & Dashboards**  
 12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain optimal trim, avoid overstanding laylines, and correct drift before it costs places.
@@ -40,13 +40,12 @@ Expedition delivers precision timing, line pings, and bias calculations. SailWat
 <div align="center">
   <img src="images/swp-navigator-portrait-light.png" width="384"/>
   <br><em>See the course progression and keep Expedition up to date with NEXT and PREV mark updates</em>
-</div>
+</div><br><br>
 
 <div align="center">
   <img src="images/swp-navigator-landscape-light.png" width="384"/>
-  <br><em>Electronic maps display your position, race course overlay, and nearby buoy wind data. Mark waypoints with TWA information to plan routing based on forecasted conditions along your course.
-</div>
-</em>
+  <br><em>Electronic maps display your position, race course overlay, and nearby buoy wind data. Mark waypoints with TWA information to plan routing based on forecasted conditions along your course.</em>
+</div><br><br>
 
 ### Weather Observations & Analytics
 Automatic polling of nearby buoys (NOAA, NDBC, etc.) within 100nm. Overlay predicted GRIB vs. actual observations, track divergences in real time, and analyze trends with rolling averages and advanced transforms (FFT, wavelet) for confident race-area decisions.
