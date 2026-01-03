@@ -24,6 +24,11 @@ SailWatchPro brings Expedition Marine's world-class capabilities above deck with
 **Pre-Start & Start Line**  
 Expedition delivers precision timing, line pings, and bias calculations. SailWatchPro makes it mobile and intuitive — above-deck touch controls for pinging, timer management, course selection, and a clean visual dashboard for approach decisions.
 
+<div align="center">
+  <img src="images/swp-prestart-view-light.png" width="384">
+  <br><em>Pre-Start Dashboard – Mobile Edge for Above-Deck Control</em>
+</div>
+
 **Navigator View & Dashboards**  
 12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain optimal trim, avoid overstanding laylines, and correct drift before it costs places.
 
