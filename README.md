@@ -29,6 +29,11 @@ Expedition delivers precision timing, line pings, and bias calculations. SailWat
   <br><em>Pre-Start Dashboard – Mobile Edge for Above-Deck Control</em>
 </div>
 
+<div align="center">
+  <img src="images/images/swp-iPad-start-view-with-flags-light.png" width="384">
+  <br><em>Start Line Visuals & Bias</em>
+</div>
+
 **Navigator View & Dashboards**  
 12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain optimal trim, avoid overstanding laylines, and correct drift before it costs places.
 
@@ -41,16 +46,6 @@ Live corrected time vs. handicap, lateral separation visualization, and performa
 ### Strategic & Tactical Advisories
 Centralized, customizable alerts that watch for you: current push, leeway drift, sail mismatches, barometric trends, and more. Focus on steering and tactics instead of mental math.
 
-## Screenshots
-<div align="center">
-  <img src="images/swp-prestart-view-light.png" width="384">
-  <br><em>Pre-Start Dashboard</em>
-</div>
-
-<div align="center">
-  <img src="images/images/swp-iPad-start-view-with-flags-light.png" width="384">
-  <br><em>Start Line Visuals & Bias</em>
-</div>
 
 <!-- Add 3–4 more key screenshots here -->
 
