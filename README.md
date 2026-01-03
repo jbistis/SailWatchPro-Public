@@ -84,9 +84,6 @@ Electronic maps display your position, race course overlay, and nearby buoy wind
   <img src="images/swp-navigator-landscape-light.png" width="384"/>
 </div>
 
-### Racing Dashboards
-The app includes 12 customizable racing dashboards that users can add their favorite Expedition channels to.  In addition, SailWatchPro includes many more computed channels that are derived from the Expedition channels, including those maintained by the Averaging Engine.
-
 <!-- Section - Weather Observations and Analytics -->
 ## Weather Observation and Analytics
 <strong>Unlock the Real Race Weather Edge with SailWatchPro</strong><br>
@@ -167,7 +164,10 @@ But why burn brainpower when SailWatchPro can watch it for you, 24/7, and only i
 Stay ahead of the fleet. Stay focused on the race.
 
 ### 📊 **Customizable Dashboards**
-12 different layouts that display any Expedition Marine channel. Configure them for different race scenarios—pre-start, upwind work, reaching, or offshore. Fields show context-aware data based on sailing mode and provide visual alerts for out-of-range conditions.
+
+
+### Racing Dashboards
+The app includes 12 different dashboard layouts that display any Expedition Marine channel. Configure them for different race scenarios—pre-start, upwind work, reaching, or offshore. Fields show context-aware data based on sailing mode and provide visual alerts for out-of-range conditions.  In addition, SailWatchPro includes many more computed channels derived from Expedition channel data, including those maintained by the Averaging Engine.  Adding more computed channels is straightforward.
 
 <div align="center">
   <strong>Select any channel, including computed channels derived from Expedition Marine Channels</strong><br>
