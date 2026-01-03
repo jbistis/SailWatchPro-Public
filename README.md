@@ -109,7 +109,7 @@ Real-time wind trend analysis using rolling averages, FFT, and wavelet transform
 See exactly where, when, and how the wind, pressure, or other elements are shifting differently than expected—across the entire race area.
 Stop guessing. Start knowing.  Gain the advantage the fleet can't see coming.
 
-## Competitor Tracking and Threat Assessment
+## 🏁 Competitor Tracking and Threat Assessment
 <strong>Know the Real Score Mid-Race with SailWatchPro's Fleet Intelligence</strong><br>
 After the start gun, the real race begins: Where are your competitors, and how are you actually performing against them on handicap?
 Competitor boat performance often reveals the fastest path—which side of the course to favor, which areas to avoid. Basic AIS gives you range, bearing, SOG, and COG for each boat… but SailWatchPro goes much further.
