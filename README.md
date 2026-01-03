@@ -206,10 +206,19 @@ Stay ahead of the fleet. Stay focused on the race.
 ---
 
 <div align="center">
+  <strong>Four Channels</strong><br>
+</div>
+<div align="center">
+ <img src="images/dashboard-2x2-wind-landscape-light.png" width="512"/>
+</div>---
+
+---
+
+<div align="center">
   <strong>Two Large Channels</strong><br>
 </div>
 <div align="center">
- <img src="images/swp-dashboard-1x2-portrait-light.png" width="384"/>
+ <img src="images/swp-dashboard-1x2-portrait-light.png" width="512"/>
 </div>
 
 ---
@@ -218,7 +227,7 @@ Stay ahead of the fleet. Stay focused on the race.
   <strong>One Large Channel</strong><br>
 </div>
 <div align="center">
- <img src="images/swp-dashboard-1x1-portrait-light.png" width="384"/>
+ <img src="images/swp-dashboard-1x1-portrait-light.png" width="512"/>
 </div>
 
 ### ⌚ **Apple Watch Integration**
