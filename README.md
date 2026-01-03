@@ -206,17 +206,20 @@ Stay ahead of the fleet. Stay focused on the race.
 ---
 
 <div align="center">
-  <strong>Buoy Racing Dashboard Example</strong>
- <img src="images/swp-dashboard-3x3-buoys-landscape-light.png" width="384"/>
+  <strong>Two Large Channels</strong><br>
 </div>
-
-Portrait Mode
 <div align="center">
  <img src="images/swp-dashboard-1x2-portrait-light.png" width="384"/>
- <img src="images/swp-dashboard-1x1-portrait-light.png" width="384"/>
 </div>
 
+---
 
+<div align="center">
+  <strong>One Large Channel</strong><br>
+</div>
+<div align="center">
+ <img src="images/swp-dashboard-1x1-portrait-light.png" width="384"/>
+</div>
 
 ### ⌚ **Apple Watch Integration**
 <div align="center">
