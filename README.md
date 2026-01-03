@@ -327,3 +327,89 @@ SailWatchPro is actively developed based on user feedback from competitive saili
 *May you always find the favorable shift.*
 
 **– The SailWatchPro Team**
+
+# SailWatchPro
+
+<p align="center">
+  <img alt="SailWatchPro" src="images/icon-76x76@2x.png" width="96">
+  <br><br>
+  <strong>Win More Races. Make Faster Decisions.</strong>
+</p>
+
+<p align="center">
+  <a href="https://docs.google.com/document/d/1cXRDmIqwttnDQbBGQB0azVdZFzVpno5fVTCnSREfSbo/edit?usp=sharing">
+    <img src="http://i.imgur.com/0n2zqHD.png" width="140">
+  </a>
+</p>
+
+SailWatchPro brings Expedition Marine's world-class capabilities above deck with a modern, touch-first iOS interface for iPad, iPhone, and Apple Watch. Built for competitive sailors, it synthesizes real-time data — wind trends, performance metrics, course positioning, and more — into clear, actionable insights and advisories.
+
+## Key Pillars
+- **Racing Management** — Pre-start control, start line visuals, and customizable dashboards
+- **Weather Observations & Analytics** — Buoy data fusion, GRIB predicted vs. actual comparisons
+- **Competitor Tracking** — Live corrected time, separation, and fleet awareness
+- **Strategic & Tactical Advisories** — Automated high-value alerts from live data streams
+
+### Racing Management
+**Pre-Start & Start Line**  
+Expedition delivers precision timing, line pings, and bias calculations. SailWatchPro makes it mobile and intuitive — above-deck touch controls for pinging, timer management, course selection, and a clean visual dashboard for approach decisions.
+
+**Navigator View & Dashboards**  
+12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain optimal trim, avoid overstanding laylines, and correct drift before it costs places.
+
+### Weather Observations & Analytics
+Automatic polling of nearby buoys (NOAA, NDBC, etc.) within 100nm. Overlay predicted GRIB vs. actual observations, track divergences in real time, and analyze trends with rolling averages and advanced transforms (FFT, wavelet) for confident race-area decisions.
+
+### Competitor Tracking
+Live corrected time vs. handicap, lateral separation visualization, and performance insights — know instantly if you're gaining or losing on corrected time, even when boats are physically ahead/behind.
+
+### Strategic & Tactical Advisories
+Centralized, customizable alerts that watch for you: current push, leeway drift, sail mismatches, barometric trends, and more. Focus on steering and tactics instead of mental math.
+
+## Screenshots
+<div align="center">
+  <img src="images/swp-prestart-view-light.png" width="384">
+  <br><em>Pre-Start Dashboard</em>
+</div>
+
+<div align="center">
+  <img src="images/swp-startline-landscape-light.png" width="512">
+  <br><em>Start Line Visuals & Bias</em>
+</div>
+
+<!-- Add 3–4 more key screenshots here -->
+
+## Apple Watch Integration
+Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches to shallow-water monitoring.
+
+## Technical Highlights
+- GRIB parsing via ECMWF ecCodes bridge
+- 5/10/15-min averaging engine
+- Two-way Expedition integration
+- Night mode with red tint
+- iOS 18.5+ / watchOS 11.5+ / Expedition Marine 12.5.11+
+
+## Requirements
+- iOS 18.5+ (iPad/iPhone) | watchOS 11.5+  
+- Expedition Marine 12.5.11+ (latest encouraged)  
+- Reliable boat WiFi
+
+## Getting Started
+1. Connect to Expedition network  
+2. Enter boat parameters  
+3. Customize dashboards  
+4. Race with real-time edge  
+
+[Full setup guide →](https://docs.google.com/document/d/1cXRDmIqwttnDQbBGQB0azVdZFzVpno5fVTCnSREfSbo/edit?usp=sharing)
+
+## Pricing & Availability
+Currently in limited beta with a small group of boats.  
+Full release and pricing details coming soon — contact us for early access.
+
+**Request Beta Access** → [james.bistis@icloud.com](mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Access%20Request)  
+or email directly: james.bistis@icloud.com
+
+[Report Issues & Suggestions →](https://github.com/jbistis/SailWatchPro-Public/issues)
+
+*May you always find the favorable shift.*  
+**– The SailWatchPro Team**
