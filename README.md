@@ -159,7 +159,11 @@ Stay ahead of the fleet. Stay focused on the race.
 
 <div align="center">
  <img src="images/swp-dashboard-3x3-prestart-landscape-light.png" width="384"/>
+</div>
+<div align="center">
  <img src="images/swp-dashboard-3x3-performance-landscape-light.png" width="384"/>
+</div>
+<div align="center">
  <img src="images/swp-dashboard-3x3-buoys-landscape-light.png" width="384"/>
 </div>
 
