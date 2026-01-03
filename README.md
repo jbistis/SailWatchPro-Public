@@ -285,7 +285,7 @@ SailWatchPro is designed for competitive sailing with features that address comm
 ## Requirements
 
 - iOS 18.5+ (iPad/iPhone) | watchOS 11.5+ (Apple Watch)
-- Expedition Marine 12.4.12+
+- Expedition Marine 12.5.11+ - keeping current with the latest Expedition Marine release is encouraged.
 - Reliable boat WiFi network
 
 ---
