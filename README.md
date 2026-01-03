@@ -255,7 +255,7 @@ The app includes 12 different dashboard layouts that display any Expedition Mari
  <img src="images/swp-apple-watch-views.png" width="512"/>
 </div>
 
-Dedicated watch views for race timer, speed, heel angle, VMG, wind angles, and depth. Data syncs from your iPhone and the watch automatically switches to depth monitoring when approaching shallow water.
+Dedicated watch views for race timer, speed, heel angle, VMG, wind angles, and depth.  Also included in access to all custom data fields that comprise dashboards. Data syncs from your iPhone, and the watch automatically shakes and switches to depth monitoring when approaching shallow water.
 
 ---
 
