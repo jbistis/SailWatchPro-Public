@@ -171,6 +171,7 @@ Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches t
 
 [Full setup guide →](https://docs.google.com/document/d/1cXRDmIqwttnDQbBGQB0azVdZFzVpno5fVTCnSREfSbo/edit?usp=sharing)
 
+<a id="beta-request"></a>
 ## Pricing & Availability
 Currently in limited beta.  
 Full release and pricing details coming soon — contact us for early access.
