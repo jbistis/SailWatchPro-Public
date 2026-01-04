@@ -62,6 +62,10 @@ Your boat is a moving weather station. SailWatchPro analyzes real-time wind tren
 
 ### Competitor Tracking
 Live corrected time vs. handicap, lateral separation visualization — know instantly if you're gaining or losing on corrected time, even when boats are physically ahead or behind.
+<div align="center">
+  <img src="images/swp-competitor-view-light.png" width="512"> <!-- Use your Virginia Key screenshot here -->
+  <br><em>Buoy: Predicted vs. Actual Wind Trends</em>
+</div>
 
 ### Strategic & Tactical Advisories
 Centralized, customizable alerts that monitor for you: current push, leeway drift, sail mismatches, barometric trends, and more — so you can focus on steering and tactics.
