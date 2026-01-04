@@ -13,10 +13,18 @@
 </p> -->
 
 <p align="center">
-  <strong>Limited Beta – Join via TestFlight</strong><br>
-  <a href="https://testflight.apple.com/join/YOUR_10_CHAR_CODE">
-    <img src="https://developer.apple.com/assets/elements/testflight/testflight-badge.svg" width="200" alt="Join Beta">
-  </a>
+  <strong>Limited Invite-Only Beta</strong><br>
+  SailWatchPro is currently in closed beta with a small group of competitive boats.<br>
+  Full release coming soon — we're adding testers selectively.
+</p>
+
+<p align="center">
+  **Request Beta Invite** → [james.bistis@icloud.com](mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Invite%20Request)<br>
+  <small>Please include your boat type, racing plans, and Expedition version.</small>
+</p>
+
+<p align="center">
+  [Report Issues & Suggestions →](https://github.com/jbistis/SailWatchPro-Public/issues)
 </p>
 
 <!-- <p align="center">
