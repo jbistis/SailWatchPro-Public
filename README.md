@@ -6,13 +6,13 @@
   <strong>Win More Races. Make Faster Decisions.</strong>
 </p>
 
-<!-- <p align="center">
-  <a href="https://docs.google.com/document/d/1cXRDmIqwttnDQbBGQB0azVdZFzVpno5fVTCnSREfSbo/edit?usp=sharing">
+<p align="center">
+  <a href="https://apps.apple.com/us/app/testflight/id899247664">
     <img src="http://i.imgur.com/0n2zqHD.png" width="140">
   </a>
-</p> -->
+</p>
 
-<p align="center">
+<!-- <p align="center">
   <strong>Limited Beta – Join via TestFlight</strong><br>
   <a href="https://testflight.apple.com/join/YOUR_BETA_CODE_HERE">
     <img src="https://developer.apple.com/assets/elements/testflight/testflight-badge.svg" width="200" alt="Join Beta on TestFlight">
@@ -31,7 +31,7 @@
 
 <p align="center">
   [Report Issues & Suggestions →](https://github.com/jbistis/SailWatchPro-Public/issues)
-</p>
+</p> -->
 
 SailWatchPro extends Expedition Marine above-deck with a modern, touch-first iOS interface for iPad, iPhone, Mac, and Apple Watch. It synthesizes real-time data into clear, actionable insights and advisories — helping you make faster, more confident decisions on the water.
 
