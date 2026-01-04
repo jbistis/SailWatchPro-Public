@@ -19,14 +19,13 @@
 </p>
 
 <p align="center">
-**Request Beta Invite** → [james.bistis@icloud.com](mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Invite%20Request)
-Please include your boat type, racing plans, and Expedition version.
+  **Request Beta Invite** → [james.bistis@icloud.com](mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Invite%20Request)<br>
+  <small>Please include your boat type, racing plans, and Expedition version.</small>
 </p>
 
 <p align="center">
   [Report Issues & Suggestions →](https://github.com/jbistis/SailWatchPro-Public/issues)
 </p>
-
 <!-- <p align="center">
   <strong>Limited Beta – Join via TestFlight</strong><br>
   <a href="https://testflight.apple.com/join/YOUR_BETA_CODE_HERE">
