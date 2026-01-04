@@ -48,7 +48,7 @@ Automatic polling of nearby buoys (NOAA, NDBC, etc.) within 100nm. Overlay predi
 **Weather Station Wind Analysis**  
 Visually compare buoy observations with GRIB forecasts and trends for every key station — see exactly how reality is diverging across the race area.
 <div align="center">
-  <img src="images/swp-buoy-wind-analysis-light.png" width="512"> <!-- Use your Virginia Key screenshot here -->
+  <img src="images/buoy-observed-grib.png" width="512"> <!-- Use your Virginia Key screenshot here -->
   <br><em>Buoy: Predicted vs. Actual Wind Trends</em>
 </div>
 
