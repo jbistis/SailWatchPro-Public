@@ -40,7 +40,7 @@ Expedition provides precision timing, line pings, and bias. SailWatchPro makes i
 </div>
 
 <div align="center">
-  <img src="images/swp-iPad-start-view-light.png" width="512">
+  <img src="images/swp-iPad-start-view-with-flags-light.png" width="512">
   <br><em>Start Line Visuals & Bias</em>
 </div>
 
