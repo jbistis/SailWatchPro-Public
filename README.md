@@ -147,11 +147,10 @@ Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches t
 - 5/10/15-min averaging engine
 - Two-way Expedition integration
 - Night mode with red tint
-- iOS 18.5+ / watchOS 11.5+ / Expedition Marine 12.5.11+
 
 ## Requirements
-- iOS 18.5+ (iPad/iPhone) | watchOS 11.5+  
-- Expedition Marine 12.5.11+ (latest encouraged)  
+- iOS 18.5+ (iPad/iPhone) / macOS 15.6+ / watchOS 11.5+
+- Expedition Marine 12.5.11+ (latest encouraged)
 - Reliable boat WiFi
 
 ## Getting Started
