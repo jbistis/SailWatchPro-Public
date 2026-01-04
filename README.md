@@ -75,6 +75,85 @@ Centralized, customizable alerts that monitor for you: current push, leeway drif
 **Dashboards**  
 12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain trim, avoid overstanding, and correct drift.
 
+The app includes 12 different dashboard layouts that display any Expedition Marine channel. Configure them for different race scenarios—pre-start, upwind work, reaching, or offshore. Fields show context-aware data based on sailing mode and provide visual alerts for out-of-range conditions.  In addition, SailWatchPro includes many more computed channels derived from Expedition channel data, including those maintained by the Averaging Engine.  Adding more computed channels is straightforward.
+
+<div align="center">
+  <strong>Select any channel, including computed channels derived from Expedition Marine Channels</strong><br>
+</div>
+<div align="center">
+  <img src="images/swp-dashboard-select-channels-dashboards-landscape-light.png" width="512"/>
+</div>
+
+---
+
+<div align="center">
+  <strong>Prestart Dashboard Example</strong><br>
+</div>
+<div align="center">
+  <img src="images/swp-dashboard-3x3-prestart-landscape-light.png" width="512"/>
+</div>
+
+---
+
+<div align="center">
+  <strong>Buoy Racing Dashboard Example</strong><br>
+</div>
+<div align="center">
+  <img src="images/swp-dashboard-3x3-buoy-racing-landscape-light.png" width="512"/>
+</div>
+
+---
+
+<div align="center">
+  <strong>Offshore Racing Dashboard Example</strong><br>
+</div>
+<div align="center">
+  <img src="images/swp-dashboard-3x3-offshore-racing-landscape-light.png" width="512"/>
+</div>
+
+---
+
+<div align="center">
+  <strong>Driver Performance Dashboard Example</strong><br>
+</div>
+<div align="center">
+  <img src="images/swp-dashboard-3x3-performance-landscape-light.png" width="512"/>
+</div>
+
+---
+
+<div align="center">
+  <strong>Four Channels</strong><br>
+</div>
+<div align="center">
+ <img src="images/swp-dashboard-2x2-wind-landscape-light.png" width="512"/>
+</div>
+
+---
+
+<div align="center">
+  <strong>Two Large Channels</strong><br>
+</div>
+<div align="center">
+ <img src="images/swp-dashboard-1x2-portrait-light.png" width="512"/>
+</div>
+
+---
+
+<div align="center">
+  <strong>One Large Channel</strong><br>
+</div>
+<div align="center">
+ <img src="images/swp-dashboard-1x1-portrait-light.png" width="512"/>
+</div>
+
+<div align="center">
+  <strong>Build your own custom names in custom order</strong><br>
+</div>
+<div align="center">
+ <img src="images/swp-dashboard-reorder-dashboards-landscape-light.png" width="512"/>
+</div>
+
 ## Apple Watch Integration
 Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches to shallow-water monitoring.
 
