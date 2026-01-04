@@ -19,7 +19,9 @@
 </p>
 
 <p align="center">
-  **Request Beta Invite** → [james.bistis@icloud.com](mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Invite%20Request)<br>
+  **Request Beta Invite** → [james.bistis@icloud.com](mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Invite%20Request)
+
+Please include your boat type, racing plans, and Expedition version.
   <small>Please include your boat type, racing plans, and Expedition version.</small>
 </p>
 
