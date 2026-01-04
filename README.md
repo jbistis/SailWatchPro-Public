@@ -6,9 +6,16 @@
   <strong>Win More Races. Make Faster Decisions.</strong>
 </p>
 
-<p align="center">
+<!-- <p align="center">
   <a href="https://apps.apple.com/us/app/testflight/id899247664">
     <img src="http://i.imgur.com/0n2zqHD.png" width="140">
+  </a>
+</p> -->
+
+<p align="center">
+  <strong>Limited Beta – Join via TestFlight</strong><br>
+  <a href="https://testflight.apple.com/join/YOUR_10_CHAR_CODE">
+    <img src="https://developer.apple.com/assets/elements/testflight/testflight-badge.svg" width="200" alt="Join Beta">
   </a>
 </p>
 
