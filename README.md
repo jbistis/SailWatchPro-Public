@@ -12,18 +12,6 @@
   </a>
 </p> -->
 
-<p align="center">
-  <strong>Limited Invite-Only Beta</strong><br>
-  SailWatchPro is currently in closed beta with a small group of competitive boats.<br>
-  Full release coming soon — we're adding testers selectively.
-</p>
-
-<p align="center">
-  <strong>Request Beta Invite</strong><br>
-  Email me directly: <a href="mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Invite%20Request">james.bistis@icloud.com</a><br>
-  <small>Please include your boat type, racing plans, and Expedition version.</small>
-</p>
-
 SailWatchPro extends Expedition Marine above-deck with a modern, touch-first iOS interface for iPad, iPhone, Mac, and Apple Watch. It synthesizes real-time data into clear, actionable insights and advisories — helping you make faster, more confident decisions on the water.
 
 ## Key Pillars
@@ -177,8 +165,17 @@ Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches t
 Currently in limited beta.  
 Full release and pricing details coming soon — contact us for early access.
 
-**Request Beta Access** → [james.bistis@icloud.com](mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Access%20Request)  
-or email directly: james.bistis@icloud.com
+<p align="center">
+  <strong>Limited Invite-Only Beta</strong><br>
+  SailWatchPro is currently in closed beta with a small group of competitive boats.<br>
+  Full release coming soon — we're adding testers selectively.
+</p>
+
+<p align="center">
+  <strong>Request Beta Invite</strong><br>
+  Email me directly: <a href="mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Invite%20Request">james.bistis@icloud.com</a><br>
+  <small>Please include your boat type, racing plans, and Expedition version.</small>
+</p>
 
 [Report Issues & Suggestions →](https://github.com/jbistis/SailWatchPro-Public/issues)
 
