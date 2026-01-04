@@ -7,10 +7,16 @@
 </p>
 
 <p align="center">
+  <img src="images/test-flight.webp" alt="SailWatchPro Screenshot" width="256">
+  <br><em>SailWatchPro Start Line Dashboard</em>
+</p>
+<!-- <p align="center">
   <a href="https://apps.apple.com/us/app/testflight/id899247664">
     <img src="http://i.imgur.com/0n2zqHD.png" width="140">
   </a>
-</p>
+</p> -->
+
+
 
 SailWatchPro extends Expedition Marine above-deck with a modern, touch-first iOS interface for iPad, iPhone, Mac, and Apple Watch. It synthesizes real-time data into clear, actionable insights and advisories — helping you make faster, more confident decisions on the water.
 
