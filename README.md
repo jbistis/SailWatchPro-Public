@@ -12,55 +12,57 @@
   </a>
 </p>
 
-SailWatchPro brings Expedition Marine's world-class capabilities above deck with a modern, touch-first iOS interface for iPad, iPhone, and Apple Watch. Built for competitive sailors, it synthesizes real-time data — wind trends, performance metrics, course positioning, and more — into clear, actionable insights and advisories.
+SailWatchPro extends Expedition Marine above deck with a modern, touch-first iOS interface for iPad, iPhone, and Apple Watch. It synthesizes real-time data into clear, actionable insights and advisories — helping you make faster, more confident decisions on the water.
 
 ## Key Pillars
-- **Racing Management** — Pre-start control, start line visuals, and customizable dashboards
-- **Weather Observations & Analytics** — Buoy data fusion, GRIB predicted vs. actual comparisons
-- **Competitor Tracking** — Live corrected time, separation, and fleet awareness
-- **Strategic & Tactical Advisories** — Automated high-value alerts from live data streams
+- **Racing Management** — Pre-start, start line, and customizable dashboards
+- **Weather Observations & Analytics** — Buoy + GRIB fusion, trend analysis
+- **Competitor Tracking** — Live corrected time & fleet awareness
+- **Strategic & Tactical Advisories** — Automated high-value alerts
 
 ### Racing Management
 **Pre-Start & Start Line**  
-Expedition delivers precision timing, line pings, and bias calculations. SailWatchPro makes it mobile and intuitive — above-deck touch controls for pinging, timer management, course selection, and a clean visual dashboard for approach decisions.
+Expedition provides precision timing, line pings, and bias. SailWatchPro makes it mobile and intuitive — above-deck touch controls for pinging, timer, course selection, and visual dashboards for approach decisions.
+
+**Dashboards**  
+12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain trim, avoid overstanding, and correct drift.
 
 <div align="center">
   <img src="images/swp-prestart-view-light.png" width="384">
-  <br><em>Pre-Start Dashboard – Mobile Edge for Above-Deck Control</em>
-</div><br><br>
+  <br><em>Pre-Start Dashboard</em>
+</div>
 
 <div align="center">
-  <img src="images/swp-iPad-start-view-with-flags-light.png" width="384">
+  <img src="images/swp-startline-landscape-light.png" width="512">
   <br><em>Start Line Visuals & Bias</em>
-</div><br><br>
-
-**Navigator View & Dashboards**  
-12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain optimal trim, avoid overstanding laylines, and correct drift before it costs places.
-
-<div align="center">
-  <img src="images/swp-navigator-portrait-light.png" width="384"/>
-  <br><em>See the course progression and keep Expedition up to date with NEXT and PREV mark updates</em>
-</div><br><br>
-
-<div align="center">
-  <img src="images/swp-navigator-landscape-light.png" width="384"/>
-  <br><em>Electronic maps display your position, race course overlay, and nearby buoy wind data. Mark waypoints with TWA information to plan routing based on forecasted conditions along your course.</em>
-</div><br><br>
+</div>
 
 ### Weather Observations & Analytics
-Automatic polling of nearby buoys (NOAA, NDBC, etc.) within 100nm. Overlay predicted GRIB vs. actual observations, track divergences in real time, and analyze trends with rolling averages and advanced transforms (FFT, wavelet) for confident race-area decisions.
+Automatic polling of nearby buoys (NOAA, NDBC, etc.) within 100nm. Overlay predicted GRIB vs. actual observations, track divergences in real time.
+
+**Weather Station Wind Analysis**  
+Visually compare buoy observations with GRIB forecasts and trends for every key station — see exactly how reality is diverging across the race area.
+
+**Boat Instrumentation Wind Analysis**  
+Your boat is a moving weather station. SailWatchPro analyzes real-time wind trends using rolling averages, FFT, and wavelet transforms to identify veering/backing, building, and oscillating patterns — with confidence indicators and a 6-hour wind history that syncs across devices.
+
+<div align="center">
+  <img src="images/swp-buoy-wind-analysis-light.png" width="512"> <!-- Use your Virginia Key screenshot here -->
+  <br><em>Buoy: Predicted vs. Actual Wind Trends</em>
+</div>
 
 ### Competitor Tracking
-Live corrected time vs. handicap, lateral separation visualization, and performance insights — know instantly if you're gaining or losing on corrected time, even when boats are physically ahead/behind.
+Live corrected time vs. handicap, lateral separation visualization — know instantly if you're gaining or losing on corrected time, even when boats are physically ahead or behind.
 
 ### Strategic & Tactical Advisories
-Centralized, customizable alerts that watch for you: current push, leeway drift, sail mismatches, barometric trends, and more. Focus on steering and tactics instead of mental math.
-
-
-<!-- Add 3–4 more key screenshots here -->
+Centralized, customizable alerts that monitor for you: current push, leeway drift, sail mismatches, barometric trends, and more — so you can focus on steering and tactics.
 
 ## Apple Watch Integration
 Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches to shallow-water monitoring.
+
+<div align="center">
+  <img src="images/swp-apple-watch-views.png" width="512">
+</div>
 
 ## Technical Highlights
 - GRIB parsing via ECMWF ecCodes bridge
@@ -75,7 +77,7 @@ Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches t
 - Reliable boat WiFi
 
 ## Getting Started
-1. Connect to the Expedition network  
+1. Connect to Expedition network  
 2. Enter boat parameters  
 3. Customize dashboards  
 4. Race with real-time edge  
@@ -83,7 +85,7 @@ Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches t
 [Full setup guide →](https://docs.google.com/document/d/1cXRDmIqwttnDQbBGQB0azVdZFzVpno5fVTCnSREfSbo/edit?usp=sharing)
 
 ## Pricing & Availability
-Currently in limited beta with a small group of boats.  
+Currently in limited beta.  
 Full release and pricing details coming soon — contact us for early access.
 
 **Request Beta Access** → [james.bistis@icloud.com](mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Access%20Request)  
@@ -94,41 +96,8 @@ or email directly: james.bistis@icloud.com
 *May you always find the favorable shift.*  
 **– The SailWatchPro Team**
 
-
-
-
-
 <!-- End of Version
 
-
-
-
-
- 
-
-
-
-### 🗺️ **Navigation & Course Management**
-
-<div align="center">
-  <img src="images/swp-navigator-portrait-light.png" width="384"/>
-</div>
-
-Electronic maps display your position, race course overlay, and nearby buoy wind data. Mark waypoints with TWA information to plan routing based on forecasted conditions along your course.
-
-<div align="center">
-  <img src="images/swp-navigator-landscape-light.png" width="384"/>
-</div>
-
-<!-- Section - Weather Observations and Analytics -->
-## Weather Observation and Analytics
-<strong>Unlock the Real Race Weather Edge with SailWatchPro</strong><br>
-Weather forecasts begin to degrade the moment they're published. Savvy navigators know that understanding spatial and temporal inaccuracies is often the difference between leading the fleet and chasing it.
-In their limited spare time (when not sleeping), most navigators juggle GRIB viewers, surf buoy data on their phone, and scribble notes about shifting winds—trying to build a big-picture view of what's really happening across the race area. Boat instruments are great, but your boat is essentially just one moving buoy—it can't show you the larger view.
-<br><br>
-
-<strong>SailWatchPro changes the game</strong><br>
-Once you select your race course, the software automatically defines the race area and identifies the most relevant weather observation stations. With a simple set-it-and-forget-it setup, it periodically fetches the latest buoy data at your chosen interval—no more manual hunting.  
 
 ### **Weather Station Wind Analysis**
 <div align="center">
