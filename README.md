@@ -12,7 +12,7 @@
   </a>
 </p>
 
-SailWatchPro extends Expedition Marine above deck with a modern, touch-first iOS interface for iPad, iPhone, and Apple Watch. It synthesizes real-time data into clear, actionable insights and advisories — helping you make faster, more confident decisions on the water.
+SailWatchPro extends Expedition Marine's above-deck with a modern, touch-first iOS interface for iPad, iPhone, and Apple Watch. It synthesizes real-time data into clear, actionable insights and advisories — helping you make faster, more confident decisions on the water.
 
 ## Key Pillars
 - **Racing Management** — Pre-start, start line, and customizable dashboards
