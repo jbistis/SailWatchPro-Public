@@ -170,12 +170,12 @@ Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches t
 - Night mode with red tint
 
 ## Requirements
-- iOS 18.5+ (iPad/iPhone) / macOS 15.6+ / watchOS 11.5+
+- iOS 18.5+ (iPad/iPhone) / macOS 15.6+ (arm) / watchOS 11.5+
 - Expedition Marine 12.5.11+ (latest encouraged)
 - Reliable boat WiFi
 
 ## Getting Started
-1. Connect to Expedition network  
+1. Connect to the Expedition network  
 2. Enter boat parameters  
 3. Customize dashboards  
 4. Race with real-time edge  
