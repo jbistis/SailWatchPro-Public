@@ -67,6 +67,8 @@ Your boat is a moving weather station. SailWatchPro analyzes real-time wind tren
   <br><em>Boat: Wind Trends from instruments</em>
 </div>
 
+---
+
 <div align="center">
   <img src="images/swp-boat-location-forcast-portrait-light.png" width="512">
   <br><em>Boat: Predicted vs. Actual Wind Trends</em>
