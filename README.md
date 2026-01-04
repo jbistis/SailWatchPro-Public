@@ -74,9 +74,6 @@ Centralized, customizable alerts that monitor for you: current push, leeway drif
 
 **Dashboards**  
 12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain trim, avoid overstanding, and correct drift.
-
-The app includes 12 different dashboard layouts that display any Expedition Marine channel. Configure them for different race scenarios—pre-start, upwind work, reaching, or offshore. Fields show context-aware data based on sailing mode and provide visual alerts for out-of-range conditions.  In addition, SailWatchPro includes many more computed channels derived from Expedition channel data, including those maintained by the Averaging Engine.  Adding more computed channels is straightforward.
-
 <div align="center">
   <strong>Select any channel, including computed channels derived from Expedition Marine Channels</strong><br>
 </div>
