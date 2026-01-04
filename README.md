@@ -45,7 +45,7 @@ Expedition provides precision timing, line pings, and bias. SailWatchPro makes i
 </div>
 
 ### Weather Observations & Analytics
-Automatic polling of nearby buoys (NOAA, NDBC, etc.) within 100nm. Overlay predicted GRIB vs. actual observations, track divergences in real time.
+Automatic polling of nearby buoys (NOAA, NDBC, etc.) within a user-defined distance beyond the race area. Overlay predicted GRIB with actual observations and track divergences in real time.
 <div align="center">
   <img src="images/swp-buoy-list-view-light.png" width="512">
   <br><em>Automated recurring buoy data fetching</em>
