@@ -70,6 +70,11 @@ Live corrected time vs. handicap, lateral separation visualization — know inst
 ### Strategic & Tactical Advisories
 Centralized, customizable alerts that monitor for you: current push, leeway drift, sail mismatches, barometric trends, and more — so you can focus on steering and tactics.
 
+<div align="center">
+  <img src="images/swp-advisories-light.png" width="512"> <!-- Use your Virginia Key screenshot here -->
+  <br><em>Buoy: Predicted vs. Actual Wind Trends</em>
+</div>
+
 ## Apple Watch Integration
 Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches to shallow-water monitoring.
 
