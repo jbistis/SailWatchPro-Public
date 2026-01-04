@@ -169,6 +169,7 @@ Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches t
 - iOS 18.5+ (iPad/iPhone) / macOS 15.6+ (arm) / watchOS 11.5+
 - Expedition Marine 12.5.11+ (latest encouraged)
 - Reliable boat WiFi
+- NMEA 2000 Ethernet Gateway for competitor tracking via AIS
 
 ## Getting Started
 1. Connect to the Expedition network  
