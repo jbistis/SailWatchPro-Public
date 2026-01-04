@@ -24,31 +24,6 @@
   <small>Please include your boat type, racing plans, and Expedition version.</small>
 </p>
 
-<p align="center">
-  <a href="https://github.com/jbistis/SailWatchPro-Public/issues">Report Issues & Suggestions</a>
-</p>
-
-<!-- <p align="center">
-  <strong>Limited Beta – Join via TestFlight</strong><br>
-  <a href="https://testflight.apple.com/join/YOUR_BETA_CODE_HERE">
-    <img src="https://developer.apple.com/assets/elements/testflight/testflight-badge.svg" width="200" alt="Join Beta on TestFlight">
-  </a>
-</p>
-
-<p align="center">
-  SailWatchPro is currently in limited beta with a small group of competitive boats.<br>
-  Full App Store release and pricing details coming soon — request an invite for early access.
-</p>
-
-<p align="center">
-  **Request Beta Invite** → [james.bistis@icloud.com](mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Invite%20Request)  
-  or email directly: james.bistis@icloud.com
-</p>
-
-<p align="center">
-  [Report Issues & Suggestions →](https://github.com/jbistis/SailWatchPro-Public/issues)
-</p> -->
-
 SailWatchPro extends Expedition Marine above-deck with a modern, touch-first iOS interface for iPad, iPhone, Mac, and Apple Watch. It synthesizes real-time data into clear, actionable insights and advisories — helping you make faster, more confident decisions on the water.
 
 ## Key Pillars
