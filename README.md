@@ -24,9 +24,6 @@ SailWatchPro extends Expedition Marine's above-deck with a modern, touch-first i
 **Pre-Start & Start Line**  
 Expedition provides precision timing, line pings, and bias. SailWatchPro makes it mobile and intuitive — above-deck touch controls for pinging, timer, course selection, and visual dashboards for approach decisions.
 
-**Dashboards**  
-12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain trim, avoid overstanding, and correct drift.
-
 <div align="center">
   <img src="images/swp-prestart-view-light.png" width="512">
   <br><em>Pre-Start Dashboard</em>
@@ -74,6 +71,9 @@ Centralized, customizable alerts that monitor for you: current push, leeway drif
   <img src="images/swp-advisories-light.png" width="512"> <!-- Use your Virginia Key screenshot here -->
   <br><em>Buoy: Predicted vs. Actual Wind Trends</em>
 </div>
+
+**Dashboards**  
+12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain trim, avoid overstanding, and correct drift.
 
 ## Apple Watch Integration
 Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches to shallow-water monitoring.
