@@ -17,7 +17,7 @@ SailWatchPro extends Expedition Marine above-deck with a modern, touch-first iOS
 ## Key Pillars
 - **Racing Management** — Pre-start, start line, course marks, course map, and customizable dashboards
 - **Weather Observations & Analytics** — Boat Instruments + Buoys + GRIB fusion, trend analysis
-- **Competitor Tracking** — AIS tracting, Live Leaderboard with corrected time & fleet awareness
+- **Competitor Tracking** — Live Leaderboard with corrected time & fleet awareness
 - **Strategic & Tactical Advisories** — Automated high-value alerts
 
 ### Racing Management
