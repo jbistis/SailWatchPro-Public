@@ -132,22 +132,6 @@ The app includes 12 different dashboard layouts that display any Expedition Mari
 ---
 
 <div align="center">
-  <strong>Two Large Channels</strong><br>
-</div>
-<div align="center">
- <img src="images/swp-dashboard-1x2-portrait-light.png" width="512"/>
-</div>
-
----
-
-<div align="center">
-  <strong>One Large Channel</strong><br>
-</div>
-<div align="center">
- <img src="images/swp-dashboard-1x1-portrait-light.png" width="512"/>
-</div>
-
-<div align="center">
   <strong>Build your own custom names in custom order</strong><br>
 </div>
 <div align="center">
