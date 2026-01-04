@@ -10,11 +10,11 @@
   <img src="images/test-flight.webp" alt="SailWatchPro Screenshot" width="256">
   <br><em>SailWatchPro Start Line Dashboard</em>
 </p> -->
-<!-- <p align="center">
+<p align="center">
   <a href="https://apps.apple.com/us/app/testflight/id899247664">
     <img src="http://i.imgur.com/0n2zqHD.png" width="140">
   </a>
-</p> -->
+</p>
 
 
 
