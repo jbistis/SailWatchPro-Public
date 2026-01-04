@@ -41,18 +41,22 @@ Expedition provides precision timing, line pings, and bias. SailWatchPro makes i
 Automatic polling of nearby buoys (NOAA, NDBC, etc.) within 100nm. Overlay predicted GRIB vs. actual observations, track divergences in real time.
 <div align="center">
   <img src="images/swp-buoy-list-view-light.png" width="512">
-  <br><em>Start Line Visuals & Bias</em>
+  <br><em>Automated recurring buoy data fetching</em>
 </div>
 
 
 **Weather Station Wind Analysis**  
 Visually compare buoy observations with GRIB forecasts and trends for every key station — see exactly how reality is diverging across the race area.
+<div align="center">
+  <img src="images/swp-buoy-wind-analysis-light.png" width="512"> <!-- Use your Virginia Key screenshot here -->
+  <br><em>Buoy: Predicted vs. Actual Wind Trends</em>
+</div>
 
 **Boat Instrumentation Wind Analysis**  
 Your boat is a moving weather station. SailWatchPro analyzes real-time wind trends using rolling averages, FFT, and wavelet transforms to identify veering/backing, building, and oscillating patterns — with confidence indicators and a 6-hour wind history that syncs across devices.
 
 <div align="center">
-  <img src="images/swp-buoy-wind-analysis-light.png" width="512"> <!-- Use your Virginia Key screenshot here -->
+  <img src="images/swp-boat-location-forcast-portrait-light.png" width="512"> <!-- Use your Virginia Key screenshot here -->
   <br><em>Buoy: Predicted vs. Actual Wind Trends</em>
 </div>
 
