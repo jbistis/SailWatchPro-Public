@@ -28,7 +28,7 @@ Expedition provides precision timing, line pings, and bias. SailWatchPro makes i
 12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain trim, avoid overstanding, and correct drift.
 
 <div align="center">
-  <img src="images/swp-prestart-view-light.png" width="384">
+  <img src="images/swp-prestart-view-light.png" width="512">
   <br><em>Pre-Start Dashboard</em>
 </div>
 
