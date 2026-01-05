@@ -45,13 +45,22 @@ Expedition provides precision timing, line pings, and bias. SailWatchPro makes i
   <br><em>Start Line Visuals & Bias</em>
 </div>
 
+<div align="center">
+  <img src="images/swp-iPad-start-view-with-flags-light.png" width="512">
+  <br><em>Start Line Visuals & Bias</em>
+</div>
+
+<div align="center">
+  <img src="images/swp-navigator-landscape-light.png" width="512">
+  <br><em>Course Mao with Buoy/GRIB data and Compeitor Heat Map</em>
+</div>
+
 ### Weather Observations & Analytics
 Automatic polling of nearby buoys (NOAA, NDBC, etc.) within a user-defined distance beyond the race area. Overlay predicted GRIB with actual observations and track divergences in real time.
 <div align="center">
   <img src="images/swp-buoy-list-view-light.png" width="512">
   <br><em>Automated recurring buoy data fetching</em>
 </div>
-
 
 **Weather Station Wind Analysis**  
 Visually compare buoy observations with GRIB forecasts and trends for every key station — see exactly how reality is diverging across the race area.
