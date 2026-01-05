@@ -12,121 +12,128 @@
 
 ---
 
-## Download the app from Apple's Test Flight
+## Table of Contents
 
+- [Getting Started](#getting-started)
+  - [First Launch Setup](#first-launch-setup)
+  - [Expedition Marine Requirements](#expedition-marine-requirements)
+- [Connection Settings](#connection-settings)
+- [Boat Configuration](#boat-configuration)
+- [Display Options](#display-options)
+- [Safety Settings](#safety-settings)
+- [Troubleshooting](#troubleshooting)
+  - [Connection Issues](#connection-issues)
+  - [Display Problems](#display-problems)
+  - [Performance Issues](#performance-issues)
+- [Support & Updates](#support--updates)
 
-### Connection Settings
-- **IP Address**: Your boat's network broadcast address
-- **UDP Port**: Communication port (typically 5098)
-- **Test Mode**: Use simulated data for training
+---
 
-### Boat Configuration
-- **Boat Name**: Your vessel identification
-- **Boat Length**: Used for distance calculations in boat lengths
-- **Draft**: Critical for depth safety calculations
-- **TWA Reaching Threshold**: Sailing mode detection sensitivity
+## Getting Started
 
-### Display Options
-- **Light Mode**: Uses traditional dark text on a light background
-- **Dark Mode**: Inverts the color scheme, displaying light text on a dark background
-- **Night Mode**: Red-tinted display for night vision preservation
-- **Chart Time Windows**: Customizable data history viewing
-- **Map Style**: Choose between hybrid, standard, satellite, or imagery views
+**Latest Version**  
+It is strongly recommended that all iOS devices (iPhone & Watch) run the **same version** of the app since data is shared between users.
 
-### Safety Settings
-- **Depth Alerts**: Automatic warnings based on draft + safety margin
-- **Audio Countdown**: Spoken start sequence announcements
-- **MOB (Man Overboard)**: Emergency position marking and tracking
+### First Launch Setup
+
+1. **Configure the Expedition Marine Network**  
+   - Start Expedition Marine on the boat PC.  
+   - From the ☰ Hamburger Menu → drag down → hover over Instruments → click *Number of network connections*  
+   - Enter one greater than the displayed number to add a new network → OK  
+   - Go back to Instruments → select the new network and configure:  
+     - Alias: **SailWatchPro**  
+     - Instruments: **Expedition**  
+     - Address: **192.168.XXX.YYY** (your Expedition Marine PC's IP)  
+     - Port: Choose an unused port  
+   - Click *Expedition Settings*  
+   - In **Exp Rx filter**: check **Receive marks**  
+   - In **Exp Tx filter**: enable the channels listed in [Expedition Marine Requirements](#expedition-marine-requirements) below  
+
+2. **Connect to Expedition Marine**  
+   - Install SailWatchPro on your iOS device via TestFlight  
+   - Open **Settings** in the app  
+   - Enter the same **IP address** and **UDP port** you configured in Expedition Marine  
+   - (If using) Enter NMEA 2000 Ethernet Gateway IP/port  
+   - Restart connection → look for **green** status indicators  
+
+3. **Configure Your Boat**  
+   - Boat Name  
+   - MMSI number (if applicable)  
+   - Boat Length (used for boat-length distance calculations)  
+   - Draft (used for depth safety alerts)  
+   - TWA Reaching Threshold (sailing mode detection sensitivity)  
+
+4. **Choose Display Mode**  
+   - Light Mode  
+   - Dark Mode  
+   - Night Mode (red-tinted for night vision)  
+   - Test Mode (simulated data for training/demos)  
+
+### Expedition Marine Requirements
+
+**Exp Rx filter**  
+- Enable **Receive marks**
+
+**Exp Tx filter** (select these channels):  
+AWA, AWS, Barometer, BSP, Cog, Course, Current Drift, Current Set, Depth, Heading, Heading - Cog, Heading to steer, Heading to steer polar, Heel (roll), Latitude, Layline bearing, Layline bearing on port, Layline bearing on strb, Layline distance on port, Layline distance on starb, Layline Distance, Layline time, Layline time on port, Layline time on starb, Longitude, Magnetic variation, Mark bearing, Mark bearing - Cog, Mark latitude, Mark longitude, Mark range, Mark time, Mark twa, Opposite track, Next mark awa, Next mark aws, Next mark bearing, Next mark latitude, Next mark longitude, Next mark polar time, Next mark range, Next mark time on port, Next mark time on starb, Next mark tws, Opposite track, Polar bsp, Polar bsp %, Sail mark, Sail next mark, Sog, Start bias length, Start distance below line, Start layline on port, Start layline on strbd, Start line square wind, Start port latitude, Start port longitude, Start stbd latitude, Start stbd longitude, Start time to burn, Start time to gun, Start time to layline P, Start time to layline S, Start time to line, Start time to port, Start time to strb, Target bsp, Target twa, Target bsp %, Target twa, Trim (pitch) rate, TWA, TWS, VMC, VMC %
+
+---
+
+## Connection Settings
+
+- **IP Address**: Boat network broadcast address  
+- **UDP Port**: Usually 5098  
+- **Test Mode**: Enable for simulated training data  
+
+## Boat Configuration
+
+- **Boat Name** — Vessel identification  
+- **Boat Length** — For distance calculations in boat lengths  
+- **Draft** — Critical for depth safety  
+- **TWA Reaching Threshold** — Adjusts sailing mode detection  
+
+## Display Options
+
+- Light Mode  
+- Dark Mode  
+- Night Mode (red-tinted)  
+- Chart Time Windows (custom history view)  
+- Map Style (hybrid, standard, satellite, imagery)  
+
+## Safety Settings
+
+- **Depth Alerts** — Draft + safety margin warnings  
+- **Audio Countdown** — Spoken start sequence  
+- **MOB (Man Overboard)** — Emergency position mark & tracking  
 
 ---
 
 ## Troubleshooting
 
 ### Connection Issues
-- **Red status indicators**: Check IP address and UDP port settings
-- **No data reception**: Verify Expedition Marine is broadcasting data
-- **Intermittent connection**: Check WiFi signal strength and network stability
+- Red indicators → Verify IP & port  
+- No data → Confirm Expedition is broadcasting  
+- Intermittent → Check WiFi strength/stability  
 
 ### Display Problems
-- **Data not updating**: Restart Expedition Marine or the UDP connection in settings
-- **Watch not syncing**: Check iPhone-Watch connectivity and app permissions
+- Data not updating → Restart connection or Expedition  
+- Watch not syncing → Check iPhone–Watch link & permissions  
 
 ### Performance Issues
-- **Slow response**: Reduce chart time windows or restart the app
-- **Battery drain**: Use night mode and reduce display brightness
-- **Memory issues**: Clear old event logs and restart periodically
-
----
-
-## Getting Started
-- **Latest Version**: Because this app shares data between users, it is recommended that all iOS devices run the same version of the app.
-
-### First Launch Setup
-
-1. **Configure the Expdition Marine Network**
-  - Start Expedition Marine on the boat PC.
-  - From the ☰ Hamburger Menu > drag down and hover over Instruments > click on Number of network connections
-  - Enter one greater than the number displayed to add one more network > click OK
-  - From the ☰ Hamburger Menu > drag down, hover over, and click Instruments
-  - Select the Network you just created and enter the following
-  - Alias - SailWatchPro
-  - Instruments - Expedition
-  - Address - 192.168.XXX.YYY, where this is the IP address of your Expedition Marine PC.
-  - Port - Select any port that is not used by another Expedition Marine network.
-  - Click Expedition Settings
-  - Click the Exp Rx filter and select the Receive marks check box.
-  - Click the Exp Tx filter and select the channels noted in Appendix A below.
-
-1. **Connect to Expedition Marine**
-  - Install the app on your iOS device.
-  - In the SailProApp, touch Settings and configure your boat's WiFi network and other details.
-  - Set the IP address to match the Expedition Marine network IP address you set in the previous step.
-  - Set the UDP port to match the Expedition Marine network port you set in the previous step.
-  - Set the IP address for any NMEA 2000 Ethernet Gateway and UDP port
-  - Restart to enable the connection and look for green status indicators.
-
-2. **Configure Your Boat**
-  - Enter your boat name
-  - Enter your boat's MMSI number
-  - Set boat length (for distance calculations in boat lengths)
-  - Set draft (for depth safety alerts)
-  - Adjust TWA reaching threshold for sailing mode detection
-
-3. **Choose Your Display Mode**
-  - **Night Mode**: Red-tinted display for night sailing
-  - **Test Mode**: Use simulated data for testing and demos
-
-## Expedition Marine Requirements
-
-## Exp Rx filter
-Enable Receive marks
-
-## Exp Tx filter
-AWA, AWS, Barometer, BSP, Cog, Course, Current Drift, Current Set, Depth,
-Heading, Heading - Cog, Heading to steer, Heading to steer polar, Heel (roll), Latitude,
-Layline bearing, Layline bearing on port, Layline bearing on strb, Layline distance on port, Layline distance on starb, Layline Distance, Layline time, Layline time on port, Layline time on starb, Longitude,
-Magnetic variation, Mark bearing, Mark bearing - Cog, Mark latitude, Mark longitude, Mark range, Mark time, Mark twa, Opposite track,
-Next mark awa, Next mark aws, Next mark bearing, Next mark latitude, Next mark longitude,
-Next mark polar time, Next mark range, Next mark time on port, Next mark time on starb, Next mark tws,
-Opposite track, Polar bsp, Polar bsp %, Sail mark, Sail next mark, Sog,
-Start bias length, Start distance below line, Start layline on port, Start layline on strbd, Start line square wind,
-Start port latitude, Start port longitude, Start stbd latitude, Start stbd longitude,
-Start time to burn, Start time to gun, Start time to layline P, Start time to layline S, Start time to line,
-Start time to port, Start time to strb, Target bsp, Target twa, Target bsp %, Target twa, Trim (pitch) rate,
-TWA, TWS, TWS, VMC, VMC %
+- Slow → Shorten chart time windows / restart app  
+- Battery drain → Use Night Mode + lower brightness  
+- Memory → Clear old logs / restart periodically  
 
 ---
 
 ## Support & Updates
 
-SailWatchPro is continuously updated with new features and improvements based on user feedback and racing experience. Regular updates include enhanced analytics, new data visualizations, and improved integration with marine electronics.
+SailWatchPro is actively developed with new features based on user feedback and racing experience.  
 
-For the best racing experience, ensure both your iPhone and Apple Watch apps are up to date.
+For best results, keep both iPhone and Watch apps on the same version.  
 
-For Support & Enhancement Requests, please contact us at https://github.com/jbistis/SailWatchPro-Public/issues.  We’re eager to hear your suggestions on features that would make the app even more valuable to you.
+**Support & Feature Requests**:  
+https://github.com/jbistis/SailWatchPro-Public/issues
 
----
-
-*Happy sailing, and may you always find the favorable wind shift!*
-
+Happy sailing! ⛵
 **SailWatchPro Team**
