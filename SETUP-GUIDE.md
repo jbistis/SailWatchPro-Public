@@ -107,13 +107,13 @@ AWA, AWS, Barometer, BSP, Cog, Course, Current Drift, Current Set, Depth, Headin
 - **Audio Countdown** — Spoken start sequence  
 - **MOB (Man Overboard)** — Emergency position mark & tracking  
 
-## Data imports via CSV
+## Data imports
 
-- **Buoys* — Starter file at
-- **Sail Crossover Chart* — Txt or xml export from Expedition Marine
-- **Sail Performance Crossover Chart* — export tsv from sailing analytics
-- **Polars* — Txt or export from Expedition Marine
-- **Competitors* — Bulk high speed entry
+- **Buoys** — Starter file at
+- **Sail Crossover Chart** — Txt or xml export from Expedition Marine
+- **Sail Performance Crossover Chart** — export tsv from sailing analytics
+- **Polars** — Txt or export from Expedition Marine
+- **Competitors** — Bulk high speed entry
 
 ## Troubleshooting
 
