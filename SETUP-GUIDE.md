@@ -21,6 +21,7 @@
 - [Boat Configuration](#boat-configuration)
 - [Display Options](#display-options)
 - [Safety Settings](#safety-settings)
+- - [Data Imports](#data-imports)
 - [Troubleshooting](#troubleshooting)
   - [Connection Issues](#connection-issues)
   - [Display Problems](#display-problems)
