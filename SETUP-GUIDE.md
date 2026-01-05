@@ -114,8 +114,6 @@ AWA, AWS, Barometer, BSP, Cog, Course, Current Drift, Current Set, Depth, Headin
 - **Polars* — Txt or export from Expedition Marine
 - **Competitors* — Bulk high speed entry
 
----
-
 ## Troubleshooting
 
 ### Connection Issues
