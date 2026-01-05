@@ -193,6 +193,8 @@ Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches t
 
 [Full setup guide →](https://docs.google.com/document/d/1cXRDmIqwttnDQbBGQB0azVdZFzVpno5fVTCnSREfSbo/edit?usp=sharing)
 
+[Jump to Installation section](SETUP-GUIDE.md)
+
 [Full user guide →](https://docs.google.com/document/d/1cXRDmIqwttnDQbBGQB0azVdZFzVpno5fVTCnSREfSbo/edit?usp=sharing)
 
 <a id="beta-request"></a>
