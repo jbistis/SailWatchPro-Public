@@ -12,7 +12,8 @@
 
 ---
 
-## Settings & Customization
+## Download the app from Apple's Test Flight
+
 
 ### Connection Settings
 - **IP Address**: Your boat's network broadcast address
