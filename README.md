@@ -55,7 +55,7 @@ Expedition provides precision timing, line pings, and bias. SailWatchPro makes i
 
 <div align="center">
   <img src="images/swp-navigator-landscape-light.png" width="512">
-  <br><em>Course Mao with Buoy/GRIB data and Compeitor Heat Map</em>
+  <br><em>Course Map with Buoy/GRIB data and Competitor Heat Map</em>
 </div>
 <br>
 
