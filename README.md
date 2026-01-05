@@ -39,21 +39,25 @@ Expedition provides precision timing, line pings, and bias. SailWatchPro makes i
   <img src="images/swp-prestart-view-light.png" width="512">
   <br><em>Pre-Start Dashboard</em>
 </div>
+<br>
 
 <div align="center">
   <img src="images/swp-iPad-start-view-with-flags-light.png" width="512">
   <br><em>Start Line Visuals & Bias</em>
 </div>
+<br>
 
 <div align="center">
   <img src="images/swp-navigator-portrait-light.png" width="512">
   <br><em>Course Table View with Marks Bears, and Estimated Wind Angles</em>
 </div>
+<br>
 
 <div align="center">
   <img src="images/swp-navigator-landscape-light.png" width="512">
   <br><em>Course Mao with Buoy/GRIB data and Compeitor Heat Map</em>
 </div>
+<br>
 
 ### Weather Observations & Analytics
 Automatic polling of nearby buoys (NOAA, NDBC, etc.) within a user-defined distance beyond the race area. Overlay predicted GRIB with actual observations and track divergences in real time.
@@ -61,6 +65,7 @@ Automatic polling of nearby buoys (NOAA, NDBC, etc.) within a user-defined dista
   <img src="images/swp-buoy-list-view-light.png" width="512">
   <br><em>Automated recurring buoy data fetching</em>
 </div>
+<br>
 
 **Weather Station Wind Analysis**  
 Visually compare buoy observations with GRIB forecasts and trends for every key station — see exactly how reality is diverging across the race area.
@@ -68,6 +73,7 @@ Visually compare buoy observations with GRIB forecasts and trends for every key 
   <img src="images/buoy-observed-grib.png" width="512"> <!-- Use your Virginia Key screenshot here -->
   <br><em>Buoy: Predicted vs. Actual Wind Trends</em>
 </div>
+<br>
 
 **Boat Instrumentation Wind Analysis**  
 Your boat is a moving weather station. SailWatchPro analyzes real-time wind trends using rolling averages, FFT, and wavelet transforms to identify veering/backing, building, and oscillating patterns — with confidence indicators and a 6-hour wind history that syncs across devices.
@@ -76,13 +82,13 @@ Your boat is a moving weather station. SailWatchPro analyzes real-time wind tren
   <img src="images/swp-wind-state.png" width="512">
   <br><em>Boat: Wind Trends from instruments</em>
 </div>
-
----
+<br>
 
 <div align="center">
   <img src="images/swp-boat-location-forcast-portrait-light.png" width="512">
   <br><em>Boat: Predicted vs. Actual Wind Trends</em>
 </div>
+<br>
 
 ### Competitor Tracking
 Live corrected time vs. handicap, lateral separation visualization — know instantly if you're gaining or losing on corrected time, even when boats are physically ahead or behind.
@@ -90,6 +96,7 @@ Live corrected time vs. handicap, lateral separation visualization — know inst
   <img src="images/swp-competitor-view-light.png" width="512"> <!-- Use your Virginia Key screenshot here -->
   <br><em>Competitor Tracking with live leaderboard</em>
 </div>
+<br>
 
 ### Strategic & Tactical Advisories
 Centralized, customizable alerts that monitor for you: current push, leeway drift, sail mismatches, barometric trends, and more — so you can focus on steering and tactics.
@@ -98,7 +105,8 @@ Centralized, customizable alerts that monitor for you: current push, leeway drif
   <img src="images/swp-advisories-light.png" width="512"> <!-- Use your Virginia Key screenshot here -->
   <br><em>Advisories in realtime/em>
 </div>
-
+<br>
+    
 **Dashboards**  
 12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain trim, avoid overstanding, and correct drift.
 <div align="center">
@@ -107,8 +115,7 @@ Centralized, customizable alerts that monitor for you: current push, leeway drif
 <div align="center">
   <img src="images/swp-dashboard-select-channels-dashboards-landscape-light.png" width="512"/>
 </div>
-
----
+<br>
 
 <div align="center">
   <strong>Prestart Dashboard Example</strong><br>
@@ -116,8 +123,7 @@ Centralized, customizable alerts that monitor for you: current push, leeway drif
 <div align="center">
   <img src="images/swp-dashboard-3x3-prestart-landscape-light.png" width="512"/>
 </div>
-
----
+<br>
 
 <div align="center">
   <strong>Buoy Racing Dashboard Example</strong><br>
@@ -125,8 +131,7 @@ Centralized, customizable alerts that monitor for you: current push, leeway drif
 <div align="center">
   <img src="images/swp-dashboard-3x3-buoy-racing-landscape-light.png" width="512"/>
 </div>
-
----
+<br>
 
 <div align="center">
   <strong>Offshore Racing Dashboard Example</strong><br>
@@ -134,8 +139,7 @@ Centralized, customizable alerts that monitor for you: current push, leeway drif
 <div align="center">
   <img src="images/swp-dashboard-3x3-offshore-racing-landscape-light.png" width="512"/>
 </div>
-
----
+<br>
 
 <div align="center">
   <strong>Driver Performance Dashboard Example</strong><br>
@@ -143,8 +147,7 @@ Centralized, customizable alerts that monitor for you: current push, leeway drif
 <div align="center">
   <img src="images/swp-dashboard-3x3-performance-landscape-light.png" width="512"/>
 </div>
-
----
+<br>
 
 <div align="center">
   <strong>Four Channels</strong><br>
@@ -152,8 +155,7 @@ Centralized, customizable alerts that monitor for you: current push, leeway drif
 <div align="center">
  <img src="images/swp-dashboard-2x2-wind-landscape-light.png" width="512"/>
 </div>
-
----
+<br>
 
 <div align="center">
   <strong>Build your own custom names in custom order</strong><br>
@@ -161,6 +163,7 @@ Centralized, customizable alerts that monitor for you: current push, leeway drif
 <div align="center">
  <img src="images/swp-dashboard-reorder-dashboards-landscape-light.png" width="512"/>
 </div>
+<br>
 
 ## Apple Watch Integration
 Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches to shallow-water monitoring.
@@ -168,6 +171,7 @@ Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches t
 <div align="center">
   <img src="images/swp-apple-watch-views.png" width="512">
 </div>
+<br>
 
 ## Technical Highlights
 - GRIB parsing via ECMWF ecCodes bridge
