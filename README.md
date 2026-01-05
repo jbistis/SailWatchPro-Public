@@ -191,11 +191,9 @@ Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches t
 3. Customize dashboards  
 4. Race with real-time edge  
 
-[Full setup guide →](https://docs.google.com/document/d/1cXRDmIqwttnDQbBGQB0azVdZFzVpno5fVTCnSREfSbo/edit?usp=sharing)
-
 [Jump to setup guide](SETUP-GUIDE.md)
 
-[Full user guide →](https://docs.google.com/document/d/1cXRDmIqwttnDQbBGQB0azVdZFzVpno5fVTCnSREfSbo/edit?usp=sharing)
+[Jump to user manual →](USER-MANUAL)
 
 <a id="beta-request"></a>
 ## Pricing & Availability
