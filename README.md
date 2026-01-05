@@ -185,16 +185,6 @@ Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches t
 - Reliable boat WiFi
 - NMEA 2000 Ethernet Gateway for competitor tracking via AIS
 
-## Getting Started
-1. Connect to the Expedition network  
-2. Enter boat parameters  
-3. Customize dashboards  
-4. Race with real-time edge  
-
-[Jump to setup guide →](SETUP-GUIDE.md)
-
-[Jump to user manual →](USER-MANUAL.md)
-
 <a id="beta-request"></a>
 ## Pricing & Availability
 Currently in limited beta.  
@@ -211,6 +201,16 @@ Full release and pricing details coming soon — contact us for early access.
   Email me directly: <a href="mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Invite%20Request">james.bistis@icloud.com</a><br>
   <small>Please include your boat type, racing plans, and Expedition version.</small>
 </p>
+
+## Getting Started
+1. Connect to the Expedition network  
+2. Enter boat parameters  
+3. Customize dashboards  
+4. Race with real-time edge  
+
+[Jump to setup guide →](SETUP-GUIDE.md)
+
+[Jump to user manual →](USER-MANUAL.md)
 
 [Report Issues & Suggestions →](https://github.com/jbistis/SailWatchPro-Public/issues)
 
