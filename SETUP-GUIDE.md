@@ -111,7 +111,7 @@ AWA, AWS, Barometer, BSP, Cog, Course, Current Drift, Current Set, Depth, Headin
 
 You can find sample import files at https://github.com/jbistis/SailWatchPro-Public/tree/main/documents 
 
-- **Buoys** — file name must be default_buoys.csv
+- **Buoys** — file name must be `default_buoys.csv`
 - **Sail Crossover Chart** — Txt or xml export from Expedition Marine
 - **Sail Performance Crossover Chart** — export tsv from sailing analytics
 - **Polars** — Txt or export from Expedition Marine
