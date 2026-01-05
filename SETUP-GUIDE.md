@@ -10,30 +10,6 @@
   Setup Guide
 </p>
 
-
-## Apple Watch Integration
-
-Your Apple Watch becomes a powerful racing companion with dedicated views:
-
-<div align="center">
- <img src="images/swp-apple-watch-views.png" width="512"/>
-</div>
-
-**Watch Features**
-- **Race Timer**: Dedicated start sequence display
-- **BSP Split Box**: Speed data with performance indicators
-- **Heel Angle**: Real-time heel monitoring
-- **VMG Split Box**: Velocity made good analysis
-- **TWA/AWA Split Boxes**: Wind angle optimization
-- **Depth Split Box**: Safety monitoring with alerts
-- **Custom Data Fields**: Personalized data display
-- **Automatic Page Switching**: Switches to the depth page on dangerous conditions
-
-**Watch Connectivity**
-- Seamless data sync from iPhone app
-- Independent operation during races
-- Night mode support for all watch faces
-
 ---
 
 ## Settings & Customization
