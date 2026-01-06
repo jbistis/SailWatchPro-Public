@@ -232,38 +232,13 @@ Happy sailing! ⛵
 - VMC
 - VMC %
 
-- 
+<td>
 
-|--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [adaptor](https://github.com/gofiber/fiber/tree/main/middleware/adaptor)             | Converter for net/http handlers to/from Fiber request handlers.                                                                                                         |
-| [basicauth](https://github.com/gofiber/fiber/tree/main/middleware/basicauth)         | Provides HTTP basic authentication. It calls the next handler for valid credentials and 401 Unauthorized for missing or invalid credentials.                            |
-| [cache](https://github.com/gofiber/fiber/tree/main/middleware/cache)                 | Intercept and cache HTTP responses.                                                                                                                                     |
-| [compress](https://github.com/gofiber/fiber/tree/main/middleware/compress)           | Compression middleware for Fiber, with support for `deflate`, `gzip`, `brotli` and `zstd`.                                                                             |
-| [cors](https://github.com/gofiber/fiber/tree/main/middleware/cors)                   | Enable cross-origin resource sharing (CORS) with various options.                                                                                                       |
-| [csrf](https://github.com/gofiber/fiber/tree/main/middleware/csrf)                   | Protect from CSRF exploits.                                                                                                                                             |
-| [earlydata](https://github.com/gofiber/fiber/tree/main/middleware/earlydata)         | Adds support for TLS 1.3's early data ("0-RTT") feature.                                                                                                                |
-| [encryptcookie](https://github.com/gofiber/fiber/tree/main/middleware/encryptcookie) | Encrypt middleware which encrypts cookie values.                                                                                                                        |
-| [envvar](https://github.com/gofiber/fiber/tree/main/middleware/envvar)               | Expose environment variables with providing an optional config.                                                                                                         |
-| [etag](https://github.com/gofiber/fiber/tree/main/middleware/etag)                   | Allows for caches to be more efficient and save bandwidth, as a web server does not need to resend a full response if the content has not changed.                      |
-| [expvar](https://github.com/gofiber/fiber/tree/main/middleware/expvar)               | Serves via its HTTP server runtime exposed variables in the JSON format.                                                                                                 |
-| [favicon](https://github.com/gofiber/fiber/tree/main/middleware/favicon)             | Ignore favicon from logs or serve from memory if a file path is provided.                                                                                               |
-| [healthcheck](https://github.com/gofiber/fiber/tree/main/middleware/healthcheck)     | Liveness and Readiness probes for Fiber.                                                                                                                                |
-| [helmet](https://github.com/gofiber/fiber/tree/main/middleware/helmet)               | Helps secure your apps by setting various HTTP headers.                                                                                                                 |
-| [idempotency](https://github.com/gofiber/fiber/tree/main/middleware/idempotency)     | Allows for fault-tolerant APIs where duplicate requests do not erroneously cause the same action performed multiple times on the server-side.                           |
-| [keyauth](https://github.com/gofiber/fiber/tree/main/middleware/keyauth)             | Adds support for key based authentication.                                                                                                                              |
-| [limiter](https://github.com/gofiber/fiber/tree/main/middleware/limiter)             | Adds Rate-limiting support to Fiber. Use to limit repeated requests to public APIs and/or endpoints such as password reset.                                             |
-| [logger](https://github.com/gofiber/fiber/tree/main/middleware/logger)               | HTTP request/response logger.                                                                                                                                           |
-| [pprof](https://github.com/gofiber/fiber/tree/main/middleware/pprof)                 | Serves runtime profiling data in pprof format.                                                                                                                          |
-| [proxy](https://github.com/gofiber/fiber/tree/main/middleware/proxy)                 | Allows you to proxy requests to multiple servers.                                                                                                                       |
-| [recover](https://github.com/gofiber/fiber/tree/main/middleware/recover)             | Recovers from panics anywhere in the stack chain and handles the control to the centralized ErrorHandler.                                                               |
-| [redirect](https://github.com/gofiber/fiber/tree/main/middleware/redirect)           | Redirect middleware.                                                                                                                                                    |
-| [requestid](https://github.com/gofiber/fiber/tree/main/middleware/requestid)         | Adds a request ID to every request.                                                                                                                                     |
-| [responsetime](https://github.com/gofiber/fiber/tree/main/middleware/responsetime)   | Measures request handling duration and writes it to a configurable response header.                          |
-| [rewrite](https://github.com/gofiber/fiber/tree/main/middleware/rewrite)             | Rewrites the URL path based on provided rules. It can be helpful for backward compatibility or just creating cleaner and more descriptive links.                        |
-| [session](https://github.com/gofiber/fiber/tree/main/middleware/session)             | Session middleware. NOTE: This middleware uses our Storage package.                                                                                                     |
-| [skip](https://github.com/gofiber/fiber/tree/main/middleware/skip)                   | Skip middleware that skips a wrapped handler if a predicate is true.                                                                                                    |
-| [static](https://github.com/gofiber/fiber/tree/main/middleware/static)               | Static middleware for Fiber that serves static files such as **images**, **CSS**, and **JavaScript**.                                                                    |
-| [timeout](https://github.com/gofiber/fiber/tree/main/middleware/timeout)             | Adds a max time for a request and forwards to ErrorHandler if it is exceeded.                                                                                           |
-
-
-
+|Accuracy|Precision|Recall|F1-Score|
+|-:|-:|-:|-:|
+|0.9871|0.9667|0.9830|0.9748|
+|0.9664|0.8667|1.0000|0.9286|
+|0.9664|1.0000|0.8823|0.9375|
+|0.9957|1.0000|0.9836|0.9917|
+            
+</td>
