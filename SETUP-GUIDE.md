@@ -27,7 +27,7 @@
 - [Display Problems](#display-problems)
 - [Performance Issues](#performance-issues)
 - [Support & Updates](#support--updates)
-- [Expedition Marine Tx Channels](#tx--channels)
+- [Tx Channels](#tx--channels)
 
 ---
 
@@ -155,7 +155,7 @@ https://github.com/jbistis/SailWatchPro-Public/issues
 Happy sailing! ⛵
 **SailWatchPro Team**
 
-## Expedition Marine Tx Channels
+## Tx Channels
 
 - AWA
 - AWS
