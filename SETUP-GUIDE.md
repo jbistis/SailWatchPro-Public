@@ -232,7 +232,7 @@ Happy sailing! ⛵
 - VMC
 - VMC %
 
->    |Type|COVID-19|Lung Opacity|AWA|AWS|Total|
+>    |AWA|AWS|Barometer|BSP|Cog|Course|
 >    |:-|-:|-:|-:|-:|-:|
 >    |Train|3496|5892|10072|1225|20685|
 >    |Val|60|60|60|60|240|
