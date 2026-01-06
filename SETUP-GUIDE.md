@@ -27,7 +27,6 @@
 - [Display Problems](#display-problems)
 - [Performance Issues](#performance-issues)
 - [Support & Updates](#support--updates)
-- [Tx Channels](#tx-channels)
 
 ---
 
@@ -183,50 +182,4 @@ https://github.com/jbistis/SailWatchPro-Public/issues
 
 Happy sailing! ⛵
 **SailWatchPro Team**
-
-## Tx Channels
-
->    |Tx Channels|||
->    |:-|-:|-:|
->    |AWS|AWA|Barometer|
->    |BSP|Cog|Course|
->    |Current drift|Current drift|Current drift predicted|
->    |Current set|Current set predicted|Depth|
->    |Heading - Cog|Heading to steer|Heading to steer polar|
->    |Heel (roll)|J1|Lattitude|
->    |Layline bearing|Layline bearing on port|Layline bearing on strb|
->    |Layline dist on port|Layline dist on starb|Layline distance|
->    |Layline time|Layline time on port|Layline time on starb|
->    |Longitude|Magnetic variation|Mark bearing|
->    |Mark bearing - Cog|Mark lattitude|Mark longitude|
->    |Mark range|Mark time|Mark twa|
->    |Next mark awa|Next mark aws|Next mark bearing|
->    |Next mark lattitude|Next mark longitude|Next mark polar time|
->    |Next mark range|Next mark time on port|Next mark time on starb|
->    |Next mark twa|Opposite track|Polar bsp|
->    |Polar bsp %|Sail|Sail event|
->    |Sail mark|Sail next mark|Sea temperature|
->    |Sog|Start bias angle|Start bias length|
->    |Start distance below line|Start layline on port|Start layline on strdb|
->    |Start line square wind|Start port lattitude|Start port longitude|
->    |Start stdb lattitude|Start stdb longitude|Start time to burn|
->    |Start time to gun|Start time to layline P|Start time to layline S|
->    |Start time to line|Start time to port|Start time to port burn|
->    |Start time to strb|Start time to strb burn|Target bsp|
->    |Target bsp %|Target twa|Trim (pitch)|
->    |TWA|TWD|TWD predicted|
->    |TWS|TWS predicted|VMC|
->    |VMC %|VMC optimum|VMG|
->    |VMG %|||
-
-
-
-
-
-
-
-
-
-
-
 
