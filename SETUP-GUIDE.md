@@ -246,6 +246,10 @@ Happy sailing! ⛵
 >    |Longitude|Magnetic variation|Mark bearing|
 >    |Mark bearing - Cog|Mark lattitude|Mark longitude|
 >    |Mark range|Mark time|Mark twa|
+>    |Next mark awa|Next mark aws|Next mark bearing|
+>    |Next mark lattitude|Next mark longitude|Next mark polar time|
+>    |Next mark range|Next mark time on port|Next mark time on starb|
+
 
 
 
