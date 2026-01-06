@@ -91,15 +91,15 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **same 
 >    |Mark bearing - Cog|Mark latitude|Mark longitude|
 >    |Mark range|Mark time|Mark twa|
 >    |Next mark awa|Next mark aws|Next mark bearing|
->    |Next mark lattitude|Next mark longitude|Next mark polar time|
+>    |Next mark latitude|Next mark longitude|Next mark polar time|
 >    |Next mark range|Next mark time on port|Next mark time on starb|
 >    |Next mark twa|Opposite track|Polar bsp|
 >    |Polar bsp %|Sail|Sail event|
 >    |Sail mark|Sail next mark|Sea temperature|
 >    |Sog|Start bias angle|Start bias length|
 >    |Start distance below line|Start layline on port|Start layline on strdb|
->    |Start line square wind|Start port lattitude|Start port longitude|
->    |Start stdb lattitude|Start stdb longitude|Start time to burn|
+>    |Start line square wind|Start port latitude|Start port longitude|
+>    |Start stdb latitude|Start stdb longitude|Start time to burn|
 >    |Start time to gun|Start time to layline P|Start time to layline S|
 >    |Start time to line|Start time to port|Start time to port burn|
 >    |Start time to strb|Start time to strb burn|Target bsp|
