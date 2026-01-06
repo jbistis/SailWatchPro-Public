@@ -90,6 +90,13 @@ Your boat is a moving weather station. SailWatchPro analyzes real-time wind tren
 </div>
 <br>
 
+**GRIB File Manager**  
+<div align="center">
+  <img src="images/swp-grib-file-manager-portrait-light.png" width="512">
+  <br><em>Enforces compliance to Race Area Coverage Box</em>
+</div>
+<br>
+
 ### Competitor Tracking
 Live corrected time vs. handicap, lateral separation visualization — know instantly if you're gaining or losing on corrected time, even when boats are physically ahead or behind.
 <div align="center">
