@@ -239,7 +239,7 @@ Happy sailing! ⛵
 >    |Current drift|Current drift|Current drift predicted|
 >    |Current set|Current set predicted|Depth|
 >    |Heading - Cog|Heading to steer|Heading to steer polar|
->    |Heel (roll)|J1||Lattitude|
+>    |Heel (roll)|J1|Lattitude|
 >    |Layline bearing|Layline bearing on port|Layline bearing on strb|
 >    |Layline dist on port|Layline dist on starb|Layline distance|
 
