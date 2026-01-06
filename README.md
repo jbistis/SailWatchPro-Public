@@ -90,7 +90,9 @@ Your boat is a moving weather station. SailWatchPro analyzes real-time wind tren
 </div>
 <br>
 
-**GRIB File Manager**  
+**GRIB File Manager**
+The GRIB File Manager automatically disables GRIB files that have either expired or are outside the race area.
+
 <div align="center">
   <img src="images/swp-grib-file-manager-portrait-light.png" width="512">
   <br><em>Enforces compliance to Race Area Coverage Box</em>
