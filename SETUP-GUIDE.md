@@ -15,17 +15,17 @@
 ## Table of Contents
 
 - [Getting Started](#getting-started)
-  - [First Launch Setup](#first-launch-setup)
-  - [Expedition Marine Requirements](#expedition-marine-requirements)
+- [First Launch Setup](#first-launch-setup)
+- [Expedition Marine Requirements](#expedition-marine-requirements)
 - [Connection Settings](#connection-settings)
 - [Boat Configuration](#boat-configuration)
 - [Display Options](#display-options)
 - [Safety Settings](#safety-settings)
 - [Data Imports](#data-imports)
 - [Troubleshooting](#troubleshooting)
-  - [Connection Issues](#connection-issues)
-  - [Display Problems](#display-problems)
-  - [Performance Issues](#performance-issues)
+- [Connection Issues](#connection-issues)
+- [Display Problems](#display-problems)
+- [Performance Issues](#performance-issues)
 - [Support & Updates](#support--updates)
 
 ---
@@ -79,23 +79,82 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **same 
 
 **Exp Tx filter** (select these channels):
 
-- AWA                  • Layline bearing        • Next mark polar time
-- AWS                  • Layline bearing on port • Next mark range
-- Barometer            • Layline bearing on strb • Next mark time on port
-- BSP                  • Layline distance on port • Next mark time on starb
-- Cog                  • Layline distance on starb • Next mark tws
-- Course               • Layline Distance        • Polar bsp
-- Current Drift        • Layline time           • Polar bsp %
-- Current Set          • Layline time on port   • Sail mark
-- Depth                • Layline time on starb  • Sail next mark
-- Heading              • Longitude              • Sog
-- Heading - Cog        • Magnetic variation     • Start bias length
-- Heading to steer     • Mark bearing           • Start distance below line
-- Heading to steer polar • Mark bearing - Cog   • Start layline on port
-- Heel (roll)          • Mark latitude          • Start layline on strbd
-- Latitude             • Mark longitude         • Start line square wind
-- ... (continue pattern)
+**Exp Tx filter** (select these channels):
 
+- AWA
+- AWS
+- Barometer
+- BSP
+- Cog
+- Course
+- Current Drift
+- Current Set
+- Depth
+- Heading
+- Heading - Cog
+- Heading to steer
+- Heading to steer polar
+- Heel (roll)
+- Latitude
+- Layline bearing
+- Layline bearing on port
+- Layline bearing on strb
+- Layline distance on port
+- Layline distance on starb
+- Layline Distance
+- Layline time
+- Layline time on port
+- Layline time on starb
+- Longitude
+- Magnetic variation
+- Mark bearing
+- Mark bearing - Cog
+- Mark latitude
+- Mark longitude
+- Mark range
+- Mark time
+- Mark twa
+- Opposite track
+- Next mark awa
+- Next mark aws
+- Next mark bearing
+- Next mark latitude
+- Next mark longitude
+- Next mark polar time
+- Next mark range
+- Next mark time on port
+- Next mark time on starb
+- Next mark tws
+- Polar bsp
+- Polar bsp %
+- Sail mark
+- Sail next mark
+- Sog
+- Start bias length
+- Start distance below line
+- Start layline on port
+- Start layline on strbd
+- Start line square wind
+- Start port latitude
+- Start port longitude
+- Start stbd latitude
+- Start stbd longitude
+- Start time to burn
+- Start time to gun
+- Start time to layline P
+- Start time to layline S
+- Start time to line
+- Start time to port
+- Start time to strb
+- Target bsp
+- Target twa
+- Target bsp %
+- Target twa
+- Trim (pitch) rate
+- TWA
+- TWS
+- VMC
+- VMC %
 
 AWA, AWS, Barometer, BSP, Cog, Course, Current Drift, Current Set, Depth, Heading, Heading - Cog, Heading to steer, Heading to steer polar, Heel (roll), Latitude, Layline bearing, Layline bearing on port, Layline bearing on strb, Layline distance on port, Layline distance on starb, Layline Distance, Layline time, Layline time on port, Layline time on starb, Longitude, Magnetic variation, Mark bearing, Mark bearing - Cog, Mark latitude, Mark longitude, Mark range, Mark time, Mark twa, Opposite track, Next mark awa, Next mark aws, Next mark bearing, Next mark latitude, Next mark longitude, Next mark polar time, Next mark range, Next mark time on port, Next mark time on starb, Next mark tws, Opposite track, Polar bsp, Polar bsp %, Sail mark, Sail next mark, Sog, Start bias length, Start distance below line, Start layline on port, Start layline on strbd, Start line square wind, Start port latitude, Start port longitude, Start stbd latitude, Start stbd longitude, Start time to burn, Start time to gun, Start time to layline P, Start time to layline S, Start time to line, Start time to port, Start time to strb, Target bsp, Target twa, Target bsp %, Target twa, Trim (pitch) rate, TWA, TWS, VMC, VMC %
 
