@@ -182,6 +182,16 @@ Happy sailing! ⛵
 >    |Start line square wind|Start port lattitude|Start port longitude|
 >    |Start stdb lattitude|Start stdb longitude|Start time to burn|
 >    |Start time to gun|Start time to layline P|Start time to layline S|
+>    |Start time to line|Start time to port|Start time to port burn|
+>    |Start time to strb|Start time to strb burn|Target bsp|
+>    |Target bsp %|Target twa|Trim (pitch)|
+>    |TWA|TWD|TWD predicted|
+>    |TWS|TWS predicted|VMC|
+>    |VMC %|VMC optimum|VMG|
+>    |VMG %|||
+
+
+
 
 
 
