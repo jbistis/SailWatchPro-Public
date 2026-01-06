@@ -242,6 +242,8 @@ Happy sailing! ⛵
 >    |Heel (roll)|J1|Lattitude|
 >    |Layline bearing|Layline bearing on port|Layline bearing on strb|
 >    |Layline dist on port|Layline dist on starb|Layline distance|
+>    |Layline time|Layline time on port|Layline time on starb|
+>    |Longitude|Magnetic variation|Mark bearing|
 
 
 
