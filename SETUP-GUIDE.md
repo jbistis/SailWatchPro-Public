@@ -233,11 +233,6 @@ Happy sailing! ⛵
 - VMC %
 
 - 
-| AWA     | AWS      | WTA |
-| AWA     | AWS      | WTA |
-| AWA     | AWS      | WTA |
-| AWA     | AWS      | WTA |
-
 
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [adaptor](https://github.com/gofiber/fiber/tree/main/middleware/adaptor)             | Converter for net/http handlers to/from Fiber request handlers.                                                                                                         |
