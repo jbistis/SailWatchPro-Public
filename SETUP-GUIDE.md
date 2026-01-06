@@ -27,7 +27,7 @@
 - [Display Problems](#display-problems)
 - [Performance Issues](#performance-issues)
 - [Support & Updates](#support--updates)
-- [Tx Channels](#tx--channels)
+- [Tx Channels](#tx-channels)
 
 ---
 
