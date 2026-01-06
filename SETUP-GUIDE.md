@@ -232,14 +232,9 @@ Happy sailing! ⛵
 - VMC
 - VMC %
 
->    |AWA|AWS|Barometer|BSP|Cog|Course|
+>    ||AWS|Barometer|BSP|Cog|Course|
 >    |:-|-:|-:|-:|-:|-:|
 >    |Current drift|Current drift|Current drift predicted|Current set|Current set predicted|Depth|
 >    |Val|60|60|60|60|240|
 >    |Test|60|60|60|60|240|
 
-    |AWA |AWS |Barometer |BSP |Cog |
-    |:-|-:|-:|-:|-:|-:|
-    |Train|3496|5892|10072|1225|20685|
-    |Val|60|60|60|60|240|
-    |Test|60|60|60|60|240|
