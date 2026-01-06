@@ -178,6 +178,10 @@ Happy sailing! ⛵
 >    |Polar bsp %|Sail|Sail event|
 >    |Sail mark|Sail next mark|Sea temperature|
 >    |Sog|Start bias angle|Start bias length|
+>    |Start distance below line|Start layline on port|Start layline on strdb|
+>    |Start line square wind|Start port lattitude|Start port longitude|
+>    |Start stdb lattitude|Start stdb longitude|Start time to burn|
+>    |Start time to gun|Start time to layline P|Start time to layline S|
 
 
 
