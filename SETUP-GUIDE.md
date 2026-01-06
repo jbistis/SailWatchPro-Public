@@ -233,7 +233,7 @@ Happy sailing! ⛵
 - VMC %
 
 <td>
-
+|||||
 |-:|-:|-:|-:|
 |AWA|AWS|Barometer|BSP|
 |0.9664|0.8667|1.0000|0.9286|
