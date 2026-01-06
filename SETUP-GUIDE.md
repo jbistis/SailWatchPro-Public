@@ -249,6 +249,11 @@ Happy sailing! ⛵
 >    |Next mark awa|Next mark aws|Next mark bearing|
 >    |Next mark lattitude|Next mark longitude|Next mark polar time|
 >    |Next mark range|Next mark time on port|Next mark time on starb|
+>    |Next mark twa|Opposite track|Polar bsp|
+>    |Polar bsp %|Sail|Sail event|
+>    |Sail mark|Sail next mark|Sea temperature|
+
+
 
 
 
