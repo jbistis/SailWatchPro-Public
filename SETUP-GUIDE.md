@@ -227,3 +227,6 @@ https://github.com/jbistis/SailWatchPro-Public/issues
 
 Happy sailing! ⛵
 **SailWatchPro Team**
+
+**Tx Channels**:  
+
