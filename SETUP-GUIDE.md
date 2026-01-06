@@ -252,6 +252,8 @@ Happy sailing! ⛵
 >    |Next mark twa|Opposite track|Polar bsp|
 >    |Polar bsp %|Sail|Sail event|
 >    |Sail mark|Sail next mark|Sea temperature|
+>    |Sog|Start bias angle|Start bias length|
+
 
 
 
