@@ -234,8 +234,12 @@ Happy sailing! ⛵
 
 >    |Tx Channels||||||
 >    |:-|-:|-:|-:|-:|-:|
->    |AWS|AWA|Barometer|BSP|Cog|Course|
->    |Current drift|Current drift|Current drift predicted|Current set|Current set predicted|Depth|
->    |Heading|Heading - Cog|Heading to steer|Heading to steer polar|Heel (roll)|J1|
->    |Lattitude|Layline bearing|Layline bearing on port|Layline bearing on strb|Layline dist on port|Layline dist on starb|
+>    |AWS|AWA|Barometer|BSP|
+>    |Cog|Course|Current drift|Current drift|Current drift predicted|
+>    |Current set|Current set predicted|Depth|Heading|
+>    |Heading - Cog|Heading to steer|Heading to steer polar|Heel (roll)|
+>    |J1||Lattitude|Layline bearing|Layline bearing on port|
+>    |Layline bearing on strb|Layline dist on port|Layline dist on starb|
+
+
 
