@@ -233,7 +233,12 @@ Happy sailing! ⛵
 - VMC %
 
 - 
-| Middleware                                                                           | Description                                                                                                                                                             |
+| AWA     | AWS      | WTA |
+| AWA     | AWS      | WTA |
+| AWA     | AWS      | WTA |
+| AWA     | AWS      | WTA |
+
+
 |--------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [adaptor](https://github.com/gofiber/fiber/tree/main/middleware/adaptor)             | Converter for net/http handlers to/from Fiber request handlers.                                                                                                         |
 | [basicauth](https://github.com/gofiber/fiber/tree/main/middleware/basicauth)         | Provides HTTP basic authentication. It calls the next handler for valid credentials and 401 Unauthorized for missing or invalid credentials.                            |
