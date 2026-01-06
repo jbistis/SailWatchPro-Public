@@ -27,6 +27,7 @@
 - [Display Problems](#display-problems)
 - [Performance Issues](#performance-issues)
 - [Support & Updates](#support--updates)
+- [Expedition Marine Tx Channels](#tx--channels)
 
 ---
 
