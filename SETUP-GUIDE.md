@@ -82,6 +82,81 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **same 
 
 **Exp Tx filter** (select these channels):
 
+
+
+AWA, AWS, Barometer, BSP, Cog, Course, Current Drift, Current Set, Depth, Heading, Heading - Cog, Heading to steer, Heading to steer polar, Heel (roll), Latitude, Layline bearing, Layline bearing on port, Layline bearing on strb, Layline distance on port, Layline distance on starb, Layline Distance, Layline time, Layline time on port, Layline time on starb, Longitude, Magnetic variation, Mark bearing, Mark bearing - Cog, Mark latitude, Mark longitude, Mark range, Mark time, Mark twa, Opposite track, Next mark awa, Next mark aws, Next mark bearing, Next mark latitude, Next mark longitude, Next mark polar time, Next mark range, Next mark time on port, Next mark time on starb, Next mark tws, Opposite track, Polar bsp, Polar bsp %, Sail mark, Sail next mark, Sog, Start bias length, Start distance below line, Start layline on port, Start layline on strbd, Start line square wind, Start port latitude, Start port longitude, Start stbd latitude, Start stbd longitude, Start time to burn, Start time to gun, Start time to layline P, Start time to layline S, Start time to line, Start time to port, Start time to strb, Target bsp, Target twa, Target bsp %, Target twa, Trim (pitch) rate, TWA, TWS, VMC, VMC %
+
+---
+
+## Connection Settings
+
+- **IP Address**: Boat network broadcast address  
+- **UDP Port**: Usually 5098  
+- **Test Mode**: Enable for simulated training data  
+
+## Boat Configuration
+
+- **Boat Name** — Vessel identification  
+- **Boat Length** — For distance calculations in boat lengths  
+- **Draft** — Critical for depth safety  
+- **TWA Reaching Threshold** — Adjusts sailing mode detection  
+
+## Display Options
+
+- Light Mode  
+- Dark Mode  
+- Night Mode (red-tinted)  
+- Chart Time Windows (custom history view)  
+- Map Style (hybrid, standard, satellite, imagery)  
+
+## Safety Settings
+
+- **Depth Alerts** — Draft + safety margin warnings  
+- **Audio Countdown** — Spoken start sequence  
+- **MOB (Man Overboard)** — Emergency position mark & tracking  
+
+## Data imports
+
+You can find sample import files at https://github.com/jbistis/SailWatchPro-Public/tree/main/documents 
+
+- **Buoys** — file name must be `default_buoys.csv`
+- **Sail Crossover Chart** — Txt or xml export from Expedition Marine
+- **Sail Performance Crossover Chart** — export tsv from sailing analytics
+- **Polars** — Txt or export from Expedition Marine
+- **Competitors** — Bulk high speed entry
+
+## Troubleshooting
+
+### Connection Issues
+- Red indicators → Verify IP & port  
+- No data → Confirm Expedition is broadcasting  
+- Intermittent → Check WiFi strength/stability  
+
+### Display Problems
+- Data not updating → Restart connection or Expedition  
+- Watch not syncing → Check iPhone–Watch link & permissions  
+
+### Performance Issues
+- Slow → Shorten chart time windows / restart app  
+- Battery drain → Use Night Mode + lower brightness  
+- Memory → Clear old logs / restart periodically  
+
+---
+
+## Support & Updates
+
+SailWatchPro is actively developed with new features based on user feedback and racing experience.  
+
+For best results, keep both iPhone and Watch apps on the same version.  
+
+**Support & Feature Requests**:  
+https://github.com/jbistis/SailWatchPro-Public/issues
+
+Happy sailing! ⛵
+**SailWatchPro Team**
+
+## Expedition Marine Tx Channels
+
 - AWA
 - AWS
 - Barometer
@@ -157,76 +232,4 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **same 
 - VMC
 - VMC %
 
-AWA, AWS, Barometer, BSP, Cog, Course, Current Drift, Current Set, Depth, Heading, Heading - Cog, Heading to steer, Heading to steer polar, Heel (roll), Latitude, Layline bearing, Layline bearing on port, Layline bearing on strb, Layline distance on port, Layline distance on starb, Layline Distance, Layline time, Layline time on port, Layline time on starb, Longitude, Magnetic variation, Mark bearing, Mark bearing - Cog, Mark latitude, Mark longitude, Mark range, Mark time, Mark twa, Opposite track, Next mark awa, Next mark aws, Next mark bearing, Next mark latitude, Next mark longitude, Next mark polar time, Next mark range, Next mark time on port, Next mark time on starb, Next mark tws, Opposite track, Polar bsp, Polar bsp %, Sail mark, Sail next mark, Sog, Start bias length, Start distance below line, Start layline on port, Start layline on strbd, Start line square wind, Start port latitude, Start port longitude, Start stbd latitude, Start stbd longitude, Start time to burn, Start time to gun, Start time to layline P, Start time to layline S, Start time to line, Start time to port, Start time to strb, Target bsp, Target twa, Target bsp %, Target twa, Trim (pitch) rate, TWA, TWS, VMC, VMC %
-
----
-
-## Connection Settings
-
-- **IP Address**: Boat network broadcast address  
-- **UDP Port**: Usually 5098  
-- **Test Mode**: Enable for simulated training data  
-
-## Boat Configuration
-
-- **Boat Name** — Vessel identification  
-- **Boat Length** — For distance calculations in boat lengths  
-- **Draft** — Critical for depth safety  
-- **TWA Reaching Threshold** — Adjusts sailing mode detection  
-
-## Display Options
-
-- Light Mode  
-- Dark Mode  
-- Night Mode (red-tinted)  
-- Chart Time Windows (custom history view)  
-- Map Style (hybrid, standard, satellite, imagery)  
-
-## Safety Settings
-
-- **Depth Alerts** — Draft + safety margin warnings  
-- **Audio Countdown** — Spoken start sequence  
-- **MOB (Man Overboard)** — Emergency position mark & tracking  
-
-## Data imports
-
-You can find sample import files at https://github.com/jbistis/SailWatchPro-Public/tree/main/documents 
-
-- **Buoys** — file name must be `default_buoys.csv`
-- **Sail Crossover Chart** — Txt or xml export from Expedition Marine
-- **Sail Performance Crossover Chart** — export tsv from sailing analytics
-- **Polars** — Txt or export from Expedition Marine
-- **Competitors** — Bulk high speed entry
-
-## Troubleshooting
-
-### Connection Issues
-- Red indicators → Verify IP & port  
-- No data → Confirm Expedition is broadcasting  
-- Intermittent → Check WiFi strength/stability  
-
-### Display Problems
-- Data not updating → Restart connection or Expedition  
-- Watch not syncing → Check iPhone–Watch link & permissions  
-
-### Performance Issues
-- Slow → Shorten chart time windows / restart app  
-- Battery drain → Use Night Mode + lower brightness  
-- Memory → Clear old logs / restart periodically  
-
----
-
-## Support & Updates
-
-SailWatchPro is actively developed with new features based on user feedback and racing experience.  
-
-For best results, keep both iPhone and Watch apps on the same version.  
-
-**Support & Feature Requests**:  
-https://github.com/jbistis/SailWatchPro-Public/issues
-
-Happy sailing! ⛵
-**SailWatchPro Team**
-
-**Tx Channels**:  
 
