@@ -231,7 +231,7 @@ Happy sailing! ⛵
 - TWS
 - VMC
 - VMC %
-    |AWA|AWS|Lung Opacity|Normal|Viral Pneumonia|Total|
+    |AWA|AWS|Barometer|BSP|Cog|
     |:-|-:|-:|-:|-:|-:|
     |Train|3496|5892|10072|1225|20685|
     |Val|60|60|60|60|240|
