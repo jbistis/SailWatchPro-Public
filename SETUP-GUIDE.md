@@ -232,8 +232,8 @@ Happy sailing! ⛵
 - VMC
 - VMC %
 
->    |Tx Channels||||||
->    |:-|-:|-:|-:|-:|-:|
+>    |Tx Channels|||
+>    |:-|-:|-:|
 >    |AWS|AWA|Barometer|
 >    |BSP|Cog|Course|
 >    |Current drift|Current drift|Current drift predicted|
