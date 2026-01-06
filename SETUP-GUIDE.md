@@ -83,12 +83,12 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **same 
 >    |Current drift|Current drift|Current drift predicted|
 >    |Current set|Current set predicted|Depth|
 >    |Heading - Cog|Heading to steer|Heading to steer polar|
->    |Heel (roll)|J1|Lattitude|
+>    |Heel (roll)|J1|Latitude|
 >    |Layline bearing|Layline bearing on port|Layline bearing on strb|
 >    |Layline dist on port|Layline dist on starb|Layline distance|
 >    |Layline time|Layline time on port|Layline time on starb|
 >    |Longitude|Magnetic variation|Mark bearing|
->    |Mark bearing - Cog|Mark lattitude|Mark longitude|
+>    |Mark bearing - Cog|Mark latitude|Mark longitude|
 >    |Mark range|Mark time|Mark twa|
 >    |Next mark awa|Next mark aws|Next mark bearing|
 >    |Next mark lattitude|Next mark longitude|Next mark polar time|
