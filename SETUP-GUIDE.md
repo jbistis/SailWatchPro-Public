@@ -233,9 +233,9 @@ Happy sailing! ⛵
 - VMC %
 
 <td>
-|||||
-|-:|-:|-:|-:|
 |AWA|AWS|Barometer|BSP|
+|-:|-:|-:|-:|
+|Cog|Course|Current drift|Current drift predicted|
 |0.9664|0.8667|1.0000|0.9286|
 |0.9664|1.0000|0.8823|0.9375|
 |0.9957|1.0000|0.9836|0.9917|
