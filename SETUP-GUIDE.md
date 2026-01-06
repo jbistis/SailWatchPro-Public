@@ -244,6 +244,10 @@ Happy sailing! ⛵
 >    |Layline dist on port|Layline dist on starb|Layline distance|
 >    |Layline time|Layline time on port|Layline time on starb|
 >    |Longitude|Magnetic variation|Mark bearing|
+>    |Mark bearing - Cog|Mark lattitude|Mark longitude|
+>    |Mark range|Mark time|Mark twa|
+
+
 
 
 
