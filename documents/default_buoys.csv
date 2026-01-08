@@ -1,26 +1,27 @@
-stationId,name,dataSourceType,datasetId,latitude,longitude,imageUrl,providesHistory
-44025,"LONG ISLAND - 30 NM South of Islip, NY",NDBC (NERACOOS),,40.258,-73.175,,Yes
-44065,NY Harbor Approach (Ambrose Light),NDBC (NERACOOS),,40.368,-73.701,,Yes
-44008,"Nantucket Shoals LB ""N""",NDBC (CoastWatch),,40.5,-69.254,,Yes
-44009,"DELAWARE BAY 26 NM Southeast of Cape May, NJ",NDBC (CoastWatch),,38.46,-74.692,,Yes
-41009,"CANAVERAL 20 NM East of Cape Canaveral, FL",NDBC (CoastWatch),,28.508,-80.185,,Yes
-44014,"VIRGINIA BEACH 64 NM East of Virginia Beach, VA",NDBC (CoastWatch),,36.603,-74.837,,Yes
-44099,"Cape Henry, VA",NDBC (CoastWatch),,36.915,-75.722,,Yes
-41068,"Fort Pierce, FL",NDBC (CoastWatch),,27.593,-80.189,,Yes
-41122,"Hollywood Beach, FL",NDBC (CoastWatch),,26.001,-80.096,,Yes
-ROBN4,"Robbins Reef, NY",NDBC (CoastWatch),,40.657,-74.065,,Yes
-KPTN6,"Kings Point, NY",NDBC (NERACOOS),,40.811,-73.765,,Yes
-BRHC3,"Bridgeport, CT",NDBC (NERACOOS),,41.174,-73.181,,Yes
-NWHC3,"New Haven, CT",NDBC (NERACOOS),,41.283,-72.908,,Yes
-CLIS,Central Sound,LISICOS (Image),,41.209,-72.509,https://clis-cache.dms.uconn.edu/clis_wxSens1.png,No
-EXRX,Execution Rocks,LISICOS (Image),,40.879,-73.742,https://clis-cache.dms.uconn.edu/exrx_wxSens2.png,No
-WLIS,Western Sound,LISICOS (Image),,41.045,-73.443,https://clis-cache.dms.uconn.edu/wlis_wxSens1.png,No
-ARTG,ARTG Buoy,LISICOS (Image),,41.168,-72.66,https://clis-cache.dms.uconn.edu/artg_wxSens1.png,No
-LEDG,Ledge Light,LISICOS (Image),,41.305,-72.079,https://clis-cache.dms.uconn.edu/ledg_wx.png,No
-LKWF1,"Lake Worth Pier, FL",NOS (SECOORA),noaa_nos_co_ops_8722670,26.613,-80.034,,Yes
-PEGF1,"Port Everglades, FL",NOS (SECOORA),noaa_nos_co_ops_8722956,26.086,-80.116,,Yes
-VAKF1,"Virginia Key, FL",NOS (SECOORA),noaa_nos_co_ops_8723214,25.731,-80.162,,Yes
-VCAF1,"Vaca Key, FL",NOS (SECOORA),noaa_nos_co_ops_8723970,24.711,-81.107,,Yes
-KYWF1,"Key West, FL",NOS (SECOORA),noaa_nos_co_ops_8724580,24.556,-81.808,,Yes
-SMKF1,"Sombrero Key, FL",NDBC (CoastWatch),,24.628,-81.109,,Yes
-SANF1,"Sand Key, FL",NDBC (CoastWatch),,24.456,-81.877,,Yes
+stationId,name,dataSourceType,datasetId,latitude,longitude,imageUrl
+44025,"LONG ISLAND - 30 NM South of Islip, NY",NDBC (NERACOOS),,40.258,-73.175,
+44065,NY Harbor Approach (Ambrose Light),NDBC (NERACOOS),,40.368,-73.701,
+44008,"Nantucket Shoals LB ""N""",NDBC (CoastWatch),,40.5,-69.254,
+44009,"DELAWARE BAY 26 NM Southeast of Cape May, NJ",NDBC (CoastWatch),,38.46,-74.692,
+41009,"CANAVERAL 20 NM East of Cape Canaveral, FL",NDBC (CoastWatch),,28.508,-80.185,
+44014,"VIRGINIA BEACH 64 NM East of Virginia Beach, VA",NDBC (CoastWatch),,36.603,-74.837,
+44099,"Cape Henry, VA",NDBC (CoastWatch),,36.915,-75.722,
+41068,"Fort Pierce, FL",NDBC (CoastWatch),,27.593,-80.189,
+41122,"Hollywood Beach, FL",NDBC (CoastWatch),,26.001,-80.096,
+ROBN4,"Robbins Reef, NY",NDBC (CoastWatch),,40.657,-74.065,
+KPTN6,"Kings Point, NY",NDBC (NERACOOS),,40.811,-73.765,
+BRHC3,"Bridgeport, CT",NDBC (NERACOOS),,41.174,-73.181,
+NWHC3,"New Haven, CT",NDBC (NERACOOS),,41.283,-72.908,
+CLIS,Central Sound,LISICOS (Image),,41.209,-72.509,https://clis-cache.dms.uconn.edu/clis_wxSens1.png
+EXRX,Execution Rocks,LISICOS (Image),,40.879,-73.742,https://clis-cache.dms.uconn.edu/exrx_wxSens2.png
+WLIS,Western Sound,LISICOS (Image),,41.045,-73.443,https://clis-cache.dms.uconn.edu/wlis_wxSens1.png
+ARTG,ARTG Buoy,LISICOS (Image),,41.168,-72.66,https://clis-cache.dms.uconn.edu/artg_wxSens1.png
+LEDG,Ledge Light,LISICOS (Image),,41.305,-72.079,https://clis-cache.dms.uconn.edu/ledg_wx.png
+LKWF1,"Lake Worth Pier, FL",NOS (SECOORA),noaa_nos_co_ops_8722670,26.613,-80.034,
+PEGF1,"Port Everglades, FL",NOS (SECOORA),noaa_nos_co_ops_8722956,26.086,-80.116,
+VAKF1,"Virginia Key, FL",NOS (SECOORA),noaa_nos_co_ops_8723214,25.731,-80.162,
+LONF1,"Long Key, FL",NDBC (NERACOOS),,24.844,-80.864,
+VCAF1,"Vaca Key, FL",NOS (SECOORA),noaa_nos_co_ops_8723970,24.711,-81.107,
+KYWF1,"Key West, FL",NOS (SECOORA),noaa_nos_co_ops_8724580,24.556,-81.808,
+SMKF1,"Sombrero Key, FL",NDBC (CoastWatch),,24.628,-81.109,
+SANF1,"Sand Key, FL",NDBC (CoastWatch),,24.456,-81.877,
