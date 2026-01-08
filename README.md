@@ -111,8 +111,13 @@ Live corrected time vs. handicap, lateral separation visualization — know inst
 Centralized, customizable alerts that monitor for you: current push, leeway drift, sail mismatches, barometric trends, and more — so you can focus on steering and tactics.
 
 <div align="center">
-  <img src="images/swp-advisories-light.png" width="512"> <!-- Use your Virginia Key screenshot here -->
-  <br><em>Advisories in realtime/em>
+  <img src="images/swp-advisories-light.png" width="512">
+  <br><em>Sail check</em>
+</div>
+<br>
+<div align="center">
+  <img src="images/swp-mild-current-push-portrait-light.png" width="512">
+  <br><em>Speed efficiency with opposite tack VMG prediction</em>
 </div>
 <br>
     
