@@ -40,10 +40,7 @@ The first launch will take a few moments as the app has install the ECMWF librar
    - On the iPad, navigate to Settings and enter the following:
 
 **Connection Information**  
-- **Boat Name** — Vessel identification  
-- **Boat Length** — For distance calculations in boat lengths  
-- **Draft** — Critical for depth safety  
-- **TWA Reaching Threshold**
+
 
 <div align="center">
   <img src="images/swp-expedition-connections-setup.png" width="756">
@@ -52,6 +49,10 @@ The first launch will take a few moments as the app has install the ECMWF librar
 <br>
 
 **Boat Configuration**  
+- **Boat Name** — Vessel identification  
+- **Boat Length** — For distance calculations in boat lengths  
+- **Draft** — Critical for depth safety  
+- **TWA Reaching Threshold**
 <div align="center">
   <img src="images/swp-boat-configuration.png" width="756">
   <br><em>Enter your boat parameters</em>
