@@ -59,11 +59,12 @@ The first launch will take a few moments as the app installs the ECMWF libraries
 
 Touch the [Done] button
 
-<a href="[https://github.com/username/repo-name/raw/main/path/to/file.ext](https://raw.githubusercontent.com/jbistis/SailWatchPro-Public/main/documents/default_buoys.csv)" download>
-  <img src="https://img.shields.io/badge/Download-File-blue?style=for-the-badge" alt="Download">
-</a>
+[![Download default_buoys.csv](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge&logo=data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBmaWxsPSJ3aGl0ZSIgZD0iTTE5IDloLTRWM0g5djZINmw2IDYgNnoiLz48L3N2Zz4=)](https://raw.githubusercontent.com/jbistis/SailWatchPro-Public/main/documents/default_buoys.csv)
 
 [Download default_buoys.csv](https://raw.githubusercontent.com/jbistis/SailWatchPro-Public/main/documents/default_buoys.csv)
+
+[Download CSV File](https://raw.githubusercontent.com/jbistis/SailWatchPro-Public/main/documents/default_buoys.csv?download)
+
 
 **Load Buoys for Weather Data Stations**  
 Navigate to Weather Data and press the (+) sign in the top right toolbar and follow the upload prompts.  Your file name must be user_default_buoys.csv.  A starter file is found at 
