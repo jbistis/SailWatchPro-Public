@@ -32,7 +32,7 @@
 It is strongly recommended that all iOS devices (iPhone & Watch) run the latest version of the app, as some data is shared between users.
 
 ### First Launch
-The first launch will take a few moments as the app has install the ECMWF libraries.  This is just on the first launch.  
+The first launch will take a few moments as the app installs the ECMWF libraries.  This is just on the first launch.  
 
 **Start Expedition Marine Network**  
    - Download the App
@@ -59,7 +59,7 @@ The first launch will take a few moments as the app has install the ECMWF librar
 
 Touch the [Done] button
 
-[Download latest data](https://[raw.githubusercontent.com/jbistis/SailWatchPro-Public/documents/default_buoys.csv](https://github.com/jbistis/SailWatchPro-Public/blob/main/documents/default_buoys.csv))
+[Download default_buoys.csv](/documents/default_buoys.csv?raw=true)
 
 **Load Buoys for Weather Data Stations**  
 Navigate to Weather Data and press the (+) sign in the top right toolbar and follow the upload prompts.  Your file name must be user_default_buoys.csv.  A starter file is found at 
