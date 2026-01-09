@@ -60,21 +60,16 @@ The first launch will take a few moments as the app installs the ECMWF libraries
 Touch the [Done] button
 ## Default Buoy Data
 
-**Browse the data interactively** (GitHub's built-in table viewer):  
-[View default_buoys.csv as Table](/documents/default_buoys.csv)
+## Downloadable Import Files
+These files serve as data sources for SailWatchPro.
 
-**Download the raw CSV file** (for Excel, Python, etc.):  
-[Raw CSV Link](https://raw.githubusercontent.com/jbistis/SailWatchPro-Public/main/documents/default_buoys.csv)  
-*(Tip: Right-click the link above and select "Save link as..." to download it directly to your computer with the correct filename.)*
+Click the links below to download directly (no preview in browser):
 
-[click me to download](https://github.com/Schecher1/Minecraft-Server-Creator/blob/master/README.md)
+- [![Download default_buoys.csv](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFiles/default_buoys.csv)
+- [OtherFileName.ext](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFiles/OtherFileName.ext)
 
-Go to the "Releases" and download any version. Or [press here](https://github.com/Schecher1/Minecraft-Server-Creator/releases/download/Minecraft-Server-Creator-Ver-1.5.1.2/Minecraft-Server-Creator.zip) to download if you want the latest one
-
-Go to the "Releases" and download any version. Or [press here](https://github.com/jbistis/SailWatchPro-Public/blob/main/documents/competitors.csv) to download if you want the latest one
-
-**Load Buoys for Weather Data Stations**  
-Navigate to Weather Data and press the (+) sign in the top right toolbar and follow the upload prompts.  Your file name must be user_default_buoys.csv.  A starter file is found at 
+Or visit the full release page:  
+[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
 
 <div align="center">
   <img src="images/swp-buoy-import.png" width="756">
