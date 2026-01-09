@@ -80,16 +80,11 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 ---
 
 ## Polars Import
-### Download polars
+### Download polars and Sail Crossover Charts
 
 [![Download Polars ORC](https://img.shields.io/badge/Download%20Polars%20ORC-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)
 
-
-
-documents/ORC-polars-della-aurora-2.5m 08122025.txt
-### Import buoys list
-The file name must remain default_buoys.csv.  To add more buoys, follow the format used in the default file.
-
+### Import polars
 <div align="center">
   <img src="images/swp-buoy-import.png" width="756">
   <br><em>Enter your boat parameters</em>
