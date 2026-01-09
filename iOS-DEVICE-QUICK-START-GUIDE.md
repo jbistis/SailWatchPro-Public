@@ -72,6 +72,9 @@ Or visit the full release page:
 [All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
 
 <br>
+
+### Import the buoy data.  The file name must remain default_buoys.csv.  I you add more buoys, follow the format used in the default file.
+
 <div align="center">
   <img src="images/swp-buoy-import.png" width="756">
   <br><em>Enter your boat parameters</em>
