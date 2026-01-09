@@ -57,7 +57,7 @@ The first launch will take a few moments as the app has install the ECMWF librar
 </div>
 <br>
 
-Touch Done
+Touch the [Done] button
 
 **Load Buoys for Weather Data Stations**  
 Navigate to Weather Data and press the (+) sign in the top right toolbar
