@@ -144,8 +144,7 @@ Or visit the full release page:
 
 ## Display Options
 
-- Light Mode  
-- Dark Mode  
+- Light Mode and Dark Mode using iOS device Settings > Display & Brightnesss > APPEARANCE
 - Night Mode (red-tinted)  
 - Chart Time Windows (custom history view)  
 - Map Style (hybrid, standard, satellite, imagery)  
