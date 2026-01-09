@@ -7,7 +7,7 @@
 </p>
 
 <p align="center">
-  End User Device Setup Guide
+  <strong>End User Device Setup Guide</strong>
 </p>
 
 ---
