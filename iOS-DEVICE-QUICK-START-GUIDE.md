@@ -66,9 +66,7 @@ Touch the [Done] button
 ## Buoy Data Import
 ### Download buoys list
 
-
  [![Download default_buoys.csv](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFiles/default_buoys.csv)
-
 
 ### Import buoys list
 The file name must remain default_buoys.csv.  To add more buoys, follow the format used in the default file.
@@ -78,6 +76,27 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
   <br><em>Enter your boat parameters</em>
 </div>
 <br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Downloadable Import Files
 These files serve as data sources for SailWatchPro.
