@@ -16,20 +16,12 @@
 
 - [Getting Started](#getting-started)
 - [First Launch Setup](#first-launch-setup)
-
-
-
-
 - [Expedition Marine Requirements](#expedition-marine-requirements)
 - [Connection Settings](#connection-settings)
 - [Boat Configuration](#boat-configuration)
 - [Display Options](#display-options)
 - [Safety Settings](#safety-settings)
-- [Data Imports](#data-imports)
-- [Troubleshooting](#troubleshooting)
-- [Connection Issues](#connection-issues)
-- [Display Problems](#display-problems)
-- [Performance Issues](#performance-issues)
+ [Performance Issues](#performance-issues)
 - [Support & Updates](#support--updates)
 
 ---
@@ -48,6 +40,10 @@ The first launch will take a few moments as the app has install the ECMWF librar
    - On the iPad, navigate to Settings and enter the following:
 
 **Connection Information**  
+- **Boat Name** — Vessel identification  
+- **Boat Length** — For distance calculations in boat lengths  
+- **Draft** — Critical for depth safety  
+- **TWA Reaching Threshold**
 
 <div align="center">
   <img src="images/swp-expedition-connections-setup.png" width="756">
@@ -80,10 +76,7 @@ Navigate to Weather Data and press the (+) sign in the top right toolbar
 </div>
 <br>
 
-**Load buoys**  
-
-**Load buoys**  
-Navigate to Competitors to load competitors
+**Load Compeitors**  
 
 
 
