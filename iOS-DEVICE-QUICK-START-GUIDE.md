@@ -26,7 +26,7 @@
 
 ---
 
-## Getting Started
+# Getting Started
 
 **Latest Version**  
 It is strongly recommended that all iOS devices (iPhone & Watch) run the latest version of the app, as some data is shared between users.
@@ -58,6 +58,9 @@ The first launch will take a few moments as the app installs the ECMWF libraries
 <br>
 
 Touch the [Done] button
+
+---
+
 ## Default Buoy Data
 
 [![Download default_buoys.csv](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFiles/default_buoys.csv)
