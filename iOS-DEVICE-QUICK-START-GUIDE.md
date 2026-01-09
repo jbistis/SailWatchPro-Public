@@ -97,38 +97,10 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 
 ---
 
-
-
-
 [![Download Competitors](https://img.shields.io/badge/Download%20competitors.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/competitors.csv)
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Downloadable Import Files
-These files serve as data sources for SailWatchPro.
-
-Click the links below to download directly (no preview in browser):
-
-
-
-
-Or visit the full release page:  
-[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
+## Import Competitors
 
 
 
@@ -142,6 +114,15 @@ Or visit the full release page:
 **Load Compeitors**  
 
 
+
+
+## File Downloads
+These files serve as data sources for SailWatchPro.
+
+Click the links below to download directly (no preview in browser):
+
+Or visit the full release page:  
+[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
 
 Or visit the full release page:  
 [All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
