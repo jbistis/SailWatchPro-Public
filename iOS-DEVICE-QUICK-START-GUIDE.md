@@ -69,6 +69,9 @@ Touch the [Done] button
 
 [click me to download](https://github.com/Schecher1/Minecraft-Server-Creator/blob/master/README.md)
 
+Go to the "Releases" and download any version. Or [press here](https://github.com/Schecher1/Minecraft-Server-Creator/releases/download/Minecraft-Server-Creator-Ver-1.5.1.2/Minecraft-Server-Creator.zip) to download if you want the latest one
+
+
 
 **Load Buoys for Weather Data Stations**  
 Navigate to Weather Data and press the (+) sign in the top right toolbar and follow the upload prompts.  Your file name must be user_default_buoys.csv.  A starter file is found at 
