@@ -32,8 +32,9 @@
 It is strongly recommended that all iOS devices (iPhone & Watch) run the latest version of the app, as some data is shared between users.
 
 ### First Launch
-The first launch will take a few moments as the app installs the ECMWF libraries.  This is just on the first launch.  
+The first launch will take a few additional moments while the app performs a one-time installation of the ECMWF libraries.
 
+### Settings
 **Start Expedition Marine Network**  
    - Download the App
    - Start the App on your iPhone or iPad
