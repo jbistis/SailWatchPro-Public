@@ -67,7 +67,6 @@ Touch the [Done] button
 <br>
 
 - [![Download default_buoys.csv](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFiles/default_buoys.csv)
-- [OtherFileName.ext](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFiles/OtherFileName.ext)
 
 Or visit the full release page:  
 [All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
