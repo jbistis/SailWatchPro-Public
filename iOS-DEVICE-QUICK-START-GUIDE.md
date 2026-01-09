@@ -48,9 +48,18 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **lates
 
 **Connection Information**  
 
-<p align="center">
-    <img alt="SailWatchPro" title="SailWatchPro Connections" src="images/swp-connections-setup.png">
-</p>
+<div align="center">
+  <img src="images/swp-connections-setup.png" width="512">
+  <br><em>Enter your boat parameters</em>
+</div>
+<br>
+
+**Boat Configuration**  
+<div align="center">
+  <img src="images/swp-boat-configuration.png" width="512">
+  <br><em>Enter your boat parameters</em>
+</div>
+<br>
 
 
    - From the ☰ Hamburger Menu → drag down → hover over Instruments → click *Number of network connections*  
