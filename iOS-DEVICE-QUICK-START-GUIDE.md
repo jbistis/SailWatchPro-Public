@@ -26,7 +26,7 @@
 
 ---
 
-# Getting Started
+## Getting Started
 
 **Latest Version**  
 It is strongly recommended that all iOS devices (iPhone & Watch) run the latest version of the app, as some data is shared between users.
