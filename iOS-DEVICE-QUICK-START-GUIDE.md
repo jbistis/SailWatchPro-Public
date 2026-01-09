@@ -82,8 +82,10 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 ## Polars Import
 ### Download polars
 
-  [![Download default_buoys.csv](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFiles/default_buoys.csv)
+  [![Download default_buoys.csv](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFiles/ORC-polars-della-aurora-2.5m-08122025.txt)
 
+
+documents/ORC-polars-della-aurora-2.5m 08122025.txt
 ### Import buoys list
 The file name must remain default_buoys.csv.  To add more buoys, follow the format used in the default file.
 
