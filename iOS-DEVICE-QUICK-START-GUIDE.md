@@ -69,7 +69,7 @@ Touch the [Done] button
  [![Download Polars](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/default_buoys.csv)
 
 ### Import buoys list
-The file name must remain default_buoys.csv.  To add more buoys, follow the format used in the default file.
+The file name must remain default_buoys.csv.  To add more buoys, follow the format used in the default file.  When you import a buoy file, the new file will completely replace the existing list.
 
 <div align="center">
   <img src="images/swp-buoy-import.png" width="756">
