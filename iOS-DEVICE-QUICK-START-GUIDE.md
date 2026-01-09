@@ -73,7 +73,8 @@ Or visit the full release page:
 
 <br>
 
-### Import the buoy data.  The file name must remain default_buoys.csv.  I you add more buoys, follow the format used in the default file.
+### Import buoys
+The file name must remain default_buoys.csv.  To add more buoys, follow the format used in the default file.
 
 <div align="center">
   <img src="images/swp-buoy-import.png" width="756">
