@@ -49,14 +49,14 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **lates
 **Connection Information**  
 
 <div align="center">
-  <img src="images/swp-expedition-connections-setup.png" width="512">
+  <img src="images/swp-expedition-connections-setup.png" width="1028">
   <br><em>Enter your boat parameters</em>
 </div>
 <br>
 
 **Boat Configuration**  
 <div align="center">
-  <img src="images/swp-boat-configuration.png" width="512">
+  <img src="images/swp-boat-configuration.png" width="1028">
   <br><em>Enter your boat parameters</em>
 </div>
 <br>
