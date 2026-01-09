@@ -98,7 +98,7 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 ---
 
 
- [![Download Competitors](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/default_buoys.csv)
+ [![Download Competitors](https://img.shields.io/badge/Download%20competitors.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/competitors.csv)
 
 
 
