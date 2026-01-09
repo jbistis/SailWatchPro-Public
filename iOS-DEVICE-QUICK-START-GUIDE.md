@@ -68,8 +68,6 @@ Touch the [Done] button
 
  [![Download default_buoys.csv](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFiles/default_buoys.csv)
 
-
-
 <br>
 
 ### Import buoys
