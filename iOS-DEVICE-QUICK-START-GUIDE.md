@@ -62,39 +62,20 @@ The first launch will take a few moments as the app has install the ECMWF librar
 </div>
 <br>
 
+Touch Done
 
-   - From the ☰ Hamburger Menu → drag down → hover over Instruments → click *Number of network connections*  
-   - Enter one greater than the displayed number to add a new network → OK  
-   - Go back to Instruments → select the new network and configure:  
-     - Alias: **SailWatchPro**  
-     - Instruments: **Expedition**  
-     - Address: **192.168.XXX.YYY** (your Expedition Marine PC's IP)  
-     - Port: Choose an unused port  
-   - Click *Expedition Settings*  
-   - In **Exp Rx filter**: check **Receive marks**  
-   - In **Exp Tx filter**: enable the channels listed in [Expedition Marine Requirements](#expedition-marine-requirements) below  
+**Load polars**  
+Navigate to Weather Data and press the + sign in the top tool bar
 
-2. **Connect to Expedition Marine**  
-   - Install SailWatchPro on your iOS device via TestFlight  
-   - Open **Settings** in the app  
-   - Enter the same **IP address** and **UDP port** you configured in Expedition Marine  
-   - (If using) Enter NMEA 2000 Ethernet Gateway IP/port  
-   - Restart connection → look for **green** status indicators  
+**Load sail crossover chart**
 
-3. **Configure Your Boat**  
-   - Boat Name  
-   - MMSI number (if applicable)  
-   - Boat Length (used for boat-length distance calculations)  
-   - Draft (used for depth safety alerts)  
-   - TWA Reaching Threshold (sailing mode detection sensitivity)  
 
-4. **Choose Display Mode**  
-   - Light Mode  
-   - Dark Mode  
-   - Night Mode (red-tinted for night vision)  
-   - Test Mode (simulated data for training/demos)  
+**Load buoys**  
 
-### Expedition Marine Requirements
+**Load buoys**  
+Navigate to Competitors to load competitors
+
+
 
 ---
 
