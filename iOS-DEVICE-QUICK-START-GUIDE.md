@@ -60,7 +60,8 @@ The first launch will take a few moments as the app has install the ECMWF librar
 Touch the [Done] button
 
 **Load Buoys for Weather Data Stations**  
-Navigate to Weather Data and press the (+) sign in the top right toolbar
+Navigate to Weather Data and press the (+) sign in the top right toolbar and follow the upload prompts.  Your file name must be user_default_buoys.csv.  A starter file is found at 
+
 <div align="center">
   <img src="images/swp-buoy-import.png" width="756">
   <br><em>Enter your boat parameters</em>
