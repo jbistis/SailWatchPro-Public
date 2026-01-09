@@ -80,10 +80,17 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 ---
 
 ## Import Sail Crossover Charts and Polars
+### Download polars
 
-### Download polars and Sail Crossover Charts
+[![Download Polars](https://img.shields.io/badge/Download%20Polars%20ORC-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)
 
-[![Download Polars ORC](https://img.shields.io/badge/Download%20Polars%20ORC-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)
+### Download Sailmaker Crossover chart
+
+### Download Performance Crossover chart
+
+
+
+
 
 ### Import
 <div align="center">
@@ -93,6 +100,8 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 <br>
 
 ---
+
+
 
 
  [![Download Competitors](https://img.shields.io/badge/Download%20competitors.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/competitors.csv)
