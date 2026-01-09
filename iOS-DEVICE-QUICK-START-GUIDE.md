@@ -42,7 +42,7 @@ The first launch will take a few moments as the app has install the ECMWF librar
 **Connection Information**  
 <div align="center">
   <img src="images/swp-expedition-connections-setup.png" width="756">
-  <br><em>Enter your boat parameters</em>
+  <br><em>Enter your connection parameters</em>
 </div>
 <br>
 
