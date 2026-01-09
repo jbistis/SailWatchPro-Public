@@ -47,13 +47,10 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **lates
    - On the iPad navigate to Settings and enter the following:
 
 **Connection Information**  
-<ol>
-  <li>Epedition Marine IP Address</li>
-  <li>Epedition Marine Port</li>
-  <li>NMEA 2000 Server IP Address</li>
-  <li>NMEA 2000 Server Port</li>
-</ol>
 
+<p align="center">
+    <img alt="SailWatchPro" title="SailWatchPro Connections" src="images/swp-connections-setup.png">
+</p>
 
 
    - From the ☰ Hamburger Menu → drag down → hover over Instruments → click *Number of network connections*  
