@@ -37,7 +37,7 @@
 ## Getting Started
 
 **Latest Version**  
-It is strongly recommended that all iOS devices (iPhone & Watch) run the **same version** of the app since data is shared between users.
+It is strongly recommended that all iOS devices (iPhone & Watch) run the **latest version** of the app since some data is shared between users.
 
 ### First Launch Setup
 
