@@ -68,8 +68,7 @@ Touch the [Done] button
 
  [![Download default_buoys.csv](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFiles/default_buoys.csv)
 
-Or visit the full release page:  
-[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
+
 
 <br>
 
@@ -105,6 +104,9 @@ Or visit the full release page:
 **Load Compeitors**  
 
 
+
+Or visit the full release page:  
+[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
 
 ---
 
