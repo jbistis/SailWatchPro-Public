@@ -35,12 +35,13 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the latest 
 The first launch will take a few additional moments while the app performs a one-time installation of the ECMWF libraries.
 
 ### Settings
-**Start Expedition Marine Network**  
-   - Download the App
-   - Start the App on your iPhone or iPad
-   - On the iPad, navigate to Settings and enter the following:
+- Download the App
+- Start the App on your iPhone or iPad
+- iPad - navigate to Settings
+- iPhone - navigate to More > Settings
 
-**Connection Information**  
+**Connection Information**
+Enter values specific to your boat as supplied by your Expedition Marine Administrator
 <div align="center">
   <img src="images/swp-expedition-connections-setup.png" width="756">
   <br><em>Enter your connection parameters</em>
@@ -63,16 +64,14 @@ Touch the [Done] button
 ---
 
 ## Default Buoy Data
-
+<br>
 [![Download default_buoys.csv](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFiles/default_buoys.csv)
-
+<br>
 <div align="center">
   <img src="images/swp-buoy-import.png" width="756">
   <br><em>Enter your boat parameters</em>
 </div>
 <br>
-
-
 
 ## Downloadable Import Files
 These files serve as data sources for SailWatchPro.
