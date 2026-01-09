@@ -62,6 +62,11 @@ The first launch will take a few moments as the app has install the ECMWF librar
 Touch Done
 
 **Load Buoys for Weather Data Stations**  
+
+- **Boat Name** — Vessel identification  
+- **Boat Length** — For distance calculations in boat lengths  
+- **Draft** — Critical for depth safety  
+- **TWA Reaching Threshold**
 Navigate to Weather Data and press the (+) sign in the top right toolbar
 <div align="center">
   <img src="images/swp-buoy-import.png" width="756">
