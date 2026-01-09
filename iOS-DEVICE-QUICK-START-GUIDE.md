@@ -40,8 +40,6 @@ The first launch will take a few moments as the app has install the ECMWF librar
    - On the iPad, navigate to Settings and enter the following:
 
 **Connection Information**  
-
-
 <div align="center">
   <img src="images/swp-expedition-connections-setup.png" width="756">
   <br><em>Enter your boat parameters</em>
