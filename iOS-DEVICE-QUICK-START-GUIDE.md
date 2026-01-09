@@ -67,6 +67,9 @@ Touch the [Done] button
 [Raw CSV Link](https://raw.githubusercontent.com/jbistis/SailWatchPro-Public/main/documents/default_buoys.csv)  
 *(Tip: Right-click the link above and select "Save link as..." to download it directly to your computer with the correct filename.)*
 
+[click me to download](https://github.com/Schecher1/Minecraft-Server-Creator/blob/master/README.md)
+
+
 **Load Buoys for Weather Data Stations**  
 Navigate to Weather Data and press the (+) sign in the top right toolbar and follow the upload prompts.  Your file name must be user_default_buoys.csv.  A starter file is found at 
 
