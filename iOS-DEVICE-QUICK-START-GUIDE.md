@@ -67,8 +67,12 @@ Touch Done
 **Load polars**  
 Navigate to Weather Data and press the + sign in the top tool bar
 
-**Load sail crossover chart**
-
+**Load sail crossover charts and polars**
+<div align="center">
+  <img src="images/swp-sail-polar-import.png" width="756">
+  <br><em>Enter your boat parameters</em>
+</div>
+<br>
 
 **Load buoys**  
 
