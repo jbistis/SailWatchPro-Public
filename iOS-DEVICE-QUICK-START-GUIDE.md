@@ -64,12 +64,14 @@ Touch the [Done] button
 ---
 
 ##Buoy Data
+### Download buoys list
+
 
  [![Download default_buoys.csv](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFiles/default_buoys.csv)
 
 <br>
 
-### Import buoys
+### Import buoys list
 The file name must remain default_buoys.csv.  To add more buoys, follow the format used in the default file.
 
 <div align="center">
