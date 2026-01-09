@@ -89,7 +89,6 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 
 ### Import the Source Datafiles using the import buttons
 
-### Import
 <div align="center">
   <img src="images/swp-sail-polar-import.png" width="756">
   <br><em>Enter your boat parameters</em>
