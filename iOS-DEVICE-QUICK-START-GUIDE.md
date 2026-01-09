@@ -41,8 +41,21 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **lates
 
 ### First Launch Setup
 
-1. **Configure the Expedition Marine Network**  
-   - Start Expedition Marine on the boat PC.  
+**Start Expedition Marine Network**  
+   - Download the App
+   - Start the App on your iPhone or iPad
+   - On the iPad navigate to Settings and enter the following:
+
+**Connection Information**  
+<ol>
+  <li>Epedition Marine IP Address</li>
+  <li>Epedition Marine Port</li>
+  <li>NMEA 2000 Server IP Address</li>
+  <li>NMEA 2000 Server Port</li>
+</ol>
+
+
+
    - From the ☰ Hamburger Menu → drag down → hover over Instruments → click *Number of network connections*  
    - Enter one greater than the displayed number to add a new network → OK  
    - Go back to Instruments → select the new network and configure:  
@@ -75,48 +88,6 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **lates
    - Test Mode (simulated data for training/demos)  
 
 ### Expedition Marine Requirements
-
-**Exp Rx filter**  
-- Enable **Receive marks**
-
-**Exp Tx filter** (select these channels):
->    |Tx Channels|||
->    |:-|-:|-:|
->    |AWS|AWA|Barometer|
->    |BSP|Cog|Course|
->    |Current drift|Current drift|Current drift predicted|
->    |Current set|Current set predicted|Depth|
->    |Heading - Cog|Heading to steer|Heading to steer polar|
->    |Heel (roll)|J1|Latitude|
->    |Layline bearing|Layline bearing on port|Layline bearing on strb|
->    |Layline dist on port|Layline dist on starb|Layline distance|
->    |Layline time|Layline time on port|Layline time on starb|
->    |Longitude|Magnetic variation|Mark bearing|
->    |Mark bearing - Cog|Mark latitude|Mark longitude|
->    |Mark range|Mark time|Mark twa|
->    |Next mark awa|Next mark aws|Next mark bearing|
->    |Next mark latitude|Next mark longitude|Next mark polar time|
->    |Next mark range|Next mark time on port|Next mark time on starb|
->    |Next mark twa|Opposite track|Polar bsp|
->    |Polar bsp %|Sail|Sail event|
->    |Sail mark|Sail next mark|Sea temperature|
->    |Sog|Start bias angle|Start bias length|
->    |Start distance below line|Start layline on port|Start layline on strdb|
->    |Start line square wind|Start port latitude|Start port longitude|
->    |Start stdb latitude|Start stdb longitude|Start time to burn|
->    |Start time to gun|Start time to layline P|Start time to layline S|
->    |Start time to line|Start time to port|Start time to port burn|
->    |Start time to strb|Start time to strb burn|Target bsp|
->    |Target bsp %|Target twa|Trim (pitch)|
->    |TWA|TWD|TWD predicted|
->    |TWS|TWS predicted|VMC|
->    |VMC %|VMC optimum|VMG|
->    |VMG %|||
-
-
-
-
-
 
 ---
 
