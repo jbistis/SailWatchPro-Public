@@ -43,7 +43,7 @@ The first launch will take a few additional moments while the app performs a one
 **Connection Information**
 Enter values specific to your boat as supplied by your Expedition Marine Administrator
 <div align="center">
-  <img src="images/swp-expedition-connections-setup.png" width="756">
+  <img src="images/swp-expedition-connections-setup.png" width="512">
   <br><em>Enter your connection parameters</em>
 </div>
 <br>
@@ -54,7 +54,7 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 - **Draft** — Critical for depth safety  
 - **TWA Reaching Threshold**
 <div align="center">
-  <img src="images/swp-boat-configuration.png" width="756">
+  <img src="images/swp-boat-configuration.png" width="512">
   <br><em>Enter your boat parameters</em>
 </div>
 <br>
@@ -72,7 +72,7 @@ Touch the [Done] button
 The file name must remain default_buoys.csv.  To add more buoys, follow the format used in the default file.  When you import a buoy file, the new file will completely replace the existing list.
 
 <div align="center">
-  <img src="images/swp-buoy-import.png" width="756">
+  <img src="images/swp-buoy-import.png" width="512">
   <br><em>Enter your boat parameters</em>
 </div>
 <br>
@@ -90,7 +90,7 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 ### Import the Source Datafiles using the import buttons
 
 <div align="center">
-  <img src="images/swp-sail-polar-import.png" width="756">
+  <img src="images/swp-sail-polar-import.png" width="512">
   <br><em>Enter your boat parameters</em>
 </div>
 <br>
@@ -106,7 +106,7 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 
 **Load sail crossover charts and polars**
 <div align="center">
-  <img src="images/swp-sail-polar-import.png" width="756">
+  <img src="images/swp-competitors.png" width="512">
   <br><em>Enter your boat parameters</em>
 </div>
 <br>
