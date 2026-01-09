@@ -59,6 +59,10 @@ The first launch will take a few moments as the app installs the ECMWF libraries
 
 Touch the [Done] button
 
+<a href="[https://github.com/username/repo-name/raw/main/path/to/file.ext](https://raw.githubusercontent.com/jbistis/SailWatchPro-Public/main/documents/default_buoys.csv)" download>
+  <img src="https://img.shields.io/badge/Download-File-blue?style=for-the-badge" alt="Download">
+</a>
+
 [Download default_buoys.csv](https://raw.githubusercontent.com/jbistis/SailWatchPro-Public/main/documents/default_buoys.csv)
 
 **Load Buoys for Weather Data Stations**  
