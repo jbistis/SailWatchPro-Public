@@ -64,8 +64,14 @@ The first launch will take a few moments as the app has install the ECMWF librar
 
 Touch Done
 
-**Load polars**  
-Navigate to Weather Data and press the + sign in the top tool bar
+**Load Buoys for Weather Data Stations**  
+Navigate to Weather Data and press the + sign in the top toolbar
+<div align="center">
+  <img src="images/swp-buoy-import.png" width="756">
+  <br><em>Enter your boat parameters</em>
+</div>
+<br>
+
 
 **Load sail crossover charts and polars**
 <div align="center">
