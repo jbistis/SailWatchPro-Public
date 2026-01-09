@@ -129,12 +129,6 @@ Or visit the full release page:
 
 ---
 
-## Connection Settings
-
-- **IP Address**: Boat network broadcast address  
-- **UDP Port**: Usually 5098  
-- **Test Mode**: Enable for simulated training data  
-
 ## Boat Configuration
 
 - **Boat Name** — Vessel identification  
