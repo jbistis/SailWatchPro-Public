@@ -110,12 +110,6 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 
 ---
 
-## Boat Configuration
-- **Boat Name** — Vessel identification  
-- **Boat Length** — For distance calculations in boat lengths  
-- **Draft** — Critical for depth safety  
-- **TWA Reaching Threshold** — Adjusts sailing mode detection  
-
 ## Display Options
 - Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightnesss > APPEARANCE
 - Night Mode (red-tinted) is enabled and disabled in Settings
