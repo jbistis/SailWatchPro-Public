@@ -130,27 +130,22 @@ Or visit the full release page:
 ---
 
 ## Boat Configuration
-
 - **Boat Name** — Vessel identification  
 - **Boat Length** — For distance calculations in boat lengths  
 - **Draft** — Critical for depth safety  
 - **TWA Reaching Threshold** — Adjusts sailing mode detection  
 
 ## Display Options
-
-- Light Mode and Dark Mode using iOS device Settings > Display & Brightnesss > APPEARANCE
-- Night Mode (red-tinted)  
-- Chart Time Windows (custom history view)  
+- Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightnesss > APPEARANCE
+- Night Mode (red-tinted) is enabled and disabled in Settings
 - Map Style (hybrid, standard, satellite, imagery)  
 
 ## Safety Settings
-
 - **Depth Alerts** — Draft + safety margin warnings  
 - **Audio Countdown** — Spoken start sequence  
 - **MOB (Man Overboard)** — Emergency position mark & tracking  
 
 ## Data imports
-
 You can find sample import files at https://github.com/jbistis/SailWatchPro-Public/tree/main/documents 
 
 - **Buoys** — file name must be `default_buoys.csv`
