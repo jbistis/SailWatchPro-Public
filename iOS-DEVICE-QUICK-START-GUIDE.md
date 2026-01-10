@@ -108,15 +108,6 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 </div>
 <br>
 
-
-## File Downloads
-These files serve as data sources for SailWatchPro.
-
-Click the links below to download directly (no preview in browser):
-
-Or visit the full release page:  
-[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
-
 ---
 
 ## Boat Configuration
@@ -133,10 +124,9 @@ Or visit the full release page:
 ## Safety Settings
 - **Depth Alerts** — Draft + safety margin warnings  
 - **Audio Countdown** — Spoken start sequence  
-- **MOB (Man Overboard)** — Emergency position mark & tracking  
+- **MOB (Man Overboard)** — Emergency position mark & tracking
 
-## Data imports
-You can find sample import files at https://github.com/jbistis/SailWatchPro-Public/tree/main/documents 
+## File Downloads
 
 - **Buoys** — file name must be `default_buoys.csv`
 - **Sail Crossover Chart** — Txt or xml export from Expedition Marine
