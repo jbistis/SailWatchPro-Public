@@ -101,7 +101,7 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 ### Download Source Datafile
 [![Download Competitors](https://img.shields.io/badge/Download%20competitors.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/competitors.csv)
 
-### Load the Competitor Datafile using the impo
+### Load the Competitor Datafile using the import icon in the toolbar.  Use the Add button to add one competitor.
 <div align="center">
   <img src="images/swp-competitors.png" width="512">
   <br><em>Load your competitors file</em>
