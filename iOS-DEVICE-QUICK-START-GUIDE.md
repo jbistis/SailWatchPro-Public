@@ -147,7 +147,6 @@ Visit the full release page:
 ### Performance Issues
 - Slow → Shorten chart time windows/restart app  
 - Battery drain → Use Night Mode + lower brightness  
-- Memory → Clear old logs/restart periodically  
 
 ---
 
