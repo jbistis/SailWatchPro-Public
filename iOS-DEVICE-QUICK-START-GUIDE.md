@@ -101,7 +101,7 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 ### Download Source Datafile
 [![Download Competitors](https://img.shields.io/badge/Download%20competitors.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/competitors.csv)
 
-### Load the Competitor Datafile using the import icon in the toolbar.  Use the Add button to add one competitor.
+### Load the Competitor Datafile using the import icon in the toolbar.  Use the [+ Add] button to add one competitor.
 <div align="center">
   <img src="images/swp-competitors.png" width="512">
   <br><em>Load your competitors file</em>
@@ -131,7 +131,7 @@ Visit the full release page:
 [All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
 
 ## Display Options
-- Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightnesss > APPEARANCE
+- Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightness > APPEARANCE
 - Night Mode (red-tinted) is enabled and disabled in Settings
 - Map Style (hybrid, standard, satellite, imagery)  
 
@@ -161,7 +161,7 @@ Visit the full release page:
 
 ## Support & Updates
 
-SailWatchPro is actively developed with new features based on user feedback and racing experience.  
+SailWatchPro is actively developed, with new features driven by user feedback and racing experience.  
 
 For best results, keep both iPhone and Watch apps on the same version.  
 
