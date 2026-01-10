@@ -54,7 +54,7 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 - **Draft** — Critical for depth safety  
 - **TWA Reaching Threshold**
 <div align="center">
-  <img src="images/swp-boat-configuration-settings.png" width="512">
+  <img src="images/swp-boat-configuration-da.png" width="512">
   <br><em>Enter your boat parameters</em>
 </div>
 <br>
