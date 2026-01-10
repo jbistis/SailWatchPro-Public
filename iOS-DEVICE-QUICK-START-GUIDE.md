@@ -73,7 +73,7 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 
 <div align="center">
   <img src="images/swp-buoy-import.png" width="512">
-  <br><em>Enter your boat parameters</em>
+  <br><em>Load your race buoy weather stations</em>
 </div>
 <br>
 
