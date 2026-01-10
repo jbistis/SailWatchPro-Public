@@ -110,16 +110,6 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 
 ---
 
-## Display Options
-- Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightnesss > APPEARANCE
-- Night Mode (red-tinted) is enabled and disabled in Settings
-- Map Style (hybrid, standard, satellite, imagery)  
-
-## Safety Settings
-- **Depth Alerts** — Draft + safety margin warnings  
-- **Audio Countdown** — Spoken start sequence  
-- **MOB (Man Overboard)** — Emergency position mark & tracking
-
 ## File Downloads
 
 - **Buoys** — file name must be `default_buoys.csv`
@@ -130,6 +120,16 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 
 Visit the full release page:  
 [All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
+
+## Display Options
+- Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightnesss > APPEARANCE
+- Night Mode (red-tinted) is enabled and disabled in Settings
+- Map Style (hybrid, standard, satellite, imagery)  
+
+## Safety Settings
+- **Depth Alerts** — Draft + safety margin warnings  
+- **Audio Countdown** — Spoken start sequence  
+- **MOB (Man Overboard)** — Emergency position mark & tracking
 
 ---
 
@@ -145,9 +145,9 @@ Visit the full release page:
 - Watch not syncing → Check iPhone–Watch link & permissions  
 
 ### Performance Issues
-- Slow → Shorten chart time windows / restart app  
+- Slow → Shorten chart time windows/restart app  
 - Battery drain → Use Night Mode + lower brightness  
-- Memory → Clear old logs / restart periodically  
+- Memory → Clear old logs/restart periodically  
 
 ---
 
