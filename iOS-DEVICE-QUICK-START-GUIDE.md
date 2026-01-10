@@ -69,7 +69,7 @@ Touch the [Done] button
 [![Download Polars](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/default_buoys.csv)
 
 ### Import buoys list
-The file name must remain default_buoys.csv.  To add more buoys, follow the format used in the default file.  When you import a buoy file, the new file will completely replace the existing list.
+The file name must remain default_buoys.csv.  To add more buoys, follow the format used in the default file.  When you import a buoy file, the new file replaces the existing list.
 
 <div align="center">
   <img src="images/swp-buoy-import.png" width="512">
@@ -110,7 +110,7 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 
 ### Enter the Race Information (Yacht Scoring eID number, if available).
 
-Touch the 3-dot circle just to the right of [+ Add] button to enter the race information.
+Touch the 3-dot circle just to the right of [+ Add] button to enter and update the race information.
 <div align="center">
   <img src="images/swp-yacht-scoring-setup.png" width="512">
   <br><em>Load your Race Information</em>
