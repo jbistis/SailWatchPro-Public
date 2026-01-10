@@ -91,7 +91,7 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 
 <div align="center">
   <img src="images/swp-sail-polar-import.png" width="512">
-  <br><em>Enter your boat parameters</em>
+  <br><em>Enter your Sail Crossover Charts and Polars</em>
 </div>
 <br>
 
@@ -104,7 +104,7 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 ### Load the Competitor Datafile using the impo
 <div align="center">
   <img src="images/swp-competitors.png" width="512">
-  <br><em>Lod your competitors file</em>
+  <br><em>Load your competitors file</em>
 </div>
 <br>
 
