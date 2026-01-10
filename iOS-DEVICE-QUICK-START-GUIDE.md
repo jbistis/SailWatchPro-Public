@@ -109,6 +109,8 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 <br>
 
 ### Enter the Race Information (Yacht Scoring eID number, if available).
+
+Touch the 3-dot circle just to the right of [+ Add] button to enter the race information.
 <div align="center">
   <img src="images/swp-yacht-scoring-setup.png" width="512">
   <br><em>Load your Race Information</em>
