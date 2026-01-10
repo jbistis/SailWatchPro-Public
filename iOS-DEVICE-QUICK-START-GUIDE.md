@@ -97,32 +97,22 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 
 ---
 
+## Import Competitors
+### Download Source Datafile
 [![Download Competitors](https://img.shields.io/badge/Download%20competitors.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/competitors.csv)
 
-
-## Import Competitors
-
-
-
-**Load sail crossover charts and polars**
+### Load the Competitor Datafile using the impo
 <div align="center">
   <img src="images/swp-competitors.png" width="512">
-  <br><em>Enter your boat parameters</em>
+  <br><em>Lod your competitors file</em>
 </div>
 <br>
-
-**Load Compeitors**  
-
-
 
 
 ## File Downloads
 These files serve as data sources for SailWatchPro.
 
 Click the links below to download directly (no preview in browser):
-
-Or visit the full release page:  
-[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
 
 Or visit the full release page:  
 [All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
@@ -153,6 +143,11 @@ You can find sample import files at https://github.com/jbistis/SailWatchPro-Publ
 - **Sail Performance Crossover Chart** — export tsv from sailing analytics
 - **Polars** — Txt or export from Expedition Marine
 - **Competitors** — Bulk high speed entry
+
+Visit the full release page:  
+[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
+
+---
 
 ## Troubleshooting
 
