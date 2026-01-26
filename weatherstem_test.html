@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weatherstem API Test</title>
+  <!-- 1. Your API Key -->
+  <meta name="Weatherstem-api-key" content="3be65853-1bcf-9ba0-6bbc-db2d0f5db63c">
+  <style>
+      body { font-family: -apple-system, BlinkMacSystemFont, sans-serif; padding: 20px; font-size: 1.2em; }
+      div { margin-bottom: 10px; }
+      span { font-weight: bold; color: #007AFF; }
+  </style>
+</head>
+<!-- 2. The Station Scope for Blue Lagoon Island -->
+<body data-scope="bli@bahamas.weatherstem.com">
+
+  <h1>Weatherstem API Test for "bli@bahamas.weatherstem.com"</h1>
+
+  <!-- 3. Requesting Sensor Data -->
+  <div data-feature="Sensor" data-name="Additional Wind Speed">
+      Wind Speed (mph): <span data-subfeature="Value">--</span>
+  </div>
+  <div data-feature="Sensor" data-name="Additional Wind Direction">
+      Wind Direction (&deg;): <span data-subfeature="Value">--</span>
+  </div>
+
+  <hr>
+  <p>If you see numbers replace the "--" above after a few seconds, the API is working correctly.</p>
+
+  <!-- 4. The Weatherstem JavaScript Library -->
+  <script src="https://apiv2.weatherstem.com/apiv2.min.js"></script>
+</body>
+</html>
