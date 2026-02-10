@@ -47,7 +47,7 @@ The first launch will take a few additional moments while the app installs the E
 ### Import Performance Files
 - Polars
 
-[![Download Polars](https://img.shields.io/badge/Download%20Sailmak20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)er%
+[![Download Polars](https://img.shields.io/badge/Download%20Sailmak20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)
 
 - Crossover Chart
 
