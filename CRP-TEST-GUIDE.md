@@ -100,11 +100,28 @@ Visit the full release page:
 - Set the PORT and Starboard start line pins.
 - Select a course.
 
+### Import Performance Files
+- Polars
+- Crossover Chart
+- Performance Crossover Chart
+
 - ### Weather Data
 - Import the buoys
-- Check that Auto-Fetch is functioning properly by letting it sit long enough to execute a few auto-fetches.
+
+[![Download Polars](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/default_buoys.csv)
+
+- Import a current and relevant GRIB file
+- Check that Buoy Auto-Fetch is functioning properly by letting it sit long enough to execute a few auto-fetches.
 - Check that buoys that do not report history accure history as auto-fetch proceeds
 - Check that the GRIB data is plotted along with the buoy's actual data
+
+### Display Options
+- Test switching between Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightness > APPEARANCE
+- Night Mode (red-tinted) is enabled and disabled in Settings and check for hot spots.
+
+### Competitors 
+- Import competitors
+- Check ORC poll
 
 Happy sailing! ⛵
 **SailWatchPro Team**
