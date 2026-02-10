@@ -47,7 +47,7 @@ The first launch will take a few additional moments while the app installs the E
 ### Import Performance Files
 - Polars
 
-[![Download Polars](https://img.shields.io/badge/Download%20Sailmak20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)
+[![Download Polars](https://img.shields.io/badge/Download%20Polars%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)
 
 - Crossover Chart
 
@@ -68,13 +68,13 @@ The first launch will take a few additional moments while the app installs the E
 - Check that buoys that do not report history accure history as auto-fetch proceeds
 - Check that the GRIB data is plotted along with the buoy's actual data
 
-### Display Options
-- Test switching between Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightness > APPEARANCE
-- Night Mode (red-tinted) is enabled and disabled in Settings and check for hot spots.
-
 ### Competitors 
 - Import competitors
 - Check ORC poll
+
+### Display Options
+- Test switching between Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightness > APPEARANCE
+- Night Mode (red-tinted) is enabled and disabled in Settings and check for hot spots.
 
 Visit the full release page:  
 [All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
