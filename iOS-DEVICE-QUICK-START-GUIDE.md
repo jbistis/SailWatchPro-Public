@@ -43,7 +43,7 @@ The first launch will take a few additional moments while the app performs a one
 **Connection Information**
 Enter values specific to your boat as supplied by your Expedition Marine Administrator
 <div align="center">
-  <img src="images/swp-expedition-connections-setup.png" width="512">
+  <img src="images/swp-settings.png" width="512">
   <br><em>Enter your connection parameters</em>
 </div>
 <br>
