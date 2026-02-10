@@ -102,10 +102,19 @@ Visit the full release page:
 
 ### Import Performance Files
 - Polars
+
+[![Download Polars](https://img.shields.io/badge/Download%20Sailmak20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)er%
+
 - Crossover Chart
+
+[![Download Polars](https://img.shields.io/badge/Download%20Sail%20Performance%20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/sail-chart-della-aurora-20251029.xml)
+
 - Performance Crossover Chart
 
-- ### Weather Data
+[![Download Polars](https://img.shields.io/badge/Download%20Sail%20Performance%20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/performance-sail-chart-della-aurora.txt)
+
+
+### Weather Data
 - Import the buoys
 
 [![Download Polars](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/default_buoys.csv)
