@@ -36,26 +36,6 @@ The first launch will take a few additional moments while the app installs the E
 
 ---
 
-## Import Sail Crossover Charts and Polars
-### Download Source Datafiles
-[![Download Polars](https://img.shields.io/badge/Download%20Sailmaker%20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)
-
-[![Download Polars](https://img.shields.io/badge/Download%20Sail%20Performance%20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)
-
-[![Download Polars](https://img.shields.io/badge/Download%20Polars-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)
-
-### Import the Source Datafiles using the import buttons
-
-<div align="center">
-  <img src="images/swp-sail-polar-import.png" width="512">
-  <br><em>Enter your Sail Crossover Charts and Polars</em>
-</div>
-<br>
-
----
-
-
-
 Visit the full release page:  
 [All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
 
