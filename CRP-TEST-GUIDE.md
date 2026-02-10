@@ -96,13 +96,13 @@ Visit the full release page:
 
 ### Pre-Start Controls
 - Start clock with 15-minute timer and test +1, -1, Sync, and Kill buttons
-- Start clock with 10, 5, and 3-minute timers
+- Start clock with 10, 5, and 3-minute timers.
 - Set the PORT and Starboard start line pins.
-- Select a course
+- Select a course.
 
 - ### Weather Data
 - Import the buoys
-- Check that Auto-Fetch is functioning properly by letting it sit.
+- Check that Auto-Fetch is functioning properly by letting it sit long enough to execute a few auto-fetches.
 - Check that buoys that do not report history accure history as auto-fetch proceeds
 - Check that the GRIB data is plotted along with the buoy's actual data
 
