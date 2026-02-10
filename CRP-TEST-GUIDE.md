@@ -36,21 +36,6 @@ The first launch will take a few additional moments while the app installs the E
 
 ---
 
-Visit the full release page:  
-[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
-
-## Display Options
-- Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightness > APPEARANCE
-- Night Mode (red-tinted) is enabled and disabled in Settings
-- Map Style (hybrid, standard, satellite, imagery)  
-
-## Safety Settings
-- **Depth Alerts** — Draft + safety margin warnings  
-- **Audio Countdown** — Spoken start sequence  
-- **MOB (Man Overboard)** — Emergency position mark & tracking
-
----
-
 ## Test Scripts
 
 ### Pre-Start Controls
@@ -90,6 +75,9 @@ Visit the full release page:
 ### Competitors 
 - Import competitors
 - Check ORC poll
+
+Visit the full release page:  
+[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
 
 Happy sailing! ⛵
 **SailWatchPro Team**
