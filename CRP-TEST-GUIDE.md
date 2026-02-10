@@ -29,17 +29,16 @@
 ## Getting Started
 
 **Latest Version**  
-It is strongly recommended that all iOS devices (iPhone & Watch) run the latest version of the app, as some data is shared between users.
+Remove the app from your iOS device and install the latest version.
 
 ### First Launch
-The first launch will take a few additional moments while the app performs a one-time installation of the ECMWF libraries.
+The first launch will take a few additional moments while the app installs the ECMWF libraries once.
 
 ### Test Areas
 - Pre-start buttons
-
-- Start the App on your iPhone or iPad
-- iPad - navigate to Settings
-- iPhone - navigate to More > Settings
+- Weather Data
+- Competitors
+- Buoy Fetch - Test automated 
 
 
 ## Buoy List Import
@@ -76,35 +75,7 @@ The file name must remain default_buoys.csv.  To add more buoys, follow the form
 
 ---
 
-## Import Competitors
-### Download Source Datafile
-[![Download Competitors](https://img.shields.io/badge/Download%20competitors.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/competitors.csv)
 
-### Load the Competitor Datafile using the import icon in the toolbar.  Use the [+ Add] button to add one competitor.
-<div align="center">
-  <img src="images/swp-competitors.png" width="512">
-  <br><em>Load your competitors file</em>
-</div>
-<br>
-
-### Enter the Race Information (Yacht Scoring eID number, if available).
-
-Touch the 3-dot circle just to the right of [+ Add] button to enter and update the race information.
-<div align="center">
-  <img src="images/swp-yacht-scoring-setup.png" width="512">
-  <br><em>Load your Race Information</em>
-</div>
-<br>
-
----
-
-## File Downloads
-
-- **Buoys** — file name must be `default_buoys.csv`
-- **Sail Crossover Chart** — Txt or xml export from Expedition Marine
-- **Sail Performance Crossover Chart** — export tsv from sailing analytics
-- **Polars** — Txt or export from Expedition Marine
-- **Competitors** — Bulk high speed entry
 
 Visit the full release page:  
 [All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
@@ -121,31 +92,19 @@ Visit the full release page:
 
 ---
 
-## Troubleshooting
+## Test Scripts
 
-### Connection Issues
-- Red indicators → Verify IP & port  
-- No data → Confirm Expedition is broadcasting  
-- Intermittent → Check WiFi strength/stability  
+### Pre-Start Controls
+- Start clock with 15-minute timer and test +1, -1, Sync, and Kill buttons
+- Start clock with 10, 5, and 3-minute timers
+- Set the PORT and Starboard start line pins.
+- Select a course
 
-### Display Problems
-- Data not updating → Restart connection or Expedition  
-- Watch not syncing → Check iPhone–Watch link & permissions  
-
-### Performance Issues
-- Slow → Shorten chart time windows/restart app  
-- Battery drain → Use Night Mode + lower brightness  
-
----
-
-## Support & Updates
-
-SailWatchPro is actively developed, with new features driven by user feedback and racing experience.  
-
-For best results, keep both iPhone and Watch apps on the same version.  
-
-**Support & Feature Requests**:  
-https://github.com/jbistis/SailWatchPro-Public/issues
+- ### Weather Data
+- Import the buoys
+- Check that Auto-Fetch is functioning properly by letting it sit.
+- Check that buoys that do not report history accure history as auto-fetch proceeds
+- Check that the GRIB data is plotted along with the buoy's actual data
 
 Happy sailing! ⛵
 **SailWatchPro Team**
