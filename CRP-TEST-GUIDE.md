@@ -20,6 +20,20 @@ Remove the app from your iOS device and install the latest version.
 ### First Launch
 The first launch will take a few additional moments while the app installs the ECMWF libraries once.
 
+### Settings
+- Download the App
+- Start the App on your iPhone or iPad
+- iPad - navigate to Settings
+- iPhone - navigate to More > Settings
+
+**Connection Information**
+Enter values specific to your boat as supplied by your Expedition Marine Administrator
+<div align="center">
+  <img src="images/swp-settings.png" width="512">
+  <br><em>Enter your connection parameters</em>
+</div>
+<br>
+
 ---
 
 ## Test Scripts
