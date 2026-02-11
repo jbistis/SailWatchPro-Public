@@ -34,6 +34,9 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 </div>
 <br>
 
+- Boat Name: Della Aurora
+- MMSI: 338480651
+
 ---
 
 ## Test Scripts
