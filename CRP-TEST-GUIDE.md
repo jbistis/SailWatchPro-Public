@@ -49,21 +49,21 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 - Select a course.
 
 ### Import Performance Files
-- Polars
+- Import Polars
 
 [![Download Polars](https://img.shields.io/badge/Download%20Polars-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)
 
-- Crossover Chart
+- Import Crossover Chart
 
 [![Download Polars](https://img.shields.io/badge/Download%20Sail%20Performance%20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/sail-chart-della-aurora-20251029.xml)
 
-- Performance Crossover Chart
+- Import Performance Crossover Chart
 
 [![Download Polars](https://img.shields.io/badge/Download%20Sail%20Performance%20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/performance-sail-chart-della-aurora.txt)
 
 
 ### Weather Data
-- Import the buoys
+- Import Buoys
 
 [![Download Polars](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/default_buoys.csv)
 
@@ -73,7 +73,7 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 - Check that the GRIB data is plotted along with the buoy's actual data
 
 ### Competitors 
-- Import competitors
+- Import Competitors
 
 [![Download Competitors](https://img.shields.io/badge/Download%20competitors.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/competitors.csv)
 
