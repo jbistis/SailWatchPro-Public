@@ -57,11 +57,11 @@ The first launch will take a few additional moments while the app installs the E
 ### Competitors 
 - Import competitors
 
-[![Download Competitors](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/default_buoys.csv)
+[![Download Competitors](https://img.shields.io/badge/Download%20competitors.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/competitors.csv)
 
 - Check ORC poll
 
-### Display Options
+### Display Options1
 - Test switching between Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightness > APPEARANCE
 - Night Mode (red-tinted) is enabled and disabled in Settings and check for hot spots.
 
