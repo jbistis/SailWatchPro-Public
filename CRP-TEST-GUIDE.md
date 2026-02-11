@@ -79,7 +79,7 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 
 - Check ORC poll
 
-### Display Options1
+### Display Options
 - Test switching between Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightness > APPEARANCE
 - Night Mode (red-tinted) is enabled and disabled in Settings and check for hot spots.
 
