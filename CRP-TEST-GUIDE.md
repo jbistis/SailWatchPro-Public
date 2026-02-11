@@ -12,20 +12,6 @@
 
 ---
 
-## Table of Contents
-
-- [Getting Started](#getting-started)
-- [First Launch Setup](#first-launch-setup)
-- [Expedition Marine Requirements](#expedition-marine-requirements)
-- [Connection Settings](#connection-settings)
-- [Boat Configuration](#boat-configuration)
-- [Display Options](#display-options)
-- [Safety Settings](#safety-settings)
-- [Performance Issues](#performance-issues)
-- [Support & Updates](#support--updates)
-
----
-
 ## Getting Started
 
 **Latest Version**  
@@ -70,6 +56,9 @@ The first launch will take a few additional moments while the app installs the E
 
 ### Competitors 
 - Import competitors
+
+[![Download Competitors](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/default_buoys.csv)
+
 - Check ORC poll
 
 ### Display Options
