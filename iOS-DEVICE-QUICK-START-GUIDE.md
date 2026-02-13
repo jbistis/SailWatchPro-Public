@@ -128,7 +128,7 @@ Touch the 3-dot circle just to the right of [+ Add] button to enter and update t
 - **Competitors** — Bulk high speed entry
 
 Visit the full release page:  
-[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
+[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/importFilesBuild65)
 
 ## Display Options
 - Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightness > APPEARANCE
