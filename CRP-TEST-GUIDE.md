@@ -52,21 +52,21 @@ Enter values specific to your boat for:
 ### Import Performance Files
 - Import Polars
 
-[![Download Polars](https://img.shields.io/badge/Download%20Polars-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/ORC-polars-della-aurora-2dot5m-20251029.txt)
+[![Download Polars](https://img.shields.io/badge/Download%20Polars-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild65/ORC-polars-della-aurora-2dot5m-20251029.txt)
 
 - Import Crossover Chart
 
-[![Download Polars](https://img.shields.io/badge/Download%20Sail%20Performance%20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/sail-chart-della-aurora-20251029.xml)
+[![Download Polars](https://img.shields.io/badge/Download%20Sail%20Performance%20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild65/sail-chart-della-aurora-20251029.xml)
 
 - Import Performance Crossover Chart
 
-[![Download Polars](https://img.shields.io/badge/Download%20Sail%20Performance%20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/performance-sail-chart-della-aurora.txt)
+[![Download Polars](https://img.shields.io/badge/Download%20Sail%20Performance%20Crossover%20Chart-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild65/performance-sail-chart-della-aurora.txt)
 
 
 ### Weather Data
 - Import Buoys
 
-[![Download Polars](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/default_buoys.csv)
+[![Download Polars](https://img.shields.io/badge/Download%20default_buoys.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild65/default_buoys.csv)
 
 - Import a current and relevant GRIB file
 - Check that Buoy Auto-Fetch is functioning properly by letting it sit long enough to execute a few auto-fetches.
@@ -76,13 +76,13 @@ Enter values specific to your boat for:
 ### Competitors 
 - Import Competitors
 
-[![Download Competitors](https://img.shields.io/badge/Download%20competitors.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild57/competitors.csv)
+[![Download Competitors](https://img.shields.io/badge/Download%20competitors.csv-blue?style=for-the-badge)](https://github.com/jbistis/SailWatchPro-Public/releases/download/ImportFilesBuild65/competitors.csv)
 
 - Check ORC poll
 
 ### Display Options
-- Test switching between Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightness > APPEARANCE
-- Night Mode (red-tinted) is enabled and disabled in Settings and check for hot spots.
+- Test switching between Light Mode and Dark Mode is set using your iOS device Settings > Display & Brightness > APPEARANCE
+- Night Mode (red-tinted) is enabled and disabled in Settings, and check for hot spots.
 
 Visit the full release page:  
 [All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
