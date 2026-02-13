@@ -8,13 +8,13 @@ stationId,name,dataSourceType,datasetId,latitude,longitude,imageUrl,providesHist
 44099,"Cape Henry, VA",NDBC (CoastWatch),,36.915,-75.722,,Yes
 41068,"Fort Pierce, FL",NDBC (CoastWatch),,27.593,-80.189,,Yes
 41122,"Hollywood Beach, FL",NDBC (CoastWatch),,26.001,-80.096,,Yes
-41046,East of San Salvador Island,NDBC (CoastWatch),,23.840,-68.340,,Yes
-41047,Northeast of Nassau,NDBC (CoastWatch),,27.557,-71.480,,Yes
-46026,San Francisco - 18 NM West of San Francisco,NDBC (CoastWatch),,37.750,-122.838,,Yes
+41046,East of San Salvador Island,NDBC (CoastWatch),,23.84,-68.34,,Yes
+41047,Northeast of Nassau,NDBC (CoastWatch),,27.557,-71.48,,Yes
+46026,San Francisco - 18 NM West of San Francisco,NDBC (CoastWatch),,37.75,-122.838,,Yes
 ROBN4,"Robbins Reef, NY",NDBC (CoastWatch),,40.657,-74.065,,Yes
-KPTN6,"Kings Point, NY",NDBC (NERACOOS),,40.811,-73.765,,Yes
-BRHC3,"Bridgeport, CT",NDBC (NERACOOS),,41.174,-73.181,,Yes
-NWHC3,"New Haven, CT",NDBC (NERACOOS),,41.283,-72.908,,Yes
+KPTN6,"Kings Point, NY",NDBC (CoastWatch),,40.811,-73.765,,Yes
+BRHC3,"Bridgeport, CT",NDBC (CoastWatch),,41.174,-73.181,,Yes
+NWHC3,"New Haven, CT",NDBC (CoastWatch),,41.283,-72.908,,Yes
 CLIS,Central Sound,LISICOS (Image),,41.209,-72.509,https://clis-cache.dms.uconn.edu/clis_wxSens1.png,No
 EXRX,Execution Rocks,LISICOS (Image),,40.879,-73.742,https://clis-cache.dms.uconn.edu/exrx_wxSens2.png,No
 WLIS,Western Sound,LISICOS (Image),,41.045,-73.443,https://clis-cache.dms.uconn.edu/wlis_wxSens1.png,No
