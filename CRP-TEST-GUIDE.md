@@ -85,7 +85,7 @@ Enter values specific to your boat for:
 - Night Mode (red-tinted) is enabled and disabled in Settings, and check for hot spots.
 
 Visit the full release page:  
-[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/ImportFiles)
+[All Import Files Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/importFilesBuild65)
 
 Happy sailing! ⛵
 **SailWatchPro Team**
