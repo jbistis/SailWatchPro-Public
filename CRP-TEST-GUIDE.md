@@ -24,6 +24,7 @@ A Sandbox environment is available to help you explore and test SailWatchPro bef
   <li>Download and install WireGuard from the Apple App Store: https://apps.apple.com/us/app/wireguard/id1441195209</li>
   <li>Request a WireGuard configuration file from James Bistis at james.bistis@icloud.com</li>
   <li>Install the provided .conf file using WireGuard</li>
+  <li>Open the WireGuard app and connect to the Vero Beach VPN.</li>
 </ul>
 
 ### Settings
