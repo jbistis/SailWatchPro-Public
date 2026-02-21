@@ -28,7 +28,8 @@ https://apps.apple.com/us/app/wireguard/id1441195209
   </a>
 </p>
 
-- Install the supplied .conf configuration file
+- Request from James Bistis at mailto:james.bistis@icloud.com a WatchGuard configuration file.
+- Install the provided .conf configuration file.
 
 
 ### First Launch
