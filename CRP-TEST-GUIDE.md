@@ -17,27 +17,20 @@
 **Latest Version**  
 Remove the app from your iOS device and install the latest version.
 
-### Sandbox Environment at SailWatchPro
-There is a Sandbox environment you can attach your app to to become familiar with SailWatchPro.
+### SailWatchPro Sandbox Environment
+A Sandbox environment is available to help you explore and test SailWatchPro before going live. To connect your app, follow these steps:
 
-- Download and Install WireGuard from the Apple App Store.
-https://apps.apple.com/us/app/wireguard/id1441195209
-<p align="center">
-  <a href="https://apps.apple.com/us/app/wireguard/id1441195209">
-    <img alt="WireGuard" title="WireGuard" src="images/wire-guard-logo.png" width="64">
-  </a>
-</p>
-
-- Request from James Bistis at james.bistis@icloud.com a WatchGuard configuration file.
-- Install the provided .conf configuration file.
-
+<ol>
+  <li>Download and install WireGuard from the Apple App Store: https://apps.apple.com/us/app/wireguard/id1441195209</li>
+  <li>Request a WireGuard configuration file from James Bistis at james.bistis@icloud.com</li>
+  <li>Install the provided .conf file using WireGuard</li>
+</ol>
 
 ### First Launch
 The first launch will take a few additional moments while the app installs the ECMWF libraries once.
 
 ### Settings
-- Download the SailWatchPro App
-- Start the App on your iPhone or iPad
+- Start the SailWatchPro App on your iPhone or iPad
 - iPad - navigate to Settings
 - iPhone - navigate to More > Settings
 
