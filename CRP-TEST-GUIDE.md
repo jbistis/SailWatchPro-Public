@@ -26,7 +26,7 @@ A Sandbox environment is available to help you explore and test SailWatchPro bef
   <li>Install the provided .conf file using WireGuard</li>
 </ol>
 
-### First Launch
+## First Launch
 The first launch will take a few additional moments while the app installs the ECMWF libraries once.
 
 ### Settings
@@ -34,7 +34,7 @@ The first launch will take a few additional moments while the app installs the E
 - iPad - navigate to Settings
 - iPhone - navigate to More > Settings
 
-**Connection Information**
+###Connection Information**
 Enter values specific to your boat as supplied by your Expedition Marine Administrator
 <div align="center">
   <img src="images/swp-settings.png" width="512">
@@ -42,7 +42,7 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 </div>
 <br>
 
-**Boat Details**
+###Boat Details**
 Enter values specific to your boat for:
 - Boat Name: Della Aurora
 - MMSI: 338480651
