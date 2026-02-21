@@ -20,14 +20,11 @@ Remove the app from your iOS device and install the latest version.
 ### SailWatchPro Sandbox Environment
 A Sandbox environment is available to help you explore and test SailWatchPro before going live. To connect your app, follow these steps:
 
-<ol>
+<ul>
   <li>Download and install WireGuard from the Apple App Store: https://apps.apple.com/us/app/wireguard/id1441195209</li>
   <li>Request a WireGuard configuration file from James Bistis at james.bistis@icloud.com</li>
   <li>Install the provided .conf file using WireGuard</li>
-</ol>
-
-## First Launch
-The first launch will take a few additional moments while the app installs the ECMWF libraries once.
+</ul>
 
 ### Settings
 - Start the SailWatchPro App on your iPhone or iPad
@@ -46,6 +43,10 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 Enter values specific to your boat for:
 - Boat Name: Della Aurora
 - MMSI: 338480651
+
+### Options (Sandbox Only)
+- Enable Calculate TWA & TWS
+- Enable Calculate TWD
 
 ---
 
