@@ -17,6 +17,12 @@
 **Latest Version**  
 Remove the app from your iOS device and install the latest version.
 
+### Sandbox Environment
+There is a Sandbox environment you can use to become familiar with the app.  This app is attached to real instruments, albeit land-based.
+- Download and Install Wireguard from the Apple App Store.
+- 
+
+
 ### First Launch
 The first launch will take a few additional moments while the app installs the ECMWF libraries once.
 
