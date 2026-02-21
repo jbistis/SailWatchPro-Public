@@ -17,20 +17,19 @@
 **Latest Version**  
 Remove the app from your iOS device and install the latest version.
 
-### Sandbox Environment
+### Sandbox Environment at SailWatchPro
 There is a Sandbox environment you can use to become familiar with the app.  This app is attached to real instruments, albeit land-based.
 
-
-
-https://apps.apple.com/us/app/wireguard/id1441195209
-
-
-- Download and Install Wireguard from the Apple App Store.
+- Download and Install WireGuard from the Apple App Store.
 <p align="center">
   <a href="https://apps.apple.com/us/app/wireguard/id1441195209">
     <img alt="WireGuard" title="WireGuard" src="images/wire-guard-logo.png" width="64">
   </a>
 </p>
+https://apps.apple.com/us/app/wireguard/id1441195209
+
+- Install the supplied .conf configuration file
+
 
 ### First Launch
 The first launch will take a few additional moments while the app installs the ECMWF libraries once.
