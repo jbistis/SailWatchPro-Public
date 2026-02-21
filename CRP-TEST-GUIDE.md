@@ -21,12 +21,12 @@ Remove the app from your iOS device and install the latest version.
 There is a Sandbox environment you can attach your app to to become familiar with SailWatchPro.
 
 - Download and Install WireGuard from the Apple App Store.
+https://apps.apple.com/us/app/wireguard/id1441195209
 <p align="center">
   <a href="https://apps.apple.com/us/app/wireguard/id1441195209">
     <img alt="WireGuard" title="WireGuard" src="images/wire-guard-logo.png" width="64">
   </a>
 </p>
-https://apps.apple.com/us/app/wireguard/id1441195209
 
 - Install the supplied .conf configuration file
 
