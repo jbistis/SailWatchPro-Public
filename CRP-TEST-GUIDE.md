@@ -35,7 +35,7 @@ A Sandbox environment is available to help you explore and test SailWatchPro bef
 ###Connection Information**
 Enter values specific to your boat as supplied by your Expedition Marine Administrator
 <div align="center">
-  <img src="images/ver0-beach-sandbox-settings.png" width="512">
+  <img src="images/vero-beach-sandbox-settings.png" width="512">
   <br><em>Enter your connection parameters</em>
 </div>
 <br>
