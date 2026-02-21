@@ -28,7 +28,7 @@ https://apps.apple.com/us/app/wireguard/id1441195209
 - Download and Install Wireguard from the Apple App Store.
 <p align="center">
   <a href="https://apps.apple.com/us/app/wireguard/id1441195209">
-    <img alt="WireGuard" title="WireGuard" src="images/wire-guard-logo.png" width="256">
+    <img alt="WireGuard" title="WireGuard" src="images/wire-guard-logo.png" width="64">
   </a>
 </p>
 
