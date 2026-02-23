@@ -131,7 +131,7 @@ Visit the full release page:
 
 [All Import Files /Github Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/importFilesBuild65)
 
-[All Import Files /Github Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/importFilesBuild65)
+[All Import Files /Goolge Drive →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/importFilesBuild65)
 
 
 ## Display Options
