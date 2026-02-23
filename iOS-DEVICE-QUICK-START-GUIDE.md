@@ -131,6 +131,9 @@ Visit the full release page:
 
 [All Import Files /Github Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/importFilesBuild65)
 
+[All Import Files /Github Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/importFilesBuild65)
+
+
 ## Display Options
 - Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightness > APPEARANCE
 - Night Mode (red-tinted) is enabled and disabled in Settings
