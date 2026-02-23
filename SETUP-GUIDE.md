@@ -145,7 +145,12 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **same 
 
 ## Data imports
 
-You can find sample import files at https://github.com/jbistis/SailWatchPro-Public/tree/main/documents 
+Visit the full release page:  
+
+[All Import Files /Github Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/importFilesBuild65)
+
+[All Import Files /Goolge Drive →](https://drive.google.com/drive/folders/1XXa9frakEL_QT7oMJfO0aDO2mqGzbGHm?usp=drive_link)
+
 
 - **Buoys** — file name must be `default_buoys.csv`
 - **Sail Crossover Chart** — Txt or xml export from Expedition Marine
