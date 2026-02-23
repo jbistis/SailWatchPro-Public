@@ -45,7 +45,7 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **same 
      - Alias: **SailWatchPro**  
      - Instruments: **Expedition**  
      - Address: **192.168.XXX.YYY** (your Expedition Marine PC's IP)  
-     - Port: Choose an unused port  
+     - Port: Choose an unused port number
    - Click *Expedition Settings*  
    - In **Exp Rx filter**: check **Receive marks**  
    - In **Exp Tx filter**: enable the channels listed in [Expedition Marine Requirements](#expedition-marine-requirements) below  
