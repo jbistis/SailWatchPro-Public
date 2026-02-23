@@ -131,7 +131,7 @@ Visit the full release page:
 
 [All Import Files /Github Release →](https://github.com/jbistis/SailWatchPro-Public/releases/tag/importFilesBuild65)
 
-[All Import Files /Google Share →]([https://github.com/jbistis/SailWatchPro-Public/releases/tag/importFilesBuild65](https://drive.google.com/drive/folders/1XXa9frakEL_QT7oMJfO0aDO2mqGzbGHm?usp=sharing))
+[All Import Files /Github Release →](https://drive.google.com/drive/folders/1XXa9frakEL_QT7oMJfO0aDO2mqGzbGHm?usp=sharing)
 
 ## Display Options
 - Light Mode and Dark Mode are set using your iOS device Settings > Display & Brightness > APPEARANCE
