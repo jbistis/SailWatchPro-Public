@@ -38,6 +38,9 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **same 
 ### First Launch Setup
 
 1. **Configure the Expedition Marine Network**  
+   - Get the ip address of your Expedition Marine PC
+     - To find your Windows PC's IP address, open the Command Prompt (type cmd in the Start menu), type ipconfig, and press Enter. Look for "IPv4 Address" under your active connection (Wi-Fi or Ethernet)
+     - Alternatively, go to Settings > Network & internet and view properties.
    - Start Expedition Marine on the boat PC.  
    - From the ☰ Hamburger Menu → drag down → hover over Instruments → click *Number of network connections*  
    - Enter one greater than the displayed number to add a new network → OK  
