@@ -42,7 +42,7 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **same 
      - Go to Settings > Network & internet and view properties and you should see something similar to the following:
 
 <div align="center">
-  <img src="images/windows-pc-ipaddress.png" width="512">
+  <img src="images/ip-address-windows-pc.png" width="512">
   <br><em>Your Expedition PC IP address</em>
 </div>
 
