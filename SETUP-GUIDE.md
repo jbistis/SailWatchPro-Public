@@ -97,6 +97,7 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **same 
 >    |Next mark latitude|Next mark longitude|Next mark polar time|
 >    |Next mark range|Next mark time on port|Next mark time on starb|
 >    |Next mark twa|Opposite track|Polar bsp|
+>    |Predicted twd|Predicted tws|Predicted Drift|
 >    |Polar bsp %|Sail|Sail event|
 >    |Sail mark|Sail next mark|Sea temperature|
 >    |Sog|Start bias angle|Start bias length|
