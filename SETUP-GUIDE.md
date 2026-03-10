@@ -41,6 +41,11 @@ It is strongly recommended that all iOS devices (iPhone & Watch) run the **same 
    - Get the ip address of your Expedition Marine PC
      - Go to Settings > Network & internet and view properties and you should see something similar to the following:
 
+<div align="center">
+  <img src="images/windows-pc-ipaddress.png" width="512">
+  <br><em>Your Expedition PC IP address</em>
+</div>
+
    - Start Expedition Marine on the boat PC.  
    - From the ☰ Hamburger Menu → drag down → hover over Instruments → click *Number of network connections*  
    - Enter one greater than the displayed number to add a new network → OK  
