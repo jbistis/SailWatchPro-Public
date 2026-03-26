@@ -95,7 +95,7 @@
       <labelposition tws="25" twa="146" />
       <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
     </element>
-    <element name="C0" group="DownwindSails" type="Sail">
+    <element name="C0" group="ReachingSails" type="Sail">
       <createdby val="" />
       <datecreated val="0001-01-01" />
       <visible val="True" />
@@ -119,7 +119,7 @@
       <labelposition tws="6.3" twa="115.3" />
       <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
     </element>
-    <element name="J1" group="Headsails" type="Sail">
+    <element name="J1" group="UpwindSails" type="Sail">
       <createdby val="" />
       <datecreated val="0001-01-01" />
       <visible val="True" />
@@ -143,7 +143,7 @@
       <labelposition tws="8.2" twa="55.3" />
       <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
     </element>
-    <element name="J2" group="Headsails" type="Sail">
+    <element name="J2" group="UpwindSails" type="Sail">
       <createdby val="" />
       <datecreated val="0001-01-01" />
       <visible val="True" />
@@ -167,7 +167,7 @@
       <labelposition tws="17.6" twa="62" />
       <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
     </element>
-    <element name="Storm Jib" group="Headsails" type="Sail">
+    <element name="Genoa Staysail" group="Staysails" type="Sail">
       <createdby val="" />
       <datecreated val="0001-01-01" />
       <visible val="False" />
@@ -190,7 +190,53 @@
       <labelposition tws="33" twa="95.9" />
       <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
     </element>
-    <element name="J4" group="Headsails" type="Sail">
+        <element name="Storm Jib" group="Staysails" type="Sail">
+      <createdby val="" />
+      <datecreated val="0001-01-01" />
+      <visible val="False" />
+      <colour R="255" G="255" B="255" />
+      <straightline val="False" />
+      <sailarea val="123" units="m²" display="False" />
+      <alias val="J3-A" />
+      <sailweightkg val="328" />
+      <bezierpoints>
+        <point tws="25" twa="32" />
+        <point tws="29" twa="89" />
+        <point tws="34" twa="174" />
+        <point tws="40" twa="139" />
+        <point tws="39" twa="45" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="40" />
+      <linepattern val="Solid" />
+      <linewidth val="3" />
+      <labelposition tws="33" twa="95.9" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
+    </element>
+    <element name="Spinnaker Staysail" group="Staysails" type="Sail">
+      <createdby val="" />
+      <datecreated val="0001-01-01" />
+      <visible val="False" />
+      <colour R="255" G="255" B="255" />
+      <straightline val="False" />
+      <sailarea val="123" units="m²" display="False" />
+      <alias val="J3-A" />
+      <sailweightkg val="328" />
+      <bezierpoints>
+        <point tws="25" twa="32" />
+        <point tws="29" twa="89" />
+        <point tws="34" twa="174" />
+        <point tws="40" twa="139" />
+        <point tws="39" twa="45" />
+      </bezierpoints>
+      <shapepattern val="Solid" />
+      <shapeopacity val="40" />
+      <linepattern val="Solid" />
+      <linewidth val="3" />
+      <labelposition tws="33" twa="95.9" />
+      <labelfont size="14" bold="True" italic="False" underline="False" r="1" g="1" b="1" />
+    </element>
+    <element name="J4" group="UpwindSails" type="Sail">
       <createdby val="Jeremiah" />
       <datecreated val="2025-07-22" />
       <visible val="True" />
@@ -215,7 +261,7 @@
       <labelposition tws="28.4" twa="99.5" />
       <labelfont size="14" bold="True" italic="False" underline="False" r="0" g="0" b="0" />
     </element>
-    <element name="J2R" group="Headsails" type="Sail">
+    <element name="J2R" group="UpwindSails" type="Sail">
       <createdby val="Jeremiah" />
       <datecreated val="2025-07-22" />
       <visible val="True" />
