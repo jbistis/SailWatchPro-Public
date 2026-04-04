@@ -92,7 +92,7 @@ Your boat is a moving weather station. SailWatchPro analyzes real-time wind tren
 
 **Expedition Event Entry**
 
-***Sail Events***
+***Sail Change Event Tracking***
 Log sail changes with one tap. SailWatchPro instantly sends events to Expedition Marine and keeps your entire crew in sync across iPads, iPhones, and Macs.
 
 <div align="center">
@@ -101,13 +101,12 @@ Log sail changes with one tap. SailWatchPro instantly sends events to Expedition
 </div>
 <br>
 
-***Crew Position Tracking Events***
-
+***Crew Position Change Event Tracking***
 **Crew Manager**
 Log crew changes with one tap. SailWatchPro instantly sends events to Expedition Marine and keeps your entire crew in sync across iPads, iPhones, and Macs.
 
 <div align="center">
-  <img src="images/swp-crew-positions-iPhone" width="512">
+  <img src="images/swp-crew-positions-iPhone.png" width="512">
   <br><em>Create your own position titles and enforces posiiton eligiability by crew member</em>
 </div>
 <br>
