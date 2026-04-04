@@ -91,8 +91,10 @@ Your boat is a moving weather station. SailWatchPro analyzes real-time wind tren
 <br>
 
 **Expedition Event Entry**
+
 ***Sail Events***
 Log sail changes with one tap. SailWatchPro instantly sends events to Expedition Marine and keeps your entire crew in sync across iPads, iPhones, and Macs.
+
 <div align="center">
   <img src="images/swp-sails-up.png" width="512">
   <br><em>Communicates sail changes to Expedition Marine</em>
@@ -100,14 +102,13 @@ Log sail changes with one tap. SailWatchPro instantly sends events to Expedition
 <br>
 
 ***Crew Position Tracking Events***
-The Crew Position Track Events....
 
-**GRIB File Manager**
-The GRIB File Manager automatically disables GRIB files that have either expired or are outside the race area.
+**Crew Manager**
+Log crew changes with one tap. SailWatchPro instantly sends events to Expedition Marine and keeps your entire crew in sync across iPads, iPhones, and Macs.
 
 <div align="center">
-  <img src="images/swp-grib-file-manager-portrait-light.png" width="512">
-  <br><em>Enforces compliance to Race Area Coverage Box</em>
+  <img src="images/swp-crew-positions-iPhone" width="512">
+  <br><em>Create your own position titles and enforces posiiton eligiability by crew member</em>
 </div>
 <br>
 
