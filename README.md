@@ -79,7 +79,7 @@ Visually compare buoy observations with GRIB forecasts and trends for every key 
 Your boat is a moving weather station. SailWatchPro analyzes real-time wind trends using rolling averages, FFT, and wavelet transforms to identify veering/backing, building, and oscillating patterns — with confidence indicators and a 6-hour wind history that syncs across devices.
 
 <div align="center">
-  <img src="images/swp-wind-state.png" width="512">
+  <img src="images/swp-wind-state-v76.png" width="512">
   <br><em>Boat: Wind Trends from instruments</em>
 </div>
 <br>
