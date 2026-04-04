@@ -92,11 +92,10 @@ Your boat is a moving weather station. SailWatchPro analyzes real-time wind tren
 
 **Expedition Event Entry**
 ***Sail Events***
-The Sail Events....
-
+Log sail changes with one tap. SailWatchPro instantly sends events to Expedition Marine and keeps your entire crew in sync across iPads, iPhones, and Macs.
 <div align="center">
-  <img src="images/swp-grib-file-manager-portrait-light.png" width="512">
-  <br><em>Enforces compliance to Race Area Coverage Box</em>
+  <img src="images/swp-sails-up.png" width="512">
+  <br><em>Communicates sail changes to Expedition Marine</em>
 </div>
 <br>
 
