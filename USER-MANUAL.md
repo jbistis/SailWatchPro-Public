@@ -523,7 +523,7 @@ Your Apple Watch becomes a powerful racing companion with dedicated views:
 - **iPad**: iOS 18.5 or later
 - **iPhone**: iOS 18.5 or later
 - **Apple Watch**: watchOS 11.5 or later
-- **Expedition Marine**: 12.4.12 or later
+- **Expedition Marine**: 12.6.9 or later
 - **Network**: Reliable WiFi connection for real-time data, with a wired connection for the Expedition Marine PC
 
 ---
