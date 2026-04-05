@@ -103,7 +103,7 @@ Log sail changes with one tap. SailWatchPro instantly sends events to Expedition
 
 ***Crew Position Change Event Tracking***
 **Crew Manager**
-Log crew changes with one tap. SailWatchPro instantly sends events to Expedition Marine and keeps your entire crew in sync across iPads, iPhones, and Macs.
+Define your own custom positions and assign only to qualified crew members.  Log crew changes with one tap. SailWatchPro instantly sends events to Expedition Marine and keeps your entire crew in sync across iPads, iPhones, and Macs.
 
 <div align="center">
   <img src="images/swp-crew-positions-iPhone.png" width="512">
