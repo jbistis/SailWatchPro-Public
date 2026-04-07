@@ -53,9 +53,12 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 ### Step 1: Find IP Addresses
 
 **Find your Expedition PC's IP address:**
-1. Press **Windows Key + R**, type `cmd`, press Enter
-2. Type `ipconfig` and look for **IPv4 Address** under your active network adapter
-3. Write down this IP (example: 192.168.1.50)
+1. Open Command Prompt in Windows:
+   - **Windows PC:** Press **Windows Key + R**
+   - **Mac keyboard:** Press **Command (⌘) + R** or click the Windows Start menu
+2. Type `cmd` and press Enter
+3. Type `ipconfig` and look for **IPv4 Address** under your active network adapter
+4. Write down this IP (example: 192.168.1.50)
 
 **Find your iPad's IP address:**
 - Settings → Wi-Fi → Tap the (i) icon → IPv4 Address
@@ -83,7 +86,7 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 
 ---
 
-**If ping works in both directions, your network is fine.** The issue is likely firewall or port configuration.
+**If ping works in both directions, your network is fine.** The issue is likely firewall or port configuration. 
 
 ---
 
