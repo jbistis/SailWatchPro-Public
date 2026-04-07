@@ -40,13 +40,15 @@
 
 ---
 
-## Step 1 — Configure Expedition Marine
+### Step 1 — Find IP Addresses
 
-**Find your Expedition PC's IP address:**
-
-1. Press **Windows Key + R**, type `cmd`, press Enter
+**Expedition PC IP address:**
+1. Open a Windows Command Prompt:
+   - **Native Windows PC:** Press **Windows Key + R**, type `cmd`, press Enter
+   - **Mac running Parallels or VMware:** Click the **Start menu** with your mouse, type `cmd`, press Enter
 2. Type `ipconfig` and look for **IPv4 Address** under your active network adapter
 3. Note this IP (example: `192.168.1.50`)
+
 
 <div align="center">
   <img src="images/ip-address-windows-pc.png" width="512">
