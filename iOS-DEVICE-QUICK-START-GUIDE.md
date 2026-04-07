@@ -48,22 +48,80 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 </div>
 <br>
 
-**Troubleshooting Connection Issues**
+## Troubleshooting Connection Issues
 
-***From your iPad/iPhone***
-- Install a free ping utility app at  https://apps.apple.com/us/app/ping-network-utility/id576773404
--  Ping your Expedition Marine PC IP Address (If running Windows on top of Mac, the IP address of the virtual Windows PC)
+### Test Network Connectivity
 
-***From your Expedition PC***
--  From a Windows CMD prompt, ping your iPhone.  Find your iOS device IP Address by Settings > WiFi > i (information circle) and not the IP Address found in the IPv4 Section
-If you can ping in both directions that proves the networking is functioning properly
+**From your iPad/iPhone:**
+1. Install a ping utility app: [Ping - Network Utility](https://apps.apple.com/us/app/ping-network-utility/id576773404)
+2. Ping your Expedition PC's IP address
+   - If running Windows in a VM (Parallels, VMware), use the **virtual machine's IP**, not the Mac's IP
 
-***Check your port settings***
--  Typically, in Expedition, the Rx port is 5098 and Tx port is 5099 and in the SailWatchPro app it is switched and the Rx port is 5099 and the Tx port is 5098.
+**From your Expedition PC:**
+1. Open Command Prompt (CMD)
+2. Ping your iPad/iPhone IP address
+   - Find your iOS device IP: **Settings → Wi-Fi → (i) → IPv4 Address**
 
-***Check your Windows Firewall***
-Temporarilly disable 
--  From a Windows CMD prompt, enter the command netsh advfirewall set allprofiles state off
+**If ping works in both directions, your network is fine.** The issue is likely firewall or port configuration.
+
+---
+
+### Verify Port Settings
+
+Port configuration must be **opposite** between Expedition and SailWatchPro:
+
+| Application | Rx Port (Receive) | Tx Port (Transmit) |
+|-------------|-------------------|-------------------|
+| **Expedition Marine** | 5098 | 5099 |
+| **SailWatchPro** | 5099 | 5098 |
+
+**Why opposite?** Expedition's Tx port (5099) must match SailWatchPro's Rx port (5099), and vice versa.
+
+**To check in SailWatchPro:**
+- Settings → Expedition Marine → Verify Rx and Tx ports
+
+---
+
+### Check Windows Firewall
+
+**Quick Test: Temporarily disable firewall**
+
+Open Command Prompt **as Administrator** and run:
+```cmd
+netsh advfirewall set allprofiles state off
+```
+
+Test your connection. If it works, the firewall was blocking UDP traffic.
+
+**Re-enable firewall:**
+```cmd
+netsh advfirewall set allprofiles state on
+```
+
+---
+
+**Permanent Fix: Add firewall rules for Expedition**
+
+1. **Windows Defender Firewall** → Advanced Settings → Inbound Rules
+2. **New Rule** → Port → UDP
+3. **Specific local ports:** `5098, 5099`
+4. **Allow the connection** → Apply to all profiles
+5. Name: "Expedition Marine UDP Ports"
+
+**Also add an application rule:**
+1. **New Rule** → Program
+2. Browse to `Expedition.exe`
+3. **Allow the connection** → Apply to all profiles
+
+---
+
+### Still Having Issues?
+
+**Check these:**
+- ✅ Both devices on the same Wi-Fi network
+- ✅ No VPN active on either device
+- ✅ Router not blocking UDP broadcasts (some routers have "AP Isolation" - disable it)
+- ✅ Expedition UDP output is enabled and set to broadcast IP: `255.255.255.255`
 
 **Boat Configuration**  
 - **Boat Name** — Vessel identification  
