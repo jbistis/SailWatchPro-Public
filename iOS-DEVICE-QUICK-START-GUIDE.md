@@ -48,6 +48,23 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 </div>
 <br>
 
+**Troubleshooting Connection Issues**
+
+***From your iPad/iPhone***
+- Install a free ping utility app at  https://apps.apple.com/us/app/ping-network-utility/id576773404
+-  Ping your Expedition Marine PC IP Address (If running Windows on top of Mac, the IP address of the virtual Windows PC)
+
+***From your Expedition PC***
+-  From a Windows CMD prompt, ping your iPhone.  Find your iOS device IP Address by Settings > WiFi > i (information circle) and not the IP Address found in the IPv4 Section
+If you can ping in both directions that proves the networking is functioning properly
+
+***Check your port settings***
+-  Typically, in Expedition, the Rx port is 5098 and Tx port is 5099 and in the SailWatchPro app it is switched and the Rx port is 5099 and the Tx port is 5098.
+
+***Check your Windows Firewall***
+Temporarilly disable 
+-  From a Windows CMD prompt, enter the command netsh advfirewall set allprofiles state off
+
 **Boat Configuration**  
 - **Boat Name** — Vessel identification  
 - **Boat Length** — For distance calculations in boat lengths  
