@@ -54,13 +54,25 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 
 **From your iPad/iPhone:**
 1. Install a ping utility app: [Ping - Network Utility](https://apps.apple.com/us/app/ping-network-utility/id576773404)
-2. Ping your Expedition PC's IP address
-   - If running Windows in a VM (Parallels, VMware), use the **virtual machine's IP**, not the Mac's IP
+2. Find your Expedition PC's IP address:
+   - On Windows: Press **Windows Key + R**, type `cmd`, press Enter
+   - Type `ipconfig` and look for **IPv4 Address** under your active network adapter
+3. Ping that IP address from your iPad using the ping utility app
 
 **From your Expedition PC:**
-1. Open Command Prompt (CMD)
-2. Ping your iPad/iPhone IP address
-   - Find your iOS device IP: **Settings → Wi-Fi → (i) → IPv4 Address**
+
+**Open Command Prompt:**
+1. Press **Windows Key + R** (or click Start menu)
+2. Type `cmd` and press Enter
+3. A black window will open - this is the Command Prompt
+
+**Find your iPad's IP address:**
+- Settings → Wi-Fi → Tap the (i) icon → IPv4 Address
+
+**Ping your iPad/iPhone:**
+1. Type: `ping` followed by your iPad's IP address
+   - Example: `ping 192.168.1.100`
+2. Press Enter
 
 **If ping works in both directions, your network is fine.** The issue is likely firewall or port configuration.
 
