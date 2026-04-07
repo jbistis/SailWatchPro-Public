@@ -28,6 +28,44 @@
 
 ---
 
+## Recommended Network Architecture
+
+A stable, low-latency onboard network is the foundation of a reliable SailWatchPro installation. The recommended setup uses a **wired backbone** for the critical components, with iPads and iPhones connecting via WiFi.
+
+```
+                        [ Onboard Router ]
+                       /        |         \
+              (ethernet)   (ethernet)    (WiFi)
+                 /              |              \
+    [ Expedition PC ]  [ NMEA 2000 Gateway ]  [ iPads / iPhones ]
+```
+
+### Wired Components
+
+**Onboard Router**
+The router is the hub of the network. Common choices on racing boats include the Pepwave MAX BR1, Vesper Cortex, and Ubiquiti UniFi access points. The router should be connected to the boat's power supply and positioned for strong WiFi coverage across the cockpit and nav station.
+
+**Expedition PC**
+The Expedition Marine PC should be connected to the router via ethernet cable — not WiFi. A wired connection eliminates the latency and dropout issues that can occur when the PC is on WiFi, and ensures Expedition's UDP broadcasts reach SailWatchPro reliably.
+
+**NMEA 2000 / CANBus Gateway**
+The gateway bridges your boat's NMEA 2000 instrument network (CANBus) to the ethernet network, making instrument data available to Expedition Marine and SailWatchPro. Common gateway devices include:
+
+- **Actisense NGW-1** — NMEA 2000 to ethernet
+- **Yacht Devices YDWG-02** — WiFi and ethernet gateway
+- **Garmin GND 10** — NMEA 2000 to ethernet bridge
+- **Vesper Cortex** — Integrated router and NMEA 2000 gateway
+
+The gateway should also be connected to the router via ethernet for maximum reliability.
+
+### WiFi Devices
+iPads, iPhones, and Apple Watches connect to the router via WiFi. For best results:
+- Use the **5 GHz band** if your router supports it — less interference than 2.4 GHz in marina environments
+- Keep devices within good range of the router (see signal strength guidance in the [Troubleshooting Guide](TROUBLESHOOTING.md))
+- Ensure the router does **not** have AP Isolation (also called Client Isolation) enabled, as this prevents devices from communicating with each other
+
+---
+
 ## Getting Started
 
 **All iOS devices (iPhone & Watch) should run the same version of the app**, as data is shared between users.

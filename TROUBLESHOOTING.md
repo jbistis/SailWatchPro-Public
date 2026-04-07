@@ -29,6 +29,14 @@
 
 ## Connection Issues
 
+### Verify Network Architecture
+
+Before working through the steps below, confirm your onboard network is set up as recommended — with the Expedition PC and NMEA 2000 gateway both hardwired to the router, and iPads/iPhones on WiFi. A wired Expedition PC eliminates the most common source of intermittent connection problems.
+
+See [Recommended Network Architecture](SETUP-GUIDE.md#recommended-network-architecture) in the Setup Guide.
+
+---
+
 ### Symptoms
 - Red connection indicators in SailWatchPro
 - No data appearing from Expedition Marine
