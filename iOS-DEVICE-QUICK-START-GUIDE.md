@@ -48,31 +48,40 @@ Enter values specific to your boat as supplied by your Expedition Marine Adminis
 </div>
 <br>
 
-## Troubleshooting Connection Issues
+## Test Network Connectivity
 
-### Test Network Connectivity
+### Step 1: Find IP Addresses
 
-**From your iPad/iPhone:**
-1. Install a ping utility app: [Ping - Network Utility](https://apps.apple.com/us/app/ping-network-utility/id576773404)
-2. Find your Expedition PC's IP address:
-   - On Windows: Press **Windows Key + R**, type `cmd`, press Enter
-   - Type `ipconfig` and look for **IPv4 Address** under your active network adapter
-3. Ping that IP address from your iPad using the ping utility app
-
-**From your Expedition PC:**
-
-**Open Command Prompt:**
-1. Press **Windows Key + R** (or click Start menu)
-2. Type `cmd` and press Enter
-3. A black window will open - this is the Command Prompt
+**Find your Expedition PC's IP address:**
+1. Press **Windows Key + R**, type `cmd`, press Enter
+2. Type `ipconfig` and look for **IPv4 Address** under your active network adapter
+3. Write down this IP (example: 192.168.1.50)
 
 **Find your iPad's IP address:**
 - Settings → Wi-Fi → Tap the (i) icon → IPv4 Address
+- Write down this IP (example: 192.168.1.100)
 
-**Ping your iPad/iPhone:**
-1. Type: `ping` followed by your iPad's IP address
+---
+
+### Step 2: Test Connection from iPad to PC
+
+**From your iPad/iPhone:**
+1. Install [Ping - Network Utility](https://apps.apple.com/us/app/ping-network-utility/id576773404)
+2. Open the app and ping your Expedition PC's IP address
+3. If successful, you'll see replies with response times
+
+---
+
+### Step 3: Test Connection from PC to iPad
+
+**From your Expedition PC:**
+1. Open Command Prompt (already open from Step 1, or press **Windows Key + R**, type `cmd`)
+2. Type: `ping` followed by your iPad's IP address
    - Example: `ping 192.168.1.100`
-2. Press Enter
+3. Press Enter
+4. If successful, you'll see replies with response times
+
+---
 
 **If ping works in both directions, your network is fine.** The issue is likely firewall or port configuration.
 
