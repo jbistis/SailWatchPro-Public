@@ -380,7 +380,7 @@ Watch data syncs seamlessly from the iPhone app, with Night Mode support on all 
 | **Boat Length** | For distance calculations in boat lengths |
 | **Draft** | Critical for depth safety calculations |
 | **TWA Reaching Threshold** | Sailing mode detection sensitivity |
-| **Light / Dark / Night Mode** | Display appearance |
+| **Night Mode** | Display appearance |
 | **Map Style** | Hybrid, standard, satellite, or imagery |
 | **Chart Time Windows** | Customizable data history viewing |
 | **Depth Alerts** | Warnings based on draft + safety margin |
@@ -398,7 +398,7 @@ Watch data syncs seamlessly from the iPhone app, with Night Mode support on all 
 | iPad / iPhone | iOS 18.5 |
 | Apple Watch | watchOS 11.5 |
 | Mac (Apple silicon) | macOS 15.6 |
-| Expedition Marine | 12.5.11 (latest encouraged) |
+| Expedition Marine | 12.6.9 (latest encouraged) |
 
 Also required: reliable boat WiFi. NMEA 2000 Ethernet Gateway required for competitor tracking via AIS.
 
