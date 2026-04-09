@@ -15,6 +15,7 @@
 ## Table of Contents
 
 - [Connection Issues](#connection-issues)
+  - [Understanding the Connection Status Indicator](#understanding-the-connection-status-indicator)
   - [Test Network Connectivity](#test-network-connectivity)
   - [Check WiFi Signal Strength](#check-wifi-signal-strength)
   - [Verify Port Settings](#verify-port-settings)
@@ -38,10 +39,59 @@ See [Recommended Network Architecture](SETUP-GUIDE.md#recommended-network-archit
 ---
 
 ### Symptoms
-- Red connection indicators in SailWatchPro
+- Orange or red connection indicator in SailWatchPro
 - No data appearing from Expedition Marine
 - Intermittent connection drops
 - Can receive data but cannot send commands
+
+---
+
+### Understanding the Connection Status Indicator
+
+SailWatchPro displays a single connection symbol in the toolbar that shows exactly
+what is happening between the app and Expedition Marine. This replaces the old
+two-dot indicator system.
+
+| Symbol | Meaning |
+|--------|---------|
+| **EM — SWP** | No connection at all |
+| **EM → SWP** | Receiving data from Expedition but cannot send commands back |
+| **EM ← SWP** | Can reach Expedition but not receiving data |
+| **EM ↔ SWP** | Full bi-directional connection confirmed ✅ |
+
+**Color coding:**
+- 🟢 Green = Full connection (EM ↔ SWP)
+- 🟠 Orange = Partial connection (EM → SWP or EM ← SWP)
+- 🔴 Red = No connection (EM — SWP)
+
+**What each state tells you:**
+
+**EM → SWP (orange)** is the most common problem state. It means Expedition Marine
+is broadcasting data and SailWatchPro is receiving it, but commands from SailWatchPro
+are not reaching Expedition. Boat data will display on screen but timer commands,
+course selection, and other controls will not work. This is almost always caused by:
+- Wrong IP address in Settings → Expedition Marine
+- Windows Firewall blocking inbound connections on ports 5098/5099
+- See [Windows Firewall Configuration](#windows-firewall-configuration)
+
+**EM ← SWP (orange)** means SailWatchPro can reach Expedition but is not receiving
+data back. This is an unusual network condition. Check that Expedition Marine is
+running and that your instruments are powered on.
+
+**EM — SWP (red)** means no communication in either direction. Both devices may be
+on different networks, the IP address may be wrong, or Expedition Marine may not
+be running.
+
+> **Important:** Expedition Marine broadcasts most data packets to the entire subnet
+> (255.255.255.255), so boat position, wind, and speed data can appear on screen
+> even when the IP address in Settings is wrong. The **EM → SWP** state specifically
+> catches this case. If you can see boat data on screen but timer and course commands
+> do not work, check your IP address in Settings → Expedition Marine first before
+> investigating firewall or port issues.
+
+**Tip:** After changing the IP address or ports in Settings, tap Done and the app
+will immediately attempt a fresh connection. The indicator should update within a
+few seconds.
 
 ---
 
@@ -256,9 +306,11 @@ netsh advfirewall set allprofiles state on
 
 **Solutions:**
 
-1. **Check connection status** (top right indicators)
-   - Green = Connected ✅
-   - Red = Disconnected ❌
+1. **Check connection status** (toolbar indicator)
+   - EM ↔ SWP green = Connected ✅
+   - EM → SWP orange = Receiving only — check IP address
+   - EM — SWP red = No connection ❌
+   - See [Understanding the Connection Status Indicator](#understanding-the-connection-status-indicator)
 
 2. **Verify Expedition is running and broadcasting**
    - Check Expedition Marine is open
