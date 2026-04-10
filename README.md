@@ -6,33 +6,28 @@
   <strong>Win More Races. Make Faster Decisions.</strong>
 </p>
 
-
 <p align="center">
-  <strong>Jump to Beta Invite → <a href="#beta-request">Click here</a></strong>
+  <strong>Request Beta Invite → <a href="#beta-request">Click here</a></strong>
 </p>
-<!-- <p align="center">
-  <img src="images/test-flight.webp" alt="SailWatchPro Screenshot" width="256">
-  <br><em>SailWatchPro Start Line Dashboard</em>
-</p> -->
-<!-- <p align="center">
-  <a href="https://apps.apple.com/us/app/testflight/id899247664">
-    <img src="http://i.imgur.com/0n2zqHD.png" width="140">
-  </a>
-</p> -->
 
+SailWatchPro extends Expedition Marine above-deck with a modern, touch-first iOS interface for iPad, iPhone, and Apple Watch. It synthesizes real-time data into clear, actionable insights and advisories — helping you make faster, more confident decisions on the water.
 
-
-SailWatchPro extends Expedition Marine above-deck with a modern, touch-first iOS interface for iPad, iPhone, Mac, and Apple Watch. It synthesizes real-time data into clear, actionable insights and advisories — helping you make faster, more confident decisions on the water.
+---
 
 ## Key Pillars
+
 - **Racing Management** — Pre-start, start line, course marks, course map, and customizable dashboards
-- **Data Management** — Full access to all Expedition Marine channels, plus many computed channels derived from Expedition data and other NMEA sources — including a Boat Performance Database, Wind Database, and powerful 5/10/15-minute Averaging Engine for any channel.
-- **Weather Observations & Analytics** — Boat Instruments + Buoys + GRIB fusion, trend analysis
-- **Competitor Tracking** — Live Leaderboard and map with corrected time and distance & fleet awareness, ORC Interface
+- **Data Management** — Full access to all Expedition Marine channels, plus computed channels including a Boat Performance Database, Wind Database, and 5/10/15-minute Averaging Engine for any channel
+- **Weather Observations & Analytics** — Boat instruments + buoys + GRIB fusion, trend analysis
+- **Competitor Tracking** — Live leaderboard and map with corrected time, fleet awareness, and ORC interface
 - **Strategic & Tactical Advisories** — Automated high-value alerts
 
-### Racing Management
-**Pre-Start & Start Line**  
+---
+
+## Racing Management
+
+### Pre-Start & Start Line
+
 Expedition provides precision timing, line pings, and bias. SailWatchPro makes it mobile and intuitive — above-deck touch controls for pinging, timer, course selection, and visual dashboards for approach decisions.
 
 <div align="center">
@@ -47,40 +42,89 @@ Expedition provides precision timing, line pings, and bias. SailWatchPro makes i
 </div>
 <br>
 
+### Course Management
+
 <div align="center">
   <img src="images/swp-navigator-portrait-light.png" width="512">
-  <br><em>Course Table View with Marks Bears, and Estimated Wind Angles</em>
+  <br><em>Course Table View with Mark Bearings and Estimated Wind Angles</em>
 </div>
 <br>
 
 <div align="center">
   <img src="images/swp-buoy-data-pinwheel-view.png" width="512">
-  <br><em>Course Map with Buoy/GRIB data and Competitor Heat Map</em>
+  <br><em>Course Map with Buoy/GRIB Data and Competitor Heat Map</em>
 </div>
 <br>
 
-### Weather Observations & Analytics
-Automatic polling of nearby buoys (NOAA, NDBC, etc.) within a user-defined distance beyond the race area. Overlay predicted GRIB with actual observations and track divergences in real time.
+---
+
+## Dashboards
+
+12 fully customizable layouts — select any Expedition Marine channel or computed metric (5/10/15-min averages, polar%, VMG%, and more). Context-aware fields switch automatically based on sailing mode (upwind/reaching/downwind) and provide color feedback for out-of-bounds conditions.
+
+<div align="center">
+  <img src="images/swp-dashboard-select-channels-dashboards-landscape-light.png" width="512"/>
+  <br><em>Select any channel, including computed channels derived from Expedition Marine</em>
+</div>
+<br>
+
+<div align="center">
+  <img src="images/swp-dashboard-3x3-prestart-landscape-light.png" width="512"/>
+  <br><em>Pre-Start Dashboard Example</em>
+</div>
+<br>
+
+<div align="center">
+  <img src="images/swp-dashboard-3x3-buoy-racing-landscape-light.png" width="512"/>
+  <br><em>Buoy Racing Dashboard Example</em>
+</div>
+<br>
+
+<div align="center">
+  <img src="images/swp-dashboard-3x3-offshore-racing-landscape-light.png" width="512"/>
+  <br><em>Offshore Racing Dashboard Example</em>
+</div>
+<br>
+
+<div align="center">
+  <img src="images/swp-dashboard-3x3-performance-landscape-light.png" width="512"/>
+  <br><em>Driver Performance Dashboard Example</em>
+</div>
+<br>
+
+<div align="center">
+  <img src="images/swp-dashboard-reorder-dashboards-landscape-light.png" width="512"/>
+  <br><em>Build custom dashboard names in any order</em>
+</div>
+<br>
+
+---
+
+## Weather Observations & Analytics
+
+Automatic polling of nearby buoys (NOAA, NDBC, etc.) within a user-defined distance. Overlay predicted GRIB with actual observations and track divergences in real time.
+
 <div align="center">
   <img src="images/swp-buoy-list-view-light.png" width="512">
   <br><em>Automated recurring buoy data fetching</em>
 </div>
 <br>
 
-**Weather Station Wind Analysis**  
-Visually compare buoy observations with GRIB forecasts and trends for every key station — see exactly how reality is diverging across the race area.
+**Weather Station Wind Analysis**
+Visually compare buoy observations with GRIB forecasts for every key station — see exactly how reality is diverging across the race area.
+
 <div align="center">
-  <img src="images/buoy-observed-grib.png" width="512"> <!-- Use your Virginia Key screenshot here -->
+  <img src="images/buoy-observed-grib.png" width="512">
   <br><em>Buoy: Predicted vs. Actual Wind Trends</em>
 </div>
 <br>
 
-**Boat Instrumentation Wind Analysis**  
+**Boat Instrumentation Wind Analysis**
 Your boat is a moving weather station. SailWatchPro analyzes real-time wind trends using rolling averages, FFT, and wavelet transforms to identify veering/backing, building, and oscillating patterns — with confidence indicators and a 6-hour wind history that syncs across devices.
 
 <div align="center">
   <img src="images/swp-wind-state-v76.png" width="512">
-  <br><em>Boat: Wind Trends from instruments</em>
+  <br><em>Wind trend analysis from boat instruments</em>
 </div>
 <br>
 
@@ -90,158 +134,116 @@ Your boat is a moving weather station. SailWatchPro analyzes real-time wind tren
 </div>
 <br>
 
-**Expedition Event Entry**
+---
 
-***Sail Change Event Tracking***
-Log sail changes with one tap. SailWatchPro instantly sends events to Expedition Marine and keeps your entire crew in sync across iPads, iPhones, and Macs.
+## Sail & Crew Event Logging
+
+Log sail changes and crew position changes with one tap. SailWatchPro instantly sends events to Expedition Marine and keeps your entire crew in sync across iPads, iPhones, and Macs.
+
+**Sail Change Tracking**
 
 <div align="center">
   <img src="images/swp-sails-up.png" width="512">
-  <br><em>Communicates sail changes to Expedition Marine</em>
+  <br><em>Sail changes communicated instantly to Expedition Marine</em>
 </div>
 <br>
 
-***Crew Position Change Event Tracking***
 **Crew Manager**
-Define your own custom positions and assign only to qualified crew members.  Log crew changes with one tap. SailWatchPro instantly sends events to Expedition Marine and keeps your entire crew in sync across iPads, iPhones, and Macs.
+Define custom crew positions and assign them only to qualified crew members. Log position changes with one tap.
 
 <div align="center">
   <img src="images/swp-crew-positions-iPhone.png" width="512">
-  <br><em>Create your own position titles and enforces posiiton eligiability by crew member</em>
+  <br><em>Custom position titles with crew eligibility enforcement</em>
 </div>
 <br>
 
-### Competitor Tracking
-Live corrected time vs. handicap, lateral separation visualization — know instantly if you're gaining or losing on corrected time, even when boats are physically ahead or behind.
+---
+
+## Competitor Tracking
+
+Live corrected time vs. handicap with lateral separation visualization — know instantly if you're gaining or losing on corrected time, even when boats are physically ahead or behind.
+
 <div align="center">
-  <img src="images/swp-competitor-view-light.png" width="512"> <!-- Use your Virginia Key screenshot here -->
-  <br><em>Competitor Tracking with live leaderboard</em>
+  <img src="images/swp-competitor-view-light.png" width="512">
+  <br><em>Competitor tracking with live leaderboard</em>
 </div>
 <br>
 
-### Strategic & Tactical Advisories
-Centralized, customizable alerts that monitor for you: current push, leeway drift, sail mismatches, barometric trends, and more — so you can focus on steering and tactics.
+---
+
+## Strategic & Tactical Advisories
+
+Centralized, automated alerts that monitor conditions on your behalf: current push, leeway drift, sail mismatches, barometric trends, GRIB accuracy, and more — so you can focus on steering and tactics.
 
 <div align="center">
   <img src="images/swp-advisories-light.png" width="512">
-  <br><em>Sail check</em>
+  <br><em>Advisory panel</em>
 </div>
 <br>
+
 <div align="center">
   <img src="images/swp-mild-current-push-portrait-light.png" width="512">
-  <br><em>Speed efficiency with opposite tack VMG prediction</em>
-</div>
-<br>
-    
-**Dashboards**  
-12 customizable layouts (any Expedition channel + computed metrics like 5/10/15-min averages). Context-aware alerts help maintain trim, avoid overstanding, and correct drift.
-<div align="center">
-  <strong>Select any channel, including computed channels derived from Expedition Marine Channels</strong><br>
-</div>
-<div align="center">
-  <img src="images/swp-dashboard-select-channels-dashboards-landscape-light.png" width="512"/>
+  <br><em>Current push advisory with opposite tack VMG prediction</em>
 </div>
 <br>
 
-<div align="center">
-  <strong>Prestart Dashboard Example</strong><br>
-</div>
-<div align="center">
-  <img src="images/swp-dashboard-3x3-prestart-landscape-light.png" width="512"/>
-</div>
-<br>
-
-<div align="center">
-  <strong>Buoy Racing Dashboard Example</strong><br>
-</div>
-<div align="center">
-  <img src="images/swp-dashboard-3x3-buoy-racing-landscape-light.png" width="512"/>
-</div>
-<br>
-
-<div align="center">
-  <strong>Offshore Racing Dashboard Example</strong><br>
-</div>
-<div align="center">
-  <img src="images/swp-dashboard-3x3-offshore-racing-landscape-light.png" width="512"/>
-</div>
-<br>
-
-<div align="center">
-  <strong>Driver Performance Dashboard Example</strong><br>
-</div>
-<div align="center">
-  <img src="images/swp-dashboard-3x3-performance-landscape-light.png" width="512"/>
-</div>
-<br>
-
-<div align="center">
-  <strong>Four Channels</strong><br>
-</div>
-<div align="center">
- <img src="images/swp-dashboard-2x2-wind-landscape-light.png" width="512"/>
-</div>
-<br>
-
-<div align="center">
-  <strong>Build your own custom names in custom order</strong><br>
-</div>
-<div align="center">
- <img src="images/swp-dashboard-reorder-dashboards-landscape-light.png" width="512"/>
-</div>
-<br>
+---
 
 ## Apple Watch Integration
-Dedicated views for timer, speed, heel, VMG, wind, and depth — auto-switches to shallow-water monitoring.
+
+Dedicated views for timer, speed, heel, VMG, wind, and depth — automatically switches to shallow-water monitoring when depth becomes critical.
 
 <div align="center">
   <img src="images/swp-apple-watch-views.png" width="512">
 </div>
 <br>
 
+---
+
 ## Technical Highlights
+
 - GRIB parsing via ECMWF ecCodes bridge
-- 5/10/15-min averaging engine
-- Two-way Expedition integration
-- Night mode with red tint
+- 5/10/15-minute averaging engine for any channel
+- Two-way Expedition Marine integration
+- Night mode with red tint for night vision preservation
+
+---
 
 ## Requirements
-- iOS 18.5+ (iPad/iPhone) / macOS 15.6+ (arm) / watchOS 11.5+
-- Expedition Marine 12.5.11+ (latest encouraged)
+
+- **iPad / iPhone:** iOS 18.5+
+- **Apple Watch:** watchOS 11.5+
+- **Mac (Apple silicon):** macOS 15.6+
+- **Expedition Marine:** 12.5.11+ (latest encouraged)
 - Reliable boat WiFi
-- NMEA 2000 Ethernet Gateway for competitor tracking via AIS
+- NMEA 2000 Ethernet Gateway required for competitor tracking via AIS
+
+---
 
 <a id="beta-request"></a>
 ## Pricing & Availability
-Currently in limited beta.  
-Full release and pricing details coming soon — contact us for early access.
 
-<p align="center">
-  <strong>Limited Invite-Only Beta</strong><br>
-  SailWatchPro is currently in closed beta with a small group of competitive boats.<br>
-  Full release coming soon — we're adding testers selectively.
-</p>
+SailWatchPro is currently in limited beta with a small group of competitive boats. Full release and pricing details coming soon.
 
 <p align="center">
   <strong>Request Beta Invite</strong><br>
-  Email me directly: <a href="mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Invite%20Request">james.bistis@icloud.com</a><br>
+  Email directly: <a href="mailto:james.bistis@icloud.com?subject=SailWatchPro%20Beta%20Invite%20Request">james.bistis@icloud.com</a><br>
   <small>Please include your boat type, racing plans, and Expedition version.</small>
 </p>
 
-## Getting Started
-1. Connect to the Expedition network  
-2. Enter boat parameters  
-3. Customize dashboards  
-4. Race with real-time edge  
+---
 
-[Jump to setup guide →](SETUP-GUIDE.md)
+## Documentation
 
-[Jump to user manual →](USER-MANUAL.md)
+[Setup Guide →](SETUP-GUIDE.md)
 
-[Report Issues & Suggestions →](https://github.com/jbistis/SailWatchPro-Public/issues)
+[User Manual →](USER-MANUAL.md)
 
-*May you always find the favorable shift.*  
-**– The SailWatchPro Team**
+[Troubleshooting →](TROUBLESHOOTING.md)
 
-<!-- End of Version
+[Report Issues & Feature Requests →](https://github.com/jbistis/SailWatchPro-Public/issues)
 
+---
+
+*May you always find the favorable shift.*
+**— The SailWatchPro Team**
