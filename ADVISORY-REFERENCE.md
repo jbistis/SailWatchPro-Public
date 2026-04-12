@@ -37,7 +37,23 @@
 | Dangerous Pressure Drop | Critical | Pressure drops > 5 mb/hr over last hour | "Pressure has plummeted X mb. Severe weather likely." | URGENT: Seek shelter immediately |
 | Rising Barometric Pressure | Info | Pressure rises > 3 mb/hr over last hour | "Pressure has risen X mb. Conditions improving." | Expect lighter winds and clearing conditions |
 
-**Data required:** Min 10 pressure samples from last 2 hours (WindDataManager.pressureDataPoints)
+**Data required:** Min 10 pressure samples from last 2 hours (`WindDataManager.pressureDataPoints`)
+
+---
+
+### Dew Point
+
+**Data sources:** `airTemperature` (channel 14, °C), `dewPoint` (channel 370, °C), `relativeHumidity` (channel 168, 0–100%)  
+**Dew risk window:** 17:00–08:00 local time
+
+| Title | Priority | Trigger | Message | Action |
+|-------|----------|---------|---------|--------|
+| Dew Forming on Deck | Warning | Spread ≤ 1.5°C OR humidity ≥ 95% (any time) | "Dew point spread is X°C (Y% RH). Dew is actively forming on deck surfaces." | Consider heading offshore. Use caution on deck — wet surfaces reduce grip. |
+| Dew Forming on Deck | Info | Spread ≤ 3.0°C AND within dew risk window (17:00–08:00) | "Dew point spread is X°C (Y% RH). Dew likely to form as deck temperatures drop." | Monitor conditions. Consider heading offshore. |
+
+**Spread calculation:** `airTemperature − dewPoint`  
+**Auto-clears** when spread > 3.0°C outside the dew risk window, or when sensor data is unavailable  
+**Data values logged:** `airTempC`, `dewPointC`, `spreadC`, `humidityPct`
 
 ---
 
@@ -110,11 +126,12 @@
 
 | Title | Priority | Trigger | Message |
 |-------|----------|---------|---------|
-| Overstood Layline | Info | Past layline by 0–0.1 nm | "You are X nm (Y m) past the [port/starboard] layline to [mark]." |
+| Overstood Layline | Info | Past layline by 0–0.1 nm | "You are X nm (Y m) past the [port/starboard] layline to [mark]. This course is costing an extra ~Z nm." |
 | Overstood Layline | Warning | Past layline by > 0.1 nm | Same message, higher priority |
 
 **Buffer:** 0.05 nm dead-band to reduce noise  
-**Tack vs Gybe:** Advisory says "Tack now" upwind, "Gybe now" downwind
+**Tack vs Gybe:** Advisory says "Tack now" upwind, "Gybe now" downwind  
+**Extra distance:** Approximate extra distance to sail is shown (`overstoodDistance × 2`)
 
 ---
 
@@ -153,6 +170,21 @@
 - **Dismissed:** User can dismiss; dismissed advisories stay in storage but are hidden from active list
 - **Cleanup:** Advisories older than 7 days are purged; max 50 stored (configurable in Advisory Settings)
 - **Watch:** Most critical (`.critical`) advisory synced to Apple Watch via WatchConnectivity
+- **Storage throttle:** Disk writes throttled to max once per 10 seconds to reduce I/O during frequent checks
+
+---
+
+## Check Order (per `performAdvisoryChecks()`)
+
+1. Barometric pressure
+2. Sail change
+3. Sail mismatch
+4. Safety
+5. Performance
+6. Tactical
+7. GRIB accuracy
+8. Current push
+9. Dew point
 
 ---
 
@@ -160,7 +192,7 @@
 
 | File | Contents |
 |------|----------|
-| `AdvisoryManager.swift` | Core manager, all non-GRIB advisories |
+| `AdvisoryManager.swift` | Core manager, all non-GRIB advisories including dew point |
 | `AdvisoryManager+GRIBAccuracy.swift` | GRIB bias advisories (iOS target only) |
 | `AdvisoryModels.swift` | `Advisory`, `AdvisoryPriority`, `AdvisoryCategory` structs (iOS + Watch) |
 | `AdvisorySettingsView.swift` | Settings UI — enable/disable, category filter, priority filter |
