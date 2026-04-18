@@ -432,9 +432,9 @@ The Settings view is organized into the following sections, accessible from the 
 
 **Expedition Marine**
 
-| Setting | Default | Description |
+| Setting | Example | Description |
 |---------|---------|-------------|
-| **IP Address** | `192.168.101.123` | Network address of the Expedition Marine machine on your boat WiFi |
+| **IP Address** | `192.168.101.123` | Network address of the Expedition Marine machine on your boat WiFi. Must be set to match your actual network. |
 | **UDP Port (Rx)** | `5099` | Port SailWatchPro listens on for data from Expedition |
 | **UDP Port (Tx)** | `5098` | Port SailWatchPro transmits on to send events/commands to Expedition |
 
@@ -446,9 +446,9 @@ The Settings view is organized into the following sections, accessible from the 
 
 **NMEA 2000 Ethernet Gateway**
 
-| Setting | Default | Description |
+| Setting | Example | Description |
 |---------|---------|-------------|
-| **IP Address** | `192.168.101.26` | Network address of the NMEA 2000 Ethernet Gateway |
+| **IP Address** | `192.168.101.26` | Network address of the NMEA 2000 Ethernet Gateway. Must be set to match your actual gateway. |
 | **UDP Port** | `1457` | Gateway communication port |
 
 > Expedition Marine provides racing data. The NMEA Gateway provides boat systems data (required for competitor tracking via AIS).
