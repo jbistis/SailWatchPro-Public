@@ -29,7 +29,7 @@ SailWatchPro extends Expedition Marine above-deck with a modern, touch-first iOS
 
 Full pre-start and start line suite — precision timing, line bias, pin pings, and a dedicated start area grid showing your position relative to the line, laylines, and optimal crossing point.
 
-<!-- SCREENSHOT: swp-prestart-view-light.png — RETAKE on v81+ -->
+<!-- SCREENSHOT: swp-prestart-view-light-v81.png -->
 <div align="center">
   <img src="images/swp-prestart-view-light.png" width="512">
   <br><em>Pre-Start Dashboard</em>
