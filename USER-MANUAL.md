@@ -426,21 +426,95 @@ Three quick ways to check your Apple Watch battery level during a race:
 
 ## Settings Reference
 
+The Settings view is organized into the following sections, accessible from the main navigation. Tap **Done** after making changes to save and restart the UDP listener with the new values.
+
+### Connection Settings
+
+**Expedition Marine**
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| **IP Address** | `192.168.101.123` | Network address of the Expedition Marine machine on your boat WiFi |
+| **UDP Port (Rx)** | `5099` | Port SailWatchPro listens on for data from Expedition |
+| **UDP Port (Tx)** | `5098` | Port SailWatchPro transmits on to send events/commands to Expedition |
+
+**SailWatchPro Inter-Device Sync**
+
 | Setting | Description |
 |---------|-------------|
-| **IP Address** | Expedition Marine network address |
-| **UDP Port** | Communication port (typically 5098) |
-| **Test Mode** | Simulated data for training and demos |
-| **Boat Name** | Vessel identification |
-| **Boat Length** | For distance calculations in boat lengths |
-| **Draft** | Critical for depth safety calculations |
-| **TWA Reaching Threshold** | Sailing mode detection sensitivity |
-| **Night Mode** | Display appearance |
-| **Map Style** | Hybrid, standard, satellite, or imagery |
-| **Chart Time Windows** | Customizable data history viewing |
-| **Depth Alerts** | Warnings based on draft + safety margin |
-| **Audio Countdown** | Spoken start sequence announcements |
-| **MOB** | Emergency position marking and tracking |
+| **Allow Coordinator Role** | Enables this device to act as the sync coordinator for other SailWatchPro devices on the boat. Enable on nav station devices; disable on crew iPads that may disconnect frequently. |
+
+**NMEA 2000 Ethernet Gateway**
+
+| Setting | Default | Description |
+|---------|---------|-------------|
+| **IP Address** | `192.168.101.26` | Network address of the NMEA 2000 Ethernet Gateway |
+| **UDP Port** | `1457` | Gateway communication port |
+
+> Expedition Marine provides racing data. The NMEA Gateway provides boat systems data (required for competitor tracking via AIS).
+
+### Boat Configuration
+
+| Setting | Description |
+|---------|-------------|
+| **Boat Name** | Vessel identification used throughout the app and in sync messages |
+| **MMSI Number** | 9-digit Maritime Mobile Service Identity for your vessel (validated — must be exactly 9 digits) |
+| **Boat Length** | Length in meters, used for distance calculations in boat lengths |
+| **Draft** | Draft in meters, critical for depth safety calculations and alerts |
+| **Reaching Threshold from Target TWA** | Degrees of deviation from target TWA before the app switches out of upwind/downwind mode into reaching mode. Only used when polars/targets are loaded; falls back to fixed ranges otherwise. |
+
+### Wind Calculation Options
+
+| Setting | Description |
+|---------|-------------|
+| **Calculate TWA & TWS** | Let SailWatchPro derive True Wind Angle and True Wind Speed locally from Apparent Wind and boat data |
+| **Calculate TWD** | Let SailWatchPro derive True Wind Direction from Apparent Wind and boat data |
+
+### AI Weather Briefings
+
+SailWatchPro can generate AI-powered weather briefings using the Anthropic API.
+
+| Setting | Description |
+|---------|-------------|
+| **Enable AI briefings** | Master toggle. Disable before races that prohibit paid external services. When disabled, no connections to Claude are made. |
+| **Anthropic API key** | Your personal `sk-ant-...` key, stored securely in the iOS Keychain |
+| **Test key** | Validates the key against the Anthropic API and saves it to the Keychain on success |
+| **Clear saved key** | Removes the stored key from the Keychain |
+
+A status dot indicates the current state: *Disabled*, *API key required to activate*, or *Ready — API key configured*. Get a free API key at [console.anthropic.com](https://console.anthropic.com). Each AI briefing costs approximately $0.01.
+
+### System Options
+
+| Setting | Description |
+|---------|-------------|
+| **Night Vision** | Override the system theme and use red colors optimized for night sailing |
+| **Throttle Interval** | UDP update rate, selectable between 0.05s (20 Hz, very responsive) and 1.0s (1 Hz, battery saver). Options: 0.05s, 0.10s, 0.20s, 0.50s, 1.0s. |
+| **Map Style** | Hybrid (recommended for sailing — satellite imagery with navigation labels), Standard, Satellite, or Imagery |
+| **Auto Mark Detection** | When enabled, automatically advances to the next mark as you approach the active one |
+
+### Licenses
+
+Read-only display of license status for connected services.
+
+| Field | Description |
+|-------|-------------|
+| **Expedition Marine — License ID** | Detected license key from Expedition Marine |
+| **Expedition Marine — Status** | Valid / not-valid indicator; includes a **Refresh License** button to re-query Expedition |
+| **SailWatchPro — Status** | Current SailWatchPro license tier (e.g., Beta) |
+| **SailWatchPro — Device ID** | Unique device identifier for support purposes |
+
+### Development
+
+| Setting | Description |
+|---------|-------------|
+| **Test Mode** | Uses simulated preview data instead of the live UDP listener. Useful for training, demos, and UI work off the boat. |
+
+### Debug
+
+| Setting | Description |
+|---------|-------------|
+| **Debug Mode** | Password-protected developer mode. When enabled, unlocks additional diagnostic tools including the Master Template View, Response Log, and (coming soon) a UDP Packet Inspector. |
+| **Device ID** | Weather sync device identifier, useful when reporting issues |
 
 > For initial connection and boat configuration steps, see the [Setup Guide](SETUP-GUIDE.md).
 
