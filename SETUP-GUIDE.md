@@ -72,6 +72,8 @@ iPads, iPhones, and Apple Watches connect to the router via WiFi. For best resul
 
 **First launch** will take a few extra moments while the app performs a one-time installation of the ECMWF libraries.
 
+**Internet connection:** Required for Coastal Effects wind predictions on the Wind screen. All other features work fully offline on the boat network.
+
 **Open Settings:**
 - iPad → Settings
 - iPhone → More > Settings
