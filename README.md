@@ -38,7 +38,7 @@ Full pre-start and start line suite — precision timing, line bias, pin pings, 
 
 <!-- SCREENSHOT: swp-iPad-start-view-with-cards-light.png — RETAKE on v81+ -->
 <div align="center">
-  <img src="images/swp-iPad-start-view-with-cards-light-v81.png" width="512">
+  <img src="images/swp-iPad-start-view-with-cards-light.png" width="512">
   <br><em>Start Line Visuals & Bias</em>
 </div>
 <br>
