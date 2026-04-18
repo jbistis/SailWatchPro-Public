@@ -120,18 +120,30 @@
 
 ---
 
-### Overstood Layline
+### Layline
 
 **Prerequisites:** Active mark with `markRange > 0`, sailing mode is upwind or downwind (not reaching)
 
-| Title | Priority | Trigger | Message |
-|-------|----------|---------|---------|
-| Overstood Layline | Info | Past layline by 0–0.1 nm | "You are X nm (Y m) past the [port/starboard] layline to [mark]. This course is costing an extra ~Z nm." |
-| Overstood Layline | Warning | Past layline by > 0.1 nm | Same message, higher priority |
+| Title | Priority | Trigger | Message | Action |
+|-------|----------|---------|---------|--------|
+| Layline | Info | `2.5 min < laylineTime ≤ 7.5 min` on the approaching-tack layline | "Tack/Gybe to [mark] in ~N min." | Start preparing crew for tack/gybe |
+| Layline | Warning | `laylineTime ≤ 2.5 min` AND not overstood | "At the layline to [mark]." | Tack/Gybe as soon as practicable |
+| Layline | Warning | `shortestAngleDifference(oppositeTackCOG, markBearing) × sign(AWA) > 1°` | "Overstood layline to [mark] by ~X nm." | Tack/Gybe as soon as practicable — losing distance |
+| Layline | Info | Overstood but `overstoodNM / markRange ≤ 5%` (trivial) | Same overstood message, lower priority | Same action |
 
-**Buffer:** 0.05 nm dead-band to reduce noise  
-**Tack vs Gybe:** Advisory says "Tack now" upwind, "Gybe now" downwind  
-**Extra distance:** Approximate extra distance to sail is shown (`overstoodDistance × 2`)
+**Layline time source (picked by current tack):**
+- Starboard tack → `laylineTimeOnPort` (approaching port layline)
+- Port tack → `laylineTimeOnStarboard` (approaching starboard layline)
+
+**Overstood detection:** Angle-based using `oppositeTackCOG` vs `markBearing` — robust regardless of Expedition distance-sign convention. On starboard, overstood when `markBearing` is clockwise of `oppositeTackCOG` by > 1°; inequality flips on port tack (the `× sign(AWA)` term normalizes this).
+
+**Overstood distance:** `max(markRange × sin(|Δ|), |laylineDistance_approachingTack|)` — geometric estimate with fallback to Expedition distance if larger.
+
+**Tack vs Gybe:** Message says "Tack" upwind, "Gybe" downwind.
+
+**Lifecycle:** All three phases share the single title `"Layline"` and replace each other in place. The legacy `"Overstood Layline"` title is removed on every check so users upgrading don't see stale entries.
+
+**Cadence note:** Thresholds are tuned to the 5-min check cadence — the (2.5, 7.5] min approaching bucket is 5 min wide so roughly one check lands inside it; the ≤ 2.5 min bucket catches the final approach. A separate 1-min warning was considered but dropped because a 1-min window can't be reliably caught at 5-min cadence.
 
 ---
 
