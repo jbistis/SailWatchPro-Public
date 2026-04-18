@@ -25,6 +25,7 @@
 - [Weather Data](#weather-data)
 - [MOB Function](#mob-function)
 - [Apple Watch Integration](#apple-watch-integration)
+- [Apple Watch Tips](#apple-watch-tips)
 - [Settings Reference](#settings-reference)
 - [System Requirements](#system-requirements)
 - [Support & Updates](#support--updates)
@@ -366,6 +367,60 @@ In a Man Overboard situation, SailWatchPro communicates the incident to Expediti
 | Custom Data Fields | Any user-defined dashboard field |
 
 Watch data syncs seamlessly from the iPhone app, with Night Mode support on all watch faces. The most critical active advisory is automatically pushed to the watch.
+
+---
+
+## Apple Watch Tips
+
+A few iOS and watchOS settings dramatically improve the SailWatchPro experience on Apple Watch during a race or passage. These are not app settings — they are system settings on your iPhone and Apple Watch that control how watchOS behaves and how your iPhone delivers data to the watch.
+
+### Keep SailWatchPro on the Watch Face
+
+By default, Apple Watch returns to the clock face after a couple of minutes of inactivity, which means SailWatchPro will disappear mid-race unless you reconfigure this behavior.
+
+**On your iPhone:**
+
+1. Open the **Watch** app
+2. Tap **General** → **Return to Clock**
+3. Scroll to find **SailWatchPro** in the app list
+4. Tap it and select **Don't Return to Clock**
+
+**On the Apple Watch:**
+
+1. Open **Settings** → **General** → **Return to Clock**
+2. Scroll to **SailWatchPro** and turn off **Return to Clock**
+
+**Additional recommendations:**
+
+- Enable **Wake Screen on Wrist Raise** (Settings → Display & Brightness) so SailWatchPro reappears instantly when you glance at your wrist
+- Enable **Always On** display (Series 5 and later) so the watch keeps showing SailWatchPro even when your wrist is down
+- Running SailWatchPro as a workout (when available) also helps keep the app foregrounded continuously
+
+### Keep iPhone Data Flowing to the Watch
+
+When the iPhone screen locks or the phone enters a low-power state, iOS can throttle Bluetooth traffic and suspend background apps — which stops data from reaching SailWatchPro on the watch. Apply the following settings to keep the data pipeline alive during a race.
+
+| Setting | Path | Recommended Value |
+|---------|------|-------------------|
+| Auto-Lock | Settings → Display & Brightness → Auto-Lock | **Never** (during racing) |
+| Low Power Mode | Settings → Battery | **Off** |
+| Background App Refresh | Settings → General → Background App Refresh | **On** for SailWatchPro (Wi-Fi & Cellular Data) |
+| Location Services | Settings → Privacy & Security → Location Services → SailWatchPro | **Always** + **Precise Location** on |
+
+**Additional recommendations:**
+
+- **Keep the iPhone plugged into power** when possible — iOS is significantly less aggressive about suspending apps while charging
+- **Maintain Bluetooth proximity** — keep the iPhone within close range of the watch. Metal rigging, wet sails, and below-deck stowage all reduce effective Bluetooth range. A cockpit pocket is better than a cabin nav station
+- **Start a workout** in SailWatchPro (when available) — this elevates the app's priority on both devices and reduces the chance iOS will suspend the phone-side app
+- Remember to restore **Auto-Lock** to a normal value (e.g., 30 seconds or 1 minute) after sailing to preserve battery life
+
+### Checking Apple Watch Battery
+
+Three quick ways to check your Apple Watch battery level during a race:
+
+- **Control Center** — swipe up from the watch face; battery percentage appears at the top
+- **Battery complication** — press and hold the watch face → **Edit** → swipe to complications → add **Battery** to a slot for at-a-glance monitoring
+- **iPhone Today View** — add the **Batteries** widget to see iPhone, Apple Watch, and AirPods levels together
 
 ---
 
