@@ -41,6 +41,26 @@
 
 ---
 
+### Frontal Passage
+
+**Data sources:** `WindDataManager.atmpDataPoints` (air temperature history), `WindDataManager.pressureDataPoints` (barometric pressure history)
+
+| Title | Priority | Trigger | Message | Action |
+|-------|----------|---------|---------|--------|
+| Frontal Passage Likely | Warning | Air temp dropped ≥ 3°C AND pressure dropped ≥ 2 mb — both within the last 30 min | "Air temp dropped X°C and pressure dropped Y mb in the last 30 min." | Front likely passing. Expect wind shift and squalls — prepare to shorten sail. |
+
+**Both conditions required** — temp-alone can be nocturnal cooling, pressure-alone is already covered by the barometric advisory. Requiring both filters out non-frontal patterns.
+
+**Prerequisites:** Both time series must span ≥ 30 min (oldest sample older than 30 min ago).
+
+**Auto-clears** when either drop falls below its threshold, or when history is insufficient.
+
+**Interaction with barometric advisory:** A 2 mb drop over 30 min is ~4 mb/hr, which also exceeds the "Rapidly Falling Barometric Pressure" threshold (3 mb/hr). Both will fire simultaneously during a front — intentional, since the Frontal advisory adds meteorological context.
+
+**Data values logged:** `tempDropC`, `pressureDropMb`, `currentTempC`, `currentPressureMb`
+
+---
+
 ### Dew Point
 
 **Data sources:** `airTemperature` (channel 14, °C), `dewPoint` (channel 370, °C), `relativeHumidity` (channel 168, 0–100%)  
@@ -147,6 +167,34 @@
 
 ---
 
+### Persistent Header
+
+**Data source:** `WindDataManager.twdDataPoints` — three non-overlapping 2-min averaging buckets (now, 4–6 min ago, 8–10 min ago) using circular sin/cos averaging
+
+**Prerequisites:** Sailing mode is upwind, BSP > 2 kt, ≥ 10 min of TWD history with at least 3 samples per bucket
+
+| Title | Priority | Trigger | Message | Action |
+|-------|----------|---------|---------|--------|
+| Persistent Header | Info | Monotonic TWD shift against current tack ≥ 5° over 10 min | "TWD has shifted X° against you on [tack] over the last 10 min." | Consider tacking to [opposite tack] if the shift persists. |
+| Persistent Header | Warning | Monotonic TWD shift against current tack ≥ 10° over 10 min | "TWD has shifted X° against you on [tack] over the last 10 min — opposite tack is lifted." | Tack to [opposite tack] for tactical advantage. |
+
+**Header interpretation (tack-aware):**
+- Starboard tack (AWA ≥ 0): TWD backing left (negative shift) = header → port tack is lifted
+- Port tack (AWA < 0): TWD veering right (positive shift) = header → starboard tack is lifted
+- Combined: `signedHeader = −totalShift × sign(AWA)` must be > 0 to fire
+
+**Oscillation filter:** Requires both sub-shifts (A→B and B→C) to share a sign — `shiftAB × shiftBC > 0`. This forces monotonic behavior across 10 min and rejects common 3–8 min wind oscillation cycles.
+
+**Auto-clears** on reversal, insufficient magnitude, oscillation detection, or mode change.
+
+**Startup behavior:** If < 10 min of TWD history or too few samples per bucket, silently skips — neither fires nor clears.
+
+**Scope note:** Upwind only. Downwind gybe-on-a-header is the same concept inverted but not yet implemented.
+
+**Data values logged:** `headerDeg`, `totalShiftDeg`, `currentTWD`
+
+---
+
 ## Performance Advisories
 
 ### Polar Performance
@@ -157,6 +205,27 @@
 |-------|----------|---------|---------|
 | Below Target Performance | Info | Polar% > 0 AND polar% < 80% | "Current performance is X% of polar target." |
 | VMG Below Target | Info | VMG% > 0 AND VMG% < 85% | "VMG is X% of target (Y vs Z kt)." |
+
+---
+
+### Excessive Rudder Angle
+
+**Data source:** `PerformanceDataManager.samples` — rolling 2-min average of `abs(rudderAngle)` (rudder is captured in each `PerformanceSample` at ~1 sample / 2s; 15-min retention)
+
+**Prerequisites:** Sailing mode is upwind, BSP > 2 kt
+
+| Title | Priority | Trigger | Message | Action |
+|-------|----------|---------|---------|--------|
+| Excessive Rudder Angle | Info | Avg \|rudder\| ≥ 5° over last 2 min | "Average rudder angle of X° over the last 2 min — more than optimal." | Consider easing sheets or flattening sails to reduce weather helm. |
+| Excessive Rudder Angle | Warning | Avg \|rudder\| ≥ 8° over last 2 min | "Average rudder angle of X° over the last 2 min — rudder is acting as a brake." | Depower: ease mainsheet/traveler, move crew to rail, or reduce sail. |
+
+**Why upwind only:** Reaches and runs naturally require more rudder to steer the boat through waves. Weather helm is a depowering signal specifically on the beat.
+
+**Autopilot note:** Autopilots are forbidden under racing rules, so we assume hand steering. If the pilot is correcting, the same imbalance advice applies.
+
+**Auto-clears** when avg falls below 5°, when boat slows, or when sailing mode changes off upwind.
+
+**Data values logged:** `avgAbsRudderDeg`, `windowSec`
 
 ---
 
@@ -189,14 +258,16 @@
 ## Check Order (per `performAdvisoryChecks()`)
 
 1. Barometric pressure
-2. Sail change
-3. Sail mismatch
-4. Safety
-5. Performance
-6. Tactical
-7. GRIB accuracy
-8. Current push
-9. Dew point
+2. Frontal passage
+3. Sail change
+4. Sail mismatch
+5. Safety
+6. Performance (polar %, VMG %)
+7. Rudder angle
+8. Tactical (Layline, Persistent Header)
+9. GRIB accuracy
+10. Current push
+11. Dew point
 
 ---
 
