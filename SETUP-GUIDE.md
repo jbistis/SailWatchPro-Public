@@ -168,8 +168,9 @@ Touch **[Done]** when finished.
 </div>
 <br>
 
-Create your api key at https://platform.claude.com/settings/keys
-Fund your api activity at https://platform.claude.com/settings/billing
+**Claude Settings:**
+- Create your api key at https://platform.claude.com/settings/keys
+- Fund your api activity at https://platform.claude.com/settings/billing ($20 to start)
 
 ---
 
