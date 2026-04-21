@@ -43,20 +43,20 @@ A stable, low-latency onboard network is the foundation of a reliable SailWatchP
 ### Wired Components
 
 **Onboard Router**
-The router is the hub of the network. Common choices on racing boats include the Pepwave MAX BR1, Vesper Cortex, and Ubiquiti UniFi access points. The router should be connected to the boat's power supply and positioned for strong WiFi coverage across the cockpit and nav station.
+The router is the hub of the network. Common choices on racing boats include the Pepwave, D-Link, and Starlink. The router should be connected to the boat's power supply and positioned for strong WiFi coverage across the cockpit and nav station.
 
 **Expedition PC**
-The Expedition Marine PC should be connected to the router via ethernet cable — not WiFi. A wired connection eliminates the latency and dropout issues that can occur when the PC is on WiFi, and ensures Expedition's UDP broadcasts reach SailWatchPro reliably.
+The Expedition Marine PC should be connected to the router via an Ethernet cable — not WiFi. A wired connection eliminates latency and dropout issues that can occur when the PC is on WiFi and ensures that Expedition's UDP broadcasts reach SailWatchPro reliably.
 
 **NMEA 2000 / CANBus Gateway**
-The gateway bridges your boat's NMEA 2000 instrument network (CANBus) to the ethernet network, making instrument data available to Expedition Marine and SailWatchPro. Common gateway devices include:
+The gateway bridges your boat's NMEA 2000 instrument network (CANBus) to the Ethernet network, making instrument data available to Expedition Marine and SailWatchPro. Common gateway devices include:
 
 - **Actisense NGW-1** — NMEA 2000 to ethernet
 - **Yacht Devices YDWG-02** — WiFi and ethernet gateway
 - **Garmin GND 10** — NMEA 2000 to ethernet bridge
 - **Vesper Cortex** — Integrated router and NMEA 2000 gateway
 
-The gateway should also be connected to the router via ethernet for maximum reliability.
+The gateway should also be connected to the router via Ethernet for maximum reliability.
 
 ### WiFi Devices
 iPads, iPhones, and Apple Watches connect to the router via WiFi. For best results:
