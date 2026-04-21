@@ -1,8 +1,8 @@
 # SailWatchPro — Advisory System Reference
 
 **Check interval:** Every 5 minutes (300 seconds) via `startPeriodicChecks()`  
-**Sources:** `AdvisoryManager.swift` + `AdvisoryManager+GRIBAccuracy.swift`  
-**Last updated:** April 2026
+**Sources:** `AdvisoryManager.swift` + `AdvisoryManager+GRIBAccuracy.swift` + `CalibrationTracker.swift` + `OpenMeteoManager.swift`  
+**Last updated:** April 2026 (v81+ session — added calibration suite, downwind header, Open-Meteo revision, performance fixes)
 
 ---
 
@@ -189,9 +189,62 @@
 
 **Startup behavior:** If < 10 min of TWD history or too few samples per bucket, silently skips — neither fires nor clears.
 
-**Scope note:** Upwind only. Downwind gybe-on-a-header is the same concept inverted but not yet implemented.
+**Data values logged:** `headerDeg`, `totalShiftDeg`, `currentTWD`
+
+---
+
+### Persistent Header — Downwind (Gybe-on-a-Header)
+
+**Data source:** `WindDataManager.twdDataPoints` — same three 2-min circular-averaged buckets as the upwind version
+
+**Prerequisites:** Sailing mode is downwind, BSP > 2 kt, ≥ 10 min of TWD history with at least 3 samples per bucket
+
+| Title | Priority | Trigger | Message | Action |
+|-------|----------|---------|---------|--------|
+| Persistent Header — Downwind | Info | Monotonic TWD shift against current gybe ≥ 5° over 10 min | "TWD has shifted X° against you on [gybe] gybe over the last 10 min." | Consider gybing to [opposite gybe] if the shift persists. |
+| Persistent Header — Downwind | Warning | Monotonic TWD shift against current gybe ≥ 10° over 10 min | "TWD has shifted X° against you on [gybe] gybe over the last 10 min — opposite gybe is lifted." | Gybe to [opposite gybe] for tactical advantage. |
+
+**Downwind sign inversion:** On starboard gybe (AWA ≥ 0), TWD veering right (positive shift) pushes the VMG angle wider — that is a header downwind. The upwind formula drops the negation: `signedHeader = totalShift × sign(AWA) > 0`.
+
+**Separate title:** Uses "Persistent Header — Downwind" so it is fully independent from the upwind version. Different titles, different lifecycle, no cross-clearing. Mode gate ensures each clears itself on mark roundings.
+
+**Same thresholds as upwind:** 5°/10° as a starting point — may need tuning after on-water validation if downwind proves noisier.
 
 **Data values logged:** `headerDeg`, `totalShiftDeg`, `currentTWD`
+
+---
+
+### Forecast Wind Direction Shifting
+
+**Data source:** `OpenMeteoManager.shared.revisionSummaries` — computed from consecutive hourly HRRR snapshots across the race area grid
+
+**Prerequisites:** `isOpenMeteoEnabled == true`, at least 3 snapshots (2 revision summaries)
+
+| Title | Priority | Trigger | Monotonic Required | Message |
+|-------|----------|---------|--------------------|---------|
+| Forecast Wind Direction Shifting | Info | Avg revision ≥ 3°/update | No | "HRRR is revising wind direction X° veering/backing per update." |
+| Forecast Wind Direction Shifting | Warning | Avg revision ≥ 6°/update | Yes | "HRRR has shifted wind direction X° veering/backing per update over the last N hours." |
+| Forecast Wind Direction Shifting | Critical | Avg revision ≥ 10°/update | Yes | "HRRR has shifted wind direction X° ... Revision is consistent and significant." |
+
+**Monotonic = all recent revisions share the same sign.** Prevents noisy oscillation from triggering warning/critical.
+
+**Auto-clears** when revision trend drops below 3°/update or Open-Meteo is disabled.
+
+---
+
+### Forecast Wind Speed Shifting
+
+**Data source:** Same as above
+
+**Prerequisites:** Same as above
+
+| Title | Priority | Trigger | Monotonic Required | Message |
+|-------|----------|---------|--------------------|---------|
+| Forecast Wind Speed Shifting | Info | Avg revision ≥ 1.5 kt/update | No | "HRRR is revising wind speed X kt increasing/decreasing per update." |
+| Forecast Wind Speed Shifting | Warning | Avg revision ≥ 3.0 kt/update | Yes | "HRRR has revised wind speed X kt ... over the last N hours." |
+| Forecast Wind Speed Shifting | Critical | Avg revision ≥ 5.0 kt/update | Yes | "HRRR has revised wind speed X kt ... Significant forecast error likely." |
+
+**Auto-clears** when revision trend drops below 1.5 kt/update or Open-Meteo is disabled.
 
 ---
 
@@ -199,12 +252,18 @@
 
 ### Polar Performance
 
-**Note:** Currently only fires in Test Mode
+**Data source:** `PerformanceDataManager` — 5-min rolling averages of polar% and VMG% (channels 58 and 66)
+
+**Prerequisites:** Race timer state == `.racing`, BSP > 2 kt
 
 | Title | Priority | Trigger | Message |
 |-------|----------|---------|---------|
-| Below Target Performance | Info | Polar% > 0 AND polar% < 80% | "Current performance is X% of polar target." |
-| VMG Below Target | Info | VMG% > 0 AND VMG% < 85% | "VMG is X% of target (Y vs Z kt)." |
+| Below Target Performance | Info | 5-min avg polar% > 0 AND < 80% | "Performance averaging X% of polar target over the last 5 min." |
+| VMG Below Target | Info | 5-min avg VMG% > 0 AND < 85% | "VMG averaging X% of target over the last 5 min (Y vs Z kt)." |
+
+**Why 5-min averages:** Instantaneous polar% and VMG% from Expedition are too noisy — gusts, waves, and momentary pinches cause false alerts. The 5-min rolling average from `PerformanceDataManager` smooths out transients.
+
+**Auto-clears** when performance recovers above thresholds, when racing stops, or when boat slows below 2 kt.
 
 ---
 
@@ -244,6 +303,77 @@
 
 ---
 
+## Calibration Advisories
+
+**Data source:** `CalibrationTracker.swift` — detects tacks (AWA sign change) and mark roundings (sailing mode change), stores 5-min TWD, |AWA|, and TWS averages before and after each maneuver
+
+**Tack detection:** AWA sign changes while upwind and BSP > 2 kt  
+**Rounding detection:** Sailing mode transitions between upwind and downwind (reaching ignored as transitional)
+
+**Timing windows:**
+- Pre-maneuver: 5-min average ending 30 seconds before the maneuver
+- Post-tack: 60-second settling window, then 5-min average
+- Post-rounding: 90-second settling window (longer — sail changes, acceleration), then 5-min average
+
+**Consistency filter:** All calibration advisories require the delta to have the same sign across all measured maneuvers. If tack 1 shows +5° and tack 2 shows -3°, that is wind oscillation, not calibration — the advisory will not fire.
+
+**Minimum maneuvers:** 3 tacks for TWD/AWA, 3 roundings for TWS
+
+**Discard conditions:** Record is discarded if sailing mode changes during the post-maneuver evaluation window (e.g., mark rounding during the 5-min post-tack averaging)
+
+---
+
+### TWD Calibration Bias (Tack-to-Tack)
+
+**Prerequisites:** Race timer state == `.racing`, sailing mode is upwind
+
+| Title | Priority | Trigger | Message | Action |
+|-------|----------|---------|---------|--------|
+| TWD Calibration Bias | Info | Mean delta ≥ 3° consistent across 3+ tacks | "TWD reads X° higher/lower after tacking — seen across N tacks." | Monitor over the next few tacks. If it persists, check compass and wind instrument calibration. |
+| TWD Calibration Bias | Warning | Mean delta ≥ 5° consistent across 3+ tacks | "TWD reads X° higher/lower after tacking — consistent across N tacks. Likely instrument calibration error." | Check compass calibration and wind instrument alignment. This bias affects all TWD-based tactical decisions. |
+
+**What it detects:** Compass offset or wind direction sensor misalignment. On a well-calibrated boat, the 5-min average TWD should be the same on port and starboard tacks. A consistent delta indicates the compass or wind vane reads differently depending on the boat's heading.
+
+**Does not clear when leaving upwind** — keeps the advisory visible on reaches/runs so the crew remembers the bias exists.
+
+**Data values logged:** `meanDeltaDeg`, `tackCount`, `isConsistent`
+
+---
+
+### AWA Calibration Bias (Tack-to-Tack)
+
+**Prerequisites:** Race timer state == `.racing`, sailing mode is upwind
+
+| Title | Priority | Trigger | Message | Action |
+|-------|----------|---------|---------|--------|
+| AWA Calibration Bias | Info | Mean |AWA| delta ≥ 2° consistent across 3+ tacks | "AWA reads X° wider/narrower after tacking — seen across N tacks." | Monitor over the next few tacks. If it persists, check mast head unit alignment. |
+| AWA Calibration Bias | Warning | Mean |AWA| delta ≥ 4° consistent across 3+ tacks | "AWA reads X° wider/narrower after tacking — consistent across N tacks. Wind instrument likely has a rotational offset." | Check mast head unit alignment. This affects target angles, sail trim, and layline calculations on every tack. |
+
+**What it detects:** Mast head unit (MHU) rotational offset. Compares `abs(AWA)` between tacks — if starboard reads 24° and port reads 18°, the delta is 6° (3° error per side). Tighter thresholds than TWD because AWA directly drives target angle and sail trim decisions.
+
+**Data values logged:** `meanDeltaDeg`, `tackCount`, `isConsistent`
+
+---
+
+### TWS Upwind/Downwind Bias (Rounding-to-Rounding)
+
+**Prerequisites:** None beyond having 3+ mark roundings between upwind and downwind
+
+| Title | Priority | Trigger | Message | Action |
+|-------|----------|---------|---------|--------|
+| TWS Upwind/Downwind Bias | Info | Mean TWS delta ≥ 8% consistent across 3+ roundings | "TWS reads X kt (Y%) higher downwind/upwind — seen across N roundings." | Monitor over the next few roundings. Review upwash speed correction tables. |
+| TWS Upwind/Downwind Bias | Warning | Mean TWS delta ≥ 12% consistent across 3+ roundings | "TWS reads X kt (Y%) higher downwind/upwind — consistent across N roundings. Upwash speed correction likely needed." | Wind speed is being distorted by sail-induced airflow. Check upwash tables in Expedition or Calibrator. |
+
+**What it detects:** Sail-induced airflow acceleration past the mast head unit. Wind speed typically reads 10-15% higher downwind because the sail accelerates air past the sensor to a greater extent at deeper angles. This affects polar targets, VMG calculations, and sail change crossover points.
+
+**Uses percentage thresholds** since the absolute knot difference scales with wind strength (2 kt in 12 kt breeze is 17%; same 2 kt in 20 kt breeze is only 10%).
+
+**Direction handling:** Uses upwind→downwind roundings or downwind→upwind roundings (whichever has more data), flipping the sign so positive always means "reads higher downwind."
+
+**Data values logged:** `meanDeltaKt`, `meanDeltaPercent`, `roundingCount`, `isConsistent`
+
+---
+
 ## Advisory Lifecycle
 
 - **Replaced:** Each advisory title replaces its previous version (`replacingCategory:withTitle:`) — no stacking of same advisory type
@@ -264,10 +394,12 @@
 5. Safety
 6. Performance (polar %, VMG %)
 7. Rudder angle
-8. Tactical (Layline, Persistent Header)
+8. Tactical (Layline, Persistent Header upwind, Persistent Header downwind)
 9. GRIB accuracy
-10. Current push
-11. Dew point
+10. Open-Meteo forecast revision (direction, speed)
+11. Calibration (TWD tack-to-tack, AWA tack-to-tack, TWS rounding-to-rounding)
+12. Current push
+13. Dew point
 
 ---
 
@@ -275,9 +407,12 @@
 
 | File | Contents |
 |------|----------|
-| `AdvisoryManager.swift` | Core manager, all non-GRIB advisories including dew point |
+| `AdvisoryManager.swift` | Core manager, all non-GRIB advisories including dew point, calibration, and Open-Meteo revision |
 | `AdvisoryManager+GRIBAccuracy.swift` | GRIB bias advisories (iOS target only) |
 | `AdvisoryModels.swift` | `Advisory`, `AdvisoryPriority`, `AdvisoryCategory` structs (iOS + Watch) |
 | `AdvisorySettingsView.swift` | Settings UI — enable/disable, category filter, priority filter |
+| `CalibrationTracker.swift` | Tack and rounding detection, pre/post TWD/AWA/TWS averaging, bias computation |
 | `ForecastComparisonManager.swift` | Raw 15-sec GRIB vs actual logging, 8-hour retention (iOS only) |
 | `ForecastModels.swift` | `ForecastComparison`, `ForecastSummaryRow`, `ForecastValidationStats` (iOS only) |
+| `OpenMeteoManager.swift` | Hourly HRRR polling, grid snapshots, revision analysis (iOS only) |
+| `WeatherBriefingManager.swift` | AI weather briefing prompt construction and Claude API call (iOS only) |
