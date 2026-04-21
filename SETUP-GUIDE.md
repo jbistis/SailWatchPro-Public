@@ -18,10 +18,10 @@
 - [Step 1 — Configure Expedition Marine](#step-1--configure-expedition-marine)
 - [Step 2 — Connect SailWatchPro](#step-2--connect-sailwatchpro)
 - [Step 3 — Configure Your Boat](#step-3--configure-your-boat)
-- [Step 4 — Choose Display Mode](#step-4--choose-display-mode)
-- [Step 5 — Import Data Files](#step-5--import-data-files)
+- [Step 4 — AI Settings](#step-4--ai-settings)
+- [Step 5 — Choose Display Mode](#step-5--choose-display-mode)
+- [Step 6 — Import Data Files](#step-6--import-data-files)
 - [Expedition Marine Channel Requirements](#expedition-marine-channel-requirements)
-- [Test Network Connectivity](#test-network-connectivity)
 - [Safety Settings](#safety-settings)
 - [Troubleshooting](#troubleshooting)
 - [Support & Updates](#support--updates)
@@ -296,79 +296,6 @@ Enable **Receive marks**
 
 ---
 
-## Test Network Connectivity
-
-Use these steps if you're having trouble establishing a connection.
-
-### Step 1 — Find IP Addresses
-
-**Expedition PC (Windows):**
-1. Press **Windows Key + R**, type `cmd`, press Enter
-2. Type `ipconfig`
-3. Note the **IPv4 Address** under your active adapter (example: `192.168.1.50`)
-
-**iPad/iPhone:**
-- Settings → Wi-Fi → tap **(i)** icon → IPv4 Address (example: `192.168.1.100`)
-
----
-
-### Step 2 — Ping from iPad to PC
-
-1. Install [Ping - Network Utility](https://apps.apple.com/us/app/ping-network-utility/id576773404) on your iPad
-2. Ping your Expedition PC's IP address
-3. Successful replies confirm basic connectivity
-
----
-
-### Step 3 — Ping from PC to iPad
-
-1. Open Command Prompt on your Expedition PC
-2. Type: `ping 192.168.1.100` (use your iPad's actual IP)
-3. Successful replies confirm two-way connectivity
-
-**If ping works both ways, your network is fine.** The issue is likely firewall or port configuration — see below.
-
----
-
-### Check Windows Firewall
-
-**Quick test — temporarily disable firewall** (open Command Prompt as Administrator):
-
-```cmd
-netsh advfirewall set allprofiles state off
-```
-
-Test your connection. If it works, the firewall was blocking UDP traffic.
-
-**Re-enable firewall:**
-```cmd
-netsh advfirewall set allprofiles state on
-```
-
-**Permanent fix — add firewall rules:**
-
-1. **Windows Defender Firewall** → Advanced Settings → Inbound Rules
-2. **New Rule** → Port → UDP
-3. **Specific local ports:** `5098, 5099`
-4. **Allow the connection** → Apply to all profiles
-5. Name: `Expedition Marine UDP Ports`
-
-Also add an application rule:
-1. **New Rule** → Program
-2. Browse to `Expedition.exe`
-3. **Allow the connection** → Apply to all profiles
-
----
-
-### Still Having Issues?
-
-- ✅ Both devices on the same Wi-Fi network
-- ✅ No VPN active on either device
-- ✅ Router not blocking UDP broadcasts — disable **AP Isolation** if present
-- ✅ Expedition UDP output enabled and broadcast IP set to `255.255.255.255`
-
----
-
 ## Safety Settings
 
 | Setting | Description |
@@ -383,19 +310,7 @@ Also add an application rule:
 
 ## Troubleshooting
 
-### Connection Issues
-- **Red status indicators** → Verify IP address and UDP port
-- **No data** → Confirm Expedition Marine is broadcasting
-- **Intermittent** → Check WiFi signal strength and network stability
-
-### Display Problems
-- **Data not updating** → Restart the UDP connection in settings or restart Expedition Marine
-- **Watch not syncing** → Check iPhone–Watch connectivity and app permissions
-
-### Performance Issues
-- **Slow response** → Shorten chart time windows or restart the app
-- **Battery drain** → Use Night Mode and reduce display brightness
-- **Memory** → Clear old event logs and restart periodically
+If you're having trouble connecting, see red status indicators, or experience any other issues, see the full [Troubleshooting Guide →](TROUBLESHOOTING.md) for network diagnostics, firewall configuration, and common fixes.
 
 ---
 
