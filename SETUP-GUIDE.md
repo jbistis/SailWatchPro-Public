@@ -164,7 +164,7 @@ Touch **[Done]** when finished.
 
 <div align="center">
   <img src="images/swp-AI-settings.png" width="512">
-  <br><em>Enter your boat parameters</em>
+  <br><em>Enter your Claude API key</em>
 </div>
 <br>
 
