@@ -168,6 +168,9 @@ Touch **[Done]** when finished.
 </div>
 <br>
 
+Create your api key at https://platform.claude.com/settings/keys
+Fund your api activity at https://platform.claude.com/settings/billing
+
 ---
 
 ## Step 5 — Choose Display Mode
