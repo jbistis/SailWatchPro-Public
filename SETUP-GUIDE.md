@@ -160,21 +160,24 @@ Touch **[Done]** when finished.
 
 ---
 
-## Step 4 — Choose Display Mode
+## Step 4 — AI Settings
 
-| Mode | Description |
-|------|-------------|
-| **Light Mode** | Dark text on light background |
-| **Dark Mode** | Light text on dark background |
-| **Night Mode** | Red-tinted display for night vision preservation |
-| **Test Mode** | Simulated data for training and demos |
-
-Light Mode and Dark Mode are set via iOS **Settings > Display & Brightness > Appearance.**  
-Night Mode is enabled and disabled within SailWatchPro Settings.
+<div align="center">
+  <img src="images/swp-AI-settings.png" width="512">
+  <br><em>Enter your boat parameters</em>
+</div>
+<br>
 
 ---
 
-## Step 5 — Import Data Files
+## Step 5 — Choose Display Mode
+
+Night Mode is enabled and disabled within SailWatchPro Settings.
+Light Mode and Dark Mode are set via iOS **Settings > Display & Brightness > Appearance.**  
+
+---
+
+## Step 6 — Import Data Files
 
 Download all import files from:
 
