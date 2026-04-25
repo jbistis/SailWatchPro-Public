@@ -38,6 +38,7 @@ Your subscription includes:
 - Full access to the iOS app on iPhone and Apple Watch
 - Unlimited devices on your boat (skipper, tactician, navigator, crew)
 - Annual updates with new features and improvements
+- Full access to the post-race analytics portal
 - Email support
 
 A subscription is tied to a specific boat — identified by its **Expedition Marine License ID** and **MMSI**. The license key embeds these identifiers, so it only validates against the boat it was issued for.
