@@ -48,11 +48,11 @@ A subscription is tied to a specific boat — identified by its **Expedition Mar
 
 SailWatchPro is offered in three tiers:
 
-### Performance — $495/year
+### Performance — $TBD/year
 
 For competitive sailing on boats under 60 feet LOA. Includes everything most racing programs need: tactical advisories, AI race briefings, MOB safety alerts, polar tracking, sail change logging, and Apple Watch integration.
 
-### Grand Prix — $1,995/year
+### Grand Prix — $TBD/year
 
 For high-performance racing programs on boats 60 feet and over. Includes everything in Performance, plus advanced features tailored to professional and semi-professional campaigns. Reach out if your program needs custom support.
 
