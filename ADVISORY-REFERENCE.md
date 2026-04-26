@@ -2,7 +2,7 @@
 
 **Check interval:** Every 5 minutes (300 seconds) via `startPeriodicChecks()`  
 **Sources:** `AdvisoryManager.swift` + `AdvisoryManager+GRIBAccuracy.swift` + `CalibrationTracker.swift` + `OpenMeteoManager.swift`  
-**Last updated:** April 2026 (v81+ session — added calibration suite, downwind header, Open-Meteo revision, performance fixes)
+**Last updated:** April 2026 (v82+ session — added downwind target angle advisory, calibration suite, downwind header, Open-Meteo revision, performance fixes)
 
 ---
 
@@ -214,6 +214,34 @@
 
 ---
 
+### Sailing Below Target Angle (Downwind)
+
+**Data source:** `PerformanceDataManager` — 2-min rolling average of `(|actualTWA| − |targetTWA|)` via `getAverageTargetTWADelta(over:)`
+
+**Prerequisites:** Sailing mode is downwind, BSP > 2 kt, race timer state == `.racing`, target TWA > 0, ≥ 3 valid samples in window
+
+| Title | Priority | Trigger | Message | Action |
+|-------|----------|---------|---------|--------|
+| Sailing Below Target Angle | Info | Avg delta > 5° over last 2 min | "TWA X° — Y° deeper than target Z° over the last 2 min." | Come up slightly to optimize angle. Monitor VMG trend. |
+| Sailing Below Target Angle | Warning | Avg delta > 8° over last 2 min | "TWA X° — Y° deeper than target Z° over the last 2 min." | Come up Y° to restore target VMG. Consider gybing if angle doesn't improve. |
+| Sailing Below Target Angle | Critical | Avg delta > 12° over last 2 min | "TWA X° — Y° deeper than target Z° over the last 2 min. Significant VMG loss." | Come up Y° to target angle immediately. If the wind has shifted, gybe to the hotter side. |
+
+**What it detects:** Helmsman drifting below polar target angle — the most common downwind VMG leak. Unlike the Persistent Header — Downwind advisory (which detects TWD wind shifts over 10 min), this catches the helmsman sailing too deep independent of wind shifts.
+
+**Why it's separate from the downwind header:** Different root cause, different solution. The header advisory says "gybe" (the wind shifted). This advisory says "come up 10°" (the helmsman drifted low). Both can fire simultaneously — a wind shift can cause the helmsman to drift deep, triggering both.
+
+**Why 2-min rolling average:** Filters out momentary surfs, wave-induced angle swings, and brief course corrections that don't need a response. Matches the smoothing approach used in upwind performance advisories.
+
+**Actionable language:** Message is expressed in degrees to steer — "come up 10°" is immediately actionable for a helmsman. More useful than "your VMG is 97%."
+
+**Auto-clears** when avg delta drops below 5° (on or above target), when boat slows below 2 kt, when sailing mode changes off downwind, or when racing stops.
+
+**Data values logged:** `avgTargetDeltaDeg`, `actualTWA`, `targetTWA`, `windowSec`
+
+**PerformanceDataManager dependency:** Requires `twa` and `targetTWA` fields added to `PerformanceSample`, populated from `ExpeditionReceivedData.trueWindAngle` and `.targetTWAValue` respectively.
+
+---
+
 ### Forecast Wind Direction Shifting
 
 **Data source:** `OpenMeteoManager.shared.revisionSummaries` — computed from consecutive hourly HRRR snapshots across the race area grid
@@ -394,7 +422,7 @@
 5. Safety
 6. Performance (polar %, VMG %)
 7. Rudder angle
-8. Tactical (Layline, Persistent Header upwind, Persistent Header downwind)
+8. Tactical (Layline, Persistent Header upwind, Persistent Header downwind, Sailing Below Target Angle downwind)
 9. GRIB accuracy
 10. Open-Meteo forecast revision (direction, speed)
 11. Calibration (TWD tack-to-tack, AWA tack-to-tack, TWS rounding-to-rounding)
