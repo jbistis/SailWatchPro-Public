@@ -1,0 +1,5 @@
+﻿email,name,phone,address,town,state,postcode,country,emergencyContactName,emergencyContactRelationship,emergencyContactPhone,emergencyContactPhone2,gender,brithDate,isDockingSkipper,isDriver,isJibTrimmer,isMainTrimmer,isSpinnakerTrimmer,isNavigator,isTactician,isMastMan,isWatchCaptain,FoodIssues,weightLbs,sasTrainingDate,shirtSize
+william.bligh@bounty.gov,William Bligh,,,,,,United Kingdom,Betsy Bligh,,,,M,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,190,5/18/24,L
+fletcher.christian@bounty.gov,Fletcher Christian,,,,,,United Kingdom,Maimiti,,,,M,,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,TRUE,,195,3/2/25,L
+john.fryer@bounty.gov,John Fryer,,,,,,United Kingdom,,,,,M,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,215,,XL
+lawrence.lebogue@bounty.gov,Lawrence Lebogue,,,,,,United Kingdom,,,,,M,,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,FALSE,,,,
