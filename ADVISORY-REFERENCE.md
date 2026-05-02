@@ -1,8 +1,8 @@
 # SailWatchPro — Advisory System Reference
 
-**Check interval:** Every 5 minutes (300 seconds) via `startPeriodicChecks()`  
-**Sources:** `AdvisoryManager.swift` + `AdvisoryManager+GRIBAccuracy.swift` + `CalibrationTracker.swift` + `OpenMeteoManager.swift`  
-**Last updated:** April 2026 (v82+ session — added downwind target angle advisory, calibration suite, downwind header, Open-Meteo revision, performance fixes)
+**Check interval:** Every 5 minutes (300 seconds) via `startPeriodicChecks()`
+**Sources:** `AdvisoryManager.swift` + `AdvisoryManager+GRIBAccuracy.swift` + `CalibrationTracker.swift` + `OpenMeteoManager.swift`
+**Last updated:** May 2026 (build 91 — added Mark Reachable, Wind Shift Approaching, position-aware Persistent Header action with rhumb-line wording)
 
 ---
 
@@ -63,7 +63,7 @@
 
 ### Dew Point
 
-**Data sources:** `airTemperature` (channel 14, °C), `dewPoint` (channel 370, °C), `relativeHumidity` (channel 168, 0–100%)  
+**Data sources:** `airTemperature` (channel 14, °C), `dewPoint` (channel 370, °C), `relativeHumidity` (channel 168, 0–100%)
 **Dew risk window:** 17:00–08:00 local time
 
 | Title | Priority | Trigger | Message | Action |
@@ -71,8 +71,8 @@
 | Dew Forming on Deck | Warning | Spread ≤ 1.5°C OR humidity ≥ 95% (any time) | "Dew point spread is X°C (Y% RH). Dew is actively forming on deck surfaces." | Consider heading offshore. Use caution on deck — wet surfaces reduce grip. |
 | Dew Forming on Deck | Info | Spread ≤ 3.0°C AND within dew risk window (17:00–08:00) | "Dew point spread is X°C (Y% RH). Dew likely to form as deck temperatures drop." | Monitor conditions. Consider heading offshore. |
 
-**Spread calculation:** `airTemperature − dewPoint`  
-**Auto-clears** when spread > 3.0°C outside the dew risk window, or when sensor data is unavailable  
+**Spread calculation:** `airTemperature − dewPoint`
+**Auto-clears** when spread > 3.0°C outside the dew risk window, or when sensor data is unavailable
 **Data values logged:** `airTempC`, `dewPointC`, `spreadC`, `humidityPct`
 
 ---
@@ -90,7 +90,7 @@
 | GRIB Current Bias | Warning | Avg drift error ≥ 0.4 kt | — | "Current drift is X kt stronger/weaker than GRIB for Y hrs." |
 | GRIB Current Bias | Critical | Avg drift error ≥ 0.8 kt | — | Same message, higher priority |
 
-**Bias trend labels:** improving / degrading / stable, not improving / insufficient data  
+**Bias trend labels:** improving / degrading / stable, not improving / insufficient data
 **Thresholds to tune after first races** — defined in `GRIBThreshold` enum in `AdvisoryManager+GRIBAccuracy.swift`
 
 **Data source:** `ForecastComparisonManager.shared.validationStats` → `fiveMinuteSummary` (downsampled from 15-sec raw logs, 8-hour window, 96 rows max)
@@ -155,6 +155,8 @@
 - Starboard tack → `laylineTimeOnPort` (approaching port layline)
 - Port tack → `laylineTimeOnStarboard` (approaching starboard layline)
 
+**Sign convention:** `laylineTimeOnPort` / `laylineTimeOnStarboard` are signed — negative values mean the boat is past the layline (overstood). The advisory preserves the sign so a passed layline is treated as already-overstood.
+
 **Overstood detection:** Angle-based using `oppositeTackCOG` vs `markBearing` — robust regardless of Expedition distance-sign convention. On starboard, overstood when `markBearing` is clockwise of `oppositeTackCOG` by > 1°; inequality flips on port tack (the `× sign(AWA)` term normalizes this).
 
 **Overstood distance:** `max(markRange × sin(|Δ|), |laylineDistance_approachingTack|)` — geometric estimate with fallback to Expedition distance if larger.
@@ -167,6 +169,34 @@
 
 ---
 
+### Mark Reachable
+
+**Data sources:** `ExpeditionReceivedData` (`trueWinddDirection`, `markBearing`, `markRange`, `activeMarkName`, `apparentWindAngle`, `trueWindAngle`, `targetTWAValue`), `RaceTimerManager.shared.state`
+
+**Prerequisites:** Active mark with `markRange > 0`, sailing mode is upwind, BSP > 2 kt, race timer state == `.racing`, finite TWD
+
+| Title | Priority | Trigger | Message | Action |
+|-------|----------|---------|---------|--------|
+| Mark Reachable | Info | Direct-to-mark TWA exceeds optimal upwind TWA by ≥ 6°, on the current tack, while still beating | "Windward mark is reachable at X° TWA. Consider bearing off for a direct course at higher boat speed." | Bear off to a direct heading to the mark. A deeper angle here means higher speed and shorter elapsed time than continuing to tack. |
+
+**What it detects:** When the bearing to the mark — measured off the wind — is wider than the boat's optimal upwind TWA, the mark can be fetched on a direct course at a deeper, faster angle. Continuing to tack in that situation gives up speed and adds distance.
+
+**Direct-to-mark TWA:** `|shortestAngleDifference(TWD, markBearing)|`. The sign of the underlying delta also tells which side of the wind the mark sits on (i.e. which tack would lay it).
+
+**Optimal upwind TWA source:** `data.targetTWAValue` (Expedition's polar target) when it falls in the plausible range `[30°, 60°]`; otherwise a 42° fallback.
+
+**Tack-match guard:** Only fires when the mark is reachable on the *current* tack (sign of the TWD-to-mark delta agrees with AWA sign). On starboard (AWA ≥ 0) the boat sails to the LEFT of TWD, so a reachable mark must also sit left of TWD (delta < 0); mirror for port. If the mark is only reachable via the *other* tack, the advisory stays silent — that's a different tactical call.
+
+**Already-cracked-off suppression:** If the helm has already borne off (current `|TWA| > optimalUpwindTWA + 5°`), the situation is over and the advisory clears.
+
+**Hysteresis:** Fires when margin (`directTWA − optimalUpwindTWA`) ≥ 6°, clears when margin falls below 3°. Prevents flicker near threshold.
+
+**Auto-clears** when the mark is removed, sailing mode leaves upwind, race state leaves `.racing`, the tack stops matching, the helm cracks off, or the hysteresis clear margin is hit.
+
+**Data values logged:** `directTWA`, `optimalUpwindTWA`, `marginDeg`, `markBearing`, `currentTWA`
+
+---
+
 ### Persistent Header
 
 **Data source:** `WindDataManager.twdDataPoints` — three non-overlapping 2-min averaging buckets (now, 4–6 min ago, 8–10 min ago) using circular sin/cos averaging
@@ -175,8 +205,8 @@
 
 | Title | Priority | Trigger | Message | Action |
 |-------|----------|---------|---------|--------|
-| Persistent Header | Info | Monotonic TWD shift against current tack ≥ 5° over 10 min | "TWD has shifted X° against you on [tack] over the last 10 min." | Consider tacking to [opposite tack] if the shift persists. |
-| Persistent Header | Warning | Monotonic TWD shift against current tack ≥ 10° over 10 min | "TWD has shifted X° against you on [tack] over the last 10 min — opposite tack is lifted." | Tack to [opposite tack] for tactical advantage. |
+| Persistent Header | Info | Monotonic TWD shift against current tack ≥ 5° over 10 min | "TWD has shifted X° against you on [tack] over the last 10 min." | Position-aware (see below) |
+| Persistent Header | Warning | Monotonic TWD shift against current tack ≥ 10° over 10 min | "TWD has shifted X° against you on [tack] over the last 10 min — opposite tack is lifted." | Position-aware (see below) |
 
 **Header interpretation (tack-aware):**
 - Starboard tack (AWA ≥ 0): TWD backing left (negative shift) = header → port tack is lifted
@@ -184,6 +214,14 @@
 - Combined: `signedHeader = −totalShift × sign(AWA)` must be > 0 to fire
 
 **Oscillation filter:** Requires both sub-shifts (A→B and B→C) to share a sign — `shiftAB × shiftBC > 0`. This forces monotonic behavior across 10 min and rejects common 3–8 min wind oscillation cycles.
+
+**Position-aware recommended action (build 91):** The action string is enriched by `headerPositionEnrichment(...)` based on where the boat sits relative to the rhumb line and how far it is from the layline. Wording is anchored to the current leg's rhumb line, which is unambiguous on any leg (the rhumb line always points to the active mark).
+
+- **Layline guard:** if the approaching-tack layline time is < 120 s or already past, the action becomes "Near the layline — tacking now risks overstanding. Hold; the Layline advisory will drive the maneuver."
+- **On-favored-side hold:** if the boat is already on the side of the rhumb line the shift favors (right when veering, left when backing), the action becomes "Already right of the rhumb line (the favored side) — hold for the shift to develop. Tacking now sails you away from it." (and mirror for left).
+- **Off-favored-side default (Warning):** "Tack to [opposite tack] — toward the favored side (right of the rhumb line)." (or left).
+- **Off-favored-side default (Info):** "Consider tacking to [opposite tack] if the shift persists — moves toward the favored side (right of the rhumb line)." (or left).
+- **Fallback (no active mark or no TWD):** original strings, "Tack to [opposite tack] for tactical advantage." or "Consider tacking to [opposite tack] if the shift persists."
 
 **Auto-clears** on reversal, insufficient magnitude, oscillation detection, or mode change.
 
@@ -201,12 +239,14 @@
 
 | Title | Priority | Trigger | Message | Action |
 |-------|----------|---------|---------|--------|
-| Persistent Header — Downwind | Info | Monotonic TWD shift against current gybe ≥ 5° over 10 min | "TWD has shifted X° against you on [gybe] gybe over the last 10 min." | Consider gybing to [opposite gybe] if the shift persists. |
-| Persistent Header — Downwind | Warning | Monotonic TWD shift against current gybe ≥ 10° over 10 min | "TWD has shifted X° against you on [gybe] gybe over the last 10 min — opposite gybe is lifted." | Gybe to [opposite gybe] for tactical advantage. |
+| Persistent Header — Downwind | Info | Monotonic TWD shift against current gybe ≥ 5° over 10 min | "TWD has shifted X° against you on [gybe] gybe over the last 10 min." | Position-aware (see below) |
+| Persistent Header — Downwind | Warning | Monotonic TWD shift against current gybe ≥ 10° over 10 min | "TWD has shifted X° against you on [gybe] gybe over the last 10 min — opposite gybe is lifted." | Position-aware (see below) |
 
 **Downwind sign inversion:** On starboard gybe (AWA ≥ 0), TWD veering right (positive shift) pushes the VMG angle wider — that is a header downwind. The upwind formula drops the negation: `signedHeader = totalShift × sign(AWA) > 0`.
 
 **Separate title:** Uses "Persistent Header — Downwind" so it is fully independent from the upwind version. Different titles, different lifecycle, no cross-clearing. Mode gate ensures each clears itself on mark roundings.
+
+**Position-aware recommended action (build 91):** Same `headerPositionEnrichment(...)` helper as the upwind path, with `isUpwind: false`. Layline guard, on-favored-side hold, and off-favored-side maneuver-toward-leverage logic all apply, with "Gybe"/"gybing" substituted for "Tack"/"tacking". Wording is anchored to the rhumb line (e.g. "Already right of the rhumb line (the favored side) — hold for the shift to develop. Gybing now sails you away from it."). Falls back to original strings when there is no active mark or no TWD.
 
 **Same thresholds as upwind:** 5°/10° as a starting point — may need tuning after on-water validation if downwind proves noisier.
 
@@ -239,6 +279,46 @@
 **Data values logged:** `avgTargetDeltaDeg`, `actualTWA`, `targetTWA`, `windowSec`
 
 **PerformanceDataManager dependency:** Requires `twa` and `targetTWA` fields added to `PerformanceSample`, populated from `ExpeditionReceivedData.trueWindAngle` and `.targetTWAValue` respectively.
+
+---
+
+### Wind Shift Approaching
+
+**Data sources:** `WeatherDataManager.shared.nearbyBuoys` + `BuoyWeatherService.calculateTrend(...)` (90-min linear regression), `OpenMeteoManager.shared.directionRevisionTrend(...)` + `isDirectionRevisionMonotonic(...)`, `WindDataManager.shared.twdDataPoints` (60-min boat TWD trend), `BoatLocationManager.shared.filteredBoatLocation`
+
+**Prerequisites:** Sailing mode is upwind, BSP > 2 kt, race timer state == `.racing`, finite TWD, boat lat/lon available, no active cooldown
+
+| Title | Priority | Trigger | Message | Action |
+|-------|----------|---------|---------|--------|
+| Wind Shift Approaching | Warning | Stations agree on a developing shift AND forecast revisions corroborate same direction | "Stations are showing a [veering/backing] shift that hasn't reached your position yet — [stations]. Favor the [right/left] of the rhumb line (based on station observations and forecast data)." | Favor the [right/left] of the rhumb line. Nearby stations suggest a [veering/backing] shift that hasn't reached your position yet. |
+| Wind Shift Approaching | Info | Stations agree on a developing shift, no forecast corroboration | Same body, "(based on station observations)" | Same as above |
+| Wind Shift Approaching | Info | Forecast revisions only (≥ 10°/hr monotonic), no nearby station data | "Forecast models show a developing [veering/backing] shift in the area — favor the [right/left] of the rhumb line (based on forecast revision trend only — no nearby station data available to confirm)." | Favor the [right/left] of the rhumb line. Forecast models suggest a [veering/backing] shift that hasn't reached your position yet. Forecast-only signal — no nearby station observations available to confirm. Weight this signal accordingly. |
+
+**What it detects (and why it's not Persistent Header):** Persistent Header is reactive — it fires once the boat's own TWD has already shifted. Wind Shift Approaching is *proactive* — it fires before the shift reaches the boat, based on external evidence (nearby station observations and/or forecast revision trends), so the crew has time to leverage out to the favored side. The boat's own TWD trend is used as a *negative gate* — once it confirms the shift has arrived, this advisory clears and Persistent Header takes over.
+
+**Station signal extraction:** For each unique station in `nearbyBuoys`:
+- Filtered to within 50 NM of the boat, with a reading less than 2 hours old
+- 90-min linear-regression trend via `BuoyWeatherService.calculateTrend`; only `.veering` or `.backing` trends with magnitude ≥ 5°/hr are retained
+- Position classified relative to TWD (the wind-FROM direction): bearing within ±60° of TWD = upwind, ≥ 120° = downwind, otherwise abeam
+- Messaged as e.g. "Bramblemet (upwind, 8 NM) showing 12°/hr veering"
+
+**Consensus rule:** All retained station signals must agree on direction (all veering or all backing). A mixed bag is treated as no signal.
+
+**Forecast corroboration:** `directionRevisionTrend(recentHours: 3)` magnitude ≥ 5°/hr AND `isDirectionRevisionMonotonic(overLastHours: 3)` true. Sign determines veering vs backing.
+
+**Forecast-only signal:** Only fires when there are no nearby station signals at all AND the forecast revision rate is ≥ 10°/hr (stricter threshold). Always Info severity, with explicit caveat in both the message and the recommended action.
+
+**Boat-already-shifting gate:** Linear regression on `WindDataManager.twdDataPoints` over the last 60 min with 360° unwrap. If `|boat TWD slope| ≥ 4°/hr` in the same direction as the detected shift, the advisory clears (with cooldown) and Persistent Header takes over.
+
+**Direction → favored side:** Veering (clockwise) ⇒ favor the right of the rhumb line; backing (CCW) ⇒ favor the left of the rhumb line. Rhumb-line wording is used because "left/right side of the course" is ambiguous between racers who anchor to the start line vs. the current leg — the rhumb line always points to the active mark and is unambiguous on any leg.
+
+**Severity:** stations + forecast agree → Warning; stations only → Info; forecast only → Info with caveat.
+
+**Auto-clears** when the gate fails (mode change, race ends, lat/lon unavailable, TWD non-finite), when station consensus breaks, or when the shift reaches the boat (boat-TWD gate trips).
+
+**Cooldown:** 15 min after any clear — prevents the same shift event from re-triggering as it propagates through. Cooldown is only set when an active advisory is being cleared, not on a no-fire tick.
+
+**Data values logged:** `shiftDirectionSign`, `stationCount`, `forecastCorroborates`, `forecastOnly`, `boatTwdRateDegPerHr`, `revisionRateDegPerHr`
 
 ---
 
@@ -318,7 +398,7 @@
 
 ### Current / Leeway Push
 
-**Data source:** `PerformanceDataManager` — 10-min avg BSP vs SOG (`netCurrentPush10MinAvg = BSP - SOG`)  
+**Data source:** `PerformanceDataManager` — 10-min avg BSP vs SOG (`netCurrentPush10MinAvg = BSP - SOG`)
 **Includes:** Opposite tack VMG prediction when tacking would be beneficial
 
 | Title | Priority | Trigger (BSP - SOG over 10 min) | Message |
@@ -335,7 +415,7 @@
 
 **Data source:** `CalibrationTracker.swift` — detects tacks (AWA sign change) and mark roundings (sailing mode change), stores 5-min TWD, |AWA|, and TWS averages before and after each maneuver
 
-**Tack detection:** AWA sign changes while upwind and BSP > 2 kt  
+**Tack detection:** AWA sign changes while upwind and BSP > 2 kt
 **Rounding detection:** Sailing mode transitions between upwind and downwind (reaching ignored as transitional)
 
 **Timing windows:**
@@ -343,7 +423,7 @@
 - Post-tack: 60-second settling window, then 5-min average
 - Post-rounding: 90-second settling window (longer — sail changes, acceleration), then 5-min average
 
-**Consistency filter:** All calibration advisories require the delta to have the same sign across all measured maneuvers. If tack 1 shows +5° and tack 2 shows -3°, that is wind oscillation, not calibration — the advisory will not fire.
+**Consistency filter:** All calibration advisories require the delta to have the same sign across all measured maneuvers. If tack 1 shows +5° and tack 2 shows −3°, that is wind oscillation, not calibration — the advisory will not fire.
 
 **Minimum maneuvers:** 3 tacks for TWD/AWA, 3 roundings for TWS
 
@@ -392,7 +472,7 @@
 | TWS Upwind/Downwind Bias | Info | Mean TWS delta ≥ 8% consistent across 3+ roundings | "TWS reads X kt (Y%) higher downwind/upwind — seen across N roundings." | Monitor over the next few roundings. Review upwash speed correction tables. |
 | TWS Upwind/Downwind Bias | Warning | Mean TWS delta ≥ 12% consistent across 3+ roundings | "TWS reads X kt (Y%) higher downwind/upwind — consistent across N roundings. Upwash speed correction likely needed." | Wind speed is being distorted by sail-induced airflow. Check upwash tables in Expedition or Calibrator. |
 
-**What it detects:** Sail-induced airflow acceleration past the mast head unit. Wind speed typically reads 10-15% higher downwind because the sail accelerates air past the sensor to a greater extent at deeper angles. This affects polar targets, VMG calculations, and sail change crossover points.
+**What it detects:** Sail-induced airflow acceleration past the mast head unit. Wind speed typically reads 10–15% higher downwind because the sail accelerates air past the sensor to a greater extent at deeper angles. This affects polar targets, VMG calculations, and sail change crossover points.
 
 **Uses percentage thresholds** since the absolute knot difference scales with wind strength (2 kt in 12 kt breeze is 17%; same 2 kt in 20 kt breeze is only 10%).
 
@@ -410,6 +490,7 @@
 - **Cleanup:** Advisories older than 7 days are purged; max 50 stored (configurable in Advisory Settings)
 - **Watch:** Most critical (`.critical`) advisory synced to Apple Watch via WatchConnectivity
 - **Storage throttle:** Disk writes throttled to max once per 10 seconds to reduce I/O during frequent checks
+- **Cooldown (Wind Shift Approaching only):** 15-min cooldown after a clear, suppresses re-fire as the same shift propagates
 
 ---
 
@@ -422,7 +503,13 @@
 5. Safety
 6. Performance (polar %, VMG %)
 7. Rudder angle
-8. Tactical (Layline, Persistent Header upwind, Persistent Header downwind, Sailing Below Target Angle downwind)
+8. Tactical (in this order):
+   1. Layline
+   2. Mark Reachable
+   3. Persistent Header (upwind)
+   4. Persistent Header — Downwind
+   5. Sailing Below Target Angle (downwind)
+   6. Wind Shift Approaching
 9. GRIB accuracy
 10. Open-Meteo forecast revision (direction, speed)
 11. Calibration (TWD tack-to-tack, AWA tack-to-tack, TWS rounding-to-rounding)
@@ -435,7 +522,7 @@
 
 | File | Contents |
 |------|----------|
-| `AdvisoryManager.swift` | Core manager, all non-GRIB advisories including dew point, calibration, and Open-Meteo revision |
+| `AdvisoryManager.swift` | Core manager, all non-GRIB advisories including dew point, calibration, Open-Meteo revision, Mark Reachable, Wind Shift Approaching, and the position-aware Persistent Header enrichment |
 | `AdvisoryManager+GRIBAccuracy.swift` | GRIB bias advisories (iOS target only) |
 | `AdvisoryModels.swift` | `Advisory`, `AdvisoryPriority`, `AdvisoryCategory` structs (iOS + Watch) |
 | `AdvisorySettingsView.swift` | Settings UI — enable/disable, category filter, priority filter |
@@ -443,4 +530,8 @@
 | `ForecastComparisonManager.swift` | Raw 15-sec GRIB vs actual logging, 8-hour retention (iOS only) |
 | `ForecastModels.swift` | `ForecastComparison`, `ForecastSummaryRow`, `ForecastValidationStats` (iOS only) |
 | `OpenMeteoManager.swift` | Hourly HRRR polling, grid snapshots, revision analysis (iOS only) |
+| `BuoyWeatherService.swift` | NDBC + custom buoy data fetch; `BuoyWindTrend` and `calculateTrend(...)` used by Wind Shift Approaching |
+| `WeatherDataManager.swift` | `nearbyBuoys` cache and `getBuoyHistory(...)` used by Wind Shift Approaching |
+| `BoatLocationManager.swift` | `filteredBoatLocation` used for distance/bearing in Wind Shift Approaching |
+| `WindDataManager.swift` | `twdDataPoints` used for boat-own TWD trend gate in Wind Shift Approaching |
 | `WeatherBriefingManager.swift` | AI weather briefing prompt construction and Claude API call (iOS only) |
