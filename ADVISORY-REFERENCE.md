@@ -2,7 +2,7 @@
 
 **Check interval:** Every 5 minutes (300 seconds) via `startPeriodicChecks()`
 **Sources:** `AdvisoryManager.swift` + `AdvisoryManager+GRIBAccuracy.swift` + `CalibrationTracker.swift` + `OpenMeteoManager.swift`
-**Last updated:** May 2026 (build 91 — added Mark Reachable, Wind Shift Approaching, position-aware Persistent Header action with rhumb-line wording)
+**Last updated:** May 2026 (build 92 — replaced "Sailing Below Target Angle" with the generalized "Target Angle" advisory; build 91 added Mark Reachable, Wind Shift Approaching, position-aware Persistent Header action with rhumb-line wording)
 
 ---
 
@@ -254,34 +254,6 @@
 
 ---
 
-### Sailing Below Target Angle (Downwind)
-
-**Data source:** `PerformanceDataManager` — 2-min rolling average of `(|actualTWA| − |targetTWA|)` via `getAverageTargetTWADelta(over:)`
-
-**Prerequisites:** Sailing mode is downwind, BSP > 2 kt, race timer state == `.racing`, target TWA > 0, ≥ 3 valid samples in window
-
-| Title | Priority | Trigger | Message | Action |
-|-------|----------|---------|---------|--------|
-| Sailing Below Target Angle | Info | Avg delta > 5° over last 2 min | "TWA X° — Y° deeper than target Z° over the last 2 min." | Come up slightly to optimize angle. Monitor VMG trend. |
-| Sailing Below Target Angle | Warning | Avg delta > 8° over last 2 min | "TWA X° — Y° deeper than target Z° over the last 2 min." | Come up Y° to restore target VMG. Consider gybing if angle doesn't improve. |
-| Sailing Below Target Angle | Critical | Avg delta > 12° over last 2 min | "TWA X° — Y° deeper than target Z° over the last 2 min. Significant VMG loss." | Come up Y° to target angle immediately. If the wind has shifted, gybe to the hotter side. |
-
-**What it detects:** Helmsman drifting below polar target angle — the most common downwind VMG leak. Unlike the Persistent Header — Downwind advisory (which detects TWD wind shifts over 10 min), this catches the helmsman sailing too deep independent of wind shifts.
-
-**Why it's separate from the downwind header:** Different root cause, different solution. The header advisory says "gybe" (the wind shifted). This advisory says "come up 10°" (the helmsman drifted low). Both can fire simultaneously — a wind shift can cause the helmsman to drift deep, triggering both.
-
-**Why 2-min rolling average:** Filters out momentary surfs, wave-induced angle swings, and brief course corrections that don't need a response. Matches the smoothing approach used in upwind performance advisories.
-
-**Actionable language:** Message is expressed in degrees to steer — "come up 10°" is immediately actionable for a helmsman. More useful than "your VMG is 97%."
-
-**Auto-clears** when avg delta drops below 5° (on or above target), when boat slows below 2 kt, when sailing mode changes off downwind, or when racing stops.
-
-**Data values logged:** `avgTargetDeltaDeg`, `actualTWA`, `targetTWA`, `windowSec`
-
-**PerformanceDataManager dependency:** Requires `twa` and `targetTWA` fields added to `PerformanceSample`, populated from `ExpeditionReceivedData.trueWindAngle` and `.targetTWAValue` respectively.
-
----
-
 ### Wind Shift Approaching
 
 **Data sources:** `WeatherDataManager.shared.nearbyBuoys` + `BuoyWeatherService.calculateTrend(...)` (90-min linear regression), `OpenMeteoManager.shared.directionRevisionTrend(...)` + `isDirectionRevisionMonotonic(...)`, `WindDataManager.shared.twdDataPoints` (60-min boat TWD trend), `BoatLocationManager.shared.filteredBoatLocation`
@@ -372,6 +344,43 @@
 **Why 5-min averages:** Instantaneous polar% and VMG% from Expedition are too noisy — gusts, waves, and momentary pinches cause false alerts. The 5-min rolling average from `PerformanceDataManager` smooths out transients.
 
 **Auto-clears** when performance recovers above thresholds, when racing stops, or when boat slows below 2 kt.
+
+---
+
+### Target Angle
+
+**Data source:** `PerformanceDataManager.shared.samples` — 5-min rolling window. Mean `|TWA|`, mean `|targetTWA|`, and signed delta (`mean(|TWA|) − mean(|targetTWA|)`) computed in one pass over the same sample set.
+
+**Prerequisites:** Race timer state == `.racing`, BSP > 2 kt, sailing mode is upwind OR downwind (not reaching), `targetTWAValue > 0`, ≥ 30 valid samples in the 5-min window, no active cooldown.
+
+| Title | Priority | Trigger (`|signed delta|` over 5 min) | Action style |
+|-------|----------|---------------------------------------|---------------|
+| Target Angle | Info | ≥ 3° | Direction-aware (see below) |
+| Target Angle | Warning | ≥ 5° | Direction-aware |
+| Target Angle | Critical | ≥ 8° | Direction-aware |
+
+**Direction-aware messaging.** Four cases driven by `(isUpwind, isDeep)` where `isDeep` means actual TWA is wider than target (positive delta):
+
+| Mode | Direction | Message | Action |
+|------|-----------|---------|--------|
+| Upwind | TWA below target (pinching) | "Averaging X° high of target TWA over last 5 min. Target: T°, actual avg: A°. Pinching costs VMG even when the angle looks good." | Bear off to target. Current TWA is costing VMG — the boat may feel fast but you're losing ground to windward. |
+| Upwind | TWA above target (footing) | "Averaging X° low of target TWA over last 5 min. Target: T°, actual avg: A°. Fast but losing height to competitors holding target." | Come up to target. Extra speed doesn't compensate for the lost height at this angle. |
+| Downwind | TWA below target (not soaking) | "Averaging X° high of target TWA downwind over last 5 min. Target: T°, actual avg: A°. Not soaking enough." | Bear off to target. Soak deeper to maximize VMG downwind. |
+| Downwind | TWA above target (over-deep) | "Averaging X° deep of target TWA downwind over last 5 min. Target: T°, actual avg: A°. Excessive depth reduces VMG and risks loss of control." | Come up to target. Excessive depth increases risk and reduces VMG. |
+
+**What it detects:** The "no higher / no lower" coaching call automated as telemetry. Drivers who drift 3–5° off polar target for sustained periods cost the boat distance, and that drift is correctable in real time. Replaces the previous downwind-only `Sailing Below Target Angle` advisory (build 91 and earlier), which only caught one of the four cases above.
+
+**Wind-shift suppression:** Mardia circular std dev (formula `σ = √(−2·ln R) · 180/π`, where R is the resultant length of the unit-vector mean) of TWD over the same 5-min window. When std dev > 8°, the driver is likely actively responding to a shift and the readings are noisy — suppress (don't fire, don't clear an active advisory). TWA is already wind-relative, so a TWD shift on its own does not invalidate the comparison; this gate just avoids firing during obvious chaos. The circular-stats approach is robust to 360° wraparound without needing to unwrap the series.
+
+**Why a single source of truth:** All four numbers (sample count, mean TWA, mean target, signed delta) are pulled from `PerformanceDataManager.samples` in one pass, rather than mixing `getAverageTargetTWADelta(over:)` with separate sample queries. Same set of samples drives both the trigger evaluation and the user-facing message.
+
+**Hysteresis:** Clear when `|signed delta|` drops below 2°. After clearing, a 2-min cooldown suppresses immediate re-fire on borderline conditions.
+
+**Legacy cleanup:** Every check tick removes any stale `Sailing Below Target Angle` advisory from previous-build storage so users upgrading don't see ghost entries.
+
+**Auto-clears** when the gate fails (BSP < 2 kt, mode leaves upwind/downwind, racing stops, target TWA invalid), or when the 2° clear-hysteresis condition is met.
+
+**Data values logged:** `avgDeltaDeg` (signed: positive = deep, negative = high), `absDeltaDeg`, `actualAvgTWA`, `targetTWA`, `windowSec`, `isUpwind`, `sampleCount`. The signed `avgDeltaDeg` plus `isUpwind` is what makes objective driver evaluation possible when correlated with `crew_on_watch` in the cloud (e.g. "Driver A averages 1.2° above target on starboard tack; Driver B averages 2.8° below").
 
 ---
 
@@ -490,7 +499,9 @@
 - **Cleanup:** Advisories older than 7 days are purged; max 50 stored (configurable in Advisory Settings)
 - **Watch:** Most critical (`.critical`) advisory synced to Apple Watch via WatchConnectivity
 - **Storage throttle:** Disk writes throttled to max once per 10 seconds to reduce I/O during frequent checks
-- **Cooldown (Wind Shift Approaching only):** 15-min cooldown after a clear, suppresses re-fire as the same shift propagates
+- **Cooldowns** (only set when an active advisory is being cleared, never on a no-fire tick):
+  - **Wind Shift Approaching**: 15-min cooldown after a clear, suppresses re-fire as the same shift propagates
+  - **Target Angle**: 2-min cooldown after a clear, prevents flicker on borderline conditions
 
 ---
 
@@ -508,7 +519,7 @@
    2. Mark Reachable
    3. Persistent Header (upwind)
    4. Persistent Header — Downwind
-   5. Sailing Below Target Angle (downwind)
+   5. Target Angle (despatched here, but `.performance` category)
    6. Wind Shift Approaching
 9. GRIB accuracy
 10. Open-Meteo forecast revision (direction, speed)
@@ -522,7 +533,7 @@
 
 | File | Contents |
 |------|----------|
-| `AdvisoryManager.swift` | Core manager, all non-GRIB advisories including dew point, calibration, Open-Meteo revision, Mark Reachable, Wind Shift Approaching, and the position-aware Persistent Header enrichment |
+| `AdvisoryManager.swift` | Core manager, all non-GRIB advisories including dew point, calibration, Open-Meteo revision, Mark Reachable, Wind Shift Approaching, Target Angle (replaces the build-91 `Sailing Below Target Angle`), and the position-aware Persistent Header enrichment |
 | `AdvisoryManager+GRIBAccuracy.swift` | GRIB bias advisories (iOS target only) |
 | `AdvisoryModels.swift` | `Advisory`, `AdvisoryPriority`, `AdvisoryCategory` structs (iOS + Watch) |
 | `AdvisorySettingsView.swift` | Settings UI — enable/disable, category filter, priority filter |
@@ -530,8 +541,9 @@
 | `ForecastComparisonManager.swift` | Raw 15-sec GRIB vs actual logging, 8-hour retention (iOS only) |
 | `ForecastModels.swift` | `ForecastComparison`, `ForecastSummaryRow`, `ForecastValidationStats` (iOS only) |
 | `OpenMeteoManager.swift` | Hourly HRRR polling, grid snapshots, revision analysis (iOS only) |
+| `PerformanceDataManager.swift` | `samples` time series with TWA, target TWA, rudder, polar%/VMG% used by Polar Performance, Excessive Rudder, Current Push, and Target Angle |
 | `BuoyWeatherService.swift` | NDBC + custom buoy data fetch; `BuoyWindTrend` and `calculateTrend(...)` used by Wind Shift Approaching |
 | `WeatherDataManager.swift` | `nearbyBuoys` cache and `getBuoyHistory(...)` used by Wind Shift Approaching |
 | `BoatLocationManager.swift` | `filteredBoatLocation` used for distance/bearing in Wind Shift Approaching |
-| `WindDataManager.swift` | `twdDataPoints` used for boat-own TWD trend gate in Wind Shift Approaching |
+| `WindDataManager.swift` | `twdDataPoints` used for boat-own TWD trend gate in Wind Shift Approaching and Target Angle's wind-shift suppression |
 | `WeatherBriefingManager.swift` | AI weather briefing prompt construction and Claude API call (iOS only) |
