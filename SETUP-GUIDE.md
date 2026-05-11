@@ -21,7 +21,6 @@
 - [Step 4 — AI Settings](#step-4--ai-settings)
 - [Step 5 — Choose Display Mode](#step-5--choose-display-mode)
 - [Step 6 — Import Data Files](#step-6--import-data-files)
-- [Expedition Marine Channel Requirements](#expedition-marine-channel-requirements)
 - [Safety Settings](#safety-settings)
 - [Troubleshooting](#troubleshooting)
 - [Support & Updates](#support--updates)
@@ -108,7 +107,7 @@ iPads, iPhones, and Apple Watches connect to the router via WiFi. For best resul
    - **Port:** any unused port number
 5. Click **Expedition Settings**
 6. In **Exp Rx filter:** check **Receive marks**
-7. In **Exp Tx filter:** enable the channels listed in [Expedition Marine Channel Requirements](#expedition-marine-channel-requirements) below
+7. In **Exp Tx filter:** enable every channel listed in [EXPEDITION-CHANNELS.md](EXPEDITION-CHANNELS.md). If you also use the [SailWatchPro web portal](https://sailwatchpro.com) for race log analysis, enable the additional channels listed in that document as well.
 
 ---
 
@@ -244,55 +243,6 @@ Use the import buttons in the app to load each file.
   <br><em>Enter race information</em>
 </div>
 <br>
-
----
-
-## Expedition Marine Channel Requirements
-
-### Exp Rx Filter
-Enable **Receive marks**
-
-### Exp Tx Filter
-
-<!-- Channel list maintained in reflow_table.py — add new channels there and run to regenerate this table -->
-
-| | | |
-|:-|:-:|:-:|
-| Air temperature | AWA | AWS |
-| Barometer | BSP | Cog |
-| Course | Current drift | Current drift predicted |
-| Current set | Current set predicted | Depth |
-| Dew point | Heading | Heading - Cog |
-| Heading to steer | Heading to steer polar | Heel (roll) |
-| J1 | Latitude | Layline bearing |
-| Layline bearing on port | Layline bearing on strb | Layline dist on port |
-| Layline dist on starb | Layline distance | Layline time |
-| Layline time on port | Layline time on starb | Longitude |
-| Magnetic variation | Mark bearing | Mark bearing - Cog |
-| Mark bearing - Cog | Mark latitude | Mark longitude |
-| Mark range | Mark time | Mark twa |
-| Next mark awa | Next mark aws | Next mark bearing |
-| Next mark latitude | Next mark longitude | Next mark polar time |
-| Next mark range | Next mark time on port | Next mark time on starb |
-| Next mark twa | Opposite track | Opposite track - mark brg |
-| Opposite track Cog | Polar bsp | Polar bsp % |
-| Relative humidity | Rudder | Sail |
-| Sail event | Sail mark | Sail next mark |
-| Sea temperature | Sog | Start bias angle |
-| Start bias length | Start distance below line | Start distance to line |
-| Start gun dist below line | Start layline on port | Start layline on strbd |
-| Start line square wind | Start port latitude | Start port longitude |
-| Start stbd latitude | Start stbd longitude | Start time to burn |
-| Start time to gun | Start time to layline P | Start time to layline S |
-| Start time to line | Start time to port | Start time to port burn |
-| Start time to strb | Start time to strb burn | Staysail |
-| Target awa | Target bsp | Target bsp % |
-| Target twa | Trim (pitch) | TWA |
-| TWD | TWD predicted | TWS |
-| TWS predicted | VMC | VMC % |
-| VMC optimum | VMG | VMG % |
-
-<!-- 104 channels total -->
 
 ---
 
