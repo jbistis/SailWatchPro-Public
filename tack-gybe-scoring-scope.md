@@ -135,7 +135,9 @@ Calling these out so they don't creep into the build:
 
 ## Questions we'd value your input on
 
-These are the places where a professional skipper's view would meaningfully improve the design:
+Two lenses are valuable here — your coaching view of the scoring model, and your user view of how this would actually fit into how a sailor reviews a race. Questions 1–7 are coach-lens; questions 8–10 are user-lens.
+
+### Coach-lens
 
 1. **Mode breakpoints.** Are 0–8 / 8–16 / 16+ kt the right defaults, or do you draw them differently? Different upwind vs. downwind? Different by boat class in ways we should encode?
 2. **Healthy oversteer bands.** Do the 15–30 / 5–15 / 0–8° ranges match what you actually coach? Where would you put them?
@@ -144,6 +146,12 @@ These are the places where a professional skipper's view would meaningfully impr
 5. **What scalars are missing?** We deliberately kept the list short. Anything important to a coach that we've left off?
 6. **Entry quality.** We're scoring the *decision to tack* (entry speed and heel vs. recent groove). Is this useful, or does it cross the line into tactical second-guessing the helm shouldn't see?
 7. **Gybes.** This document focuses on tacks. We expect most of the framework transfers to gybes but with different phase emphases (depower, asymmetric vs. symmetric kite, broach risk on exit). Where would you split the gybe analysis differently from tacks?
+
+### User-lens
+
+8. **When would you actually open this?** Same evening after racing, next morning, days later — or would you mostly want headline numbers in a feed/notification and only dig in for tacks that looked bad? This drives whether we lead with the rollup, the worst-tack-of-the-race card, or the per-tack cloud.
+9. **What gets you to click into a specific maneuver?** Should the worst tack of the race be auto-surfaced? Would you sort by time-lost, by mode, by leg? Would a "compare this tack to my best tack of the race" view be useful?
+10. **Crew sharing.** Would you want to send a single maneuver card to a tactician or trimmer (text, email, image) — or is this purely a private skipper view? If sharing is useful, what should the shareable artifact look like?
 
 ---
 
@@ -164,4 +172,4 @@ From a standard Expedition log:
 We do **not** need:
 - Polar files
 - Target boat speed channels
-- Manual annotation by the navigator (i.e. clicking buttons during the tack)
+- Manual annotation by the navigator (i.e., clicking buttons during the tack)
