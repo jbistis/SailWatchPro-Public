@@ -1,8 +1,8 @@
 # SailWatchPro — Advisory System Reference
 
-**Check interval:** Every 5 minutes (300 seconds) via `startPeriodicChecks()`
-**Sources:** `AdvisoryManager.swift` + `AdvisoryManager+GRIBAccuracy.swift` + `CalibrationTracker.swift` + `OpenMeteoManager.swift`
-**Last updated:** May 2026 (build 92 — replaced "Sailing Below Target Angle" with the generalized "Target Angle" advisory; build 91 added Mark Reachable, Wind Shift Approaching, position-aware Persistent Header action with rhumb-line wording)
+**Check interval:** Every 5 minutes (300 seconds) via `startPeriodicChecks()`, except **Board to the Mark**, which samples the live instrument data once a second (`AdvisoryManager.liveUpdate(with:)`)
+**Sources:** `AdvisoryManager.swift` + `AdvisoryManager+GRIBAccuracy.swift` + `CalibrationTracker.swift` + `OpenMeteoManager.swift` + `BoardToMark.swift`
+**Last updated:** October 2026 (build 151 — Board to the Mark replaces the two Persistent Header advisories, which are now off by default). Earlier: May 2026 (build 92 — replaced "Sailing Below Target Angle" with the generalized "Target Angle" advisory; build 91 added Mark Reachable, Wind Shift Approaching, position-aware Persistent Header action with rhumb-line wording)
 
 ---
 
@@ -197,7 +197,66 @@
 
 ---
 
+### Board to the Mark (build 151)
+
+**Replaces:** Persistent Header and Persistent Header — Downwind (below), which watched the wind alone. A shift isn't good or bad by itself; what matters is whether **the other board now points closer to the mark**. Downwind the word "header" inverts, so this advisory never says header or lift: it names the board and the degrees closer to the mark, the same sentence on any leg.
+
+**Setting:** Settings → Advisories → Shifts → *Board to the Mark* (on by default).
+
+**Cadence:** samples the live instrument data once a second, not the 5-minute check, so a knock shows within the 90 s smoothing window.
+
+**Data sources:** COG/SOG, heading, boat speed, TWD and current set/drift from `ExpeditionReceivedData`; the active mark's bearing and range (from Expedition, or computed by the app via `RaceGeometry` when Expedition isn't the GNSS source). Works on a B&G-only boat: no polars and no Expedition needed. All directions in °M; current set is converted from °T with the magnetic variation.
+
+**Prerequisites:** an active mark; upwind or downwind (not reaching); boat speed ≥ 2 kt.
+
+**The geometry, each second:**
+1. **This board's course:** COG, smoothed as a vector over 90 s, so current and leeway count.
+2. **The other board's course:** heading mirrored across TWD (`2·TWD − HDG`) at the same boat speed, with the same current applied.
+3. **Angle off the mark** for each, and **advantage** = this board's angle off − the other's. Positive means the other board points closer.
+4. **Cost:** the extra closing speed toward the mark the other board would have had, `otherSOG·cos(otherOff) − SOG·cos(currentOff)`, summed over time while positive.
+
+**When it fires:**
+
+| Priority | Trigger |
+|----------|---------|
+| Info | advantage ≥ 10°, held 2 min |
+| Info | cost ≥ 0.1 nm |
+| Warning (big knock) | advantage ≥ 20°, held 2 min |
+| Warning (persistent) | advantage ≥ 10°, held 4 min, and the advantage is steady or growing |
+| Warning (cost) | cost ≥ 0.25 nm |
+
+- **Never above Info** while the advantage is easing (falling more than 1°/min over 2 min) or the breeze is oscillating (TWD has reversed at least twice in 15 min). A Warning drops back to Info if either starts.
+- **"Held" tolerates noise:** once over a threshold, it stays held within 2° of it.
+- **Cost resets** on a tack or gybe, a new mark, or once the advantage has been gone for 2 min.
+
+**Messages (examples):**
+
+| Situation | Message | Action |
+|-----------|---------|--------|
+| Growing | "Port tack points 12° closer to [mark] — 2 min, and growing." | "Consider gybing onto port." |
+| Persistent | "Port tack points 17° closer to [mark] — 4 min and still growing: a persistent shift." | "Gybe onto port." |
+| Steady | "Starboard tack points 14° closer to [mark] — 4 min, holding steady." | "Tack onto starboard." |
+| Easing | "Port tack points 11° closer to [mark] — 4 min, but easing. It may swing back." | "Gybe if it stops easing; otherwise hold." |
+| Big knock | "Starboard tack points 24° closer to [mark] — held 2 min." | "Tack onto starboard." |
+| Oscillating | "Starboard tack points 12° closer to [mark] — 2 min. The breeze has been swinging back and forth for the last 15 min." | "Tack if it's past the average; it's likely to swing back." |
+| Cost | "Starboard tack has cost ~0.2 nm to [mark] over the last 25 min — port tack points 8° closer." | "Consider tacking onto port." |
+
+"Port tack" and "starboard tack" name the board at every angle; the action uses tack upwind and gybe downwind.
+
+**Stays silent:**
+- for 60 s after a tack or gybe, while COG settles;
+- while the Layline advisory is calling the approach (approaching or at the layline). Once overstood the guard ends, since an overstanding boat is exactly the one that needs telling;
+- once the mark is behind: the boat came within 0.25 nm and is now opening, until the active mark changes. The advance to the next mark is often late.
+
+**Clearing:** when the advantage has been under 5° for 30 s. A brief blip (reaching for a moment, boat speed under 2 kt, course more than 90° off the mark) waits out the same 30 s rather than wiping the card.
+
+**Data values logged:** `advantageDeg`, `currentOffDeg`, `otherOffDeg`, `markBearing`, `cog`, `otherCog`, `twd`, `twa`, `heldSec`, `trendSign`, `oscillating`, `costNm`, `costSinceSec`, `firedByCost`
+
+---
+
 ### Persistent Header
+
+> **Superseded in build 151 by Board to the Mark.** Off by default; available for comparison under Settings → Advisories → Shifts → *Persistent Header (old)*.
 
 **Data source:** `WindDataManager.twdDataPoints` — three non-overlapping 2-min averaging buckets (now, 4–6 min ago, 8–10 min ago) using circular sin/cos averaging
 
@@ -232,6 +291,8 @@
 ---
 
 ### Persistent Header — Downwind (Gybe-on-a-Header)
+
+> **Superseded in build 151 by Board to the Mark.** Off by default, under the same setting as the upwind version.
 
 **Data source:** `WindDataManager.twdDataPoints` — same three 2-min circular-averaged buckets as the upwind version
 
@@ -517,8 +578,8 @@
 8. Tactical (in this order):
    1. Layline
    2. Mark Reachable
-   3. Persistent Header (upwind)
-   4. Persistent Header — Downwind
+   3. Persistent Header (upwind), only when *Persistent Header (old)* is on
+   4. Persistent Header — Downwind, likewise
    5. Target Angle (despatched here, but `.performance` category)
    6. Wind Shift Approaching
 9. GRIB accuracy
@@ -526,6 +587,8 @@
 11. Calibration (TWD tack-to-tack, AWA tack-to-tack, TWS rounding-to-rounding)
 12. Current push
 13. Dew point
+
+**Outside the 5-minute check:** Board to the Mark runs on the live data, once a second, from `PerformanceDataUpdater`.
 
 ---
 
@@ -535,8 +598,9 @@
 |------|----------|
 | `AdvisoryManager.swift` | Core manager, all non-GRIB advisories including dew point, calibration, Open-Meteo revision, Mark Reachable, Wind Shift Approaching, Target Angle (replaces the build-91 `Sailing Below Target Angle`), and the position-aware Persistent Header enrichment |
 | `AdvisoryManager+GRIBAccuracy.swift` | GRIB bias advisories (iOS target only) |
+| `BoardToMark.swift` | Board to the Mark geometry and rules (smoothing, holds, trend, oscillation, cost, guards, wording), with no app state; tested in `BoardToMarkTests.swift` |
 | `AdvisoryModels.swift` | `Advisory`, `AdvisoryPriority`, `AdvisoryCategory` structs (iOS + Watch) |
-| `AdvisorySettingsView.swift` | Settings UI — enable/disable, category filter, priority filter |
+| `AdvisorySettingsView.swift` | Settings UI — enable/disable, category filter, priority filter, and the Shifts toggles (Board to the Mark, Persistent Header (old)) |
 | `CalibrationTracker.swift` | Tack and rounding detection, pre/post TWD/AWA/TWS averaging, bias computation |
 | `ForecastComparisonManager.swift` | Raw 15-sec GRIB vs actual logging, 8-hour retention (iOS only) |
 | `ForecastModels.swift` | `ForecastComparison`, `ForecastSummaryRow`, `ForecastValidationStats` (iOS only) |
