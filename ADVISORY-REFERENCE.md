@@ -199,6 +199,8 @@
 
 ### Board to the Mark (build 151)
 
+> **Beta — new in build 151.** Board to the Mark is in beta: its thresholds (10° / 20°, 0.1 / 0.25 nm, the hold times) are starting points and may change as they're tuned against logged races. Until your app is on build 151, you'll still see the Persistent Header advisories described below.
+
 **Replaces:** Persistent Header and Persistent Header — Downwind (below), which watched the wind alone. A shift isn't good or bad by itself; what matters is whether **the other board now points closer to the mark**. Downwind the word "header" inverts, so this advisory never says header or lift: it names the board and the degrees closer to the mark, the same sentence on any leg.
 
 **Setting:** Settings → Advisories → Shifts → *Board to the Mark* (on by default).
