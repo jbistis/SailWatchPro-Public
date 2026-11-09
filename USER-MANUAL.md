@@ -26,6 +26,7 @@
 - [Weather](#weather)
 - [Sails](#sails)
 - [Crew](#crew)
+- [The Boat's Devices](#the-boats-devices)
 - [Events, Expedition Control and Incoming Data](#events-expedition-control-and-incoming-data)
 - [MOB](#mob)
 - [Apple Watch](#apple-watch)
@@ -214,6 +215,29 @@ The Wind screen treats the boat as a moving weather station.
 
 ---
 
+## The Boat's Devices
+
+Every SailWatchPro device on the boat's WiFi talks to the others on a channel of its own, separate from Expedition and the gateway. Nothing needs to be set up for it; devices on the same network find each other.
+
+**What travels between all devices.** Decisions a person made, each stamped with when it was made, so the newest wins and two iPads editing the same thing seconds apart end up agreeing: sail hoists and drops, crew position changes, which sails are aboard, a KILL on the timer, the answer to "is this a new race?", and the race setup. When Expedition is not aboard, the start line, the gun and the chosen course travel this way too, so five iPads keep one line rather than five.
+
+**The coordinator.** The devices elect one of their number as the boat's coordinator: the one that has been running longest, among those allowed the role. The coordinator answers for the boat where there has to be exactly one answer:
+
+- It hands the boat's plan to any device aboard that has not imported it, with a 45-day lease.
+- It holds the authoritative sail and crew state for a device that joins mid-race and asks.
+- It alone writes to a B&G display network: the display outputs once a second, and the race timer.
+- It alone records the start line and the boat track for the web Logbook, so the race has one record.
+
+If the coordinator goes quiet for a minute the others elect again, so a coordinator that is switched off or leaves the boat is replaced on its own.
+
+**Which iPad should coordinate.** In Settings, under Data Sources, **Allow Coordinator Role** says whether this device may be elected. Leave it on for the nav-station iPad and any device that stays aboard and powered. Turn it off on a crew iPhone or iPad that comes and goes, so the boat is never coordinated by a device that is about to leave. Settings shows **This iPad is the boat's coordinator** when it is.
+
+**Taking it over.** **Make this iPad the coordinator**, in the same place, is for the case the election cannot fix: the longest-running device is an iPad in a bag below, or one nobody can find. The claim holds for twelve hours.
+
+**Keep every device on the same build.** A device on an older build than the others is heard but not trusted with anything that changes the boat's state, and cannot become coordinator.
+
+---
+
 ## Events, Expedition Control and Incoming Data
 
 **Events.** A log of what happened and when: the gun, the finish, line pings, sails up, race legs, MOB, photos, tech problems and notes. Events can be added by hand, searched, and exported as a CSV.
@@ -289,7 +313,7 @@ Settings is one long screen in sections. The sections you touch once, on day one
 | Section | What it does |
 |---------|--------------|
 | **Account** | Sign in and out, **Import Setup** to pull the boat's configuration from the web, and **Switch boat from web** for a device that moves between boats. See the Setup Guide. |
-| **Data Sources** | What the boat's sources are and whether this device hears them. Sources are defined on the web; here you switch **Receive gateway data** off on iPads that do not need AIS, see which Expedition machine commands go to, **Allow Coordinator Role** for the device that runs the boat, and enable the B&G display outputs and timer start. |
+| **Data Sources** | What the boat's sources are and whether this device hears them. Sources are defined on the web; here you switch **Receive gateway data** off on iPads that do not need AIS, see which Expedition machine commands go to, **Allow Coordinator Role** and **Make this iPad the coordinator** (see [The Boat's Devices](#the-boats-devices)), and enable the B&G display outputs and timer start. |
 | **Boat Configuration** | Boat name, MMSI, length, bow to GPS, draft, mast height, maximum forestay load, reaching threshold and minimum tactical wind. Filled from the web on Import Setup; change them there. |
 | **Wind Calculation Options** | Let the app derive TWA and TWS, or TWD, from apparent wind and boat data when the instruments do not send them. |
 | **AI Weather Briefings** | On or off. Briefings use the boat owner's Anthropic key, set on the web under Documents & config. Nothing is stored on the device. Switch off for races that prohibit paid services. |
