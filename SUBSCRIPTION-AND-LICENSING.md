@@ -108,7 +108,7 @@ When payment completes you receive an email, **Your SailWatchPro plan is active*
 Two paths deliver the plan:
 
 - **Signing in.** The owner, anyone the boat is shared with, and every crew member on the roster receives the plan when they import the boat, ashore or afloat.
-- **Aboard.** Any device on the boat's network picks the plan up from the boat's coordinator, the device running the boat. A device that got its plan this way keeps it for 45 days without hearing a coordinator, and renews it every time it hears one.
+- **Aboard.** Any device on the boat's network picks the plan up from the boat's coordinator, the iPad the boat's devices elect to answer for the boat (see [The Boat's Devices](USER-MANUAL.md#the-boats-devices) in the User Manual). A device that got its plan this way keeps it for 45 days without hearing a coordinator, and renews it every time it hears one.
 
 Once a device holds the plan it works fully offline. Nothing is checked at sea.
 

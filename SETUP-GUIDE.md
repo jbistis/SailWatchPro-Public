@@ -225,6 +225,7 @@ A few things are decided per device rather than per boat. Open **Settings** in t
 **Data Sources**
 - **Receive gateway data**: on by default. Turn it off on crew iPads that do not need AIS targets, to save the network and the battery.
 - **Expedition commands**: not a setting, but shows which Expedition machine the app is sending to. A second Expedition on the network shows up here.
+- **Allow Coordinator Role**: whether this device may be elected the boat's coordinator, the one iPad that hands the plan to the others, writes to B&G displays and records the race for the Logbook. Leave it on for the nav-station iPad; turn it off on crew devices that come and go. See the [User Manual](USER-MANUAL.md#the-boats-devices).
 - **Use B&G displays to start the race timer**: on a boat with a B&G display network source, lets a keypress on a display start the countdown on this device.
 
 **Boat Configuration**

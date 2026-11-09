@@ -271,32 +271,32 @@ netsh advfirewall set allprofiles state on
 ### Sail Changes Not Syncing Between Devices
 
 **Symptoms:**
-- Hoist sail on iPad A, doesn't appear on iPad B
+- Hoist a sail on iPad A, it does not appear on iPad B
 - Crew positions not updating across devices
-- Race setup changes not syncing
+- Race setup, start line or course differs between iPads
+
+**How it works:** every SailWatchPro device on the boat's WiFi talks to the others on its own UDP channel (port 5100, separate from Expedition). The devices elect one coordinator. See [The Boat's Devices](USER-MANUAL.md#the-boats-devices) in the User Manual.
 
 **Troubleshooting:**
 
-1. **Check SW Protocol Status**
-   - Settings → SW Protocol → Verify "Allow Coordinator" is enabled on at least one device
-   - Check "Connected Devices" count - should show other iPads/devices
+1. **Same network, no isolation**
+   - Every device on the same WiFi, same band
+   - Router's AP or Client Isolation off; it blocks the devices from hearing each other even when each can reach Expedition
 
-2. **Verify SW Port**
-   - Default SW port is 5100
-   - All devices must use the same SW port
-   - Settings → SW Protocol → SW Port
+2. **Same build**
+   - Every device on the same version of the app. A device on an older build is heard but not trusted with changes, and cannot coordinate.
 
-3. **Check Coordinator Election**
-   - Only one device should be coordinator (highest uptime)
-   - Settings → SW Protocol → Shows coordinator status
+3. **Same boat and event**
+   - Each device signed in and imported to the same boat (**Settings → Account**)
+   - Crew and competitors imported for the same event on each device. A device holding a different event's roster is ignored for crew changes.
 
-4. **Network Issues**
-   - Follow [Test Network Connectivity](#test-network-connectivity) steps
-   - SW Protocol uses UDP broadcasts like Expedition data
+4. **A coordinator exists**
+   - **Settings → Data Sources → Allow Coordinator Role** on for at least one device that stays aboard
+   - Settings shows **This iPad is the boat's coordinator** on the one that is
+   - If the coordinator is an iPad nobody can find, press **Make this iPad the coordinator** on the nav-station iPad
 
-**If only some data syncs:**
-- Crew positions work but sails don't = Check sail state timestamps
-- Nothing syncs = Network/firewall blocking SW port (5100)
+5. **Network**
+   - Follow [Test Network Connectivity](#test-network-connectivity). The sync uses UDP broadcasts like Expedition's data, so whatever blocks one blocks the other.
 
 ---
 
