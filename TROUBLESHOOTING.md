@@ -245,9 +245,9 @@ netsh advfirewall set allprofiles state on
 - Verify UDP output is enabled
 - Broadcast IP should be your network's broadcast address, ending in `.255` (for example `192.168.1.255`), or `255.255.255.255`. It must be on the same subnet as the iPad: `192.168.2.255` sends nothing to devices on `192.168.1.x`.
 
-✅ **Expedition in Parallels or VMware**
+✅ **Expedition in Parallels on a Mac**
 - The VM's network must be **Bridged** to the Mac's Wi-Fi or Ethernet adapter, not **Shared Network**
-- Parallels: on the Mac, **Parallels → [VM] → Configure → Hardware → Network → Source**
+- On the Mac, **Parallels → [VM] → Configure → Hardware → Network → Source**
 - Symptom of Shared Network: Windows can ping the iPad, but the iPad cannot ping Windows
 
 ✅ **Router AP Isolation**
