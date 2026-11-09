@@ -94,14 +94,14 @@ iPads, iPhones and Apple Watches connect to the router via WiFi. For best result
 
 Skip this step if the boat does not run Expedition.
 
-SailWatchPro finds Expedition on the network by itself. You do not enter the PC's address anywhere in SailWatchPro. Expedition, however, asks for its own address when you add a network connection, so look it up first.
+SailWatchPro finds Expedition on the network by itself. You do not enter the PC's address anywhere in SailWatchPro. Expedition, however, needs to be told where to send its data: the **broadcast address** of the boat network, which reaches every device on it. To work that out you need the PC's own address.
 
 **Find the Expedition PC's IP address:**
 1. Open a Windows Command Prompt:
    - **Native Windows PC:** press **Windows Key + R**, type `cmd`, press Enter
    - **Mac running Parallels or VMware:** click the **Start menu** with your mouse, type `cmd`, press Enter
 2. Type `ipconfig` and look for **IPv4 Address** under your active network adapter
-3. Note this IP (example: `192.168.1.50`)
+3. Note this IP (example: `192.168.1.50`). The boat network's broadcast address is the first three numbers followed by `.255`: here, `192.168.1.255`.
 
 <div align="center">
   <img src="images/ip-address-windows-pc.png" width="512">
@@ -117,11 +117,13 @@ SailWatchPro finds Expedition on the network by itself. You do not enter the PC'
 4. Go back to **Instruments**, select the new network and configure:
    - **Alias:** SailWatchPro
    - **Instruments:** Expedition
-   - **Address:** the Expedition PC's IP address
+   - **Address:** the boat network's broadcast address, ending in `.255` (example: `192.168.1.255`). Not the PC's own address: data sent there never leaves the PC. `255.255.255.255` also works on most networks, but the `.255` form is the one to use when the PC is a virtual machine or data is not arriving.
    - **Port:** 5099
 5. Click **Expedition Settings**
 6. In **Exp Rx filter**, check **Receive marks**
 7. In **Exp Tx filter**, enable every channel listed in [EXPEDITION-CHANNELS.md](EXPEDITION-CHANNELS.md). If you also use the web portal for race log analysis, enable the additional channels listed in that document as well.
+
+**Expedition in Parallels or VMware on a Mac.** The virtual machine must be on the boat network itself, not hidden behind the Mac. In Parallels, on the Mac rather than in Windows, open **Parallels → [the VM] → Configure → Hardware → Network → Source** and choose the Mac's actual Wi-Fi or Ethernet adapter, not **Shared Network**. The tell-tale of Shared Network is that Windows can ping the iPad but the iPad cannot ping Windows. Check the Windows IP again afterwards; it changes when the mode does, and the broadcast address with it.
 
 **Ports.** The two sides mirror each other:
 
