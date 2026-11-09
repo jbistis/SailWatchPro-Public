@@ -39,7 +39,7 @@
 
 ## Introduction
 
-SailWatchPro is a racing app for iPad, iPhone and Apple Watch. It reads the boat's instruments, from Expedition Marine, an NMEA 2000 gateway, a B&G display network or the iPad's own GPS, and turns them into the numbers and calls a crew needs on deck: dashboards, the start, the course, competitors, wind and weather, sails and advisories.
+SailWatchPro is a racing app for iPad, iPhone and Apple Watch. It reads the boat's instruments, from Expedition Marine, an NMEA 2000 gateway, a B&G display network or the iPad's own GPS, and turns them into the numbers and calls a crew needs on deck: dashboards, the start, the course, competitors, wind and weather, sails and advisories. Expedition Marine is optional: the app works from a gateway or the iPad's GPS alone, and where Expedition is aboard it adds the integration, sending pings, the gun, sail and crew events and MOB to it and taking its marks and courses.
 
 The boat is set up once on the web at [sailwatchpro.com](https://sailwatchpro.com) and imported to each device. The app is free; a plan unlocks its paid half. This manual describes what each screen does. It deliberately has no screenshots, so it stays true from build to build; the [README](README.md) carries a gallery.
 
@@ -327,7 +327,7 @@ A locked feature says "Available on the Instruments plan." and nothing more. Pla
 |----------|---------|
 | iPad / iPhone | iOS 18.5 |
 | Apple Watch | watchOS 11.5 |
-| Expedition Marine | A current release. Expedition updates often; keep it up to date. |
+| Expedition Marine | Optional. A current release if the boat runs it; Expedition updates often. |
 
 A reliable boat WiFi is required. An NMEA 2000 gateway or AIS source is required for competitor positions from AIS; Expedition does not forward them. An internet connection is required for sign-in, Import Setup, buoy data, forecasts and briefings; the app runs offline on the water once set up.
 
