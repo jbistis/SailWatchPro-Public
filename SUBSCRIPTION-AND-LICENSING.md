@@ -15,14 +15,15 @@
 ## Table of Contents
 
 - [Overview](#overview)
-- [Subscription Tiers](#subscription-tiers)
-- [Subscribing to SailWatchPro](#subscribing-to-sailwatchpro)
+- [Plans](#plans)
+- [Choosing a Plan for Your Boat](#choosing-a-plan-for-your-boat)
+- [How the Plan Reaches Your Devices](#how-the-plan-reaches-your-devices)
 - [Your License Key](#your-license-key)
-- [Activating SailWatchPro on iOS](#activating-sailwatchpro-on-ios)
-- [Sharing with Your Crew](#sharing-with-your-crew)
+- [Your Crew](#your-crew)
 - [Renewals](#renewals)
-- [Managing Multiple Boats](#managing-multiple-boats)
+- [Canceling](#canceling)
 - [Managing Your Subscription](#managing-your-subscription)
+- [Multiple Boats](#multiple-boats)
 - [Beta Program](#beta-program)
 - [Troubleshooting](#troubleshooting)
 - [Privacy](#privacy)
@@ -32,337 +33,209 @@
 
 ## Overview
 
-SailWatchPro is licensed per boat with an annual subscription. One subscription covers your boat and all the crew devices — iPhones, iPads, and Apple Watches — connected to it during a race or training session.
+The SailWatchPro app is free. Every boat gets the dashboards, the start tool, the race-day map, buoys, sail controls, MOB and the safety advisories on every device, with no plan at all.
 
-Your subscription includes:
-- Full access to the iOS app on iPhone and Apple Watch
-- Unlimited devices on your boat (skipper, tactician, navigator, crew)
-- Annual updates with new features and improvements
-- Full access to the post-race analytics portal
-- Email support
+A plan unlocks the paid half: the advisories after the gun, the chart map with routing, forecast, currents and depths, competitors, the instrument log, and on the web, log upload and post-race analysis.
 
-A subscription is tied to a specific boat — identified by its **Expedition Marine License ID** and **MMSI**. The license key embeds these identifiers, so it only validates against the boat it was issued for.
+A plan belongs to the **boat**, not to a person. One plan covers every iPhone, iPad and Apple Watch aboard and every crew member on the roster, with no per-user fees. There is nothing to paste or scan: sign in, import the boat, and the plan is there.
 
 ---
 
-## Subscription Tiers
+## Plans
 
-SailWatchPro is offered in three tiers:
+Prices are announced at launch. Every plan is annual and renews automatically.
 
-### Performance — $TBD/year
+### Free
 
-For competitive sailing on boats under 60 feet LOA. Includes everything most racing programs need: tactical advisories, AI race briefings, MOB safety alerts, polar tracking, sail change logging, and Apple Watch integration.
+Any boat, ashore and on the water.
 
-### Grand Prix — $TBD/year
+- The web app: season planning and events, crew roster, availability and watch bill, live buoys for your racing area, sails, provisioning, to-dos and boat documents, and the playbook
+- The iOS app on iPhone, iPad and Apple Watch: live instrument dashboards, the start timer and line pings, the race-day map, buoys, sail controls and MOB
+- Unlimited crew members
 
-For high-performance racing programs on boats 60 feet and over. Includes everything in Performance, plus advanced features tailored to professional and semi-professional campaigns. Reach out if your program needs custom support.
+### Instruments — $TBD/year
+
+Race better from your boat's instruments. Everything in Free, plus:
+
+- Advisories on the water: rounding, douse, weather and sail calls
+- The chart map: NOAA charts and depths, with weather routing from the forecast and the current aboard
+- Competitors: the fleet from AIS and the network, on the map and in their own list
+- Instrument log recording, and post-race analytics with video replay
+- AI weather briefings
+- Email support
+
+### Expedition — $TBD/year
+
+The full program, with Expedition Marine below deck. Everything in Instruments, plus:
+
+- The same app on deck, integrated with Expedition Marine below: data channels, marks, courses, timers, events, polars and sails, and its log files for analysis
+- Input variables for Expedition Marine's advanced routing, based on model accuracy
+- Instrument calibration, polars and targets
+- Priority support
+
+Expedition buys the Expedition Marine integration and the support that goes with it, not more of the app. Both paid plans unlock the same features on the iPad.
 
 ### Beta
 
-For approved beta testers. By invitation only — typically active racers willing to provide regular feedback during early development. Beta keys expire each January 31, with continuation reviewed annually based on engagement.
-
-If you're interested in joining the beta program, contact us through the [GitHub Issues page](https://github.com/jbistis/SailWatchPro-Public/issues) or reply to any email from `noreply@sailwatchpro.com`.
+Free, by invitation, for active racers who give regular feedback while the app is in TestFlight. A beta plan unlocks everything a paid plan does. See [Beta Program](#beta-program).
 
 ---
 
-## Subscribing to SailWatchPro
-
-The subscription portal is at [sailwatchpro.com](https://sailwatchpro.com).
+## Choosing a Plan for Your Boat
 
 ### Step 1 — Sign In
 
-Click **Sign In** on the homepage and enter your email address. You'll receive a magic link from `noreply@sailwatchpro.com` — click it to authenticate. No password needed.
-
-The magic link is valid for one hour. If you don't see the email, check your spam folder. If it doesn't arrive, request another from the sign-in page.
+Go to [sailwatchpro.com](https://sailwatchpro.com) and click **Sign In**. New here? Click **Sign up**, enter your email and choose a password, then confirm your email from the message you receive. There is a **Forgot password?** link on the sign-in page if you need it.
 
 ### Step 2 — Add Your Boat
 
-After signing in, you'll land on **My Boats**. Click **+ Add Another Boat** and enter:
-
-| Field | Description |
-|-------|-------------|
-| **Boat Name** | The name as you want it to appear in your account and emails |
-| **Expedition Marine License ID** | Your 8-character EM license ID (e.g., `73f15c54`) — find it in Expedition under Help → About |
-| **MMSI** | Your boat's 9-digit MMSI number |
-| **Tier** | Performance or Grand Prix |
-
-> **Important:** Both the EM License ID and MMSI become part of your license key signature. Enter them carefully — they cannot be changed after a subscription is created.
+Under **My Boats**, add your boat with its **Boat Name**. The **MMSI** is optional. Nothing else is needed to start; the boat begins on the Free plan.
 
 ### Step 3 — Subscribe
 
-Click into your boat from the My Boats page. On the boat detail page, click **Subscribe to SailWatchPro**.
+Open the boat. Its page shows the subscription with two buttons, **Subscribe — Instruments** and **Subscribe — Expedition**. Click one and you are taken to Stripe Checkout to pay. Stripe handles the card; SailWatchPro never sees it.
 
-You'll be redirected to Stripe Checkout to complete payment. Subscription is annual and renews automatically.
+When payment completes you receive an email, **Your SailWatchPro plan is active**, naming the boat, the plan and the renewal date. The boat's page shows **Active** and the date it renews.
 
-After successful payment, you'll receive your license key via email within a few seconds.
+---
+
+## How the Plan Reaches Your Devices
+
+1. Install SailWatchPro on each iPhone and iPad. Set up the boat as described in the [Setup Guide](SETUP-GUIDE.md).
+2. In the app, open **Settings**, sign in with the account you use on the web, and tap **Import Setup**.
+3. That is all. The plan arrives with the boat's configuration. **Settings → Account** shows the plan, where it came from and when it renews.
+
+Two paths deliver the plan:
+
+- **Signing in.** The owner, anyone the boat is shared with, and every crew member on the roster receives the plan when they import the boat, ashore or afloat.
+- **Aboard.** Any device on the boat's network picks the plan up from the boat's coordinator, the device running the boat. A device that got its plan this way keeps it for 45 days without hearing a coordinator, and renews it every time it hears one.
+
+Once a device holds the plan it works fully offline. Nothing is checked at sea.
+
+The app has no key field, no QR scanner and no purchase button. Plans are bought and managed on the web only. A locked feature in the app says which plan has it and nothing more.
 
 ---
 
 ## Your License Key
 
-Your license key looks something like this:
+Behind the scenes the plan travels as a license key, which looks like:
 
 ```
-SWPRO-NzNmMTVjNTR8MzM4NDgwNjUxfDIwMjcwNDI1fFBSfDU0MzBlZmIw
+SWPRO-MnwzM2U2...
 ```
 
-Each key is unique to your boat and tier. Keys contain:
-- Your EM License ID
-- Your MMSI
-- An expiration date
-- Your subscription tier (Performance, Grand Prix, or Beta)
-- A cryptographic signature
+It names your boat, the plan and an expiry date, and carries a signature so the app can verify it offline. The key is included in your plan email for reference if you ever need support. You never type it anywhere.
 
-The signature lets SailWatchPro validate the key offline — no internet connection is required to verify a license. As long as your subscription is active, your key continues working even at sea with no signal.
+**Expiry.** A key runs to the subscription's renewal date plus one week. When the subscription renews, a fresh key is minted. The app also allows a 30-day grace after a key's date before the paid features switch off, so a late renewal never catches you on the start line.
 
-### Where to Find Your Key Later
-
-Your key is always accessible at any time:
-
-- In the original subscription email
-- On your boat's detail page at sailwatchpro.com — click **Load License Key**
-- Your key persists as long as your subscription is active. If you lose the email, just sign back in to retrieve it.
+**Expedition Site Code.** If the boat runs Expedition Marine, the app sees Expedition's Site Code on the network and records it against the boat by itself. The Site Code follows the laptop, not the hull; if you replace the laptop or move it to another boat, the owner can re-link it on the web under **Documents & config → Technical Configuration**.
 
 ---
 
-## Activating SailWatchPro on iOS
+## Your Crew
 
-### Step 1 — Install the App
+A single plan covers the whole crew.
 
-Install SailWatchPro via TestFlight (during beta) or the App Store (at launch).
+1. On the web, open the boat's **Crew** card and add each crew member by email.
+2. Each crew member installs the app, signs in with that email, and taps **Import Setup**. The plan comes with the boat.
+3. A crew member who has not imported yet still gets the plan aboard, from the coordinator, as soon as they are on the boat's network.
 
-### Step 2 — Connect to Expedition Marine
+A crew member who sails on several boats uses **Switch boat from web** in Settings; it lists every boat whose roster they are on. The plan belongs to the boat, so nobody needs one of their own.
 
-The app needs to receive data from Expedition Marine to validate your license. Make sure:
-- Expedition Marine is running on your nav PC
-- Your iOS device is on the same network as Expedition
-- Expedition has been configured per the [Setup Guide](SETUP-GUIDE.md)
+A coach can be added to a boat with permission to upload logs and review the Logbook, with an end date so the access lapses when the engagement does.
 
-### Step 3 — Activate
-
-In SailWatchPro, navigate to **Settings → Licenses → SailWatchPro → Activate**.
-
-Paste your license key and tap **Activate**.
-
-The app validates the key against:
-- Your boat's MMSI from Expedition Marine
-- Your Expedition Marine License ID
-
-If both match, you'll see **Valid License** and the app unlocks all features. If validation fails, see [Troubleshooting](#troubleshooting) below.
-
----
-
-## Sharing with Your Crew
-
-A single license covers your whole crew. Each crew member just needs to install the app and activate it on their own device using the same key.
-
-### Two Ways to Share
-
-**1. Share the License Key Directly**
-
-Forward the key from your subscription email, or copy it from the boat detail page on sailwatchpro.com. Crew members paste it into Settings → Licenses → SailWatchPro → Activate.
-
-**2. Use the In-App QR Code**
-
-If you're already activated, you can share via QR code:
-
-1. In SailWatchPro: **Settings → Licenses → SailWatchPro → Share via QR**
-2. Crew member opens the camera app and scans the code
-3. The app activates automatically
-
-The QR code is the fastest option for onboarding crew at the dock.
-
-### Crew Limitations
-
-There's no hard limit on devices per license, but please use common sense — a license is intended for one boat's program. If your fleet operates across multiple boats, each boat needs its own subscription.
+There is no hard limit on devices. A plan is for one boat's program; a second boat needs its own.
 
 ---
 
 ## Renewals
 
-Subscriptions auto-renew annually on the anniversary of your initial payment. A few things to know:
+Subscriptions renew annually on the anniversary of the first payment.
 
-### Your License Key Rotates on Renewal
+**A new key is minted on renewal.** When the payment goes through, a fresh key with the new date is created and emailed to you. Devices pick it up the next time they sign in or run **Import Setup**, and aboard, from the coordinator. With the one-week margin on the old key and the app's 30-day grace, there is no gap to manage.
 
-When your annual payment processes successfully, the system generates a fresh license key with the new expiration date. The new key is emailed to you, and the old key stops working a week or so after the old expiry date.
-
-You'll need to:
-1. Check your email for the new key after renewal
-2. Activate the new key on each device (or share the new QR code with the crew)
-
-The 7-day grace period means you have time to update your devices without disruption.
-
-### If Your Card Fails
-
-If the renewal payment fails (expired card, insufficient funds, etc.), Stripe will retry several times over a few days. You'll receive notifications. Your existing license continues working through the grace period.
-
-To prevent gaps, update your payment method via the **Manage Subscription** button on your boat's detail page.
-
-### Canceling
-
-You can cancel anytime via **Manage Subscription**. Your license remains active until the end of the current paid period — no prorated refunds, but you don't lose what you've paid for.
-
-After cancellation, your key expires naturally at the end of the period. To resume, simply re-subscribe.
+**If your card fails.** Stripe retries over several days and emails you. The boat's page shows **Past Due**. Your existing key keeps working through its margin and the app's grace. Update the card from **Manage Subscription** on the boat's page.
 
 ---
 
-## Managing Multiple Boats
+## Canceling
 
-If you sail on multiple boats, you can add each one to your account:
+Click **Manage Subscription** on the boat's page and cancel there. The plan stays active through the end of the period you have paid for; there are no prorated refunds. The boat's page then shows **Canceled**.
 
-1. Sign in at sailwatchpro.com
-2. **My Boats → + Add Another Boat**
-3. Each boat gets its own subscription, key, and billing cycle
-
-Each subscription is independent. You can subscribe to Performance for one boat and Grand Prix for another, cancel one without affecting the other, etc.
-
-> **Two Expedition installs on the same boat?** Each Expedition installation has its own License ID. For now, register the primary install (the one used during racing) under your boat. Multi-install support is on the roadmap.
+When the key runs out, the boat drops back to Free. The web app keeps working, and so does the iOS app with its dashboards, start timer and race-day map. The paid half switches off until you subscribe again, which you can do at any time from the same page.
 
 ---
 
 ## Managing Your Subscription
 
-For each boat, the boat detail page shows:
+The boat's page on the web shows:
 
-- **Subscription status** — Active, Past Due, Canceled, or Not Subscribed
-- **Renewal date** — When your next payment is due
-- **License key** — Click **Load License Key** to view it
-- **Manage Subscription** button — Opens Stripe's customer portal where you can:
-  - Update your payment method
-  - Download invoices
-  - Cancel your subscription
-  - View payment history
+- **Status**: Active, Past Due, Canceled, Incomplete, or Not Subscribed
+- **Renews**: the date of the next payment
+- **Manage Subscription**: opens Stripe's customer portal to update the card, download invoices, see payment history or cancel
 
-Stripe's billing portal is secure and handles all card data — SailWatchPro never sees or stores your card details.
+Stripe's portal handles all card data. SailWatchPro never sees or stores card details.
+
+---
+
+## Multiple Boats
+
+Add each boat under **My Boats**. Each boat has its own plan, its own key and its own billing date, independent of the others. You can put one boat on Instruments and another on Expedition, or leave one on Free.
+
+In the app, **Switch boat from web** in Settings moves a device from one boat to another, and brings that boat's plan with it.
 
 ---
 
 ## Beta Program
 
-Beta access is free but invite-only. Beta keys are issued manually by the SailWatchPro team to active racers willing to provide regular feedback.
+While the app is in TestFlight, the beta program provisions a free plan for active racers who will use the app in real racing and report what they find.
 
-### Beta Mechanics
+**Requesting access.** Sign in at sailwatchpro.com, add your boat, and use **Join the iOS beta** on the boat's page. Requests are matched to the boat owner's email. When the boat is provisioned you receive the plan email with the TestFlight link.
 
-- **Tier code:** BT
-- **Expiration:** January 31 each year (aligns with off-season for most racing programs)
-- **Renewal:** Reviewed each January based on participation and feedback. Active beta testers receive renewed keys for the upcoming season.
-- **Cost:** Free during beta phase
+**How it works.** A beta plan is a subscription at no charge. It runs to its anniversary like a paid plan, and renews unless we end it. When the beta program closes, each beta boat is offered its plan, Instruments or Expedition, at a founding-member price. Nothing changes on your devices either way; the plan name updates by itself.
 
-### Expectations of Beta Testers
-
-We ask beta testers to:
-- Use the app during real racing (not just testing at the dock)
-- Report bugs, crashes, and unexpected behavior promptly via [GitHub Issues](https://github.com/jbistis/SailWatchPro-Public/issues)
-- Share suggestions for improvements
-- Respond to occasional check-in emails
-
-If you're an active racer interested in joining the beta, reach out via GitHub Issues.
+**What we ask.** Use the app during real racing, not just at the dock. Report bugs, crashes and surprises promptly through [GitHub Issues](https://github.com/jbistis/SailWatchPro-Public/issues) or by replying to the plan email. Share suggestions, and answer the occasional check-in.
 
 ---
 
 ## Troubleshooting
 
-### License Activation Fails
+### A feature says "Available on the Instruments plan"
 
-If you paste your key and see **"Invalid License"**, work through these in order:
+The device does not hold a plan yet. In order:
 
-**1. Check Expedition Marine connection**
+1. On the web, open the boat's page. If the status is **Not Subscribed**, **Canceled** or **Incomplete**, the boat has no current plan; subscribe or resume.
+2. In the app, check **Settings → Account**. Make sure you are signed in with the email that owns the boat or is on its roster, and that the right boat is selected. **Switch boat from web** lists the boats you have access to.
+3. Tap **Import Setup**. The plan comes down with the boat.
+4. Aboard, make sure the device is on the boat's network. The coordinator shares the plan with every device it can hear.
 
-The app validates your key against data Expedition sends over the network. If Expedition isn't running or isn't sending data:
+### The plan shows on one device but not another
 
-- Verify Expedition is running on your nav PC
-- Confirm your iOS device is on the same network as Expedition
-- Restart Expedition Marine — sometimes the app needs a restart to send the `#S,LICENCE` packet
-- Check **Settings → Expedition** in SWP — you should see recent data and a populated License ID
+The second device has not imported the boat, is signed in with an account that is not on the roster, or is not on the boat's network. Sign in on it and run **Import Setup**, or get it onto the boat's WiFi where the coordinator will reach it.
 
-**2. Check the EM License ID matches**
+### The plan email did not arrive
 
-Open Expedition → **Help → About**. Note the License ID shown there. It must match exactly the License ID you entered when adding the boat in the portal.
+Check spam, and the quarantine if your mail is filtered. The plan is not held up by the email: it is already on the boat, so a device that imports the boat gets it regardless. For a copy of the key, write to support@sailwatchpro.com.
 
-If they don't match, you registered the wrong License ID at sailwatchpro.com. Contact support — we can help correct this.
+### A Subscribe button shows an error
 
-**3. Check the MMSI matches**
-
-The MMSI in your boat configuration in SailWatchPro must match the MMSI you entered in the portal. Both come from your boat's official MMSI registration.
-
-**4. Check the expiration date**
-
-If your subscription expired, the key won't validate. Renew at sailwatchpro.com.
-
-### Email Didn't Arrive
-
-License key emails come from `noreply@sailwatchpro.com`.
-
-- Check your spam/junk folder
-- Add `noreply@sailwatchpro.com` to your address book
-- If you have an iCloud, Gmail, or corporate filter, check the quarantine
-- Sign in to sailwatchpro.com and use **Load License Key** on your boat's page — the key is always available there
-
-### Magic Link Email Didn't Arrive
-
-Same email troubleshooting as above. If still missing:
-
-- Make sure you typed your email address correctly
-- Wait 2-3 minutes — sometimes email delivery has slight delays
-- Check that you're not behind a corporate firewall blocking magic link emails
-
-### Subscribe Button Doesn't Work
-
-If clicking Subscribe shows an error message instead of loading Stripe:
-
-- Refresh the page and try again
-- Sign out and sign back in
-- Try a different browser
-- If still failing, [report the issue](https://github.com/jbistis/SailWatchPro-Public/issues)
-
-### Key Works on iPhone But Not Apple Watch
-
-Apple Watch reads its license from the paired iPhone. If your phone validates but the watch doesn't:
-
-- Make sure both devices are running the same version of SailWatchPro
-- Restart both apps
-- If the issue persists, restart both devices
-
-### Multiple Devices, One Stops Working
-
-This usually means Expedition Marine connection was lost on that specific device.
-
-- Verify the device is on the boat's network
-- Check Settings → Expedition for connection status
-- Restart Expedition Marine if needed
+The message names the cause, for example a Stripe error. Refresh and try again; if it repeats, send the message to support@sailwatchpro.com.
 
 ---
 
 ## Privacy
 
-SailWatchPro stores the minimum data needed to provide your subscription:
+SailWatchPro keeps your account email, the boats and crew you set up, your subscription status and the race data the app and the web app record while you use them. Payment details are handled entirely by Stripe. We do not sell personal data, show advertising or track you across other sites.
 
-- Your email address
-- Your boat's name, License ID, MMSI, and tier
-- Subscription status and renewal date
-- License key
-
-Payment processing is handled entirely by Stripe. SailWatchPro never sees, stores, or has access to your card details.
-
-For Beta and Performance tiers, no personal data beyond the above is collected. Race data, GPS positions, and tactical information stay on your device — they're never transmitted to SailWatchPro servers.
+The full policy is at [sailwatchpro.com/privacy](https://sailwatchpro.com/privacy). Questions about it go to legal@sailwatchpro.com.
 
 ---
 
 ## Support
 
-**Email Support**
-
-For subscription, billing, or account questions, reply to your subscription email — replies route directly to the SailWatchPro team.
-
-**Bug Reports & Feature Requests**
-
-Open an issue at [github.com/jbistis/SailWatchPro-Public/issues](https://github.com/jbistis/SailWatchPro-Public/issues).
-
-**Setup Help**
-
-For setup, configuration, and connection issues, see the [Setup Guide](SETUP-GUIDE.md) and [Troubleshooting Guide](TROUBLESHOOTING.md).
-
----
+- **Account, plan and billing questions:** support@sailwatchpro.com, or reply to your plan email
+- **Bugs and feature requests:** [github.com/jbistis/SailWatchPro-Public/issues](https://github.com/jbistis/SailWatchPro-Public/issues)
+- **Setup and connection help:** the [Setup Guide](SETUP-GUIDE.md) and the [Troubleshooting Guide](TROUBLESHOOTING.md)
 
 Happy sailing! ⛵
 **SailWatchPro Team**
