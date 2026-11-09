@@ -99,7 +99,7 @@ SailWatchPro finds Expedition on the network by itself. You do not enter the PC'
 **Find the Expedition PC's IP address:**
 1. Open a Windows Command Prompt:
    - **Native Windows PC:** press **Windows Key + R**, type `cmd`, press Enter
-   - **Mac running Parallels or VMware:** click the **Start menu** with your mouse, type `cmd`, press Enter
+   - **Mac running Parallels:** click the **Start menu** with your mouse, type `cmd`, press Enter
 2. Type `ipconfig` and look for **IPv4 Address** under your active network adapter
 3. Note this IP (example: `192.168.1.50`). The boat network's broadcast address is the first three numbers followed by `.255`: here, `192.168.1.255`.
 
@@ -123,7 +123,7 @@ SailWatchPro finds Expedition on the network by itself. You do not enter the PC'
 6. In **Exp Rx filter**, check **Receive marks**
 7. In **Exp Tx filter**, enable every channel listed in [EXPEDITION-CHANNELS.md](EXPEDITION-CHANNELS.md). If you also use the web portal for race log analysis, enable the additional channels listed in that document as well.
 
-**Expedition in Parallels or VMware on a Mac.** The virtual machine must be on the boat network itself, not hidden behind the Mac. In Parallels, on the Mac rather than in Windows, open **Parallels → [the VM] → Configure → Hardware → Network → Source** and choose the Mac's actual Wi-Fi or Ethernet adapter, not **Shared Network**. The tell-tale of Shared Network is that Windows can ping the iPad but the iPad cannot ping Windows. Check the Windows IP again afterwards; it changes when the mode does, and the broadcast address with it.
+**Expedition in Parallels on a Mac.** The Windows virtual machine must be on the boat network itself, not hidden behind the Mac. On the Mac, not in Windows, open **Parallels → [the VM] → Configure → Hardware → Network → Source** and choose the Mac's actual Wi-Fi or Ethernet adapter, not **Shared Network**. The tell-tale of Shared Network is that Windows can ping the iPad but the iPad cannot ping Windows. Check the Windows IP again afterwards; it changes when the mode does, and the broadcast address with it.
 
 **Ports.** The two sides mirror each other:
 
