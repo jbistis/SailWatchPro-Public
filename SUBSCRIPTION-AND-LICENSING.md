@@ -55,7 +55,7 @@ Any boat, ashore and on the water.
 
 ### Instruments — $TBD/year
 
-Race better from your boat's instruments. Everything in Free, plus:
+Race better from your boat's instruments. The plan for a boat without Expedition Marine, or one that does not need the integration. Everything in Free, plus:
 
 - Advisories on the water: rounding, douse, weather and sail calls
 - The chart map: NOAA charts and depths, with weather routing from the forecast and the current aboard

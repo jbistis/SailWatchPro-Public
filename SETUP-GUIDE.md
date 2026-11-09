@@ -38,7 +38,7 @@ The boat owner signs in at [sailwatchpro.com](https://sailwatchpro.com), adds th
 
 What you need before you start:
 
-- A boat PC running **Expedition Marine**, or an NMEA 2000 gateway, or both
+- Something for the app to hear: a boat PC running **Expedition Marine**, an **NMEA 2000 gateway**, a **B&G display network**, or just the iPad's own GPS. Expedition Marine is optional; a boat without it skips Step 1 and takes everything from the gateway.
 - An onboard router that the PC, the gateway and the iPads all share
 - An email address for the owner's account, and one for each crew member who will run the app
 - An internet connection for the web setup and for the first import. On the water the app runs fully offline.
@@ -64,7 +64,7 @@ A stable, low-latency onboard network is the foundation of a reliable SailWatchP
 **Onboard Router**
 The router is the hub of the network. Common choices on racing boats include the Pepwave, D-Link, and Starlink. The router should be connected to the boat's power supply and positioned for strong WiFi coverage across the cockpit and nav station.
 
-**Expedition PC**
+**Expedition PC** (only on boats that run Expedition)
 The Expedition Marine PC should be connected to the router via an Ethernet cable, not WiFi. A wired connection eliminates latency and dropout issues that can occur when the PC is on WiFi and ensures that Expedition's UDP broadcasts reach SailWatchPro reliably.
 
 **NMEA 2000 Gateway**
@@ -158,7 +158,7 @@ Open the boat's **Data sources** card. This is where you tell the app where the 
 
 **B&G displays.** Choose the B&G display network preset and enter the H5000 or Hercules processor's address. **Send start line and start time to B&G**, on the same page, lets the app push the pinged line and the start time to the displays.
 
-**What each source provides.** Every source is marked for what the app should take from it: GNSS, boat data, or AIS. A typical Expedition boat has two rows: Expedition for position and boat data, and a gateway restricted to AIS. A boat with no GNSS on the bus can take position from the iPad itself with the Device source.
+**What each source provides.** Every source is marked for what the app should take from it: GNSS, boat data, or AIS. A typical Expedition boat has two rows: Expedition for position and boat data, and a gateway restricted to AIS. A boat with no GNSS on the bus can take position from the iPad itself with the Device source. A boat without Expedition has a single gateway row providing all three, or a gateway for boat data and AIS with position from the Device source.
 
 Save the page. Every iPad that imports the boat will listen on exactly these sources.
 

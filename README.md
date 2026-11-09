@@ -10,6 +10,8 @@
 
 SailWatchPro is a sailboat racing app. It reads the boat's instruments, from Expedition Marine, an NMEA 2000 gateway, a B&G display network or the iPad's own GPS, and puts on deck what the crew needs: live dashboards, the start, the course and the next rounding, competitors, wind and weather, sails, and advisories that watch the conditions so nobody has to. After the race, the web app at [sailwatchpro.com](https://sailwatchpro.com) holds the logbook, the analysis and the program's planning.
 
+Expedition Marine is optional. A boat with no PC aboard runs SailWatchPro from an NMEA 2000 gateway, a B&G display network or the iPad's own GPS; a boat with Expedition gets the integration with it on top.
+
 The boat is set up once on the web and imported to each device. The app is free; a plan unlocks its paid half: advisories after the gun, the chart map with routing, currents and depths, competitors, and the instrument log with post-race analysis.
 
 This repository holds the public documentation. The app itself is distributed through TestFlight while in beta.
@@ -46,7 +48,7 @@ The `documents/` folder has sample files in the formats the web app imports: an 
 |----------|---------|
 | iPad / iPhone | iOS 18.5 |
 | Apple Watch | watchOS 11.5 |
-| Expedition Marine | A current release, if the boat runs it |
+| Expedition Marine | Optional. A current release, if the boat runs it |
 
 A boat WiFi that the instruments and the iPads share, and an internet connection for setup. The app runs offline on the water once set up.
 
