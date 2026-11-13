@@ -9,10 +9,10 @@ How it works:
     the four sail-name channels handled by handleSailUpdate().
   - The log-only list is what the .csv log needs beyond the iOS set: the
     active mark's position for Log Replay, and the channels only the web
-    portal's race-log parser reads. These are ticked under Settings > Logging,
+    portal's race-log parser reads. These are ticked under All Settings > Logging,
     which is a separate list from the Tx filter.
   - The often-missing list is the iOS channels found absent from real logs:
-    broadcast to the iPad, but never ticked under Settings > Logging.
+    broadcast to the iPad, but never ticked under All Settings > Logging.
   - Labels come from the embedded ID -> label dict at the bottom, which mirrors
     ExpeditionChannelNames.lookup in ChannelHealthMonitor.swift. That lookup
     was extracted from Expedition.exe; refresh it with the procedure in
@@ -143,7 +143,7 @@ if __name__ == "__main__":
     print(f"\n<!-- {n} channels total -->\n")
 
     table, n = render_table([label_for(i) for i in LOG_ONLY_IDS], cols=3)
-    print("=== Also tick under Settings > Logging ===\n")
+    print("=== Also tick under All Settings > Logging ===\n")
     print(table)
     print(f"\n<!-- {n} channels total -->\n")
 
