@@ -121,7 +121,7 @@ SailWatchPro finds Expedition on the network by itself. You do not enter the PC'
    - **Port:** 5099
 5. Click **Expedition Settings**
 6. In **Exp Rx filter**, check **Receive marks**
-7. In **Exp Tx filter**, enable every channel listed in [EXPEDITION-CHANNELS.md](EXPEDITION-CHANNELS.md). If you also use the web portal for race log analysis, enable the additional channels listed in that document as well.
+7. In **Exp Tx filter**, enable every channel listed in [EXPEDITION-CHANNELS.md](EXPEDITION-CHANNELS.md). If you also upload logs to the web portal or replay them in the app, tick the same channels under **Settings ▸ Logging** as well, plus the log-only ones listed in that document: logging is a separate list from the Tx filter.
 
 **Expedition in Parallels on a Mac.** The Windows virtual machine must be on the boat network itself, not hidden behind the Mac. On the Mac, not in Windows, open **Parallels → [the VM] → Configure → Hardware → Network → Source** and choose the Mac's actual Wi-Fi or Ethernet adapter, not **Shared Network**. The tell-tale of Shared Network is that Windows can ping the iPad but the iPad cannot ping Windows. Check the Windows IP again afterwards; it changes when the mode does, and the broadcast address with it.
 

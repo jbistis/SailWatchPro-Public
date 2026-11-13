@@ -7,8 +7,12 @@ How it works:
   - The iOS channel set is keyed by Expedition Tx channel ID and mirrors the
     field mapping in ExpeditionDataManager.swift (the merged() function) plus
     the four sail-name channels handled by handleSailUpdate().
-  - The web portal extras list (Tack/gybe loss time/metres) is iOS-irrelevant
-    but required for the portal's race-log parser.
+  - The log-only list is what the .csv log needs beyond the iOS set: the
+    active mark's position for Log Replay, and the channels only the web
+    portal's race-log parser reads. These are ticked under Settings > Logging,
+    which is a separate list from the Tx filter.
+  - The often-missing list is the iOS channels found absent from real logs:
+    broadcast to the iPad, but never ticked under Settings > Logging.
   - Labels come from the embedded ID -> label dict at the bottom, which mirrors
     ExpeditionChannelNames.lookup in ChannelHealthMonitor.swift. That lookup
     was extracted from Expedition.exe; refresh it with the procedure in
@@ -21,17 +25,17 @@ To add a channel to the iOS list:
   4. Run this script and copy the resulting tables into EXPEDITION-CHANNELS.md.
 
 Usage:
-  python3 reflow_table.py            # prints both tables to stdout
+  python3 reflow_table.py            # prints the tables to stdout
 """
 
 # Channel IDs the iOS app reads from numeric Expedition packets, taken from
 # every `updates["N"]` lookup in ExpeditionDataManager.swift's merged().
 IOS_NUMERIC_IDS = [
-    1, 2, 3, 4, 5, 6, 11, 12, 13, 14, 15, 16, 17, 18, 20,
+    1, 2, 3, 4, 5, 6, 11, 12, 13, 14, 15, 16, 17, 18, 20, 22,
     31, 33, 34, 35, 36, 37, 38,
-    48, 49, 50, 51, 55, 57, 58,
+    48, 49, 50, 51, 55, 56, 57, 58,
     66, 81, 82, 83, 88, 92, 93, 96, 97, 98, 99,
-    101, 105, 106, 108, 109, 110, 112, 113,
+    101, 102, 103, 105, 106, 108, 109, 110, 112, 113,
     127, 128, 129, 130, 131, 132, 133,
     154, 157, 158, 163, 164, 165, 166, 168,
     204, 205, 206, 207, 237, 238, 261, 262, 263, 276,
@@ -48,11 +52,23 @@ IOS_SAIL_PACKET_IDS = [
     404,   # Sail event
 ]
 
-# Web portal log analysis. iOS app does not consume these; Channel Health on
-# iOS therefore won't warn if they're absent from the broadcast.
-PORTAL_ONLY_IDS = [
-    273,   # Tack/gybe loss time
+# Needed in the .csv log on top of the iOS set, ticked under Settings >
+# Logging. The iOS app does not read these from the broadcast, so Channel
+# Health on iOS won't warn if they're absent.
+LOG_ONLY_IDS = [
+    161,   # Mark latitude   - Log Replay rebuilds the active mark from these
+    162,   # Mark longitude
+    10,    # Leeway          - web portal
+    32,    # Rate of turn    - web portal
+    273,   # Tack/gybe loss time   - web portal, per-maneuver loss
     274,   # Tack/gybe loss metres
+]
+
+# iOS channels found in no log header across four real logs (Aug-Sep 2026,
+# Expedition 12.8.19 to 12.9.2): sent to the iPad, never written to the log.
+OFTEN_MISSING_FROM_LOG_IDS = [
+    33, 35, 36, 38, 58, 97, 102, 103, 113, 127, 128, 129,
+    261, 263, 309, 349, 350, 358,
 ]
 
 # ID -> Tx-filter label. Mirrors ExpeditionChannelNames.lookup in
@@ -62,17 +78,19 @@ LABELS = {
     1: "BSP", 2: "AWA", 3: "AWS", 4: "TWA", 5: "TWS", 6: "TWD",
     11: "Current set", 12: "Current drift", 13: "Heading",
     14: "Air temperature", 15: "Sea temperature", 16: "Barometer",
-    17: "Depth", 18: "Heel (roll)", 20: "Rudder",
+    10: "Leeway", 17: "Depth", 18: "Heel (roll)", 20: "Rudder",
+    22: "Forestay load", 32: "Rate of turn",
     31: "VMG", 33: "Layline dist on starb", 34: "Layline time on starb",
     35: "Layline bearing on port", 36: "Layline dist on port",
     37: "Layline time on port", 38: "Layline bearing on strb",
     48: "Latitude", 49: "Longitude", 50: "Cog", 51: "Sog",
-    55: "Target vmg", 57: "Polar bsp", 58: "Polar bsp %",
+    55: "Target vmg", 56: "Target heel", 57: "Polar bsp", 58: "Polar bsp %",
     66: "VMG %", 81: "Start time to port", 82: "Start time to strb",
     83: "Start line square wind", 88: "Mark time", 92: "VMC",
     93: "Magnetic variation", 96: "Layline distance",
     97: "Layline time", 98: "Layline bearing", 99: "VMC %",
-    101: "VMC optimum", 105: "Mark range", 106: "Mark bearing",
+    101: "VMC optimum", 102: "VMC optimum heading",
+    103: "VMC optimum twa", 105: "Mark range", 106: "Mark bearing",
     108: "Mark twa", 109: "Current set predicted",
     110: "Current drift predicted", 112: "Next mark bearing",
     113: "Next mark twa", 127: "Next mark polar time",
@@ -81,6 +99,7 @@ LABELS = {
     132: "Next mark awa", 133: "Next mark aws",
     154: "Target awa", 157: "Start time to layline P",
     158: "Start time to layline S",
+    161: "Mark latitude", 162: "Mark longitude",
     163: "Start port latitude", 164: "Start port longitude",
     165: "Start stbd latitude", 166: "Start stbd longitude",
     168: "Relative humidity",
@@ -118,14 +137,17 @@ def render_table(labels, cols=3) -> str:
 
 if __name__ == "__main__":
     ios_labels = [label_for(i) for i in (IOS_NUMERIC_IDS + IOS_SAIL_PACKET_IDS)]
-    portal_labels = [label_for(i) for i in PORTAL_ONLY_IDS]
-
     table, n = render_table(ios_labels, cols=3)
-    print("=== Required for SailWatchPro iOS (paste into EXPEDITION-CHANNELS.md) ===\n")
+    print("=== Channels SailWatchPro uses (paste into EXPEDITION-CHANNELS.md) ===\n")
     print(table)
     print(f"\n<!-- {n} channels total -->\n")
 
-    table, n = render_table(portal_labels, cols=2)
-    print("=== Additionally required for web portal log analysis ===\n")
+    table, n = render_table([label_for(i) for i in LOG_ONLY_IDS], cols=3)
+    print("=== Also tick under Settings > Logging ===\n")
+    print(table)
+    print(f"\n<!-- {n} channels total -->\n")
+
+    table, n = render_table([label_for(i) for i in OFTEN_MISSING_FROM_LOG_IDS], cols=3)
+    print("=== Commonly missing from logs ===\n")
     print(table)
     print(f"\n<!-- {n} channels total -->")
