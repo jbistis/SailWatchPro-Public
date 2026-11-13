@@ -62,10 +62,11 @@ When you are done, click **OK**, and verify in SailWatchPro that the connection 
 
 ## How to Enable Channels for Logging
 
-1. In Expedition, open **All Settings** and choose **Logging** in the list on the left.
-2. Make sure **Log data** is ticked.
-3. Tick every channel in [Channels SailWatchPro Uses](#channels-sailwatchpro-uses) and in [Also Tick for Logging](#also-tick-for-logging). This list is alphabetical too.
-4. Click **OK**.
+1. In Expedition, open the menu button (☰) at the top left of the window and choose **All Settings**.
+2. Choose **Logging** in the list on the left.
+3. Make sure **Log data** is ticked.
+4. Tick every channel in [Channels SailWatchPro Uses](#channels-sailwatchpro-uses) and in [Also Tick for Logging](#also-tick-for-logging). This list is alphabetical too.
+5. Click **OK**.
 
 The change applies to logs written from then on. Logs already recorded cannot be filled in afterwards.
 
