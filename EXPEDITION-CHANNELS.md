@@ -44,7 +44,7 @@ Each has its own list of channels in Expedition, and a channel has to be ticked 
 | List | Where | Controls |
 |:-|:-|:-|
 | **Exp Tx filter** | The network connection's settings | What Expedition broadcasts to the iOS app |
-| **Logging** | **Settings ▸ Logging** | What Expedition writes to the `.csv` log |
+| **Logging** | **All Settings ▸ Logging** | What Expedition writes to the `.csv` log |
 
 The two are independent. Ticking a channel in the Tx filter does not put it in the log. A boat can have every start number on the iPad during a race and find the same numbers missing when the race is replayed or analyzed, because they were never ticked under Logging.
 
@@ -62,7 +62,7 @@ When you are done, click **OK**, and verify in SailWatchPro that the connection 
 
 ## How to Enable Channels for Logging
 
-1. In Expedition, open **Settings** and choose **Logging** in the list on the left.
+1. In Expedition, open **All Settings** and choose **Logging** in the list on the left.
 2. Make sure **Log data** is ticked.
 3. Tick every channel in [Channels SailWatchPro Uses](#channels-sailwatchpro-uses) and in [Also Tick for Logging](#also-tick-for-logging). This list is alphabetical too.
 4. Click **OK**.
@@ -73,7 +73,7 @@ The change applies to logs written from then on. Logs already recorded cannot be
 
 ## Channels SailWatchPro Uses
 
-These are the channels the iOS app actively consumes — derived from the field mapping in `ExpeditionDataManager.swift` (`merged()`) plus the four sail-name channels handled by `handleSailUpdate(...)`. Tick them in the **Exp Tx filter** and under **Settings ▸ Logging**. If any of these stop arriving over the network, [Channel Health Monitor](#channel-health-monitor) in the app will flag them.
+These are the channels the iOS app actively consumes — derived from the field mapping in `ExpeditionDataManager.swift` (`merged()`) plus the four sail-name channels handled by `handleSailUpdate(...)`. Tick them in the **Exp Tx filter** and under **All Settings ▸ Logging**. If any of these stop arriving over the network, [Channel Health Monitor](#channel-health-monitor) in the app will flag them.
 
 Some need equipment your boat may not have; see [Channels That Depend on Your Equipment](#channels-that-depend-on-your-equipment).
 
@@ -118,7 +118,7 @@ Some need equipment your boat may not have; see [Channels That Depend on Your Eq
 
 ## Also Tick for Logging
 
-These are not read from the live broadcast, so they only need ticking under **Settings ▸ Logging**.
+These are not read from the live broadcast, so they only need ticking under **All Settings ▸ Logging**.
 
 | | | |
 |:-|:-:|:-:|
@@ -139,7 +139,7 @@ These are not read from the live broadcast, so they only need ticking under **Se
 
 ## Commonly Missing from Logs
 
-These channels are in the table above and usually ticked in the Tx filter, but they are the ones we have found absent from uploaded logs. If you check nothing else under **Settings ▸ Logging**, check these.
+These channels are in the table above and usually ticked in the Tx filter, but they are the ones we have found absent from uploaded logs. If you check nothing else under **All Settings ▸ Logging**, check these.
 
 | | | |
 |:-|:-:|:-:|
@@ -190,7 +190,7 @@ Once your boat has been broadcasting for a while, SailWatchPro learns which chan
 
 Learning is per-boat: switching boats in **Boat Configuration** swaps the monitor to that boat's bucket, so a boat without (for example) a barometer will not be warned about it.
 
-Channel Health watches the live broadcast only. It cannot tell you what is being written to the log; for that, check **Settings ▸ Logging** in Expedition.
+Channel Health watches the live broadcast only. It cannot tell you what is being written to the log; for that, check **All Settings ▸ Logging** in Expedition.
 
 This is a setup and verification tool — useful when:
 
@@ -208,4 +208,4 @@ This is a setup and verification tool — useful when:
 4. Restart Expedition's network connection (see [Step 1 of the Setup Guide](SETUP-GUIDE.md#step-1--find-ip-addresses)).
 5. If the issue persists, see the [Troubleshooting Guide](TROUBLESHOOTING.md).
 
-If a number is on the iPad during a race but missing from a replay or from the web portal's analysis, the channel is being broadcast and not logged: tick it under **Settings ▸ Logging**.
+If a number is on the iPad during a race but missing from a replay or from the web portal's analysis, the channel is being broadcast and not logged: tick it under **All Settings ▸ Logging**.
