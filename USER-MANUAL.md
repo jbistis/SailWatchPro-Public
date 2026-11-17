@@ -352,7 +352,7 @@ A locked feature says "Available on the Instruments plan." and nothing more. Pla
 | iPad / iPhone | iOS 18.6 |
 | Apple Watch | watchOS 11.5 |
 | Mac (Apple silicon) | macOS 26.0 |
-| Expedition Marine | Optional. A current release if the boat runs it; Expedition updates often. |
+| Expedition Marine | Optional. 12.11.6 or later if the boat runs it; earlier releases lack the B&G race timer fix. |
 
 A reliable boat WiFi is required. An NMEA 2000 gateway or AIS source is required for competitor positions from AIS; Expedition does not forward them. An internet connection is required for sign-in, Import Setup, buoy data, forecasts and briefings; the app runs offline on the water once set up.
 

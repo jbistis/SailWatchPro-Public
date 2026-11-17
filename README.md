@@ -49,7 +49,7 @@ The `documents/` folder has sample files in the formats the web app imports: an 
 | iPad / iPhone | iOS 18.6 |
 | Apple Watch | watchOS 11.5 |
 | Mac (Apple silicon) | macOS 26.0 |
-| Expedition Marine | Optional. A current release, if the boat runs it |
+| Expedition Marine | Optional. 12.11.6 or later, if the boat runs it |
 
 A boat WiFi that the instruments and the iPads share, and an internet connection for setup. The app runs offline on the water once set up.
 
