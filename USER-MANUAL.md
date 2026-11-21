@@ -40,7 +40,7 @@
 
 ## Introduction
 
-SailWatchPro is a racing app for iPad, iPhone and Apple Watch. It reads the boat's instruments, from Expedition Marine, an NMEA 2000 gateway, a B&G display network or the iPad's own GPS, and turns them into the numbers and calls a crew needs on deck: dashboards, the start, the course, competitors, wind and weather, sails and advisories. Expedition Marine is optional: the app works from a gateway or the iPad's GPS alone, and where Expedition is aboard it adds the integration, sending pings, the gun, sail and crew events and MOB to it and taking its marks and courses.
+SailWatchPro is a racing app for iPad, iPhone and Apple Watch. It reads the boat's instruments, from Expedition Marine, an NMEA 2000 gateway, a B&G display network or the iPad's own GPS, and turns them into the numbers and calls a crew needs on deck: dashboards, the start, the course, competitors, wind and weather, sails and advisories. Expedition Marine is optional: the app works from a gateway or the iPad's GPS alone, and where Expedition is aboard the app reads all of its data, and on the Expedition plan also drives it, sending pings, the gun, sail and crew events to it and taking its marks and courses. MOB reaches Expedition on every plan.
 
 The boat is set up once on the web at [sailwatchpro.com](https://sailwatchpro.com) and imported to each device. The app is free; a plan unlocks its paid half. This manual describes what each screen does. It deliberately has no screenshots, so it stays true from build to build; the [README](README.md) carries a gallery.
 
@@ -59,6 +59,16 @@ On iPhone the main sections are tabs, and the rest are under **More**: Advisorie
 
 Every screen shares a toolbar that shows the connection state of the boat's data sources. Green means data is arriving.
 
+At the end of that group, a **cloud** says whether this device is reaching sailwatchpro.com. The app checks by asking the web app itself, so a boat's Wi-Fi with no internet behind it does not count as connected.
+
+| Cloud | Means |
+|-------|-------|
+| Green | Signed in, and the web app answered in the last few minutes |
+| Grey, with a slash | No internet right now. Normal on the water: uploads wait on the device and go out by themselves later; nothing is lost |
+| Red | Signed out, or the server refused to renew the sign-in. Sign in again under **Settings → Account** |
+
+Tap the cloud for who is signed in, when the web app last answered, and how many uploads are waiting.
+
 ---
 
 ## Dashboards
@@ -70,6 +80,19 @@ Dashboards show the boat's numbers, large, in a grid you lay out yourself. Layou
 **Context switching.** Many fields change what they show by sailing mode, upwind, reaching or downwind, so one layout serves the whole race. Fields colour themselves when a value is out of bounds.
 
 Dashboards can be renamed and reordered.
+
+**How old a number is.** A tile looks the same as long as its value keeps arriving. If it stops, an amber dot appears beside the tile's name, then a red dot with the number dimmed, then the number is replaced by "---". It clears as soon as data returns.
+
+| Kind of value | Amber | Red, dimmed | "---" |
+|---|---|---|---|
+| Instruments and GPS, including true wind, targets and performance | 3 s | 10 s | 30 s |
+| Marks, laylines and the start | 10 s | 30 s | 60 s |
+
+A value worked out from others is as old as the oldest of them. If the wind sensor stops, true wind and the targets built on it go stale with it, even where Expedition keeps sending its last calculation. On a boat reading a gateway or B&G display directly, values go to "---" after 10 seconds. The race clock, forecasts and variation have no dot.
+
+**Locking the dashboard.** Tap the padlock in the dashboard's toolbar before the start. Locked, a tap on a tile no longer opens the field picker and a swipe no longer changes the page, so a wet sleeve cannot swap boat speed for something else. To unlock, hold the padlock for about a second; a tap only says "Hold to unlock". With **Full Screen When Locked** on (**Settings → On Deck**), a locked dashboard hides its bars and keeps the padlock and MOB in a corner.
+
+**Units.** Depth and height, temperature and pressure are shown in the units chosen under **Settings → Units**, on this device and its Watch. **Automatic** follows the device's region. Only the display changes: alarms and everything sent to the web stay the same.
 
 ---
 
@@ -108,6 +131,8 @@ The Navigator shows the course and the boat on a map, with a table view of the m
 **Tidal Gate.** When a tidal gate is within range, which way to take it and whether that answer still holds when you get there. Hidden the rest of the time.
 
 **Douse card.** The crew's drop procedures gathered in one place to read on the way out to the course.
+
+**Mark a change.** Tap **Mark a change** when you reef, move the traveller, set a twing, change the sheeting or adjust the rig, and pick which. The card shows the five minutes before at once, counts down, and at minute six gives the verdict, before against after, on the numbers that matter for that kind of change: polar %, heel and rudder for a reef, the traveller or the rig; polar %, VMG %, apparent wind angle and heel for a twing; polar %, heel, wind angle and VMG % for the sheeting. The wind is shown alongside, so a change in the breeze is not mistaken for a better trim. The card stays until dismissed.
 
 **Buoys.** Weather buoys near the course are drawn on the map with their latest wind. Tap one for the 24-hour chart of what it measured against what each forecast model said, graded by how close each model has been.
 
@@ -181,7 +206,7 @@ The Wind screen treats the boat as a moving weather station.
 
 ## Weather
 
-**Buoy Weather Data.** The weather stations near the race area, fetched on a schedule. The list is seeded from SailWatchPro's buoy catalog and can be synced from the cloud as stations are added. Each station shows the latest wind and gust, its trend, the range from the boat, and a 24-hour chart of measured wind against every forecast model, with each model graded on how close it has been. Fetch interval and search radius are set from the screen.
+**Weather Stations** (Weather Data in the iPad sidebar). The weather stations near the race area, fetched on a schedule. Search by name or station id, and sort by distance, name or wind. The list is seeded from SailWatchPro's buoy catalog and can be synced from the cloud as stations are added. Each station shows the latest wind and gust, its trend, the range from the boat, and a 24-hour chart of measured wind against every forecast model, with each model graded on how close it has been. Fetch interval and search radius are set from the screen. Temperatures and pressures are in the units under **Settings → Units**. Tap the boat's own row for **Boat as Station**: every forecast model graded against the wind your own instruments measure.
 
 **Barometer.** The boat's pressure, its rate of change and a forecast hint, with a chart over a chosen window.
 
@@ -300,6 +325,12 @@ When the iPhone locks or enters a low-power state, iOS can throttle Bluetooth an
 
 Keep the iPhone on power when possible, and close to the Watch: a cockpit pocket beats the nav station, since rigging, wet sails and the deck all cut Bluetooth range. Restore Auto-Lock after sailing.
 
+With a dashboard open, SailWatchPro holds the iPhone's screen on by itself (**Settings → On Deck → Keep Screen On While Racing**), so Auto-Lock matters most when another screen is showing. In a pocket, **Pocket Mode** (**Settings → On Deck**) darkens the screen while the app keeps running and feeding the Watch.
+
+### Spray on the Watch
+
+Turn on **Water Lock** from the Watch's Control Center (the water drop) before going on deck. The touch screen then ignores spray, while SailWatchPro stays on screen. Press and hold the Digital Crown to turn it off.
+
 ### Checking Watch Battery
 
 Swipe up for Control Center, add the **Battery** complication to the watch face, or add the **Batteries** widget to the iPhone's Today View.
@@ -325,6 +356,8 @@ Settings is one long screen in sections. The sections you touch once, on day one
 | **Sail Hoists**, **Boat Track**, **Heard AIS**, **Crew Positions** | What this device has recorded for the web Logbook, what is queued and when it last uploaded. |
 | **Uploads** | Status of all uploads to the web. |
 | **Channel Health** | Learns which Expedition channels this boat normally sends and flags the ones that have gone silent. Learned per boat. **Run Check Now** and **Reset Learned Channels**. |
+| **On Deck** | **Keep Screen On While Racing** holds the screen on the dashboards, Pre-Start, Start Line and Navigator while data is heard, the timer runs or a log plays; after ten minutes with no data it can sleep. **Full Screen When Locked** hides the bars on a locked dashboard. **Pocket Mode** (iPhone, off by default) darkens the screen in a pocket or face down. How to pin the app with iOS Guided Access, and Water Lock for the Watch. |
+| **Units** | **Depth & height** (metres or feet), **Temperature** (°C or °F) and **Pressure** (mb, hPa or inHg), each **Automatic** by default, which follows the device's region. Display only. |
 | **Display & Navigation** | **Auto Mark Detection**, **Night Vision** (red for night sailing; light and dark otherwise follow iOS), **Throttle Interval** for the update rate from 20 Hz to 1 Hz, **Chart map (beta)** with its depths in feet or metres, and **Map Style**. |
 | **Development** | **Test Mode** runs the app on a recorded race instead of the live listener, for training and demos off the boat. Some screens freeze while it is on. |
 | **Licenses** | Read-only. Expedition Marine's status and Site Code, with **Refresh**. SailWatchPro's plan, where it came from (sign-in or another device on this boat), who granted it and when it renews. **Remove plan from this device**. The Device ID for support. |
@@ -334,14 +367,17 @@ Settings is one long screen in sections. The sections you touch once, on day one
 
 ## What Needs a Plan
 
-The app is free. Four features need the boat to be on a plan, Instruments or Expedition:
+The app is free, and the free app shows every live value from every source: Expedition Marine, a B&G display or an NMEA gateway. These need the boat to be on a plan, Instruments or Expedition:
 
-1. Advisories in every category except Safety
+1. Advisories in every category except Safety, including the tidal gate call and the Mark a change verdict
 2. The chart map, and with it routing, the forecast overlay, Current Lab and the depth grid
 3. Competitors, on the map and in their own screen
 4. The instrument log recorder, and log upload and analysis on the web
+5. Boat as Station: the forecast models graded against the boat's own instruments. Grading against the weather stations is free.
 
-A locked feature says "Available on the Instruments plan." and nothing more. Plans are chosen and managed on the web; see the [Subscription & Licensing Guide](SUBSCRIPTION-AND-LICENSING.md).
+One needs the **Expedition** plan: driving Expedition from the app, so line pings, the race timer, marks, courses, events and sails set on deck are sent to it. Without it the app keeps its own line and timer, which work just the same, and leaves Expedition as it is. **MOB always reaches Expedition, on every plan.**
+
+A locked feature says which plan has it, "Available on the Instruments plan." or "Available on the Expedition plan.", and nothing more. Plans are chosen and managed on the web; see the [Subscription & Licensing Guide](SUBSCRIPTION-AND-LICENSING.md).
 
 ---
 
@@ -360,7 +396,7 @@ A reliable boat WiFi is required. An NMEA 2000 gateway or AIS source is required
 
 ## Support & Updates
 
-Keep every device on the same version. Builds are announced through TestFlight.
+Keep every device on the same version. SailWatchPro is on the [App Store](https://apps.apple.com/app/sailwatchpro/id6748606157). Betas ahead of the App Store version come through TestFlight: https://testflight.apple.com/join/GkXJsuje
 
 - **Support:** support@sailwatchpro.com
 - **Bugs and feature requests:** https://github.com/jbistis/SailWatchPro-Public/issues

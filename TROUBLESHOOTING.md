@@ -20,8 +20,13 @@
   - [Check WiFi Signal Strength](#check-wifi-signal-strength)
   - [Verify Port Settings](#verify-port-settings)
   - [Windows Firewall Configuration](#windows-firewall-configuration)
+  - [The Cloud: Is This Device Reaching sailwatchpro.com?](#the-cloud-is-this-device-reaching-sailwatchprocom)
 - [Data Sync Issues](#data-sync-issues)
 - [Display Problems](#display-problems)
+  - [A Tile Shows an Amber or Red Dot, or "---"](#a-tile-shows-an-amber-or-red-dot-or----)
+  - [Some Instruments Arrive and Others Do Not](#some-instruments-arrive-and-others-do-not)
+  - [Taps and Swipes on the Dashboard Do Nothing](#taps-and-swipes-on-the-dashboard-do-nothing)
+  - [The iPhone Screen Goes Dark on a Dashboard](#the-iphone-screen-goes-dark-on-a-dashboard)
 - [Performance Issues](#performance-issues)
 - [Common Error Messages](#common-error-messages)
 - [Still Need Help?](#still-need-help)
@@ -92,6 +97,23 @@ be running.
 **Tip:** After changing the IP address or ports in Settings, tap Done and the app
 will immediately attempt a fresh connection. The indicator should update within a
 few seconds.
+
+### The Cloud: Is This Device Reaching sailwatchpro.com?
+
+The cloud at the end of the toolbar's status group is about the web app, not the
+boat. The app checks by asking the web app itself about once a minute, so a boat's
+Wi-Fi, or a B&G display's, that says "connected" with no internet behind it shows
+as offline, not connected.
+
+| Cloud | Meaning | What to do |
+|-------|---------|------------|
+| 🟢 Green | Signed in, and the web app answered in the last few minutes | Nothing |
+| ⚪ Grey, slashed | No internet right now | Nothing. Normal on the water: uploads wait on the device and go out by themselves when there is internet |
+| 🔴 Red | Signed out, or the server refused to renew the sign-in | Sign in again under **Settings → Account** |
+
+Tap the cloud for who is signed in, when the web app last answered, and how many
+uploads are waiting. A sign-in that lapsed only because there was no internet shows
+grey, not red: it renews by itself once a connection returns.
 
 ---
 
@@ -331,6 +353,51 @@ netsh advfirewall set allprofiles state on
 
 ---
 
+### A Tile Shows an Amber or Red Dot, or "---"
+
+A dot beside a tile's name means its value has stopped arriving: amber first, then
+red with the number dimmed, then "---". Instruments and GPS go amber after about 3
+seconds, red after 10 and "---" after 30; marks, laylines and the start allow 10, 30
+and 60. The dot clears the moment data returns.
+
+- **One sensor's tiles go together.** If apparent wind stops, true wind and the
+  targets built on it go stale with it. Look at that sensor first: its cable, its
+  power, and whether the instrument system itself still shows it.
+- **Everything at once** points at the source: Expedition, the gateway or the
+  boat's network. Check the toolbar indicator.
+- **A value back from a dropout can be wrong for a minute.** After a wind sensor
+  reconnects, its angle can read far off and settle over about a minute.
+
+### Some Instruments Arrive and Others Do Not
+
+Heading arrives but wind and GPS do not, or values come and go. Before suspecting
+the app or Expedition, look at the instrument system's own display: on a B&G
+processor, its web dashboard shows each sensor green or red.
+
+If the instrument system is missing them too, check the NMEA 2000 backbone. With
+the network powered off, measure the resistance between CAN-H and CAN-L: it should
+be about **60 Ω**, two 120 Ω terminators, one at each end. **40 Ω** means a third
+terminator, often built into a device; the bus then corrupts or drops messages, and
+some sensors go silent while others carry on. Turn off that device's built-in
+terminator if it has a switch, or move it to one end of the backbone in place of
+that end's terminator.
+
+### Taps and Swipes on the Dashboard Do Nothing
+
+The dashboard is locked: the padlock in its toolbar is filled. Locked, a tap on a
+tile does not change it and a swipe does not change the page. **Hold the padlock for
+about a second** to unlock; a tap only shows "Hold to unlock". With **Full Screen
+When Locked** on, the padlock is in the corner with MOB.
+
+### The iPhone Screen Goes Dark on a Dashboard
+
+**Pocket Mode** is on (**Settings → On Deck**). The proximity sensor at the top of
+the iPhone darkens the screen while it is covered, in a pocket or face down, and
+lights it again when uncovered. A thumb over the top of the screen covers it too.
+Turn Pocket Mode off if that happens in your hand.
+
+---
+
 ### Chart Data Not Displaying
 
 **Symptoms:**
@@ -439,6 +506,13 @@ netsh advfirewall set allprofiles state on
 5. **Use Low Power Mode** (if critical)
    - Settings → Battery → Low Power Mode
    - Note: May affect performance
+
+6. **Know what holds the screen on**
+   - SailWatchPro keeps the screen on while a race screen is showing and data is
+     arriving, the timer runs or a log plays (**Settings → On Deck → Keep Screen On
+     While Racing**). After ten minutes with no data it lets the screen sleep.
+   - On an iPhone in a pocket, **Pocket Mode** darkens the screen while the app
+     keeps running.
 
 ---
 

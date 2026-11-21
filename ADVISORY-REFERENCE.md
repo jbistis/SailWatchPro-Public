@@ -2,7 +2,7 @@
 
 **Check interval:** Every 5 minutes (300 seconds) via `startPeriodicChecks()`, except **Board to the Mark**, which samples the live instrument data once a second (`AdvisoryManager.liveUpdate(with:)`)
 **Sources:** `AdvisoryManager.swift` + `AdvisoryManager+GRIBAccuracy.swift` + `CalibrationTracker.swift` + `OpenMeteoManager.swift` + `BoardToMark.swift`
-**Last updated:** October 2026 (build 151 — Board to the Mark replaces the two Persistent Header advisories, which are now off by default). Earlier: May 2026 (build 92 — replaced "Sailing Below Target Angle" with the generalized "Target Angle" advisory; build 91 added Mark Reachable, Wind Shift Approaching, position-aware Persistent Header action with rhumb-line wording)
+**Last updated:** November 2026 (build 175: the depth and weather advisories no longer put numbers in their sentence, since a sentence is uploaded as written and read in each crew member's own units (metres or feet, °C or °F, mb, hPa or inHg); the numbers are in the rows under each card. The tidal gate call and the Mark a change verdict are Instruments-plan advisories. Since the October update, Dew Forming on Deck was also replaced by Dew on Deck and Dry Deck). Earlier: October 2026 (build 151 — Board to the Mark replaces the two Persistent Header advisories, which are now off by default). Earlier: May 2026 (build 92 — replaced "Sailing Below Target Angle" with the generalized "Target Angle" advisory; build 91 added Mark Reachable, Wind Shift Approaching, position-aware Persistent Header action with rhumb-line wording)
 
 ---
 
@@ -33,9 +33,9 @@
 
 | Title | Priority | Trigger | Message | Action |
 |-------|----------|---------|---------|--------|
-| Rapidly Falling Barometric Pressure | Warning | Pressure drops > 3 mb/hr over last hour | "Pressure has dropped X mb in the last hour. Conditions may deteriorate rapidly." | Shorten sail, check forecast, prepare for stronger winds |
-| Dangerous Pressure Drop | Critical | Pressure drops > 5 mb/hr over last hour | "Pressure has plummeted X mb. Severe weather likely." | URGENT: Seek shelter immediately |
-| Rising Barometric Pressure | Info | Pressure rises > 3 mb/hr over last hour | "Pressure has risen X mb. Conditions improving." | Expect lighter winds and clearing conditions |
+| Rapidly Falling Barometric Pressure | Warning | Pressure drops > 3 mb/hr over last hour | "Pressure is falling quickly, measured over N min. Weather conditions may deteriorate rapidly." | Shorten sail, check forecast, prepare for stronger winds |
+| Dangerous Pressure Drop | Critical | Pressure drops > 5 mb/hr over last hour | "Pressure is falling sharply, measured over N min. Severe weather likely approaching." | URGENT: Seek shelter immediately |
+| Rising Barometric Pressure | Info | Pressure rises > 3 mb/hr over last hour | "Pressure is rising steadily, measured over N min. Weather conditions are improving." | Expect lighter winds and clearing conditions |
 
 **Data required:** Min 10 pressure samples from last 2 hours (`WindDataManager.pressureDataPoints`)
 
@@ -47,7 +47,7 @@
 
 | Title | Priority | Trigger | Message | Action |
 |-------|----------|---------|---------|--------|
-| Frontal Passage Likely | Warning | Air temp dropped ≥ 3°C AND pressure dropped ≥ 2 mb — both within the last 30 min | "Air temp dropped X°C and pressure dropped Y mb in the last 30 min." | Front likely passing. Expect wind shift and squalls — prepare to shorten sail. |
+| Frontal Passage Likely | Warning | Air temp dropped ≥ 3°C AND pressure dropped ≥ 2 mb — both within the last 30 min | "Air temperature and pressure both dropped in the last 30 min." | Front likely passing. Expect wind shift and squalls — prepare to shorten sail. |
 
 **Both conditions required** — temp-alone can be nocturnal cooling, pressure-alone is already covered by the barometric advisory. Requiring both filters out non-frontal patterns.
 
@@ -61,13 +61,23 @@
 
 ---
 
-### Dew Point
+### Dew on Deck and Dry Deck
 
-**Data sources:** `airTemperature` (channel 14, °C), `dewPoint` (channel 370, °C), `relativeHumidity` (channel 168, 0–100%)
-**Dew risk window:** 17:00–08:00 local time
+The old sailor's call, read at sunset: dew on the deck means moist marine air is holding and the night wind stays or shifts onshore; a bone-dry deck means a land breeze will drain off the shore. Coastal only, and only from an hour before local sunset to three hours after. These replace **Dew Forming on Deck**, which is cleared if still showing.
+
+**Data sources:** `airTemperature` (channel 14, °C), `dewPoint` (channel 370, °C), `relativeHumidity` (channel 168, 0–100%), the boat's position and the distance to shore. Thresholds in `DewOnDeck.swift`.
 
 | Title | Priority | Trigger | Message | Action |
 |-------|----------|---------|---------|--------|
+| Dew on Deck | Info | Spread ≤ 3.0°C OR humidity ≥ 90%, within 20 nm of shore, in the sunset window | "Humidity H%, D nm from shore. Dew forming at sunset: moist marine air is holding, so expect the wind to stay or shift onshore overnight." | Stay seaward (with the compass point) for more wind and a better angle, clear of the calm in the land's wind shadow. |
+| Dry Deck | Info | Spread ≥ 8.0°C, within 8 nm of shore, in the sunset window | "Humidity H%, D nm from shore. Deck staying dry at sunset: dry air means a land breeze is likely to drain off the shore overnight." | Work in toward the shore (with the compass point) to catch the land breeze before the fleet does. |
+
+**Spread calculation:** `airTemperature − dewPoint`. Between the two thresholds neither is raised.
+**No temperatures in the sentence:** the air, dew point and spread are in the rows under the card, in each reader's units.
+**Suppressed** with no humidity sensor (RH 0), no position fix, more than 20 nm offshore, or outside the sunset window.
+**Data values logged:** `airTempC`, `dewPointC`, `spreadC`, `humidityPct`, `distanceOffshoreNM`
+
+-------|----------|---------|---------|--------|
 | Dew Forming on Deck | Warning | Spread ≤ 1.5°C OR humidity ≥ 95% (any time) | "Dew point spread is X°C (Y% RH). Dew is actively forming on deck surfaces." | Consider heading offshore. Use caution on deck — wet surfaces reduce grip. |
 | Dew Forming on Deck | Info | Spread ≤ 3.0°C AND within dew risk window (17:00–08:00) | "Dew point spread is X°C (Y% RH). Dew likely to form as deck temperatures drop." | Monitor conditions. Consider heading offshore. |
 
@@ -116,9 +126,9 @@
 
 | Title | Priority | Trigger | Message | Action |
 |-------|----------|---------|---------|--------|
-| Depth Data Critical | Critical | Depth ≤ 0 (sensor failure or extreme shallow) | "Depth reading is X m. Sensor failure or dangerous shallow water." | Verify sounder, navigate with extreme caution |
-| Shallow Water Warning | Critical | Depth < draft × 1.2 (e.g. draft 2.5m → depth < 3.0m) | "Current depth Xm dangerously close to draft Ym. Safety margin: Zm." | IMMEDIATE: Change course to deeper water |
-| Depth Advisory | Warning | Depth < draft × 1.5 (e.g. draft 2.5m → depth < 3.75m) | "Depth Xm getting shallow relative to draft Ym." | Monitor carefully, prepare to change course |
+| Depth Data Critical | Critical | Depth ≤ 0 (sensor failure or extreme shallow) | "The depth reading is zero or below. This indicates sensor failure or extremely dangerous shallow water conditions." | Verify sounder, navigate with extreme caution |
+| Shallow Water Warning | Critical | Depth < draft × 1.2 (e.g. draft 2.5m → depth < 3.0m) | "Depth is dangerously close to your draft." | IMMEDIATE: Change course to deeper water |
+| Depth Advisory | Warning | Depth < draft × 1.5 (e.g. draft 2.5m → depth < 3.75m) | "Depth is getting shallow relative to your draft." | Monitor carefully, prepare to change course |
 | Excessive Heel Angle | Warning | Heel angle > 35° | "Current heel angle of X° is quite high." | Reduce sail area, ease sheets, or change course |
 | High Speed in Strong Conditions | Info | TWS > 25 kt AND BSP > 12 kt | "Boat speed X kt in Y kt TWS." | Monitor carefully, consider reducing sail |
 
@@ -588,7 +598,7 @@
 10. Open-Meteo forecast revision (direction, speed)
 11. Calibration (TWD tack-to-tack, AWA tack-to-tack, TWS rounding-to-rounding)
 12. Current push
-13. Dew point
+13. Dew on Deck and Dry Deck
 
 **Outside the 5-minute check:** Board to the Mark runs on the live data, once a second, from `PerformanceDataUpdater`.
 

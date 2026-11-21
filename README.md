@@ -14,7 +14,7 @@ Expedition Marine is optional. A boat with no PC aboard runs SailWatchPro from a
 
 The boat is set up once on the web and imported to each device. The app is free; a plan unlocks its paid half: advisories after the gun, the chart map with routing, currents and depths, competitors, and the instrument log with post-race analysis.
 
-This repository holds the public documentation. The app itself is distributed through TestFlight while in beta.
+This repository holds the public documentation. SailWatchPro is on the [App Store](https://apps.apple.com/app/sailwatchpro/id6748606157) for iPhone, iPad and Apple Watch. Betas ahead of each App Store release come through TestFlight: https://testflight.apple.com/join/GkXJsuje
 
 ---
 
@@ -38,7 +38,8 @@ The `documents/` folder has sample files in the formats the web app imports: an 
 
 1. Read the [Setup Guide](SETUP-GUIDE.md).
 2. Create an account at [sailwatchpro.com](https://sailwatchpro.com) and add your boat.
-3. To join the iOS beta, use **Join the iOS beta** on your boat's page. You will receive the TestFlight link by email when the boat is provisioned.
+3. Install SailWatchPro from the [App Store](https://apps.apple.com/app/sailwatchpro/id6748606157), sign in and run **Import Setup**.
+4. To join the beta program, use **Join the iOS beta** on your boat's page.
 
 ---
 
