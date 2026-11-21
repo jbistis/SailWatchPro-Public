@@ -81,14 +81,14 @@ Dashboards show the boat's numbers, large, in a grid you lay out yourself. Layou
 
 Dashboards can be renamed and reordered.
 
-**How old a number is.** A tile looks the same as long as its value keeps arriving. If it stops, an amber dot appears beside the tile's name, then a red dot with the number dimmed, then the number is replaced by "---". It clears as soon as data returns.
+**How old a number is.** A tile looks the same as long as its value keeps arriving. If it stops, an amber dot appears beside the tile's name, then a red dot with the number dimmed, then the number is replaced by a single grey dash. It clears as soon as data returns.
 
-| Kind of value | Amber | Red, dimmed | "---" |
+| Kind of value | Amber | Red, dimmed | Grey dash |
 |---|---|---|---|
 | Instruments and GPS, including true wind, targets and performance | 3 s | 10 s | 30 s |
 | Marks, laylines and the start | 10 s | 30 s | 60 s |
 
-A value worked out from others is as old as the oldest of them. If the wind sensor stops, true wind and the targets built on it go stale with it, even where Expedition keeps sending its last calculation. On a boat reading a gateway or B&G display directly, values go to "---" after 10 seconds. The race clock, forecasts and variation have no dot.
+A value worked out from others is as old as the oldest of them. If the wind sensor stops, true wind and the targets built on it go stale with it, even where Expedition keeps sending its last calculation. On a boat reading a gateway or B&G display directly, values go to the grey dash after 10 seconds. A tile with nothing to show yet, such as the sail before one is set, shows the same dash. The race clock, forecasts and variation have no dot.
 
 **Locking the dashboard.** Tap the padlock in the dashboard's toolbar before the start. Locked, a tap on a tile no longer opens the field picker and a swipe no longer changes the page, so a wet sleeve cannot swap boat speed for something else. To unlock, hold the padlock for about a second; a tap only says "Hold to unlock". With **Full Screen When Locked** on (**Settings → On Deck**), a locked dashboard hides its bars and keeps the padlock and MOB in a corner.
 
