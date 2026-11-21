@@ -50,15 +50,19 @@ Prices are announced at launch. Every plan is annual and renews automatically.
 Any boat, ashore and on the water.
 
 - The web app: season planning and events, crew roster, availability and watch bill, live buoys for your racing area, sails, provisioning, to-dos and boat documents, and the playbook
-- The iOS app on iPhone, iPad and Apple Watch: live instrument dashboards, the start timer and line pings, the race-day map, buoys, sail controls and MOB
+- The iOS app on iPhone and iPad: live dashboards that read your instruments from Expedition Marine, B&G or an NMEA gateway, the app's own start timer and line pings, the race-day map, buoys, sail controls and MOB
+- Apple Watch included: the start countdown, boat speed, wind angles, heel, VMG and depth against target, and your own data fields, on your wrist from your iPhone
+- Forecast models scored against the weather stations around your course, with comparison graphs
 - Unlimited crew members
 
 ### Instruments — $TBD/year
 
 Race better from your boat's instruments. The plan for a boat without Expedition Marine, or one that does not need the integration. Everything in Free, plus:
 
-- Advisories on the water: rounding, douse, weather and sail calls
+- Advisories on the water: rounding, douse, weather, sail and tidal gate calls, on iPhone, iPad, Apple Watch and Mac
+- Mark a change: flag a reef, a trim or a rig change, and see six minutes later whether it helped
 - The chart map: NOAA charts and depths, with weather routing from the forecast and the current aboard
+- Boat as Station: every forecast model scored against the wind your own instruments measure, live while you race
 - Competitors: the fleet from AIS and the network, on the map and in their own list
 - Instrument log recording, and post-race analytics with video replay
 - AI weather briefings
@@ -68,16 +72,16 @@ Race better from your boat's instruments. The plan for a boat without Expedition
 
 The full program, with Expedition Marine below deck. Everything in Instruments, plus:
 
-- The same app on deck, integrated with Expedition Marine below: data channels, marks, courses, timers, events, polars and sails, and its log files for analysis
+- The app drives Expedition Marine below: line pings, timers, marks, courses, polars and sails you set on deck are sent to Expedition, and its log files come back for analysis
 - Input variables for Expedition Marine's advanced routing, based on model accuracy
 - Instrument calibration, polars and targets
 - Priority support
 
-Expedition buys the Expedition Marine integration and the support that goes with it, not more of the app. Both paid plans unlock the same features on the iPad.
+Expedition buys the Expedition Marine integration and the support that goes with it. On the iPad the one difference is driving Expedition: on Free and Instruments the app reads all of Expedition's live data and keeps its own line and timer, but does not send pings, the timer, marks, courses, events or sails to Expedition. MOB reaches Expedition on every plan.
 
 ### Beta
 
-Free, by invitation, for active racers who give regular feedback while the app is in TestFlight. A beta plan unlocks everything a paid plan does. See [Beta Program](#beta-program).
+Free, by invitation, for active racers who give regular feedback on the betas ahead of each App Store release. A beta plan unlocks everything a paid plan does. See [Beta Program](#beta-program).
 
 ---
 
@@ -188,9 +192,9 @@ In the app, **Switch boat from web** in Settings moves a device from one boat to
 
 ## Beta Program
 
-While the app is in TestFlight, the beta program provisions a free plan for active racers who will use the app in real racing and report what they find.
+SailWatchPro is on the [App Store](https://apps.apple.com/app/sailwatchpro/id6748606157). The beta program provisions a free plan for active racers who will use the app in real racing and report what they find, and test the betas that come ahead of each App Store release through TestFlight: https://testflight.apple.com/join/GkXJsuje
 
-**Requesting access.** Sign in at sailwatchpro.com, add your boat, and use **Join the iOS beta** on the boat's page. Requests are matched to the boat owner's email. When the boat is provisioned you receive the plan email with the TestFlight link.
+**Requesting access.** Sign in at sailwatchpro.com, add your boat, and use **Join the iOS beta** on the boat's page. Requests are matched to the boat owner's email. When the boat is provisioned you receive the plan email.
 
 **How it works.** A beta plan is a subscription at no charge. It runs to its anniversary like a paid plan, and renews unless we end it. When the beta program closes, each beta boat is offered its plan, Instruments or Expedition, at a founding-member price. Nothing changes on your devices either way; the plan name updates by itself.
 
@@ -208,6 +212,10 @@ The device does not hold a plan yet. In order:
 2. In the app, check **Settings → Account**. Make sure you are signed in with the email that owns the boat or is on its roster, and that the right boat is selected. **Switch boat from web** lists the boats you have access to.
 3. Tap **Import Setup**. The plan comes down with the boat.
 4. Aboard, make sure the device is on the boat's network. The coordinator shares the plan with every device it can hear.
+
+### A feature says "Available on the Expedition plan"
+
+The boat is on the Instruments plan, or Free. Driving Expedition from the app (sending pings, the timer, marks, courses, events and sails to it) is on the Expedition plan only. Everything else still works: the app reads Expedition and keeps its own line and timer. To change plan, use **Manage Subscription** on the boat's page.
 
 ### The plan shows on one device but not another
 

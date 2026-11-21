@@ -187,7 +187,7 @@ Everything on this page flows to each device on Import Setup.
 
 ## Step 5 — Install the App and Import Setup
 
-1. Install SailWatchPro on each iPhone and iPad via TestFlight.
+1. Install SailWatchPro on each iPhone and iPad from the [App Store](https://apps.apple.com/app/sailwatchpro/id6748606157). Beta testers can use the TestFlight build instead: https://testflight.apple.com/join/GkXJsuje
 2. **First launch** takes a few extra moments while the app performs a one-time installation of the ECMWF libraries.
 3. Open **Settings**:
    - iPad → Settings
@@ -257,7 +257,7 @@ When something changes on the web, run **Import Setup** again on every iPad. Unt
 
 Crew and competitors are refreshed from the Crew screen with **Import Crew & Competitors for Event**, not from Import Setup.
 
-Keep every device on the same build. Builds are announced through TestFlight.
+Keep every device on the same version. Updates come through the App Store, and betas through TestFlight.
 
 ---
 
