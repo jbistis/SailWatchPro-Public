@@ -23,7 +23,7 @@
   - [The Cloud: Is This Device Reaching sailwatchpro.com?](#the-cloud-is-this-device-reaching-sailwatchprocom)
 - [Data Sync Issues](#data-sync-issues)
 - [Display Problems](#display-problems)
-  - [A Tile Shows an Amber or Red Dot, or "---"](#a-tile-shows-an-amber-or-red-dot-or----)
+  - [A Tile Shows an Amber or Red Dot, or a Grey Dash](#a-tile-shows-an-amber-or-red-dot-or-a-grey-dash)
   - [Some Instruments Arrive and Others Do Not](#some-instruments-arrive-and-others-do-not)
   - [Taps and Swipes on the Dashboard Do Nothing](#taps-and-swipes-on-the-dashboard-do-nothing)
   - [The iPhone Screen Goes Dark on a Dashboard](#the-iphone-screen-goes-dark-on-a-dashboard)
@@ -353,11 +353,11 @@ netsh advfirewall set allprofiles state on
 
 ---
 
-### A Tile Shows an Amber or Red Dot, or "---"
+### A Tile Shows an Amber or Red Dot, or a Grey Dash
 
 A dot beside a tile's name means its value has stopped arriving: amber first, then
-red with the number dimmed, then "---". Instruments and GPS go amber after about 3
-seconds, red after 10 and "---" after 30; marks, laylines and the start allow 10, 30
+red with the number dimmed, then a single grey dash in place of the number. Instruments and GPS go amber after about 3
+seconds, red after 10 and the dash after 30; marks, laylines and the start allow 10, 30
 and 60. The dot clears the moment data returns.
 
 - **One sensor's tiles go together.** If apparent wind stops, true wind and the
