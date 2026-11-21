@@ -92,6 +92,14 @@ A value worked out from others is as old as the oldest of them. If the wind sens
 
 **Locking the dashboard.** Tap the padlock in the dashboard's toolbar before the start. Locked, a tap on a tile no longer opens the field picker and a swipe no longer changes the page, so a wet sleeve cannot swap boat speed for something else. To unlock, hold the padlock for about a second; a tap only says "Hold to unlock". With **Full Screen When Locked** on (**Settings → On Deck**), a locked dashboard hides its bars and keeps the padlock and MOB in a corner.
 
+**Pinning SailWatchPro on screen.** On a shared deck iPad or iPhone, iOS **Guided Access** keeps SailWatchPro on screen: no swiping home, no switching apps, no Control Center, until someone enters a passcode. Only iOS can turn it on, so it is set up on the device:
+
+1. In iOS Settings → Accessibility → **Guided Access**, turn it on and set a **Passcode** (or allow Face ID or Touch ID to end it).
+2. Open SailWatchPro, then triple-click the side button (the top button on an iPad without a Home button; the Home button on older devices), and tap **Start**. Before starting you can circle parts of the screen to disable them, or turn off the hardware buttons under **Options**.
+3. To leave, triple-click again and enter the passcode.
+
+The dashboard lock stops taps changing tiles; Guided Access stops anyone leaving the app. On a deck iPad the two together hold the race screen in place.
+
 **Units.** Depth and height, temperature and pressure are shown in the units chosen under **Settings → Units**, on this device and its Watch. **Automatic** follows the device's region. Only the display changes: alarms and everything sent to the web stay the same.
 
 ---
