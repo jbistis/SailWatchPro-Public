@@ -21,6 +21,9 @@
   - [Verify Port Settings](#verify-port-settings)
   - [Windows Firewall Configuration](#windows-firewall-configuration)
   - [The Cloud: Is This Device Reaching sailwatchpro.com?](#the-cloud-is-this-device-reaching-sailwatchprocom)
+- [Getting In](#getting-in)
+  - [The App Asks Me to Sign In](#the-app-asks-me-to-sign-in)
+  - [Join Does Not Appear at the Door](#join-does-not-appear-at-the-door)
 - [Data Sync Issues](#data-sync-issues)
 - [Display Problems](#display-problems)
   - [A Tile Shows an Amber or Red Dot, or a Grey Dash](#a-tile-shows-an-amber-or-red-dot-or-a-grey-dash)
@@ -285,6 +288,35 @@ netsh advfirewall set allprofiles state on
 - Restart Expedition Marine
 - Force quit and restart SailWatchPro
 - Restart router if issues persist
+
+---
+
+## Getting In
+
+The app opens to a door: **Sign in**, or **Join *your boat*** when the nav station's iPad is on the boat's Wi-Fi. Every device belongs to a boat. See [Step 5 of the Setup Guide](SETUP-GUIDE.md#step-5--install-the-app-and-import-setup).
+
+### The App Asks Me to Sign In
+
+**Expected** once, the first time the app runs on a device, and after signing out. A device that has signed in once goes straight in from then on, with or without internet.
+
+**Not expected** on a device that had signed in before and was not signed out. Then one of two things happened:
+
+- The server refused to renew the sign-in, because the account's password changed or the session was revoked. The cloud in the toolbar was red before the restart. Sign in again.
+- The app was deleted and reinstalled, which clears the kept sign-in. Sign in again.
+
+A crew phone that got in by **Join** sees the door again only when its 45 days have run out and no coordinator is on the network. Get it onto the boat's Wi-Fi with the nav station's iPad running, and the door offers Join again.
+
+### Join Does Not Appear at the Door
+
+The door offers **Join *your boat*** only while it hears the boat's coordinator. Check, in order:
+
+1. **The nav station's iPad is signed in, with the boat picked.** A coordinator with no boat cannot let anyone in. Settings on that iPad shows **This iPad is the boat's coordinator** when it is.
+2. **Both devices are on the same Wi-Fi.** The boat's network, not a phone's hotspot or the marina's.
+3. **Allow Coordinator Role** is on, on that iPad, under Settings → Data Sources.
+4. **Give it a minute.** The coordinator announces itself every 30 seconds; the door updates when it hears it.
+5. **Both devices are on the same build.** An older build is heard but not trusted (see [The Boat's Devices](USER-MANUAL.md#the-boats-devices)), and build 180 or earlier does not know the door at all.
+
+With no signed-in iPad aboard and no internet, nobody new gets in. Sign in ashore.
 
 ---
 

@@ -106,13 +106,13 @@ When payment completes you receive an email, **Your SailWatchPro plan is active*
 ## How the Plan Reaches Your Devices
 
 1. Install SailWatchPro on each iPhone and iPad. Set up the boat as described in the [Setup Guide](SETUP-GUIDE.md).
-2. In the app, open **Settings**, sign in with the account you use on the web, and tap **Import Setup**.
+2. In the app, sign in at the door with the account you use on the web, then open **Settings** and tap **Import Setup**.
 3. That is all. The plan arrives with the boat's configuration. **Settings → Account** shows the plan, where it came from and when it renews.
 
 Two paths deliver the plan:
 
 - **Signing in.** The owner, anyone the boat is shared with, and every crew member on the roster receives the plan when they import the boat, ashore or afloat.
-- **Aboard.** Any device on the boat's network picks the plan up from the boat's coordinator, the iPad the boat's devices elect to answer for the boat (see [The Boat's Devices](USER-MANUAL.md#the-boats-devices) in the User Manual). A device that got its plan this way keeps it for 45 days without hearing a coordinator, and renews it every time it hears one.
+- **Aboard.** Any device on the boat's network picks the plan up from the boat's coordinator, the iPad the boat's devices elect to answer for the boat (see [The Boat's Devices](USER-MANUAL.md#the-boats-devices) in the User Manual). A device that got its plan this way keeps it for 45 days without hearing a coordinator, and renews it every time it hears one. This is also how a device with no account gets into the app: while the coordinator is heard, the door offers **Join *your boat***; the person types their name, and the boat records who joined.
 
 Once a device holds the plan it works fully offline. Nothing is checked at sea.
 
@@ -142,7 +142,7 @@ A single plan covers the whole crew.
 
 1. On the web, open the boat's **Crew** card and add each crew member by email.
 2. Each crew member installs the app, signs in with that email, and taps **Import Setup**. The plan comes with the boat.
-3. A crew member who has not imported yet still gets the plan aboard, from the coordinator, as soon as they are on the boat's network.
+3. A crew member who has not imported yet, or has no account at all, still gets in aboard: on the boat's network the app offers **Join *your boat***, they type their name, and the plan comes from the coordinator. The owner sees who joined on the boat's page.
 
 A crew member who sails on several boats uses **Switch boat from web** in Settings; it lists every boat whose roster they are on. The plan belongs to the boat, so nobody needs one of their own.
 
@@ -219,7 +219,7 @@ The boat is on the Instruments plan, or Free. Driving Expedition from the app (s
 
 ### The plan shows on one device but not another
 
-The second device has not imported the boat, is signed in with an account that is not on the roster, or is not on the boat's network. Sign in on it and run **Import Setup**, or get it onto the boat's WiFi where the coordinator will reach it.
+The second device has not imported the boat, is signed in with an account that is not on the roster, or is not on the boat's network. Sign in on it and run **Import Setup**, or get it onto the boat's WiFi, where the coordinator will reach it and the door offers **Join**.
 
 ### The plan email did not arrive
 
