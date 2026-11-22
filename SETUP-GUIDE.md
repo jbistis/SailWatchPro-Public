@@ -36,6 +36,8 @@ SailWatchPro is configured on the website, not on each iPad.
 
 The boat owner signs in at [sailwatchpro.com](https://sailwatchpro.com), adds the boat, and sets up everything the boat needs: where the instruments come from, polars, sail charts, crew, events and competitors. Each iPhone or iPad then signs in with its own account and taps **Import Setup**, which pulls that configuration down. Change something on the web later and run Import Setup again on every device.
 
+The app opens to a sign-in the first time it runs, and every device belongs to a boat. A crew phone aboard with no account can instead join the boat from the nav station's iPad, with no internet; see [Step 5](#step-5--install-the-app-and-import-setup).
+
 What you need before you start:
 
 - Something for the app to hear: a boat PC running **Expedition Marine**, an **NMEA 2000 gateway**, a **B&G display network**, or just the iPad's own GPS. Expedition Marine is optional; a boat without it skips Step 1 and takes everything from the gateway.
@@ -140,7 +142,7 @@ These are the defaults on both sides. You only need to touch them if 5099 is alr
 
 1. Go to [sailwatchpro.com](https://sailwatchpro.com) on a computer and click **Sign In**, then **Sign Up**
 2. Enter your email address and choose a password. Confirm your email from the message you receive.
-3. Under **My Boats**, add your boat. You need only the **Boat Name**; the **MMSI** is optional and can come later.
+3. Under **My Boats**, add your boat. You need only the **Boat Name**; the **MMSI** is optional and can come later. (An owner who installs the app first can name the boat from its **No boats yet** screen instead; everything after the name is set up here.)
 
 Open the boat. Its page is a grid of cards, one per topic: Events, Logbook, Calibration, Polars & targets, Sails, Marks & courses, Crew, Competitors, Documents & config, Data sources, and more. Steps 3 and 4 work through the cards that matter for a first setup.
 
@@ -189,18 +191,20 @@ Everything on this page flows to each device on Import Setup.
 
 1. Install SailWatchPro on each iPhone and iPad from the [App Store](https://apps.apple.com/app/sailwatchpro/id6748606157). Beta testers can use the TestFlight build instead: https://testflight.apple.com/join/GkXJsuje
 2. **First launch** takes a few extra moments while the app performs a one-time installation of the ECMWF libraries.
-3. Open **Settings**:
-   - iPad → Settings
-   - iPhone → More > Settings
-4. Under **Account**, tap **Sign In or Create Account** and sign in with your email and password. Crew members use the email the owner added to the roster. A crew member who has no account yet creates one here with that same email.
-5. Tap **Import Setup**. The app downloads the boat's data sources, sail charts, polars, forestay targets, tuning tables and boat details. If your account has access to more than one boat, pick the right one.
+3. The app opens to its front door. Tap **Sign in** and sign in with your email and password. Crew members use the email the owner added to the roster; a crew member who has no account yet creates one here with that same email. A device that has signed in once goes straight in from then on, with or without internet.
+4. **No boats yet?** That screen does the work:
+   - An invitation addressed to your email shows first, as **Rikki invited you**. Tap **Join** and the boat is yours to pick. Use the invitation rather than creating a boat, or the boat exists twice.
+   - An owner who has not added the boat on the web yet types its name and taps **Create my boat**. The boat is made and picked; everything after the name is set up on the web, as in Steps 3 and 4.
+   - Crew with no invitation: ask the owner to add your email to the boat's roster on the web, then tap **Try again**.
+5. Open **Settings** (iPad → Settings; iPhone → More > Settings). Under **Account**, tap **Import Setup**. The app downloads the boat's data sources, sail charts, polars, forestay targets, tuning tables and boat details. If your account has access to more than one boat, pick the right one.
 6. Look for **green** status indicators under **Data Sources** in Settings. The Expedition row shows which machine the commands are going to.
 
+<!-- screenshot needed: the front door, with Sign in and Join <boat> -->
 <!-- screenshot needed: Settings → Account signed in, with the Import Setup button -->
 
-If the app says the account has no boats yet, the boat has not been added on the website, or you are crew and the owner has not added your email to the roster. Fix that on the web and tap **Try again**.
+**Aboard with no account and no internet.** When the nav station's iPad is signed in, has the boat picked and is on the boat's Wi-Fi, the door offers **Join *your boat***. Type your name and you are in: the boat's plan and the live instruments, dashboards and start tool, for 45 days without seeing the nav station again. The owner sees who joined on the boat's page on the web. Marks, courses and polars come with Import Setup, which needs a sign-in, so when the device next has internet the app asks once to sign in; you can say not now. With no signed-in iPad aboard and no internet, nobody new gets in: sign in ashore.
 
-To change which boat a device is on, use **Switch boat from web** in Settings.
+Signing out returns the device to the door. To change which boat a device is on, use **Switch boat from web** in Settings.
 
 ---
 

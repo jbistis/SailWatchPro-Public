@@ -53,6 +53,8 @@ The boat is set up once on the web at [sailwatchpro.com](https://sailwatchpro.co
 
 ## Getting Around
 
+The app opens to a door. **Sign in** with the account the boat's owner invited, or, when the nav station's iPad is on the boat's Wi-Fi, **Join *your boat*** by typing your name, with no account and no internet. A device that has signed in once goes straight in from then on, with or without internet. Signing out leads back to the door. Setting up is in the [Setup Guide](SETUP-GUIDE.md#step-5--install-the-app-and-import-setup).
+
 On iPad the sections are in the sidebar: Dashboard, Pre-Start, Start Line, Navigator, Competitors, Wind, Barometer, Weather Data, Advisories, Sails, Sail Control, Sail Crossover, Polars, Crew, Crew Positions, Events, Expedition Control, GRIB Files, Incoming Data and Settings.
 
 On iPhone the main sections are tabs, and the rest are under **More**: Advisories, Sail Control, Sail Crossover, Sail Inventory, Buoy Weather Data, Crew Positions, Crew Members, Events, GRIB Files, Polars and Settings.
@@ -256,7 +258,7 @@ Every SailWatchPro device on the boat's WiFi talks to the others on a channel of
 
 **The coordinator.** The devices elect one of their number as the boat's coordinator: the one that has been running longest, among those allowed the role. The coordinator answers for the boat where there has to be exactly one answer:
 
-- It hands the boat's plan to any device aboard that has not imported it, with a 45-day lease.
+- It hands the boat's plan to any device aboard that has not imported it, with a 45-day lease, and lets a device with no account in through **Join *your boat*** at the door, recording who joined for the owner to see on the web.
 - It holds the authoritative sail and crew state for a device that joins mid-race and asks.
 - It alone writes to a B&G display network: the display outputs once a second, and the race timer.
 - It alone records the start line and the boat track for the web Logbook, so the race has one record.
@@ -351,7 +353,7 @@ Settings is one long screen in sections. The sections you touch once, on day one
 
 | Section | What it does |
 |---------|--------------|
-| **Account** | Sign in and out, **Import Setup** to pull the boat's configuration from the web, and **Switch boat from web** for a device that moves between boats. See the Setup Guide. |
+| **Account** | Sign in and out, **Import Setup** to pull the boat's configuration from the web, and **Switch boat from web** for a device that moves between boats. Signing out returns the device to the door. See the Setup Guide. |
 | **Data Sources** | What the boat's sources are and whether this device hears them. Sources are defined on the web; here you switch **Receive gateway data** off on iPads that do not need AIS, see which Expedition machine commands go to, **Allow Coordinator Role** and **Make this iPad the coordinator** (see [The Boat's Devices](#the-boats-devices)), and enable the B&G display outputs and timer start. |
 | **Boat Configuration** | Boat name, MMSI, length, bow to GPS, draft, mast height, maximum forestay load, reaching threshold and minimum tactical wind. Filled from the web on Import Setup; change them there. |
 | **Wind Calculation Options** | Let the app derive TWA and TWS, or TWD, from apparent wind and boat data when the instruments do not send them. |
