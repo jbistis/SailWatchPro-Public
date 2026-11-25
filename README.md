@@ -54,6 +54,8 @@ The `documents/` folder has sample files in the formats the web app imports: an 
 
 A boat WiFi that the instruments and the iPads share, and an internet connection for setup. The app runs offline on the water once set up.
 
+**Mast displays.** Without Expedition aboard, the app can put its own numbers on the mast and deck displays. B&G Nemesis and Triton² displays need an H5000 or Hercules processor; a Triton Edge keeps nothing written to it. Garmin GNX displays (coming) need a Yacht Devices YDEN-02 or YDWG-02 gateway on the NMEA 2000 backbone, set to accept raw messages and pass them onto the bus; a B&G processor cannot fill the GNX's custom data fields. With Expedition aboard, Expedition drives these displays and the app stays off them.
+
 ---
 
 ## Support

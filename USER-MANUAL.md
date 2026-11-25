@@ -402,6 +402,8 @@ A locked feature says which plan has it, "Available on the Instruments plan." or
 
 A reliable boat WiFi is required. An NMEA 2000 gateway or AIS source is required for competitor positions from AIS; Expedition does not forward them. An internet connection is required for sign-in, Import Setup, buoy data, forecasts and briefings; the app runs offline on the water once set up.
 
+**Mast displays.** Without Expedition aboard, the app can put its own numbers on the mast and deck displays. B&G Nemesis and Triton² displays need an H5000 or Hercules processor; a Triton Edge keeps nothing written to it. Garmin GNX displays (coming) need a Yacht Devices YDEN-02 or YDWG-02 gateway on the NMEA 2000 backbone, set to accept raw messages and pass them onto the bus; a B&G processor cannot fill the GNX's custom data fields. With Expedition aboard, Expedition drives these displays and the app stays off them.
+
 ---
 
 ## Support & Updates

@@ -84,6 +84,8 @@ Any other gateway that sends NMEA 0183 over UDP or TCP can be added as a custom 
 
 The gateway should also be connected to the router via Ethernet where it has a port.
 
+Garmin GNX mast displays (coming) need a Yacht Devices gateway even on a boat that has another: it is the one that can pass the app's messages onto the NMEA 2000 bus. Set one of its servers to UDP, RAW, with transmit onto NMEA 2000 allowed, and give it a fixed address.
+
 ### WiFi Devices
 iPads, iPhones and Apple Watches connect to the router via WiFi. For best results:
 - Use the **5 GHz band** if your router supports it. It suffers less interference than 2.4 GHz in marina environments.
